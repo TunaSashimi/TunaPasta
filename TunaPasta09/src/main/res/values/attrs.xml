@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NemesisView" >
+        
+        <attr name="nemesisBackgroundNormal" format="color" />
+        <attr name="nemesisBackgroundPress" format="color" />
+        <attr name="nemesisBackgroundSelect" format="color" />
+        <attr name="nemesisBackgroundMark" format="color" />
+        
+        <attr name="nemesisTextValue" format="string" />
+        <attr name="nemesisTextSize" format="dimension" />
+        <attr name="nemesisTextColorNormal" format="color" />
+        <attr name="nemesisTextColorPress" format="color" />
+        <attr name="nemesisTextColorSelect" format="color" />
+        
+        <attr name="nemesisStrokeWidth" format="dimension" />
+        <attr name="nemesisStrokeColor" format="color" />
+        
+        <attr name="nemesisMarkRadius" format="dimension" />
+        
+        <attr name="nemesisRoundRadius" format="dimension" />
+        <attr name="nemesisLeftTopRadius" format="dimension" />
+        <attr name="nemesisLeftBottomRadius" format="dimension" />
+        <attr name="nemesisRightTopRadius" format="dimension" />
+        <attr name="nemesisRightBottomRadius" format="dimension" />
+        
+        <attr name="nemesisPressed" format="boolean" />
+        <attr name="nemesisSelected" format="boolean" />
+        <attr name="nemesisMarked" format="boolean" />
+        
+        <!-- trangle_reverse,trangle_positive -->
+        <attr name="nemesisHideMaxBorderLine" format="boolean" />
+
+        <!-- custom_dragbar -->
+        <attr name="nemesisCustomDragbarArray" format="reference" />
+        <attr name="nemesisCustomDragbarMargin" format="dimension" />
+        <attr name="nemesisCustomDragbarAngle" format="integer" />
+        <attr name="nemesisCustomDragbarFillingColor" format="color" />
+        
+        <attr name="nemesisCustomDragbarBallTextColor" format="color" />
+        <attr name="nemesisCustomDragbarBallStrokeWidth" format="dimension" />
+        <attr name="nemesisCustomDragbarBallStrokeColorNormal" format="color" />
+        <attr name="nemesisCustomDragbarBallStrokeColorPress" format="color" />
+        <attr name="nemesisCustomDragbarBallBackgroundNormal" format="color" />
+        <attr name="nemesisCustomDragbarBallBackgroundPress" format="color" />
+        <attr name="nemesisCustomDragbarBallSizeNormal" format="dimension" />
+        <attr name="nemesisCustomDragbarBallSizePress" format="dimension" />
+        <attr name="nemesisCustomDragbarCurrentIndex" format="integer" />
+        <attr name="nemesisCustomDragbarBitmapResourcesPress" format="reference" />
+        
+        <!-- custom_dumbbell -->
+        <attr name="nemesisCustomDumbbellRectColor" format="color" />
+        <attr name="nemesisCustomDumbbellRectWidth" format="dimension" />
+        <attr name="nemesisCustomDumbbellRectHeight" format="dimension" />
+        <attr name="nemesisCustomDumbbellRectMargin" format="dimension" />
+        <attr name="nemesisCustomDumbbellRectStrokeWidth" format="dimension" />
+        
+        <attr name="nemesisCustomDumbbellCircleRadius" format="dimension" />
+        <attr name="nemesisCustomDumbbellCircleMargin" format="dimension" />
+        <attr name="nemesisCustomDumbbellCircleStrokeWidth" format="dimension" />
+        <attr name="nemesisCustomDumbbellCircleColorBefore" format="color" />
+        <attr name="nemesisCustomDumbbellCircleColorAfter" format="color" />
+        
+        <attr name="nemesisCustomDumbbellTextSize" format="dimension" />
+        <attr name="nemesisCustomDumbbellTextStrokeWidth" format="dimension" />
+        <attr name="nemesisCustomDumbbellTextValueBefore" format="string" />
+        <attr name="nemesisCustomDumbbellTextValueAfter" format="string" />
+        
+        <attr name="nemesisType">
+            <enum name="rect_round" value="0" />
+            <enum name="rect_positive" value="1" />
+            <enum name="rect_custom" value="2" />
+            <enum name="trangle_reverse" value="3" />
+            <enum name="trangle_positive" value="4" />
+            <enum name="custom_dragbar" value="5" />
+            <enum name="custom_dumbbell" value="6" />
+        </attr>
+        
+        <!-- only draw picture -->
+        <attr name="nemesisScale" >
+            <enum name="width_top" value="0" />
+            <enum name="width_center" value="1" />
+            <enum name="width_bottom" value="2" />
+        </attr>
+        
+    </declare-styleable>
+
+</resources>

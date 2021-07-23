@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta06"
+    android:installLocation="preferExternal">
+
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait">
+        <activity
+            android:name="com.tunaPasta06.activity.EntryAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta06.activity.GalleryAutoChangeTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.BootTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ImproveListViewTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Rotate3DEffectTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.OutOfMemoryErrorTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.AnimatedGalleryTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.DragListViewTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.SmileyParserTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.PageTurningTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ViewPagerTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.SlidingDrawerTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.MeasureSizeTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.IncludeTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.OrdinaryAct"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.MergeTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.SlidePageViewTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.TopNavigationBarTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.NavigationBarTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.NavigationBarRelevanceTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.GridViewTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.QueryActivityTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.GetPhoneSpecificationsTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.PieChartTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.AppWidgetProviderIntroduceTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.GetPhoneLanguageTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Offect3DAnimationTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ActivityGroupTest01"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ActivityGroup01"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ActivityGroup02"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.ActivityGroup03"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity01"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity02"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity03"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity04"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity05"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity06"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity07"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity08"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.Activity09"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta06.activity.PinProgressButtonTest"
+            android:label="@string/app_name" />
+
+        <receiver android:name="com.tunaPasta06.receiver.AutoRecever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.tunaPasta06.service.BootService">
+            <intent-filter>
+                <action android:name="com.nemesisJS06.service.BootService" />
+            </intent-filter>
+        </service>
+
+        <!-- 声明widget对应的AppWidgetProvider -->
+        <receiver android:name="com.tunaPasta06.receiver.AppWidgetProviderTest">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.skywang.widget.UPDATE_ALL" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+
+        <service android:name="com.tunaPasta06.service.AppWidgetServiceTest">
+            <intent-filter>
+                <action android:name="android.appwidget.action.EXAMPLE_APP_WIDGET_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+</manifest>

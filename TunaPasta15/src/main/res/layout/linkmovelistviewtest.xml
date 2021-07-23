@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.tunaPasta15.activity.LinkMoveListView
+        android:id="@+id/list1"
+        android:layout_width="90dp"
+        android:layout_height="200dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <com.tunaPasta15.activity.LinkMoveListView
+        android:id="@+id/list2"
+        android:layout_width="90dp"
+        android:layout_height="200dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

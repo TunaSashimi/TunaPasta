@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/buttonChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPlay"
+            android:text="Change" />
+
+
+        <com.tunaPasta19.tuna.TunaRipple
+            android:id="@+id/tunaRipple01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/buttonChange"
+            tuna:tunaRippleDuraction="1800"
+            tuna:tunaRippleInnerCircleColor="#fed136"
+            tuna:tunaRippleInnerCircleRadius="24dp"
+            tuna:tunaRippleTextColor="#ffffff"
+            tuna:tunaRippleTextSize="20dp"
+            tuna:tunaRippleTextValue="^" />
+
+        <com.tunaPasta19.tuna.TunaRipple
+            android:id="@+id/tunaRipple02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/tunaRipple01"
+            android:layout_toRightOf="@id/tunaRipple01"
+            tuna:tunaRippleDuraction="1800"
+            tuna:tunaRippleInnerCircleColor="#fed136"
+            tuna:tunaRippleInnerCircleRadius="24dp"
+            tuna:tunaRippleOuterCircleColor="#ff9900"
+            tuna:tunaRippleTextColor="#ffffff"
+            tuna:tunaRippleTextSize="20dp"
+            tuna:tunaRippleTextValue="^"
+            tuna:tunaRippleTimeInterpolator="accelerateDecelerateInterpolator" />
+
+        <com.tunaPasta19.tuna.TunaRipple
+            android:id="@+id/tunaRipple03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/tunaRipple02"
+            android:layout_toRightOf="@id/tunaRipple02"
+            tuna:tunaRippleDuraction="1800"
+            tuna:tunaRippleInnerCircleAngle="270"
+            tuna:tunaRippleInnerCircleColorGradientEnd="#0000ff"
+            tuna:tunaRippleInnerCircleColorGradientStart="#ffffff"
+            tuna:tunaRippleInnerCircleRadius="24dp"
+            tuna:tunaRippleTextColor="#ffffff"
+            tuna:tunaRippleTextFractionDx="5%"
+            tuna:tunaRippleTextSize="20dp"
+            tuna:tunaRippleTextValue="^"
+            tuna:tunaRippleTimeInterpolator="accelerateInterpolator" />
+
+        <com.tunaPasta19.tuna.TunaRipple
+            android:id="@+id/tunaRipple04"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/tunaRipple03"
+            android:layout_toRightOf="@id/tunaRipple03"
+            tuna:tunaRippleDuraction="1800"
+            tuna:tunaRippleInnerCircleAngle="270"
+            tuna:tunaRippleInnerCircleColorGradientEnd="#0000ff"
+            tuna:tunaRippleInnerCircleColorGradientStart="#ffffff"
+            tuna:tunaRippleInnerCircleRadius="24dp"
+            tuna:tunaRippleOuterCircleColorGradientEnd="#0000ff"
+            tuna:tunaRippleOuterCircleColorGradientStart="#ff0000"
+            tuna:tunaRippleTextColor="#ffffff"
+            tuna:tunaRippleTextDy="10dp"
+            tuna:tunaRippleTextFractionDx="5%"
+            tuna:tunaRippleTextSize="20dp"
+            tuna:tunaRippleTextValue="^"
+            tuna:tunaRippleTimeInterpolator="anticipateInterpolator" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tunaRipple01"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="tunaRippleInnerCircleRadius设置内圆半径\ntunaRippleInnerCircleColor设置内圆颜色\ntunaRippleOuterCircleColor设置外圆颜色\ntunaRippleTextValue设置文字内容\ntunaRippleTextSize设置字体大小\ntunaRippleTextColor设置字体颜色\ntunaRippleTextDx设置文字横向偏移\ntunaRippleTextDy设置文字纵向偏移\ntunaRippleTextFractionDx设置文字横向偏移百分比\ntunaRippleTextFractionDy设置文字纵向偏移百分比\ntunaRippleInnerCircleColorGradientDirection设置内圆渐变方向\ntunaRippleOuterCircleColorGradientDirection设置外圆渐变方向\ntunaRippleInnerCircleColorGradientStart设置内圆渐变开始颜色\ntunaRippleInnerCircleColorGradientEnd设置内圆渐变结束颜色\ntunaRippleOuterCircleColorGradientStart设置外圆渐变开始颜色\ntunaRippleOuterCircleColorGradientEnd设置外圆渐变结束颜色\ntunaRippleDuraction设置持续时间\ntunaRippleTimeInterpolator设置插补器"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</ScrollView>

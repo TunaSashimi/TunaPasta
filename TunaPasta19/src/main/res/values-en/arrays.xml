@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mainentrytest_titleArray">
+        <item>Login</item>
+        <item>Link</item>
+        <item>Layout</item>
+        <item>Report</item>
+        <item>Function</item>
+        <item>Widget</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="loginentrytest_titleArray">
+        <item>Login Vertical Screen Layout</item>
+        <item>Login Horizontal Screen Layout</item>
+    </string-array>
+
+    <string-array name="welcomeentrytest_titleArray">
+        <item>Purpose Description Example</item>
+        <item>Pattern load Example</item>
+        <item>Hollow Load Example</item>
+        <item>Unlock Example</item>
+    </string-array>
+
+</resources>

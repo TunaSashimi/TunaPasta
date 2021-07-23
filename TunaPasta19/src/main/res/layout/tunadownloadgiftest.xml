@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaDownloadGraphicsSrcURLRequestHeight="600"
+        tuna:tunaDownloadGraphicsSrcURLRequestWidth="800"
+        tuna:tunaTouchType="none" />
+
+</RelativeLayout>

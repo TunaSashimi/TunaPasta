@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta03"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.tunaPasta03.activity.EntryAct"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tunapasta03" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta03.activity.DressUpGameTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name="com.tunaPasta03.activity.DressUpGameResult"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.tunaPasta03.activity.DialogMenuTest" />
+        <activity
+            android:name="com.tunaPasta03.activity.ContactDatabaseTest"
+            android:label="Database" />
+        <activity
+            android:name="com.tunaPasta03.activity.DataBaseTest"
+            android:label="Database" />
+        <activity
+            android:name="com.tunaPasta03.activity.AnimationTest"
+            android:label="Animation" />
+        <activity
+            android:name="com.tunaPasta03.activity.FrameAnimationTest"
+            android:label="FrameAnimation" />
+        <activity
+            android:name="com.tunaPasta03.activity.AnimationListenerTest"
+            android:label="AnimationListener" />
+        <activity android:name="com.tunaPasta03.activity.BroadcastReceiverTest" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

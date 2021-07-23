@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">	viewHandle.mIsFollow.setTextColor(Color.rgb(102,153,0));
+<gradient android:startColor="#ff669900" android:endColor="#ff669900" />
+    <stroke android:width="1.0dp" android:color="#ffffffff" />
+   <corners android:topLeftRadius="10.0dp"
+		android:topRightRadius="10.0dp" />
+    <padding android:left="6.0dp" android:top="2.0dp" android:right="6.0dp" android:bottom="2.0dp" />
+</shape>

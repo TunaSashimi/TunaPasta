@@ -1,0 +1,85 @@
+﻿
+添加方法
+
+屏幕处点击添加桌面小组件
+
+AppWidgetProvider
+AppWidgetProvider 继承自 BroadcastReceiver，它能接收 widget 相关的广播，例如 widget 的更新、删除、开启和禁用等。 
+AppWidgetProvider中的广播处理函数如下：
+onUpdate()
+  当 widget 更新时被执行。
+  同样，当用户首次添加 widget 时，onUpdate() 也会被调用，这样 widget 就能进行必要的设置工作(如果需要的话) 。但是，如果定义了 widget 的 configure属性(即android:config，后面会介绍)，那么当用户首次添加 widget 时，onUpdate()不会被调用；之后更新 widget 时，onUpdate才会被调用。
+
+onAppWidgetOptionsChanged()
+  当 widget 被初次添加 或者 当 widget 的大小被改变时，执行onAppWidgetOptionsChanged()。你可以在该函数中，根据 widget 的大小来显示/隐藏某些内容。可以通过 getAppWidgetOptions() 来返回 Bundle 对象以读取 widget 的大小信息，Bundle中包括以下信息：
+  OPTION_APPWIDGET_MIN_WIDTH -- 包含 widget 当前宽度的下限，以dp为单位。
+  OPTION_APPWIDGET_MIN_HEIGHT -- 包含 widget 当前高度的下限，以dp为单位。
+  OPTION_APPWIDGET_MAX_WIDTH -- 包含 widget 当前宽度的上限，以dp为单位。
+  OPTION_APPWIDGET_MAX_HEIGHT -- 包含 widget 当前高度的上限，以dp为单位。
+
+onDeleted(Context, int[])
+  当 widget 被删除时被触发。
+
+onEnabled(Context)
+  当第1个 widget 的实例被创建时触发。也就是说，如果用户对同一个 widget 增加了两次（两个实例），那么onEnabled()只会在第一次增加widget时触发。
+
+onDisabled(Context)
+  当最后1个 widget 的实例被删除时触发。
+
+onReceive(Context, Intent)
+  接收到任意广播时触发，并且会在上述的方法之前被调用。
+
+  总结，AppWidgetProvider 继承于 BroadcastReceiver。实际上，App Widge中的onUpdate()、onEnabled()、onDisabled()等方法都是在 onReceive()中调用的；是onReceive()对特定事情的响应函数。参考android源码frameworks/base/core/java/android/appwidget/AppWidgetProvider.java中onReceive()的定义：
+
+AppWidgetProviderInfo
+AppWidgetProviderInfo描述一个App Widget元数据，比如App Widget的布局，更新频率，以及AppWidgetProvider 类。这个应该在XML里定义。下面以XML示例来对AppWidgetProviderInfo中常用的类型进行说明。
+
+示例XML：
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+　　android:minWidth="40dp"
+　　android:minHeight="40dp"
+　　android:updatePeriodMillis="86400000"
+　　android:previewImage="@drawable/preview"
+　　android:initialLayout="@layout/example_appwidget"
+　　android:configure="com.example.android.ExampleAppWidgetConfigure" 
+　　android:resizeMode="horizontal|vertical"
+　　android:widgetCategory="home_screen|keyguard"
+　　android:initialKeyguardLayout="@layout/example_keyguard">
+</appwidget-provider>
+
+
+示例说明：
+minWidth 和minHeight 
+  它们指定了App Widget布局需要的最小区域。
+  缺省的App Widgets所在窗口的桌面位置基于有确定高度和宽度的单元网格中。如果App Widget的最小长度或宽度和这些网格单元的尺寸不匹配，那么这个App Widget将上舍入（上舍入即取比该值大的最接近的整数——译者注）到最接近的单元尺寸。
+  注意：app widget的最小尺寸，不建议比 “4x4” 个单元格要大。关于app widget的尺寸，后面在详细说明。
+
+minResizeWidth 和 minResizeHeight 
+  它们属性指定了 widget 的最小绝对尺寸。也就是说，如果 widget 小于该尺寸，便会因为变得模糊、看不清或不可用。 使用这两个属性，可以允许用户重新调整 widget 的大小，使 widget 的大小可以小于 minWidth 和 minHeight。
+  注意：(01) 当 minResizeWidth 的值比 minWidth 大时，minResizeWidth 无效；当 resizeMode 的取值不包括 horizontal 时，minResizeWidth 无效。
+           (02) 当 minResizeHeight 的值比 minHeight 大时，minResizeHeight 无效；当 resizeMode 的取值不包括 vertical 时，minResizeHeight 无效。
+
+updatePeriodMillis 
+  它定义了 widget 的更新频率。实际的更新时机不一定是精确的按照这个时间发生的。建议更新尽量不要太频繁，最好是低于1小时一次。 或者可以在配置 Activity 里面供用户对更新频率进行配置。 实际上，当updatePeriodMillis的值小于30分钟时，系统会自动将更新频率设为30分钟！关于这部分，后面会详细介绍。
+  注意: 当更新时机到达时，如果设备正在休眠，那么设备将会被唤醒以执行更新。如果更新频率不超过1小时一次，那么对电池寿命应该不会造成多大的影响。 如果你需要比较频繁的更新，或者你不希望在设备休眠的时候执行更新，那么可以使用基于 alarm 的更新来替代 widget 自身的刷新机制。将 alarm 类型设置为 ELAPSED_REALTIME 或 RTC，将不会唤醒休眠的设备，同时请将 updatePeriodMillis 设为 0。
+
+initialLayout 
+  指向 widget 的布局资源文件
+
+configure
+  可选属性，定义了 widget 的配置 Activity。如果定义了该项，那么当 widget 创建时，会自动启动该 Activity。
+
+previewImage
+  指定预览图，该预览图在用户选择 widget 时出现，如果没有提供，则会显示应用的图标。该字段对应在 AndroidManifest.xml 中 receiver 的 android:previewImage 字段。由 Android 3.0 引入。
+
+autoAdvanceViewId 
+  指定一个子view ID，表明该子 view 会自动更新。在 Android 3.0 中引入。
+
+resizeMode 
+  指定了 widget 的调整尺寸的规则。可取的值有: "horizontal", "vertical", "none"。"horizontal"意味着widget可以水平拉伸，“vertical”意味着widget可以竖值拉伸，“none”意味着widget不能拉伸；默认值是"none"。Android 3.1 引入。
+
+widgetCategory 
+  指定了 widget 能显示的地方：能否显示在 home Screen 或 lock screen 或 两者都可以。它的取值包括："home_screen" 和 "keyguard"。Android 4.2 引入。
+
+initialKeyguardLayout 
+  指向 widget 位于 lockscreen 中的布局资源文件。Android 4.2 引入。

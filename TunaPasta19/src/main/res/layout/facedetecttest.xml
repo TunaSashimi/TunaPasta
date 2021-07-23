@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/image01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/facedetecttest_imageview_camera_overlay" />
+
+    <ImageView
+        android:id="@+id/image02"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/facedetecttest_imageview_background"
+        android:onClick="onViewClick"
+        android:src="@drawable/facedetecttest_imageview_camera_on" />
+
+    <LinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+</merge>

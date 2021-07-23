@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tunaPasta07.widget.SliderRelativeLayout
+        android:id="@+id/slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/step2_tip_2">
+
+        <!-- Lock OK icon  -->
+        <ImageView
+            android:id="@+id/getup_finish_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/slider_ico_alarm" />
+
+
+        <!--直接 background 用 Arrow Animation -->
+        <ImageView
+            android:id="@+id/getup_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/getup_finish_ico"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/getup_finish_ico"
+            android:background="@anim/slider_tip_anim" />
+
+        <!-- hint_unlock -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/getup_finish_ico"
+            android:layout_toLeftOf="@id/getup_arrow"
+            android:text="@string/hint_unlock" />
+
+        <!-- slider img -->
+        <TextView
+            android:id="@+id/slider_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/getup_slider_ico_normal" />
+
+    </com.tunaPasta07.widget.SliderRelativeLayout>
+
+</LinearLayout>

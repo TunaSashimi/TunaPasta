@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/mixedgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/buttonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/buttonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <CheckBox
+            android:id="@+id/checkSwim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swim" />
+
+        <CheckBox
+            android:id="@+id/checkRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/run" />
+
+        <CheckBox
+            android:id="@+id/checkRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/CustomRadioBtnLeft"
+            android:layout_width="112dp"
+            android:layout_height="32dp"
+            android:checked="true" />
+
+        <RadioButton
+            style="@style/CustomRadioBtnRight"
+            android:layout_width="112dp"
+            android:layout_height="32dp" />
+    </RadioGroup>
+
+    <com.tunaPasta01.view.WrapRadioGroup
+        android:id="@+id/wrapRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/unionRadioButton01"
+                style="@style/UnionRadioBtn"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:text="一级损伤" />
+
+            <RadioButton
+                android:id="@+id/unionRadioButton02"
+                style="@style/UnionRadioBtn"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:text="二级损伤" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/unionRadioButton03"
+                style="@style/UnionRadioBtn"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:text="三级损伤" />
+
+            <RadioButton
+                android:id="@+id/unionRadioButton04"
+                style="@style/UnionRadioBtn"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:text="四级损伤" />
+        </LinearLayout>
+    </com.tunaPasta01.view.WrapRadioGroup>
+
+    <TextView
+        android:id="@+id/textCircle"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/radiogroup_background_oval_orange"
+        android:gravity="center"
+        android:text="送"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="#FF0000"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="1.0"
+        android:text="禀夫人,
+小人本住在苏州的城边,
+家中有屋又有田,生活乐无边.
+谁知那唐伯虎,他蛮横不留情面,
+勾结官府目无天,占我大屋夺我田.
+我爷爷跟他来翻脸,反被他一棍来打扁,
+我奶奶骂他欺善民,反被他抓进唐府院,
+强奸了一百遍啊,一百遍!
+啊~最后她悬梁自尽,遗恨人间……
+
+他还将我夫子,逐出了家园,流落到江边,
+我为酬养老爹,只有独自行乞在庙前.
+谁知那唐伯虎,他实在太阴险,
+知道此情景,竟派人来暗算,把我父子狂殴在市前!
+小人尚健壮,残命得留存,
+可怜老父他,魂归天!
+为求葬老爹,唯有卖身为奴,自作践.
+一面勤赚钱,一面读书艰,
+发誓把功名显,手刃仇人意志坚啊,
+从此唐寅诗集在身边,
+我铭记这仇不共戴天.
+" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shade_bachground" />
+</LinearLayout>

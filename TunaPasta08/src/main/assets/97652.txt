@@ -1,0 +1,35 @@
+[{
+        "name":"长裤",
+        "code":"97652-A",
+        "oldPrice":null,
+        "price":"RMB 199",
+        "siblingArticles":[],
+        "availabilityText":"",
+        "swatch":{
+            "col":"000000",
+            "fab":"//lp.hm.com/hmprod?set=source[/fabric/2011 /316B4BC7-E129-4781-B15D-0ABD10527B49.jpg]&call=url[file:/product /fabric]",
+            "smallfab":"//lp.hm.com/hmprod?set=source[//lp.hm.com /hmprod?set=source[/fabric/2011/316B4BC7-E129-4781-B15D- 0ABD10527B49.jpg]&call=url[file:/product/fabric]]&call=url[file: /product /fabricSmall]"
+        },
+        "parentProductId":"97652",
+        "numericPrice":199,
+        "lookletArticleMetaData":" {\"id\":35550,\"pose\":1,\"category\":34,\"categoryType\":12,\"colors\": [\"#2b292a\"],\"variants\":[{\"id\":46855,\"view\":{\"front\":{\"id \":115179,\"image\":\"2011/11/08/9deeb220-1f6a-476d-a3dd-82579f31dae2_35550_46855_f.png\",\"crop\":{\"x\":181,\"y\":233,\"width \":146,\"height\":601}},\"back\":{\"id\":115180,\"image\":\"2011/11/08/9deeb220-1f6a-476d-a3dd-82579f31dae2_35550_46855_b.png\",\"crop\":{\"x \":127,\"y\":232,\"width\":177,\"height\":592}}}}]}",
+        "swatchName":"黑色"
+    },
+    {
+        "name":"长裤",
+        "code":"97652-B",
+        "oldPrice":null,
+        "price":"RMB 199",
+        "siblingArticles":[],
+        "availabilityText":"",
+        "swatch":{
+            "col":"8d0310",
+            "fab":"//lp.hm.com/hmprod?set=source[/fabric/2011 /737D65ED-3CFC-4003-9867-156DE486B649.jpg]&call=url[file:/product /fabric]",
+            "smallfab":"//lp.hm.com/hmprod?set=source[//lp.hm.com /hmprod?set=source[/fabric/2011/737D65ED-3CFC- 4003-9867-156DE486B649.jpg]&call=url[file:/product/fabric]]& call=url[file:/product /fabricSmall]"
+        },
+        "parentProductId":"97652",
+        "numericPrice":199,
+        "lookletArticleMetaData":" {\"id\":35537,\"pose\":1,\"category\":34,\"categoryType\":12,\"colors\": [\"#614040\"],\"variants\":[{\"id\":46841,\"view\":{\"front\":{\"id \":115151,\"image\":\"2011/11/07/26f0fc0b-4495-4e63-8d5a-3ac6a4533a9a_35537_46841_f.png\",\"crop\":{\"x\":181,\"y\":232,\"width \":146,\"height\":601}},\"back\":{\"id\":115152,\"image\":\"2011/11/07 /26f0fc0b-4495-4e63-8d5a-3ac6a4533a9a_35537_46841_b.png\",\"crop\":{\"x \":130,\"y\":232,\"width\":174,\"height\":594}}}}]}",
+        "swatchName":"茄紫色"
+    }
+]

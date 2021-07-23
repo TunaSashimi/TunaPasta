@@ -1,0 +1,4 @@
+<com.tunaPasta13.widget.JazzyViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jazzy_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

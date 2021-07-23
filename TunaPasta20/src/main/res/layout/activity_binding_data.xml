@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.tunaPasta20.data.BindingData" />
+
+        <variable
+            name="expanded"
+            type="Boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={data.hotelInfo}" />
+
+        <EditText
+            android:id="@+id/editText02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText01"
+            android:text="@={data.hotelInfo}" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText02"
+            android:onClick="onClick"
+            android:text="show data" />
+
+        <com.tunasushi.view.TView
+            android:id="@+id/tViewText"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/button"
+            android:layout_marginTop="16dp"
+            app:backgroundNormal="#ffff00"
+            app:text="@{data.hotelInfo}" />
+
+        <com.tunasushi.view.TView
+            android:id="@+id/tViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/tViewText"
+            android:layout_marginTop="16dp"
+            app:backgroundNormal="#ffff00"
+            app:content="@{data.hotelInfo}"
+            app:textColorNormal="#333333" />
+
+        <com.tunasushi.view.TView
+            android:id="@+id/tViewSelect"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/tViewContent"
+            android:layout_marginTop="16dp"
+            app:backgroundNormal="#ffff00"
+            app:backgroundSelect="#0000ff"
+            app:contentColorNormal='@{data.hotelSelect?"#333333":"#666666"}'
+            app:select="@{data.hotelSelect}" />
+
+        <com.tunasushi.view.TView
+            android:id="@+id/tViewSrcLeftPadding"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tViewSelect"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            app:backgroundNormal="#ff0000"
+            app:radius="5dp"
+            app:srcRightDyNormal="1dp"
+            app:srcRightHeightNormal="10dp"
+            app:srcRightNormal="@{data.hotelSelect?@drawable/bitmap_tview_src_rmb:@drawable/bitmap_tview_src_rmb}"
+            app:srcRightPaddingNormal="8dp"
+            app:srcRightWidthNormal="9dp"
+            app:strokeColorNormal="#ffffff"
+            app:strokeWidthNormal="1dp"
+            app:text="100"
+            app:textColorNormal="#ffffff"
+            app:textSize="16dp" />
+    </RelativeLayout>
+</layout>
+
+

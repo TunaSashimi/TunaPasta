@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_bar"
+        android:checkedButton="@+id/radio3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/main_tab_bottom_clothesDetail"
+            android:text="新品推荐" />
+
+        <RadioButton
+            style="@style/main_tab_bottom_clothesDetail"
+            android:text="特价团购" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/main_tab_bottom_clothesDetail"
+            android:text="潮人分享" />
+
+        <RadioButton
+            style="@style/main_tab_bottom_clothesDetail"
+            android:text="店铺分布" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 注意,必须设置所有的单选框高度一致,不然的话默认单选框的背景图片高度会高于其他的单选框\n
+ 在style中设置 item name 的android:button 为@null 可以去掉单选框的按钮效果" />
+
+</LinearLayout>

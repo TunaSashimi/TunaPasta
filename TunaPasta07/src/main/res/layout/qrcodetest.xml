@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+	android:focusableInTouchMode="true">
+	<TableRow android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<EditText android:id="@+id/editText1" android:layout_width="match_parent"
+			android:hint="识别后的字符串！" android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button android:text="识别" android:layout_weight="4" android:id="@+id/button1"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:onClick="onViewClick" />
+	</TableRow>
+	<TableRow android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<EditText android:id="@+id/editText2" android:layout_width="match_parent"
+			android:hint="输入字符串，生成二维码" android:layout_weight="1"
+			android:layout_height="wrap_content" />
+		<Button android:text="生成" android:layout_weight="4" android:id="@+id/button2"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:onClick="onViewClick" />
+	</TableRow>
+	<ImageView android:id="@+id/imgview01" android:layout_width="400dp"
+		android:layout_height="400dp" />
+</LinearLayout>

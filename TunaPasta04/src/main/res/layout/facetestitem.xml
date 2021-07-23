@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <com.tunaPasta04.widget.FaceDetectView
+        android:id="@+id/myface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal" >
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_confirm_s"
+            android:text="保存"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_confirm_s"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</FrameLayout>

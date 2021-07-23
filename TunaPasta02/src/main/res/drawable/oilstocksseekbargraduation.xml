@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/oilstocksseekbar01">
+    </item>
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/oilstocksseekbar02">
+    </item>
+</layer-list>
+    <!--<bitmap android:src="@drawable/oilstocksseekbar01" />--><!--<bitmap android:src="@drawable/oilstocksseekbar02" />-->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/weather_linear" android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<EditText android:layout_width="200dp"
+				android:layout_height="wrap_content" android:id="@+id/weet01"
+				android:text="shanghai" />
+			<Button android:id="@+id/webu01" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="点击查询" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView android:id="@+id/weiv01" android:layout_width="55dp"
+				android:layout_height="55dp" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/wetv01"
+				android:textColor="#00ff00"  android:layout_marginLeft="8dp"/>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView android:layout_width="220dp"
+				android:layout_height="340dp" android:adjustViewBounds="true"
+				android:id="@+id/weiv02" android:layout_gravity="bottom" />
+			<TextView android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/wetv02"
+				android:textColor="#ffff00" android:layout_marginLeft="8dp"/>
+		</LinearLayout>
+		<com.tunaPasta08.widget.MarqueeText
+			android:layout_width="400dp" android:layout_height="wrap_content"
+			android:focusable="true" android:textColor="#00ff00"
+			android:focusableInTouchMode="true" android:scrollHorizontally="true"
+			android:marqueeRepeatLimit="marquee_forever" android:ellipsize="marquee"
+			android:text="          		身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃。菩提本非树，明镜亦非台，本来无一物，何处染尘埃." 
+			android:shadowColor="#00FF00" android:shadowRadius="3.0" />
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw800dp devices (e.g. 7" tablets) here.
+    -->
+
+<string name="use_dimen">屏幕宽度>=800dp,使用values-sw800dp文件夹内的配置</string>
+
+</resources>

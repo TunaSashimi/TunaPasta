@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.tunaPasta06"
+        minSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
+
+
+dependencies {
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'org.apache.httpcomponents:httpcore:4.4.1'
+}

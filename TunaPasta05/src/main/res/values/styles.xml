@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView"></style>
+
+    <style name="TextView.Middle">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TextView.Middle.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobtn_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/places_sub_title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+        <style name="main_tab_bottom_clothesDetail">
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:background">@drawable/clothes_rb_bg</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_width">65dp</item>
+	</style>
+    
+</resources>

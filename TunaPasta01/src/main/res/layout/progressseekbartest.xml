@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/customprogressbar01"
+                android:progress="100" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_02"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_04"
+            style="@style/CustomProgressBar01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_05"
+            style="@style/CustomProgressBar02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_06"
+            style="@style/CustomProgressBar02"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="10dp"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_07"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/progress01"
+            android:progressDrawable="@drawable/progress_vertical" />
+
+        <AnalogClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 在Graphical中查看DigitalClock会报错,不过程序运行正常 -->
+
+        <DigitalClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="16"
+            android:maxHeight="5dp"
+            android:progress="7"
+            android:progressDrawable="@drawable/oilstocksseekbardrawable"
+            android:thumb="@drawable/oilstocksseekbarthumb" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示组件的值" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置组件的值" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onStart"
+                android:text="开始" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onStop"
+                android:text="停止" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onReset"
+                android:text="重置" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

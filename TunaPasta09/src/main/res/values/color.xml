@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="line_gray">#b2b2b2</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tilebg" >
+
+    <ImageView
+        android:layout_width="346.0dp"
+        android:layout_height="106.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20.0dp"
+        android:background="@drawable/share_bottom_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300.0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20.0dp" >
+
+        <com.tunaPasta05.widget.ShakeButton
+            android:id="@+id/shakebtn"
+            android:layout_width="220.0dp"
+            android:layout_height="48.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="父控件中的抖动效果" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="220.0dp"
+            android:layout_height="48.0dp"
+            android:layout_above="@id/shakebtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dp"
+            android:text="android:tileMode=repeat" />
+
+        <ImageView
+            android:layout_width="204.0dp"
+            android:layout_height="98.0dp"
+            android:layout_above="@id/btn02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dp"
+            android:background="@drawable/share_text" />
+    </RelativeLayout>
+
+</RelativeLayout>

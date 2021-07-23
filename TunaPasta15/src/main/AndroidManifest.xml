@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta15"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.tunaPasta15.activity.EntryAct"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tunaPasta15.activity.WheelTest" />
+        <activity android:name="com.tunaPasta15.activity.TimeActivity" />
+        <activity android:name="com.tunaPasta15.activity.Time2Activity" />
+        <activity android:name="com.tunaPasta15.activity.DateActivity" />
+        <activity android:name="com.tunaPasta15.activity.PasswActivity" />
+        <activity android:name="com.tunaPasta15.activity.SlotMachineActivity" />
+        <activity android:name="com.tunaPasta15.activity.CitiesActivity" />
+        <activity android:name="com.tunaPasta15.activity.SpeedActivity" />
+        <activity android:name="com.tunaPasta15.activity.HoloWheelActivity" />
+        <activity android:name="com.tunaPasta15.activity.RadialWidgetTest" />
+        <activity android:name="com.tunaPasta15.activity.AltRadialMenuActivity" />
+        <activity android:name="com.tunaPasta15.activity.RadialMenuActivity" />
+        <activity android:name="com.tunaPasta15.activity.RadialProgressActivity" />
+        <activity android:name="com.tunaPasta15.activity.SemiCircularRadialMenuActivity" />
+        <activity android:name="com.tunaPasta15.activity.PageddragTest" />
+        <activity android:name="com.tunaPasta15.activity.AnimationCloning" />
+        <activity android:name="com.tunaPasta15.activity.AnimationLoading" />
+        <activity android:name="com.tunaPasta15.activity.AnimationSeeking" />
+        <activity android:name="com.tunaPasta15.activity.AnimatorEvents" />
+        <activity android:name="com.tunaPasta15.activity.BouncingBalls" />
+        <activity android:name="com.tunaPasta15.activity.CustomEvaluator" />
+        <activity android:name="com.tunaPasta15.activity.MultiPropertyAnimation" />
+        <activity android:name="com.tunaPasta15.activity.ReversingAnimation" />
+        <activity android:name="com.tunaPasta15.activity.Droidflakes" />
+        <activity android:name="com.tunaPasta15.activity.PathAnimationActivity" />
+        <activity android:name="com.tunaPasta15.activity.Toggles" />
+        <activity android:name="com.tunaPasta15.activity.VPADemo" />
+        <activity android:name="com.tunaPasta15.activity.ImageSrcTest" />
+        <activity android:name="com.tunaPasta15.activity.TestViewUnitTest" />
+        <activity android:name="com.tunaPasta15.activity.FragmentSwitchTest" />
+        <activity android:name="com.tunaPasta15.activity.FragmentShowHideTest" />
+        <activity android:name="com.tunaPasta15.activity.LinkMoveListViewTest" />
+        <activity android:name="com.tunaPasta15.activity.VideoViewTest" />
+        <activity android:name="com.tunaPasta15.activity.VideoViewControllerTest" />
+        <activity android:name="com.tunaPasta15.activity.WeightTest" />
+        <activity android:name="com.tunaPasta15.activity.VerticalScrollTestViewTest" />
+        <activity android:name="com.tunaPasta15.activity.CustomAnimationTest" />
+        <activity android:name="com.tunaPasta15.activity.MoveLineQuadCubicArcToDiffence" />
+        <activity android:name="com.tunaPasta15.activity.BezierViewTest" />
+        <activity android:name="com.tunaPasta15.activity.WaveEffectTest" />
+    </application>
+
+</manifest>

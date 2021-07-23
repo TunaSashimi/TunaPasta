@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/search_contact_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询联系人" />
+
+    <Button
+        android:id="@+id/search_call_log_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询通话记录" />
+
+    <Button
+        android:id="@+id/search_sms_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询短消息" />
+
+    <TextView
+        android:id="@+id/read_contact_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="28px" />
+</LinearLayout>

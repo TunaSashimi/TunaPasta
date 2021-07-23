@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textTouchoutable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="tunaTouchType设置always滑出控件边缘依然响应\ntunaTouchType设置edge(默认)滑出控件边缘认为抬起"
+            android:textColor="#434343" />
+
+        <com.tunaPasta19.tuna.TunaDrag
+            android:id="@+id/tunaDragTouchoutable"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/textTouchoutable"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginRight="@dimen/tuna_button_marginRight"
+            tuna:tunaDragAngle="16"
+            tuna:tunaDragBallBackgroundNormal="#ffffff"
+            tuna:tunaDragBallBackgroundPress="#ffffff"
+            tuna:tunaDragBallRadiusNormal="18dp"
+            tuna:tunaDragBallRadiusPress="22dp"
+            tuna:tunaDragBallStrokeColorNormal="#a3a3a3"
+            tuna:tunaDragBallStrokeColorPress="#a3a3a3"
+            tuna:tunaDragBallStrokeWidth="1px"
+            tuna:tunaDragBallTextColor="#592d2e"
+            tuna:tunaDragCurrentIndex="3"
+            tuna:tunaDragFillColor="#f0f0f0"
+            tuna:tunaDragStrokeColor="#a3a3a3"
+            tuna:tunaDragStrokeWidth="1px"
+            tuna:tunaDragTextColorNormal="#cccccc"
+            tuna:tunaDragTextSize="17dp"
+            tuna:tunaDragTextValueArray="@array/tunadrag_textValueArray"
+            tuna:tunaTouchIntercept="true"
+            tuna:tunaTouchType="always" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/tunaViewTouchoutableReset"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/tunaDragTouchoutable"
+            android:layout_below="@id/tunaDragTouchoutable"
+            android:layout_marginRight="@dimen/tuna_button_margin"
+            android:layout_marginTop="@dimen/tuna_button_margin"
+            tuna:tunaBackgroundNormal="#592d2d"
+            tuna:tunaBackgroundPress="#bc7955"
+            tuna:tunaStrokeColorNormal="#592d2d"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ffffff"
+            tuna:tunaTextSize="14dp"
+            tuna:tunaTextValue="下标重置" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/tunaViewTouchoutableGetIndex"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tunaViewTouchoutableReset"
+            android:layout_toRightOf="@id/tunaViewTouchoutableReset"
+            tuna:tunaBackgroundNormal="#592d2d"
+            tuna:tunaBackgroundPress="#bc7955"
+            tuna:tunaRadiusLeftTop="4dp"
+            tuna:tunaRadiusRightBottom="0dp"
+            tuna:tunaRadiusRightTop="0dp"
+            tuna:tunaStrokeColorNormal="#592d2d"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ffffff"
+            tuna:tunaTextMark="true"
+            tuna:tunaTextMarkColor="#ff0000"
+            tuna:tunaTextMarkRadius="4dp"
+            tuna:tunaTextSize="14dp"
+            tuna:tunaTextValue="获取下标" />
+
+        <TextView
+            android:id="@+id/textTouchoutUnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tunaViewTouchoutableReset"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="tunaDragAngle管道角度\ntunaDragBallBackgroundNormal设置小球常规背景\ntunaDragBallBackgroundPress设置小球按下背景\ntunaDragBallRadiusNormal设置小球常规半径\ntunaDragBallRadiusPress设置小球按下半径\ntunaDragBallStrokeColorNormal设置小球边框线常规颜色\ntunaDragBallStrokeColorPress设置小球边框线按下颜色\ntunaDragBallTextColor设置小球上字体颜色\ntunaDragCurrentIndex选中下标\ntunaDragFillColor填充颜色\ntunaDragStrokeColor设置边框线颜色\ntunaDragStrokeWidth设置边框线宽度\ntunaDragTextColorNormal设置默认字体颜色\ntunaDragTextSize设置字体大小\ntunaDragTextValueArray选择项数组"
+            android:textColor="#434343" />
+
+
+        <com.tunaPasta19.tuna.TunaDrag
+            android:id="@+id/tunaDragTouchoutUnable"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/textTouchoutUnable"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginRight="@dimen/tuna_button_marginRight"
+            tuna:tunaDragAngle="16"
+            tuna:tunaDragBallBackgroundNormal="#ffffff"
+            tuna:tunaDragBallBackgroundPress="#ffffff"
+            tuna:tunaDragBallRadiusNormal="18dp"
+            tuna:tunaDragBallRadiusPress="22dp"
+            tuna:tunaDragBallStrokeColorNormal="#a3a3a3"
+            tuna:tunaDragBallStrokeColorPress="#a3a3a3"
+            tuna:tunaDragBallStrokeWidth="1px"
+            tuna:tunaDragBallTextColor="#592d2e"
+            tuna:tunaDragCurrentIndex="3"
+            tuna:tunaDragFillColor="#f0f0f0"
+            tuna:tunaDragStrokeColor="#a3a3a3"
+            tuna:tunaDragStrokeWidth="1px"
+            tuna:tunaDragTextColorNormal="#cccccc"
+            tuna:tunaDragTextSize="17dp"
+            tuna:tunaDragTextValueArray="@array/tunadrag_textValueArray"
+            tuna:tunaTouchIntercept="true" />
+
+        <!--From bottom to top of layout-->
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/tunaViewTouchoutUnableReset"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tunaDragTouchoutUnable"
+            android:layout_margin="@dimen/tuna_button_margin"
+            tuna:tunaBackgroundNormal="#592d2d"
+            tuna:tunaBackgroundPress="#bc7955"
+            tuna:tunaStrokeColorNormal="#592d2d"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ffffff"
+            tuna:tunaTextSize="14dp"
+            tuna:tunaTextValue="下标重置" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/tunaViewTouchoutUnableGetIndex"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tunaViewTouchoutUnableReset"
+            android:layout_toRightOf="@id/tunaViewTouchoutUnableReset"
+            tuna:tunaBackgroundNormal="#592d2d"
+            tuna:tunaBackgroundPress="#bc7955"
+            tuna:tunaRadiusLeftTop="4dp"
+            tuna:tunaRadiusRightBottom="0dp"
+            tuna:tunaRadiusRightTop="0dp"
+            tuna:tunaStrokeColorNormal="#592d2d"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ffffff"
+            tuna:tunaTextMark="true"
+            tuna:tunaTextMarkColor="#ff0000"
+            tuna:tunaTextMarkRadius="4dp"
+            tuna:tunaTextSize="14dp"
+            tuna:tunaTextValue="获取下标" />
+
+    </RelativeLayout>
+
+</ScrollView>

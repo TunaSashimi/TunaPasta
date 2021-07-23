@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="lv_data">
+	    <item>字母A</item>
+	    <item>字母B</item>
+	    <item>字母C</item>
+	    <item>字母D</item>
+	    <item>字母E</item>
+	    <item>字母F</item>
+	    <item>字母G</item>
+	    <item>字母H</item>
+	    <item>字母I</item>
+	    <item>字母J</item>
+	    <item>字母K</item>
+	    <item>字母L</item>
+	    <item>字母M</item>
+	    <item>字母N</item>
+	    <item>字母O</item>
+	    <item>字母P</item>
+	    <item>字母Q</item>
+	    <item>字母R</item>
+	    <item>字母S</item>
+	    <item>字母T</item>
+	    <item>字母U</item>
+	    <item>字母V</item>
+	    <item>字母W</item>
+	    <item>字母X</item>
+	    <item>字母Y</item>
+	    <item>字母Z</item>
+	</string-array>
+	
+	  <string-array name="default_smiley_texts">
+    <item >"[爱你]"</item>
+     <item >[机器人]</item>
+    <item >[拜拜]</item>
+    <item >"[抱抱]"</item>
+    <item >"[悲剧]"</item>
+    <item >"[悲伤]"</item>
+    <item >"[便便]"</item>
+    <item >"[鄙视]"</item>
+    <item >"[闭嘴]"</item>
+    <item >"[不要]"</item>
+    <item >"[馋嘴]"</item> 
+  </string-array>
+  <string-array name="default_smiley_names">
+    <item >"爱你"</item>
+    <item >"机器人"</item>
+    <item>"拜拜"</item>
+    <item >"抱抱"</item>
+    <item >"悲剧"</item>
+    <item >"悲伤"</item>
+    <item >"便便"</item>
+    <item>"鄙视"</item>
+    <item >"闭嘴"</item>
+    <item>"不要"</item>
+    <item >"馋嘴"</item>
+  </string-array>
+    
+</resources>

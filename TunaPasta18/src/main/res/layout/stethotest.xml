@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="targetSdkVersion>=28需要网络适配" />
+
+    <Button
+        android:id="@+id/btn_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="token" />
+
+    <Button
+        android:id="@+id/btn_faceDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_token"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="faceDetect" />
+
+    <Button
+        android:id="@+id/btn_faceCompare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_faceDetect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="faceCompare" />
+
+    <Button
+        android:id="@+id/btn_bioDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_faceCompare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="bioDetect" />
+
+    <Button
+        android:id="@+id/btn_idComparison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_bioDetect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="idComparison" />
+
+    <Button
+        android:id="@+id/btn_faceCollection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_idComparison"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="faceCollection" />
+
+
+    <Button
+        android:id="@+id/btn_descreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_faceCollection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="descreen" />
+
+    <Button
+        android:id="@+id/btn_imgCompare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_descreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="imgCompare" />
+
+    <Button
+        android:id="@+id/btn_faceComparison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_imgCompare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="faceComparison" />
+
+</RelativeLayout>

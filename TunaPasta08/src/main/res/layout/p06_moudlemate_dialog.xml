@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+	Android:orientation="vertical" Android:layout_height="match_parent"
+	Android:id="@+id/popdialog">
+	<LinearLayout Android:layout_height="wrap_content"
+		Android:layout_width="match_parent">
+		<ImageView Android:layout_width="40dp"
+			Android:layout_height="40dp" Android:id="@+id/dialog_im" />
+		<TextView
+            Android:layout_height="wrap_content"
+			Android:layout_width="match_parent" Android:text=" 搜索\n 品牌" />
+	</LinearLayout>
+	<ImageView Android:layout_height="20dp"
+		Android:layout_width="match_parent" Android:background="@drawable/z02"
+		Android:id="@+id/dialog_im_brand02" />
+	<ImageView Android:layout_height="20dp"
+		Android:layout_width="match_parent" Android:background="@drawable/z01" />
+	<ImageView Android:layout_height="20dp"
+		Android:layout_width="match_parent" Android:background="@drawable/z03" />
+	<EditText Android:layout_height="wrap_content"
+		Android:layout_width="match_parent" />
+	<Button Android:id="@+id/bt_getoff" Android:layout_width="match_parent"
+		Android:layout_height="35dp" Android:text="脱下" />
+</LinearLayout>

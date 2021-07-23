@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.tunaPasta19.widget.VideoViewFullScreen
+        android:id="@+id/videoView"
+        android:layout_width="480dp"
+        android:layout_height="852dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60.5dp"
+        android:layout_height="75.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:alpha="0"
+        android:background="@drawable/tunawelcome_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:text="@string/tunawelcome_textview"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <com.tunaPasta19.tuna.TunaView
+        android:id="@+id/tunaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        tuna:tunaBackgroundNormal="#33ffffff"
+        tuna:tunaBackgroundPress="#66ffffff"
+        tuna:tunaRadius="@dimen/tuna_radius"
+        tuna:tunaStrokeColorNormal="#ffffff"
+        tuna:tunaStrokeWidthNormal="@dimen/tuna_stroke_width"
+        tuna:tunaTextColorNormal="#ffffff"
+        tuna:tunaTextSize="16dp"
+        tuna:tunaTextValue="@string/tunawelcome_tunaview_login" />
+
+    <com.tunaPasta19.tuna.TunaView
+        android:id="@+id/tunaSkip"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        tuna:tunaBackgroundNormal="#00000000"
+        tuna:tunaRadius="@dimen/tuna_radius"
+        tuna:tunaTextColorNormal="#c7c7c7"
+        tuna:tunaTextColorPress="#ffffff"
+        tuna:tunaTextSize="14dp"
+        tuna:tunaTextValue="@string/tunawelcome_tunaview_skip" />
+
+</RelativeLayout>

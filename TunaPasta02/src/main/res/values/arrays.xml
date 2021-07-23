@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="countries_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="ProjectNameTips">
+        <item>质量对规鉴定</item>
+        <item>质量验收</item>
+        <item>质量抽查</item>
+        <item>专项检查</item>
+        <item>包保检查</item>
+        <item>添乘检查</item>
+        <item>标准化验收</item>
+        <item>事故分析</item>
+        <item>故障分析</item>
+        <item>安全评估</item>
+        <item>其它工作</item>
+        <item>安全工作</item>
+    </string-array>
+
+    <array name="snooze_dismiss_drawables">
+        <item>@drawable/ic_item_google</item>
+        <item>@null</item>
+        <item>@drawable/ic_item_camera</item>
+        <item>@null</item>
+    </array>
+    <array name="snooze_dismiss_descriptions">
+        <item>dismiss</item>
+        <item>@null</item>
+        <item>snooze</item>
+        <item>@null</item>
+    </array>
+    <array name="snooze_dismiss_direction_descriptions">
+        <item>right</item>
+        <item>@null</item>
+        <item>left</item>
+        <item>@null</item>
+    </array>
+
+</resources>

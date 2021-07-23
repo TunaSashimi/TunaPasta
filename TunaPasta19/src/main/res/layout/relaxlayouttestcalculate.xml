@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_setgender"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="20.0dp"
+            android:background="@drawable/ic_updown_round"
+            android:onClick="onViewClick" />
+
+        <Button
+            android:layout_width="70.0dp"
+            android:layout_height="70.0dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/btn_setgender"
+            android:background="@drawable/ic_updown_square"
+            android:onClick="onViewClick" />
+
+        <Button
+            android:layout_width="40.0dp"
+            android:layout_height="40.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5.0dp"
+            android:layout_marginRight="5.0dp"
+            android:background="@drawable/ic_home"
+            android:onClick="onViewClick" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35.0dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="140.0dp"
+            android:layout_height="40.0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="5.0dp"
+            android:background="@drawable/dropdown_btn_selector"
+            android:paddingLeft="10.0dp" />
+
+        <Spinner
+            android:layout_width="100.0dp"
+            android:layout_height="40.0dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dropdown_btn_selector"
+            android:paddingLeft="10.0dp" />
+
+        <Button
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/ic_blank_black_round"
+            android:onClick="onViewClick"
+            android:text="GO"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:background="@drawable/bg_light_grey_box"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5.0dp"
+            android:text="[结果]"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:background="#ff000000" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="right"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="left"
+                android:text="美国"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="right"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="left"
+                android:text="英国"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="right"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="left"
+                android:text="日本"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="right"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:gravity="left"
+                android:text="欧洲"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp" />
+        </TableRow>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10.0dp"
+        android:text="输入参考尺寸和国家"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta12"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.tunaPasta12.activity.EntryAct"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tunaPasta12.activity.Patterns" />
+        <activity android:name="com.tunaPasta12.activity.DrawPoints" />
+        <activity android:name="com.tunaPasta12.activity.PolyToPoly" />
+        <activity android:name="com.tunaPasta12.activity.Xfermodes" />
+        <activity android:name="com.tunaPasta12.activity.Vertices" />
+        <activity android:name="com.tunaPasta12.activity.UnicodeChart" />
+        <activity android:name="com.tunaPasta12.activity.Typefaces" />
+        <activity android:name="com.tunaPasta12.activity.TouchPaintTest" />
+        <activity android:name="com.tunaPasta12.activity.TextAlign" />
+        <activity android:name="com.tunaPasta12.activity.Sweep" />
+        <activity android:name="com.tunaPasta12.activity.SurfaceViewOverlay" />
+        <activity android:name="com.tunaPasta12.activity.ScaleToFit" />
+        <activity android:name="com.tunaPasta12.activity.RoundRects" />
+        <activity android:name="com.tunaPasta12.activity.Regions" />
+        <activity android:name="com.tunaPasta12.activity.PurgeableBitmap" />
+        <activity android:name="com.tunaPasta12.activity.CompressedTextureActivity" />
+        <activity android:name="com.tunaPasta12.activity.CubeMapActivity" />
+        <activity android:name="com.tunaPasta12.activity.FrameBufferObjectActivity" />
+        <activity android:name="com.tunaPasta12.activity.GLSurfaceViewActivity" />
+        <activity android:name="com.tunaPasta12.activity.Kube" />
+        <activity android:name="com.tunaPasta12.activity.MatrixPaletteActivity" />
+        <activity android:name="com.tunaPasta12.activity.SpriteTextActivity" />
+        <activity android:name="com.tunaPasta12.activity.TouchRotateActivity" />
+        <activity android:name="com.tunaPasta12.activity.TranslucentGLSurfaceViewActivity" />
+        <activity android:name="com.tunaPasta12.activity.AlertDialogSamples" />
+        <activity android:name="com.tunaPasta12.activity.RotatingButton" />
+        <activity android:name="com.tunaPasta12.activity.InputOpenClosedAutomaticTest" />
+    </application>
+
+</manifest>

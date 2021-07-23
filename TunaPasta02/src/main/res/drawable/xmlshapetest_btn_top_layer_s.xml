@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--在item里面定义一个drawable，图片就会自动缩放以适应视图的大小。-->
+<!--为了避免缩放，可以使用<bitmap>的子元素来指定drawable资源-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/xmlshapetest_btn_top_layeritem_s">
+    </item>
+    <item>
+        <bitmap android:src="@drawable/xmlshapetest_btn_layer_item_2"
+            android:gravity="right|center_vertical"/>
+    </item>
+</layer-list>

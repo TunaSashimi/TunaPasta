@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TunaPasta06</string>
+    <string name="now_playing">正在播放</string>
+    <string name="native_music">本地歌曲</string>
+    <string name="network_music">网络歌曲</string>
+    <string name="function_menu">功能菜单</string>
+    <string name="content_desc_pinned_downloaded">Pinned to device and downloaded</string>
+    <string name="content_desc_pinned_downloading">Pinned to device and downloading</string>
+    <string name="content_desc_pinned_not_downloaded">Pinned to device and waiting to download</string>
+    <string name="content_desc_unpinned_downloaded">Temporarily downloaded</string>
+    <string name="content_desc_unpinned_downloading">Temporarily downloading</string>
+    <string name="content_desc_unpinned_not_downloaded">Not downloaded</string>
+
+</resources>

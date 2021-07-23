@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://www.javaeye.com/custom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player_background">
+
+	<!-- 头部为固定的布局 -->
+	<LinearLayout android:id="@+id/title_relativeLayout"
+		android:layout_width="match_parent"
+		android:layout_height="41.0dp"
+		style="@android:style/ButtonBar"
+		android:background="@drawable/title_background">
+	
+		<TextView android:layout_width="match_parent"
+			android:layout_height="41.0dp"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:textColor="#FFFFFF"
+			android:text="我的歌曲"/>
+	
+	</LinearLayout>
+	
+	<!-- 中间动态显示界面 -->
+ 	<ViewFlipper android:id="@+id/fliper" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/title_relativeLayout"
+		android:background="#00000000"
+		android:layout_marginBottom="50.0dp">
+	</ViewFlipper> 
+	
+	<!-- 底部为固定的布 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		style="@android:style/ButtonBar"
+		android:background="@drawable/title_background">
+		
+		<com.tunaPasta06.widget.ImageTextButton
+            android:id="@+id/now_playing"
+			custom:icon="@drawable/frame_player_normal"
+			android:layout_width="match_parent"
+			android:layout_height="50.0dp"
+			android:background="#00000000"
+			android:layout_weight="1"
+			android:text="@string/now_playing"
+			android:textColor="#FFFFFF"/>
+			
+		<com.tunaPasta06.widget.ImageTextButton
+            android:id="@+id/native_music"
+			custom:icon="@drawable/frame_local_normal"
+			android:layout_width="match_parent"
+			android:layout_height="50.0dp"
+			android:background="#00000000"
+			android:layout_weight="1"
+			android:text="@string/native_music"
+			android:textColor="#FFFFFF"/>
+			
+		<com.tunaPasta06.widget.ImageTextButton
+            android:id="@+id/network_music"
+			custom:icon="@drawable/frame_internet_normal"
+			android:layout_width="match_parent"
+			android:layout_height="50.0dp"
+			android:background="#00000000"
+			android:layout_weight="1"
+			android:text="@string/network_music"
+			android:textColor="#FFFFFF"/>
+		
+		<com.tunaPasta06.widget.ImageTextButton
+            custom:icon="@drawable/frame_menu_normal"
+			android:layout_width="match_parent"
+			android:layout_height="50.0dp"
+			android:background="#00000000"
+			android:layout_weight="1"
+			android:text="@string/function_menu"
+			android:textColor="#FFFFFF"/>
+	
+	</LinearLayout>
+</RelativeLayout>

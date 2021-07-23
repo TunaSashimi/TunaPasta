@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TunaPasta01</string>
+    <string name="progressbar">Progressbar</string>
+    <string name="radiogroup">RadioGroup</string>
+    <string name="female">女</string>
+    <string name="male">男</string>
+    <string name="swim">swim</string>
+    <string name="run">run</string>
+    <string name="read">read</string>
+    <string name="firstactivity">FirstActivity</string>
+    <string name="firstresult">FirstResult</string>
+    <string name="please">默认</string>
+    <string name="province">省份:	</string>
+    <string name="city">城市:	</string>
+    <string name="spinnerdemo">Spinner</string>
+    <string name="listview">ListView</string>
+    <string name="fileaccess">FileAccess</string>
+
+    <string name="text">%1$tF销售额增长%2$d%%，奖励%3$s马尔代夫游。</string>
+
+</resources>

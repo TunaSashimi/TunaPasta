@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+        首先在AndroidManifest.xml中声明相关权限\n
+        android.permission.ACCESS_NETWORK_STATE\n
+        android.permission.ACCESS_WIFI_STATE\n
+        android.permission.CHANGE_NETWORK_STATE\n
+        android.permission.CHANGE_WIFI_STATE\n
+        \n
+        打开GPS功能在2.3.5系统测试可以通过，在4.1.1系统中测试无效，待解决" />
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开WIFI" />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开移动网络" />
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开GPS" />
+    
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开飞行模式" />
+
+</LinearLayout>

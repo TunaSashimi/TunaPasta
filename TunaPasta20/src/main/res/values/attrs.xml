@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TunaSushi库中TView中的content属性为string,
+    constraintlayout库中content属性为reference,
+     当同名属性的类型不一致时,可以在项目中单独配一个content,
+     属性为两者的并集-->
+    <attr name="content" format="reference|string" />
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonAddMainPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="增加主进度条" />
+
+        <Button
+            android:id="@+id/buttonAddSubPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="增加子进度条" />
+
+        <ImageButton
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/background2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- xmlns:roundProgress="http://schemas.android.com/apk/res/com.nemesisJS02.activity" -->
+        <!-- 否则roundProgress不能使用 -->
+        
+        <com.tunaPasta02.widget.CircleProgressView
+            android:id="@+id/roundBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background1"
+            roundProgress:Inside_Interval="5"
+            roundProgress:Paint_Color="0xff0000ff"
+            roundProgress:Paint_Width="4"
+            roundProgress:fill="false"
+            roundProgress:max="100" />
+
+        <com.tunaPasta02.widget.CircleProgressView
+            android:id="@+id/roundBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background3"
+            roundProgress:Inside_Interval="8"
+            roundProgress:Paint_Color="0xffaa5500"
+            roundProgress:Paint_Width="4"
+            roundProgress:fill="true"
+            roundProgress:max="100" />
+
+        <com.tunaPasta02.widget.CircleProgressView
+            android:id="@+id/roundBar3"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            roundProgress:Inside_Interval="20"
+            roundProgress:Paint_Width="40"
+            roundProgress:fill="false"
+            roundProgress:max="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="启动动画" >
+        </Button>
+
+        <com.tunaPasta02.widget.CircleProgressView
+            android:id="@+id/roundBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background1"
+            roundProgress:Inside_Interval="6"
+            roundProgress:Paint_Color="0xff0000ff" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="停止动画" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

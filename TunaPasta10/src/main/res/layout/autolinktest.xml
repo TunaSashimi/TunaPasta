@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- android:autoLink="web"-设置自动识别链接，值web为匹配Web网址 -->
+    <!-- android:autoLink="phone"-设置自动识别链接，值phone为匹配电话号码 -->
+    <!-- android:autoLink="email"-设置自动识别链接，值email为匹配Email地址 -->
+    <!-- android:autoLink="all"-设置自动识别链接，值all为匹配所有 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="TextView 中的 autoLink,一共有几种值:web，phone, map, email, all, none.
+        分别是url连接。 电话号码提取拨号，地图地址。电子邮件，
+        全部解释就是能支持的超级连接全部起作用，none就是默认情况，没有超链接。
+       13917764342" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userlogintest02_relativelayout_background"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/relative01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/userlogintest02_relativelayout_loginbox">
+
+        <ImageView
+            android:id="@+id/image_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/userlogintest02_imageview_user" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_username"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/image_username"
+            android:background="@drawable/userlogintest02_edittext_select_s"
+            android:gravity="center_horizontal"
+            android:hint="@string/userlogin_enter_account"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/image_userpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_username"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/userlogintest02_imageview_password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_userpassword"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/image_userpassword"
+            android:background="@drawable/userlogintest02_edittext_select_s"
+            android:gravity="center_horizontal"
+            android:hint="@string/userlogin_enter_password"
+            android:password="true"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+        <View
+            android:id="@+id/view_anchor01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/image_userpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp" />
+
+
+        <CheckBox
+            android:id="@+id/check_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view_anchor01"
+            android:layout_toLeftOf="@id/view_anchor01"
+            android:checked="true"
+            android:text="@string/userlogin_remember_password"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/check_remember"
+            android:layout_toRightOf="@id/view_anchor01"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/userlogin_forget_password"
+            android:textColor="#55a8fc"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view_anchor02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/check_remember"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view_anchor02"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/view_anchor02"
+            android:background="@drawable/userlogintest02_edittext_select_s"
+            android:onClick="onClick"
+            android:text="@string/userlogin_login"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view_anchor02"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/view_anchor02"
+            android:background="@drawable/userlogintest02_edittext_select_s"
+            android:onClick="onClick"
+            android:text="@string/userlogin_cancel"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/image_set"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_login"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/userlogintest02_imageview_set" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/image_set"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tunasashimi"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imange_switch"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/text01"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/text01"
+        android:onClick="onClick"
+        android:src="@drawable/userlogintest02_imageview_switch" />
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/technology_development_tunasashimi"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.tunaPasta08"
+        minSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+        }
+    }
+}
+
+dependencies {
+    api 'com.google.code.gson:gson:2.8.2'
+    api files('libs/GifView.jar')
+    api files('libs/dom4j-1.6.1.jar')
+    api group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
+}

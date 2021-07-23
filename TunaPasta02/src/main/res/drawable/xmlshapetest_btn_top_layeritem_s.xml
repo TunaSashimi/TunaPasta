@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/xmlshapetest_btn_top_layeritem_2" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/xmlshapetest_btn_layer_item_2" />
+    </item>
+    <item android:drawable="@drawable/xmlshapetest_btn_top_layeritem_1" android:state_pressed="false">
+        <bitmap android:gravity="center" android:src="@drawable/xmlshapetest_btn_layer_item_2" />
+    </item>
+</selector>

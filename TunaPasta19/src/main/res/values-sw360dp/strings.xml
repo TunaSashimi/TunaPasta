@@ -1,0 +1,19 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw360dp devices (e.g. 7" tablets) here.    -->
+    
+
+     <!-- Activity use -->
+     
+     
+     <!-- Exclusive TunaView or any of its subclasses use -->
+     
+     
+     <!-- Other use -->
+     
+    
+    <string name="display_dimen">宽度区间 360&#8211;400dp , 使用values&#8211;sw360dp 文件夹配置</string>
+
+</resources>

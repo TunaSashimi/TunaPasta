@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Activity use -->
+
+
+    <!-- Exclusive TunaView or any of its subclasses use -->
+
+
+    <!-- Other use -->
+
+    <string name="display_dimen">宽度区间 0&#8211;360dp , 使用默认values文件夹配置</string>
+
+    <!-- TunaHome -->
+    <string name="tunahome_tunaview_top">Reserve</string>
+    <string name="tunahome_tunaview_left">Airport Pickup</string>
+    <string name="tunahome_tunaview_middle">Airport Dropoff</string>
+    <string name="tunahome_tunaview_right">Chartered car</string>
+    <string name="tunahome_textview_middle">REQUEST NOW</string>
+
+    <!-- TunaWelcome -->
+    <string name="tunawelcome_textview">Disfrute de todas las maneras</string>
+    <string name="tunawelcome_tunaview_skip">Skip</string>
+    <string name="tunawelcome_tunaview_login">Login</string>
+
+    <!-- UserLoginTest01 -->
+    <string name="userlogin_scan_account">Scan Account</string>
+    <string name="userlogin_remember_password">Remember Password</string>
+    <string name="userlogin_forget_password">Forget Password</string>
+    <string name="userlogin_cancel">Cancel</string>
+    <string name="userlogin_login">Login</string>
+    <string name="userlogin_enter_password">Please Enter Your Password</string>
+    <string name="userlogin_enter_account">Please Enter Your Login Account</string>
+
+    <string name="tunasashimi">TunaSashimi</string>
+    <string name="technology_development_tunasashimi">Technology Development: TunaSashimi</string>
+
+</resources>

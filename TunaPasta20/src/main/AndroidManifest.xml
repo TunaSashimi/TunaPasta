@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta20"
+    android:versionCode="4"
+    android:versionName="0.6.1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.tunaPasta20.activity.EntryActivity"
+            android:icon="@drawable/tunasashimi"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tunaPasta20.activity.BindingDataActivity" />
+        <activity android:name="com.tunaPasta20.activity.ChoiceMultipleActivity" />
+        <activity android:name="com.tunaPasta20.activity.ChoiceSingleActivity" />
+        <activity android:name="com.tunaPasta20.activity.GridViewActivity" />
+        <activity android:name="com.tunaPasta20.activity.LoadingActivity" />
+        <activity android:name="com.tunaPasta20.activity.TViewSrcActivity" />
+        <activity android:name="com.tunaPasta20.activity.TwoWayBindingActivity" />
+        <activity android:name="com.tunaPasta20.activity.TWrapActivity" />
+    </application>
+</manifest>

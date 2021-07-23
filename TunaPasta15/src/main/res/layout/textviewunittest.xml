@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textviewPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="textview32PT"
+            android:textSize="32pt" />
+
+        <TextView
+            android:id="@+id/textviewPX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewPT"
+            android:layout_marginLeft="10dp"
+            android:text="textview32PX"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/textviewDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewPX"
+            android:layout_margin="10dp"
+            android:text="textview32DP"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/textviewSetPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewDP"
+            android:layout_marginLeft="10dp"
+            android:text="textviewSet32PT" />
+
+        <TextView
+            android:id="@+id/textviewSetPX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewSetPT"
+            android:layout_margin="10dp"
+            android:text="textviewSet32PX" />
+
+        <TextView
+            android:id="@+id/textviewSetDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewSetPX"
+            android:layout_marginLeft="10dp"
+            android:text="textviewSet32DP" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta01">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.tunaPasta01.activity.EntryAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta01.activity.BasicComponentsTest"
+            android:label="@string/firstactivity" />
+        <activity
+            android:name="com.tunaPasta01.activity.BasicComponentsTestResult"
+            android:label="@string/firstresult" />
+        <activity android:name="com.tunaPasta01.activity.TableLayoutTest" />
+        <activity android:name="com.tunaPasta01.activity.RelativeLayoutTest" />
+        <activity
+            android:name="com.tunaPasta01.activity.ProgressSeekBarTest"
+            android:label="@string/progressbar" />
+        <activity
+            android:name="com.tunaPasta01.activity.RadioGroupTest"
+            android:label="@string/radiogroup" />
+        <activity
+            android:name="com.tunaPasta01.activity.SpinnerTest"
+            android:label="@string/spinnerdemo" />
+        <activity
+            android:name="com.tunaPasta01.activity.ListViewTest"
+            android:label="@string/listview" />
+        <activity
+            android:name="com.tunaPasta01.activity.FileAccessTest"
+            android:label="@string/fileaccess" />
+        <activity
+            android:name="com.tunaPasta01.activity.ToastTest"
+            android:label="Toast" />
+        <activity
+            android:name="com.tunaPasta01.activity.HandlerTest"
+            android:label="Handler" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

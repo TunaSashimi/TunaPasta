@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta07"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- 阅读短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 快捷卸载的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.tunaPasta07.activity.EntryAct"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tunaPasta07.activity.FlipUsageTest" />
+        <activity android:name="com.tunaPasta07.activity.ContactSearchTest" />
+        <activity android:name="com.tunaPasta07.activity.FlipTextViewTest" />
+        <activity android:name="com.tunaPasta07.activity.FlipButtonTest" />
+        <activity android:name="com.tunaPasta07.activity.FlipLayoutTest" />
+        <activity android:name="com.tunaPasta07.activity.FlipEffect" />
+        <activity android:name="com.tunaPasta07.activity.FlipTouch" />
+        <activity android:name="com.tunaPasta07.activity.ScrollEffectTest" />
+        <activity android:name="com.tunaPasta07.activity.MoveBackgroundTabTest" />
+        <activity android:name="com.tunaPasta07.activity.RectDemoTest" />
+        <activity android:name="com.tunaPasta07.activity.ArcDemoTest" />
+        <activity android:name="com.tunaPasta07.activity.LinesDemoTest" />
+        <activity android:name="com.tunaPasta07.activity.MessageSeeTest" />
+        <activity android:name="com.tunaPasta07.activity.ClipboardTest" />
+        <activity android:name="com.tunaPasta07.activity.ClipboardResult" />
+        <activity android:name="com.tunaPasta07.activity.ColorPickerTest" />
+        <activity android:name="com.tunaPasta07.activity.DialLayoutTest" />
+        <activity android:name="com.tunaPasta07.activity.DragGridViewTest" />
+        <activity android:name="com.tunaPasta07.activity.CustomGragGridViewTest" />
+        <activity android:name="com.tunaPasta07.activity.GPSFlightModeChangeTest" />
+        <activity android:name="com.tunaPasta07.activity.UninstallTest" />
+        <activity android:name="com.tunaPasta07.activity.HomeWatcherTest" />
+        <activity android:name="com.tunaPasta07.activity.OnlyChineseInputTest" />
+        <activity android:name="com.tunaPasta07.activity.StageGalleryTest" />
+        <activity android:name="com.tunaPasta07.activity.SwitchActivityEffectTest" />
+        <activity android:name="com.tunaPasta07.activity.SwitchActivityResultTest" />
+        <activity android:name="com.tunaPasta07.activity.MatrixChangeTest" />
+        <activity android:name="com.tunaPasta07.activity.SplashEffectTest" />
+        <activity android:name="com.tunaPasta07.activity.ShaderTest" />
+        <activity android:name="com.tunaPasta07.activity.GetPingyinTest" />
+        <activity android:name="com.tunaPasta07.activity.MoonChangeTest" />
+        <activity android:name="com.tunaPasta07.activity.CustomTabItem" />
+        <activity android:name="com.tunaPasta07.activity.CustomtabTest" />
+        <activity android:name="com.tunaPasta07.activity.TabNewsActivity" />
+        <activity android:name="com.tunaPasta07.activity.TabTopicActivity" />
+        <activity android:name="com.tunaPasta07.activity.TabPicActivity" />
+        <activity android:name="com.tunaPasta07.activity.TabFollowActivity" />
+        <activity android:name="com.tunaPasta07.activity.TabVoteActivity" />
+        <activity
+            android:name="com.tunaPasta07.activity.CustomLockTest"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Wallpaper" >
+        </activity>
+        <activity
+            android:name="com.tunaPasta07.activity.QRCodeTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 注意CaptureAct类,如果设置 android:launchMode="singleTask"扫描不到 -->
+
+        <activity
+            android:name="com.tunaPasta07.activity.CaptureAct"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.tunaPasta07.activity.RadialMenuTest" />
+
+        <service android:name="com.tunaPasta07.service.CustomLockService" />
+
+        <receiver
+            android:name="com.tunaPasta07.receiver.SMSReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

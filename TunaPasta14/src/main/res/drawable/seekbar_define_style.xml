@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <!--    <item
+        android:id="@+android:id/background"
+        android:drawable="@drawable/double_seekbar_line"/>
+    <item
+        android:id="@+android:id/progress"
+        android:drawable="@drawable/double_seekbar_line_selected"/> -->
+    <item android:id="@android:id/background" android:drawable="@drawable/double_seekbar_line">
+    </item>
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/double_seekbar_line">
+    </item>
+    <item android:id="@android:id/progress" android:drawable="@drawable/double_seekbar_line_selected">
+    </item>
+
+</layer-list>

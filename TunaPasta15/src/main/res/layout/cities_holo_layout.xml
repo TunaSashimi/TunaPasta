@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg_holo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Please select the city"
+        android:textSize="20sp" />
+
+    <com.tunaPasta15.widget.WheelView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

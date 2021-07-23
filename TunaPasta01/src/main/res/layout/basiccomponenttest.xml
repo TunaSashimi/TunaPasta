@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_text01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/main_edit01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/main_check01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="复选框" />
+
+            <EditText
+                android:id="@+id/main_edit02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="空时显示Ѿ,用textColorHint设置颜色"
+                android:textColorHint="#aa0000" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/main_radio01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单选项一"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/main_radio02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单选项二"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/main_radio03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单选项三"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <DatePicker
+                android:id="@+id/main_date01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TimePicker
+                android:id="@+id/main_time01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:id="@+id/main_toogle01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/main_btn01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确定" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"
+                android:shadowColor="#00FF00"
+                android:shadowRadius="3.0"
+                android:text="测试阴影"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_pasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="打开微信"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

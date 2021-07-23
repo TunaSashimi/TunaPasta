@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:id="@+id/layout"
+    Android:layout_width="match_parent"
+    Android:layout_height="match_parent"
+    Android:orientation="vertical">
+
+    <Button
+        Android:id="@+id/bt_PopupWindow1"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:text="以自己为Anchor不偏移" />
+
+    <Button
+        Android:id="@+id/bt_PopupWindow2"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:text="以自己为Anchor正下方 " />
+
+    <Button
+        Android:id="@+id/bt_PopupWindow3"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:text="以屏幕中心为参照屏幕中间" />
+
+    <Button
+        Android:id="@+id/bt_PopupWindow4"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:text="以屏幕下方为参照下方中间 " />
+
+    <TextView
+        Android:id="@+id/tv_showText"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:gravity="center"
+        Android:text="Input Content" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tunahome_relative_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.tunaPasta19.tuna.TunaAnimateCircle
+            android:id="@+id/tunaAnimateCircle"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            tuna:tunaAnimateCircleAlign="bottom"
+            tuna:tunaAnimateCircleDelay="300"
+            tuna:tunaAnimateCircleDy="10dp"
+            tuna:tunaAnimateCircleNormalDeviation="8px"
+            tuna:tunaAnimateCircleRadiusAfter="160dp"
+            tuna:tunaAnimateCircleRadiusBefore="80dp"
+            tuna:tunaAnimateCircleSpreadColorAfter="#ffffff"
+            tuna:tunaAnimateCircleSpreadColorBefore="#414140"
+            tuna:tunaAnimateCircleSpreadDeciation="10dp"
+            tuna:tunaAnimateCircleStrokeColor="#ffffff"
+            tuna:tunaAnimateCircleStrokeWidth="2px"
+            tuna:tunaAnimateCircleTotal="5"
+            tuna:tunaAnimationable="true" />
+
+        <com.tunaPasta19.tuna.TunaAnimateTransfer
+            android:id="@+id/tunaAnimateTransfer01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tunaanimatetransfer_tunaanimatetest_height"
+            android:layout_below="@+id/tunaAnimateCircle"
+            tuna:tunaAnimateTransferAfter="0dp"
+            tuna:tunaAnimateTransferBefore="@dimen/tunaanimatetransfer_tunaanimatetest_height"
+            tuna:tunaAnimateTransferBitmapSrc="@drawable/tunarepeatbartest_relativelayout_titlesetting_2"
+            tuna:tunaAnimateTransferDeviation="2px"
+            tuna:tunaAnimateTransferItemHeight="32dp"
+            tuna:tunaAnimateTransferItemWidth="32dp"
+            tuna:tunaAnimateTransferTotal="5"
+            tuna:tunaAnimationable="true"
+            tuna:tunaTouchType="none" />
+
+        <com.tunaPasta19.tuna.TunaAnimateTransfer
+            android:id="@+id/tunaAnimateTransfer02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tunaanimatetransfer_tunaanimatetest_height"
+            android:layout_below="@+id/tunaAnimateTransfer01"
+            tuna:tunaAnimateCircleNormalDeviation="2px"
+            tuna:tunaAnimateTransferAfter="0dp"
+            tuna:tunaAnimateTransferBefore="@dimen/tunaanimatetransfer_tunaanimatetest_height"
+            tuna:tunaAnimateTransferBitmapSrc="@drawable/userlogintest02_imageview_password"
+            tuna:tunaAnimateTransferDeviation="2px"
+            tuna:tunaAnimateTransferItemHeight="9dp"
+            tuna:tunaAnimateTransferItemWidth="16dp"
+            tuna:tunaAnimateTransferTotal="4"
+            tuna:tunaAnimationable="true"
+            tuna:tunaTouchType="none" />
+    </RelativeLayout>
+
+</ScrollView>

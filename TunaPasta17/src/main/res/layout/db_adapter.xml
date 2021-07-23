@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="image"
+            type="com.tunaPasta17.model.Image" />
+
+        <variable
+            name="handler"
+            type="com.tunaPasta17.activity.DBAdapterTest.Handler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/svg_launcher_background"
+            app:url="@{image.url}" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->handler.onClick(image)}"
+            android:text='@{"改变图片Url"}'
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{"xxx"}'
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background='@{"红色"}'
+            android:padding="20dp"
+            android:text="红色背景蓝色字"
+            android:textColor='@{"蓝色"}' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background='@{"蓝色"}'
+            android:padding="20dp"
+            android:text="蓝色背景红色字"
+            android:textColor='@{"红色",default=@color/colorAccent}' />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,86 @@
+[{
+        "name":"上衣",
+        "code":"79060-A",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"000000",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/93133782-C1ED-43EC-B997-267C6CCD79C6.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/93133782-C1ED-43EC-B997-267C6CCD79C6.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"79060",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":"{\"id\":10208,\"pose\":1,\"category\":29,\"categoryType\":9,\"colors\":[\"#0c0c0e\"],\"variants\":[{\"id\":13621,\"view\":{\"front\":{\"id\":35550,\"image\":\"2011/05/17/c1e4ddbe-fa23-44f1-a9a9-f3b9fbaaf43b_10208_13621_f.png\",\"crop\":{\"x\":188,\"y\":112,\"width\":100,\"height\":143}},\"back\":{\"id\":35551,\"image\":\"2011/05/17/c1e4ddbe-fa23-44f1-a9a9-f3b9fbaaf43b_10208_13621_b.png\",\"crop\":{\"x\":207,\"y\":105,\"width\":90,\"height\":168}}}}]}",
+        "swatchName":"黑色"
+    },
+    {
+        "name":"上衣",
+        "code":"79060-B",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"ffffff",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/E88CE825-5D1A-4FE8-B454-58A33E630E0B.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/E88CE825-5D1A-4FE8-B454-58A33E630E0B.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"79060",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":"{\"id\":10207,\"pose\":1,\"category\":29,\"categoryType\":9,\"colors\":[\"#d3dcea\"],\"variants\":[{\"id\":13620,\"view\":{\"front\":{\"id\":35547,\"image\":\"A01/A01 79060 10100 88 13620 1.png\",\"crop\":{\"x\":179,\"y\":111,\"width\":118,\"height\":211}},\"back\":{\"id\":35548,\"image\":\"A01/A01 79060 10100 88 13620 2.png\",\"crop\":{\"x\":192,\"y\":100,\"width\":108,\"height\":222}}}}]}",
+        "swatchName":"白色"
+    },
+    {
+        "name":"上衣",
+        "code":"79060-D",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"807774",
+            "fab":null,
+            "smallfab":null
+        },
+        "availabilityText":"",
+        "parentProductId":"79060",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":"{\"id\":13197,\"pose\":1,\"category\":29,\"categoryType\":9,\"colors\":[\"#dedde0\"],\"variants\":[{\"id\":16791,\"view\":{\"front\":{\"id\":44041,\"image\":\"2011/05/10/11d3fad7-bb3b-4eb7-8d5e-d2465df8c27d_13197_16791_f.png\",\"crop\":{\"x\":182,\"y\":111,\"width\":109,\"height\":196}},\"back\":{\"id\":44042,\"image\":\"2011/05/10/11d3fad7-bb3b-4eb7-8d5e-d2465df8c27d_13197_16791_b.png\",\"crop\":{\"x\":192,\"y\":104,\"width\":109,\"height\":218}}}}]}",
+        "swatchName":"花灰色"
+    },
+    {
+        "name":"上衣",
+        "code":"79060-E",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"ffffff",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/3C90168E-6FD7-49BC-958E-23DC3A427985.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/3C90168E-6FD7-49BC-958E-23DC3A427985.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"79060",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":"{\"id\":10783,\"pose\":1,\"category\":29,\"categoryType\":9,\"colors\":[\"#151515\",\"#d8d9e1\"],\"variants\":[{\"id\":14370,\"view\":{\"front\":{\"id\":37133,\"image\":\"2011/05/25/ca22bc9b-c562-4d2c-b39e-c6ae17b4da5c_10783_14370_f.png\",\"crop\":{\"x\":185,\"y\":112,\"width\":102,\"height\":152}},\"back\":{\"id\":37134,\"image\":\"2011/05/25/ca22bc9b-c562-4d2c-b39e-c6ae17b4da5c_10783_14370_b.png\",\"crop\":{\"x\":206,\"y\":105,\"width\":92,\"height\":180}}}}]}",
+        "swatchName":"白色/条纹"
+    },
+    {
+        "name":"上衣",
+        "code":"79060-F",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"807774",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/74356AEC-70CC-4482-B7D4-A8055C8F2220.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/74356AEC-70CC-4482-B7D4-A8055C8F2220.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"79060",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":"{\"id\":18062,\"pose\":1,\"category\":29,\"categoryType\":9,\"colors\":[\"#828382\"],\"variants\":[{\"id\":24203,\"view\":{\"front\":{\"id\":63292,\"image\":\"2011/03/30/11207e2e-1b3d-466b-a7e8-f8f9fc195b35_18062_24203_f.png\",\"crop\":{\"x\":186,\"y\":111,\"width\":101,\"height\":149}},\"back\":{\"id\":63293,\"image\":\"2011/03/30/11207e2e-1b3d-466b-a7e8-f8f9fc195b35_18062_24203_b.png\",\"crop\":{\"x\":207,\"y\":105,\"width\":91,\"height\":164}}}}]}",
+        "swatchName":"花灰色"
+    }
+]

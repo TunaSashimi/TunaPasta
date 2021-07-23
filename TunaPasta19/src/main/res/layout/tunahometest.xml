@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tunahome_relative_background">
+
+        <RelativeLayout
+            android:id="@+id/relativeTitle"
+            style="@style/Tuna_Title"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffffff">
+
+            <com.tunaPasta19.tuna.TunaView
+                android:id="@+id/tunaUser"
+                style="@style/Tuna_Title_Button"
+                tuna:tunaSrcNormal="@drawable/tunahome_imageview_user"
+                tuna:tunaTextMark="false"
+                tuna:tunaTextMarkDx="4dp"
+                tuna:tunaTextMarkDy="-4dp" />
+
+            <com.tunaPasta19.tuna.TunaView
+                android:id="@+id/tunaTravel"
+                style="@style/Tuna_Title_Button"
+                android:layout_width="45dp"
+                android:layout_alignParentRight="true"
+                tuna:tunaSrcNormal="@drawable/tunahome_imageview_travel"
+                tuna:tunaTextMark="false"
+                tuna:tunaTextMarkDx="4dp"
+                tuna:tunaTextMarkDy="-4dp" />
+
+            <com.tunaPasta19.tuna.TunaView
+                android:id="@+id/tunaActivity"
+                style="@style/Tuna_Title_Button"
+                android:layout_width="41dp"
+                android:layout_toLeftOf="@id/tunaTravel"
+                tuna:tunaSrcNormal="@drawable/tunahome_imageview_activity"
+                tuna:tunaTextMark="true"
+                tuna:tunaTextMarkDx="4dp"
+                tuna:tunaTextMarkDy="-4dp" />
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tunahome_imageview_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeTop"
+            style="@style/Tuna_Layout"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeTitle"
+            android:visibility="invisible">
+
+            <com.tunaPasta19.tuna.TunaDownload
+                android:id="@+id/tunaDownloadTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                tuna:tunaDownloadCacheCheck="true"
+                tuna:tunaDownloadCacheFolder="VIPOneCar"
+                tuna:tunaDownloadGraphicsSrcFill="@drawable/tunahome_tunaview_tunabitmaptop"
+                tuna:tunaDownloadGraphicsSrcURLRequestHeight="300"
+                tuna:tunaDownloadGraphicsSrcURLRequestWidth="590"
+                tuna:tunaDownloadRadius="10dp"
+                tuna:tunaTouchType="none" />
+
+            <TextView
+                android:id="@+id/textDownloadTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="@string/tunahome_tunaview_top"
+                android:textColor="#3a3230"
+                android:textSize="20dp" />
+
+            <com.tunaPasta19.tuna.TunaDownload
+                android:id="@+id/tunaDownloadTopImage"
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:layout_centerHorizontal="true"
+                tuna:tunaDownloadCacheCheck="true"
+                tuna:tunaDownloadCacheFolder="VIPOneCar"
+                tuna:tunaDownloadGraphicsSrcFill="@drawable/tunahome_imageview_plan"
+                tuna:tunaDownloadGraphicsSrcURLRequestHeight="78"
+                tuna:tunaDownloadGraphicsSrcURLRequestWidth="76"
+                tuna:tunaTouchType="none" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tunahome_imageview_click" />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            style="@style/Tuna_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeTop"
+            android:layout_marginTop="26dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageBottom"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/relative_marginBottom_hideHeight"
+        android:background="@drawable/tunahome_imageview_bottom"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/relative_marginBottom_hideHeight"
+        android:background="@drawable/tunahome_relative_bottom"
+        android:visibility="invisible">
+
+        <com.tunaPasta19.tuna.TunaAnimateTransfer
+            android:id="@+id/tunaAnimateTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tunaanimatetransfer_home_arrowheight"
+            android:layout_below="@+id/tunaAnimateCircle"
+            android:layout_marginTop="12dp"
+            tuna:tunaAnimateTransferAfter="0dp"
+            tuna:tunaAnimateTransferBefore="@dimen/tunaanimatetransfer_home_arrowheight"
+            tuna:tunaAnimateTransferBitmapSrc="@drawable/tunahome_tunaview_arrow"
+            tuna:tunaAnimateTransferDeviation="2px"
+            tuna:tunaAnimateTransferItemHeight="8dp"
+            tuna:tunaAnimateTransferItemWidth="25dp"
+            tuna:tunaAnimateTransferTotal="3"
+            tuna:tunaAnimationable="false"
+            tuna:tunaTouchType="none" />
+
+        <TextView
+            android:id="@+id/textMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tunaAnimateTransfer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/tunahome_textview_middle"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMiddle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/tunahome_imageview_time"
+            android:drawablePadding="5dp"
+            android:text="Use Car Now"
+            android:textColor="#e3a51e"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imageHalo"
+            android:layout_width="139dp"
+            android:layout_height="142dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/tunahome_imageview_halo"
+            android:layerType="software" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewHide"
+        style="@style/Tuna_Title"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/tuna_title_hideHeight"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/viewSwitch"
+        style="@style/Tuna_Title"
+        android:layout_height="@dimen/tuna_switch_height"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/tuna_switch_hideHeight"
+        android:background="#000000" />
+
+</RelativeLayout>

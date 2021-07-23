@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.tunaPasta17.model.Goods" />
+
+        <import type="com.tunaPasta17.activity.DBOnClickTest" />
+
+        <variable
+            name="goods"
+            type="com.tunaPasta17.model.Goods" />
+
+        <variable
+            name="goodsHandler"
+            type="com.tunaPasta17.activity.DBOnClickTest.GoodsHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{goods.name}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{goods.detail}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(goods.price)}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->goodsHandler.changeGoodsName()}"
+            android:text="改变属性 name 和 price"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->goodsHandler.changeGoodsDetails()}"
+            android:text="改变属性 detail 和 price"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</layout>

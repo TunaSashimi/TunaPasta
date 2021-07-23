@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TunaPasta04</string>
+    <string name="warn">警告</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="delete_success">删除成功</string>
+    <string name="file_is_cannot_read">该文件不可读</string>
+
+    <string-array name="file_oper_menu">
+        <item>打开</item>
+        <item>重命名</item>
+        <item>删除</item>
+        <item>复制</item>
+        <item>剪切</item>
+        <item>属性</item>
+    </string-array>
+
+    <string name="operate">操作</string>
+    <string name="filename_is_exists">文件名已经存在，是否覆盖？</string>
+    <string name="confirm_del_file">确定要删除吗？</string>
+    <string name="rename">重命名</string>
+    <string name="refresh">刷新</string>
+    <string name="confirm_exit">确定要退出吗?</string>
+    <string name="paste">粘贴</string>
+    <string name="back_to_root">回到根目录</string>
+    <string name="back_to_last">回到上一目录</string>
+    <string name="child_items_info">[共有子文件 %1$s 个]</string>
+    <string name="input_folder_name">输入文件夹名</string>
+    <string name="create_new_foler">新建文件夹</string>
+    <string name="input_file_name">输入文件名</string>
+    <string name="create_new_file">新建文件</string>
+    <string name="foldername_is_exists">文件夹名已存在</string>
+    <string name="filename_is_exists_toast">文件名已存在</string>
+    <string name="please_del_child_files">请先删除子文件</string>
+    <string name="search">搜索</string>
+    <string name="file_attr">文件属性</string>
+    <string name="file_type">类型:</string>
+    <string name="file_location">位置:</string>
+    <string name="file_size">大小:</string>
+    <string name="file_mod_time">修改日期:</string>
+    <string name="file_is_read">是否可读:</string>
+    <string name="file_is_write">是否可写:</string>
+    <string name="file_is_hidden">是否隐藏:</string>
+    <string name="file">文件</string>
+    <string name="folder">文件夹</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="searching_file">正在搜索文件，请稍候...</string>
+    <string name="search_finished">搜索完毕</string>
+    <string name="search_not_found">没有找到匹配文件</string>
+    <string name="please_input_keyword">请先输入关键字</string>
+
+</resources>

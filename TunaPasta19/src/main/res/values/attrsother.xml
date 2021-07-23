@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width" or "lock_height" -->
+    <declare-styleable name="LockPatternView">
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="reference|color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AnimatedSizingGallery">
+        <attr name="animationScale" format="float" /> <!-- defaults to 2.0 -->
+        <attr name="animationOffsetY" format="float" /> <!-- defaults to 0.0 - no vertical movement -->
+        <attr name="animationDuration" format="integer" /> <!-- defaults to 500 -->
+    </declare-styleable>
+    <declare-styleable name="NemesisViewPager3D">
+        <attr name="overscroll_rotation" format="float" />
+        <attr name="swipe_rotation" format="float" />
+        <attr name="swipe_translation" format="integer" />
+        <attr name="overscroll_translation" format="integer" />
+        <attr name="overscroll_animation_duration" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nemesis="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tunaPasta13.widget.TunaStage
+        android:id="@+id/tunaStage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        nemesis:imageHeight="@dimen/nemesis_stage_image_height"
+        nemesis:imageReflectionRatio="0.2"
+        nemesis:imageWidth="@dimen/nemesis_stage_image_width"
+        nemesis:reflectionGap="2dp"
+        nemesis:withReflection="true" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="STATUS" />
+
+</LinearLayout>

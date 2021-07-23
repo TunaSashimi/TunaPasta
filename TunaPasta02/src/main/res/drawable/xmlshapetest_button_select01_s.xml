@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下去的item状态放在前面否则可能不显示 -->
+    <item android:state_pressed="true">
+        <!-- shape标签代表形状,android:shape中rectagle矩形,oval椭圆,line水平直线,ring环形,默认rectagle -->
+        <shape android:shape="oval">
+            <!-- gradient标签代表渐变,Android:startColor起始颜色,Android:endColor结束颜色,Android:angle渐变角度(0从上到下,90表示从左到右,数值为45的整数倍默认为0),Android:type渐变的样式(liner线性渐变,radial环形渐变,sweep区域渐变) -->
+            <gradient android:endColor="#ffffff" android:gradientRadius="50" android:startColor="#ff8c00" android:type="sweep" />
+            <!-- stroke,描边，dashWidth表示'-'这样一个横线的宽度，android:dashGap表示之间隔开的距离。 -->
+            <stroke android:width="2dp" android:color="#dcdcdc" android:dashGap="3dp" android:dashWidth="5dp" />
+            <!-- corners,描边,Radius为角的弧度，值越大角越圆 -->
+            <corners android:radius="2dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+    <item>
+        <!-- shape标签代表形状,android:shape中rectagle矩形,oval椭圆,line水平直线,ring环形,默认rectagle -->
+        <shape android:shape="rectangle">
+            <!-- solid标签代表填充,Android:color填充的颜色 -->
+            <solid android:color="#ff9d77" />
+            <!-- stroke标签代表描边,Android:width描边的宽度,Android:color 描边的颜色,Android:dashWidth 表示'-'横线的宽度,Android:dashGap 表示'-'横线之间的距离 -->
+            <stroke android:width="2dp" android:color="#fad3cf" />
+            <!-- corners标签代表角度,描边,Radius为角的弧度,值越大角越圆,topLeftRadius左上角,topRightRadius右上角,bottomLeftRadius左下角,bottomRightRadius右下角 -->
+            <corners android:bottomLeftRadius="5dp" android:bottomRightRadius="-2dp" android:topLeftRadius="0dp" android:topRightRadius="10dp" />
+            <!-- padding标签代表填充,android:bottom="1.0dp"底部填充,android:left="1.0dp" 左边填充,android:right="1.0dp" 右边填充,android:top="0.0dp" 上面填充 -->
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="0dp" />
+        </shape>
+    </item>
+
+</selector>

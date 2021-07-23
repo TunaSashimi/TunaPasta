@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/text001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_dimen"
+        android:textColor="#592d2d" />
+
+    <TextView
+        android:id="@+id/text002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text001"
+        android:layout_marginTop="20dp"
+        android:textColor="#592d2d" />
+
+    <RelativeLayout
+        android:id="@+id/relative01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text002"
+        android:layout_marginLeft="5dp">
+
+        <com.tunaPasta06.widget.PreparingMeasureButton
+            android:id="@+id/view01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/t0" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative01"
+        android:text="点击" />
+
+    <TextView
+        android:id="@+id/text003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button01"
+        android:textColor="#592d2d" />
+
+</RelativeLayout>

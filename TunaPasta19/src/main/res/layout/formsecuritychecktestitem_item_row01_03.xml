@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <View
+        android:id="@+id/view01"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/view01"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="\n关\n键\n倾\n向\n性\n问\n题\n分\n析\n及\n整\n改\n落\n实\n情\n况\n"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/text01"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/view02"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#000000" />
+
+    <EditText
+        android:id="@+id/edit01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/view02"
+        android:layout_toRightOf="@id/view01"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="自行输入(1000字以内)"
+        android:padding="10dp"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" />
+
+</RelativeLayout>

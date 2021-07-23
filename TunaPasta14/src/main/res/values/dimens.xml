@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="day_label_text_size">11sp</dimen>
+    <dimen name="all_day_bottom_margin">8dp</dimen>
+    <dimen name="one_day_header_height">0dp</dimen>
+    <dimen name="day_header_bottom_margin">4dp</dimen>
+    <dimen name="date_header_text_size">12sp</dimen>
+    <dimen name="hours_text_size">12sp</dimen>
+    <dimen name="ampm_text_size">10sp</dimen>
+    <dimen name="day_view_event_text_size">12sp</dimen>
+    <dimen name="week_view_event_text_size">12sp</dimen>
+    <dimen name="event_text_vertical_margin">2dp</dimen>
+    <dimen name="event_text_horizontal_margin">4dp</dimen>
+    <dimen name="event_min_height">24dp</dimen>
+    <!-- minimum size of hours column in day/week view -->
+    <dimen name="min_hours_width">24dp</dimen>
+    <!-- margins size of hours column in day/week view -->
+    <dimen name="hours_left_margin">20dp</dimen>
+    <dimen name="hours_right_margin">4dp</dimen>
+    <!-- size of day header in day and week views -->
+    <dimen name="day_header_height">16dp</dimen>
+    <dimen name="new_event_hint_text_size">12sp</dimen>
+
+    <dimen name="key_height">50dp</dimen>
+    <dimen name="heart_size">48dp</dimen>
+</resources>

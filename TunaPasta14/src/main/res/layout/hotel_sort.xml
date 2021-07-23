@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hotel_sort"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="推荐"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hotel_sort"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="价格↑"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hotel_sort"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="价格↓"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/hotel_sort"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="评分"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hotel_sort"
+        android:clickable="true"
+        android:textColor="@android:color/black"
+        android:text="距离"
+        />
+    
+    
+
+</LinearLayout>

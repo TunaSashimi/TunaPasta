@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="line_0.5">0.5dp</dimen>
+    <!-- 个人中心里item的上下边距 -->
+    <!-- 边距 -->
+    <dimen name="textview_width">34dp</dimen>
+    <dimen name="textview_margin">10dp</dimen>
+    <dimen name="progressbar_height">2dp</dimen>
+    <dimen name="add_textview_width">135dp</dimen>
+    <dimen name="add_textview_height">20dp</dimen>
+
+    <dimen name="add_triangle_imageview_width">12dp</dimen>
+    <dimen name="add_triangle_imageview_height">12dp</dimen>
+
+    <dimen name="add_triangle_imageview_margin_top">10dp</dimen>
+    <dimen name="imageview_diamond_width">20dp</dimen>
+    <dimen name="imageview_diamond_height">20dp</dimen>
+    <dimen name="imageview_information_width">20dp</dimen>
+    <dimen name="imageview_information_height">20dp</dimen>
+    <dimen name="textview_diamond_width">92dp</dimen>
+    <dimen name="textview_diamond_margin">10dp</dimen>
+    <dimen name="relative_root_margin">10dp</dimen>
+
+    <dimen name="add_triangle_imageview_strokewidth">1.4dp</dimen>
+
+    <!-- 滚轮的尺寸 -->
+
+    <!-- 中间区域的高度 -->
+    <dimen name="additional_item_height">26.0dp</dimen>
+    <!-- 中间字的大小尺寸 -->
+    <dimen name="text_size">22.0dp</dimen>
+    <!-- 边上字的大小尺寸 -->
+    <dimen name="item_offset">16.0dp</dimen>
+    <!-- addItem绘图距离顶部和底部的高度(为中间字大小尺寸的2倍?) -->
+
+    <dimen name="activity_image_width">50dp</dimen>
+    <dimen name="activity_image_height">50dp</dimen>
+
+    <dimen name="activity_three_types">200dp</dimen>
+
+</resources>

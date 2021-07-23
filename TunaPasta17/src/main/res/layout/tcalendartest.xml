@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tunaPasta17.view.TCalendar
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:mCurrentBg="#6e6e6e"
+        app:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+        app:mCurrentBgStrokeWidth="1.5dp"
+
+        app:mLineSpac="12dp"
+        app:mMonthRowSpac="20dp"
+
+        app:mMonthSpac="10dp"
+        app:mSelectBg="#fe7f5c"
+        app:mSelectRadius="15dp"
+        app:mSelectTextColor="#ffffff"
+        app:mSelectWeekTextColor="#f67633"
+        app:mTextColorDay="#686768"
+        app:mTextColorMonth="#4b4b4b"
+        app:mTextColorPreFinish="#fc7451"
+
+        app:mTextColorPreNull="#cecdcd"
+        app:mTextColorPreUnFinish="#60ba8d"
+        app:mTextColorWeek="#9e9e9d"
+
+        app:mTextSizeDay="17sp"
+        app:mTextSizeMonth="20sp"
+        app:mTextSizePre="10sp"
+        app:mTextSizeWeek="17sp"
+        app:mTextSpac="8dp" />
+</LinearLayout>

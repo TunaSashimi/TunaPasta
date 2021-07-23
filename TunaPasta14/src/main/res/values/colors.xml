@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_bg_color">#000000</color>
+    <color name="orange">#ffa011</color>
+    <color name="red">#df5431</color>
+    <color name="purple">#b551a5</color>
+    <color name="blue">#299be8</color>
+    <color name="air">#44daff</color>
+    <color name="texi">#6cb5b5</color>
+    <color name="jingdian">#a7b56c</color>
+    <color name="white">#ffffffff</color>
+    <color name="unfocused">#ffffffff</color>
+    <color name="selected">#ffebedcf</color>
+    <color name="focused">#ffebedcf</color>
+    <color name="pressed">#330066ff</color>
+    <color name="today_highlight_color">#0033b5e5</color>
+
+    <!-- the app wide background color -->
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#ffffffff</color>
+    <color name="week_saturday">#80333333</color>
+    <color name="week_sunday">#80333333</color>
+    <color name="calendar_future_bg_color">#ffffffff</color>
+    <color name="calendar_hour_label">#ff666666</color>
+    <color name="calendar_ampm_label">#ff999999</color>
+    <color name="calendar_hour_background">#ffeeeeee</color>
+    <color name="calendar_date_banner_text_color">#ff666666</color>
+    <color name="calendar_grid_area_selected">#e633b5e5</color>
+    <color name="calendar_grid_line_inner_horizontal_color">#ffcccccc</color>
+    <color name="calendar_grid_line_inner_vertical_color">#ffcccccc</color>
+    <color name="calendar_grid_line_highlight_color">#ff707070</color>
+    <color name="mini_month_today_outline_color">#ff000000</color>
+    <color name="month_day_number">#ff333333</color>
+    <color name="month_mini_day_number">#ff000000</color>
+    <color name="month_day_number_other">#ff999999</color>
+    <color name="month_week_num_color">#ff999999</color>
+    <color name="month_day_names_color">#ff999999</color>
+    <color name="month_today_number">#ff333333</color>
+    <color name="month_event_color">#ff333333</color>
+    <color name="month_event_extra_color">#ff666666</color>
+    <color name="month_event_other_color">#ff666666</color>
+    <color name="month_event_extra_other_color">#4c999999</color>
+    <color name="month_saturday">#80333333</color>
+    <color name="month_sunday">#80333333</color>
+    <color name="month_grid_lines">#ffcccccc</color>
+    <color name="month_other_month_day_number">#ff939497</color>
+    <color name="month_other_bgcolor">#ffeeeeee</color>
+    <color name="month_selected_week_bgcolor">#ffdddddd</color>
+    <color name="month_today_bgcolor">#ffffffff</color>
+    <color name="month_bgcolor">#ffe5e5e5</color>
+    <color name="month_dna_conflict_time_color">#ff333333</color>
+    <color name="event_center">#ff6bd697</color>
+
+    <!-- text color of the date in the calendar widget -->
+
+    <!-- text color of declined events in agenda view -->
+    <color name="agenda_item_declined_color">#66333333</color>
+    <!-- text color of non-declined events in agenda view -->
+    <!-- background color of present/future events in agenda view -->
+    <!-- background color of past events in agenda view -->
+    <!-- color of the separator between the past and the present/future in agenda view -->
+    <!-- general background color in agenda view -->
+    <!-- agenda day item text color -->
+    <!-- color of the event location's text in an agenda item -->
+    <!-- color of the event location's text in an agenda item -->
+    <color name="agenda_item_where_declined_text_color">#66666666</color>
+    <!-- color of text in the calendar view selection menu -->
+    <!-- light color of text in the calendar view selection menu -->
+    <!-- color of the separator between items in the agenda list -->
+    <!-- text color of a selected items in the agenda list - trumps all other text colors -->
+    <!-- background color of a selected items in the agenda list -->
+    <!-- text color of the "new event" hint in day and week views -->
+    <color name="new_event_hint_text_color">#ffffffff</color>
+
+    <!-- text color of a clicked event in the day/week view -->
+    <color name="day_event_clicked_background_color">#8033b5e5</color>
+    <!-- background color for for clicked days in month view -->
+    <color name="day_clicked_background_color">#ff33b5e5</color>
+    <!-- background color for the past -->
+    <color name="day_past_background_color">#ffdddddd</color>
+
+    <!-- event info colors -->
+
+    <!-- text color of declined events in widget view -->
+    <!-- text color of non-declined events in widget view -->
+    <!-- text color for all day events in widget view -->
+
+    <color name="lightblack">#ff202020</color>
+
+    <color name="yellow">#ff0</color>
+    <color name="gray">#cccccc</color>
+    <color name="pink">#e91e63</color>
+
+</resources>

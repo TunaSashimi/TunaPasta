@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="com.tunasushi.view.TView.OnClickListener" />
+
+        <variable
+            name="adapter"
+            type="android.widget.BaseAdapter" />
+
+        <variable
+            name="model"
+            type="com.tunaPasta20.model.GridViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.calcu()}"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:onClick="@{()->model.change()}"
+            android:text="Change" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:adapter="@{adapter}"
+            android:numColumns="3" />
+    </RelativeLayout>
+</layout>

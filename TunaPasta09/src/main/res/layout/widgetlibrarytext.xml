@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button01"
+            style="@style/buttonStyleSelectSmall01Direct"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="buttonStyleSelectSmall01Direct" />
+
+        <Button
+            style="@style/buttonStyleSelectSmall01Direct"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/button01"
+            android:layout_toRightOf="@id/button01"
+            android:enabled="false"
+            android:text="UnableStyle" />
+
+        <Button
+            android:id="@+id/button03"
+            style="@style/buttonStyleSelectSmall01Corner"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/button01"
+            android:layout_margin="10dp"
+            android:text="buttonStyleSelectSmall01Corner" />
+
+        <Button
+            style="@style/buttonStyleSelectSmall01Corner"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/button03"
+            android:layout_toRightOf="@id/button03"
+            android:enabled="false"
+            android:text="UnableStyle" />
+
+        <Button
+            android:id="@+id/button05"
+            style="@style/buttonStyleSelectSmall02Direct"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/button03"
+            android:layout_margin="10dp"
+            android:text="buttonStyleSelectSmall02Direct" />
+
+        <Button
+            style="@style/buttonStyleSelectSmall02Direct"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/button05"
+            android:layout_toRightOf="@id/button05"
+            android:enabled="false"
+            android:text="UnableStyle" />
+
+        <Button
+            android:id="@+id/button07"
+            style="@style/buttonStyleSelectSmall02Corner"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/button05"
+            android:layout_margin="10dp"
+            android:text="buttonStyleSelectSmall02Corner" />
+
+        <Button
+            style="@style/buttonStyleSelectSmall02Corner"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/button07"
+            android:layout_toRightOf="@id/button07"
+            android:enabled="false"
+            android:text="UnableStyle" />
+
+        <Button
+            android:id="@+id/button09"
+            style="@style/buttonStyleSelectSmall03Direct"
+            android:layout_below="@id/button07"
+            android:layout_margin="10dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox01"
+            style="@style/ckeckboxStyleSelectSmall01Direct"
+            android:layout_below="@id/button09"
+            android:layout_margin="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup01"
+            style="@style/radiogroupStyleSelectMedium01Corner"
+            android:layout_below="@id/checkbox01"
+            android:layout_margin="10dp" >
+
+            <RadioButton
+                style="@style/radiobuttonStyleSelectMedium0101Corner"
+                android:text="出租车" />
+
+            <RadioButton
+                style="@style/radiobuttonStyleSelectMedium0102Corner"
+                android:text="大黄蜂专车" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiogroup02"
+            style="@style/radiogroupStyleSelectMedium02Corner"
+            android:layout_below="@id/radiogroup01" >
+
+            <RadioButton
+                style="@style/radiobuttonStyleSelectMedium0201Corner"
+                android:text="满意" />
+
+            <RadioButton
+                style="@style/radiobuttonStyleSelectMedium0202Corner"
+                android:text="不满意" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/progressBar01"
+            style="@style/progressBarStyleCountDownMedium01Corner"
+            android:layout_below="@id/radiogroup02" />
+    </RelativeLayout>
+
+</ScrollView>

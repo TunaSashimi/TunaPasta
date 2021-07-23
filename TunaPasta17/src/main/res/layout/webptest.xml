@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_jpg01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="onViewClick"
+        android:text="Test Decode JPG01" />
+
+    <Button
+        android:id="@+id/button_webp01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_jpg01"
+        android:layout_marginLeft="20dp"
+        android:onClick="onViewClick"
+        android:text="Test Decode WEBP01" />
+
+
+    <Button
+        android:id="@+id/button_png02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_webp01"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onViewClick"
+        android:text="Test Decode PNG02" />
+
+    <Button
+        android:id="@+id/button_webp02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_png02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onViewClick"
+        android:text="Test Decode WEBP02" />
+</RelativeLayout>

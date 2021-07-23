@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta05"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.tunaPasta05.activity.EntryAct"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta05.activity.TabhostTest01"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.TabhostTest02"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ViewFlipperTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.RepeatTileTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.TextViewPaintFlagTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.DownLoadTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.DoubleClickTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ButterflyTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.CheckboxListTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.LoseWeightTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.tunaPasta05.activity.RatioListDemo"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.NetWorkStateTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.WaterFallTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ViewPagerTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.MeasureSDcardTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.AutoDeleteTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ThumbTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ListViewListenerTest"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tunaPasta05.activity.ChangeScreenOrationTest"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta05.activity.CallOtherActTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta05.activity.GetWifiInformationTest"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta05.activity.NotificationTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.NofificastionPrompt"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.UpdateUITest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.XmlnsTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.PopupWindowTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.SurfaceChangeClothTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ScrollViewTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.RotaryDialTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ScreenshotTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.RadioButtonTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.HandDrawTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.CustomPlayerTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.ChangePhotoTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.GalleryChoiceTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tunaPasta05.activity.TouchFlipperTest"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.SanAngeles.NDK3Test"
+            android:label="@string/app_name" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+</manifest>

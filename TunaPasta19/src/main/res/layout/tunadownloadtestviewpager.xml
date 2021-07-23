@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tuna:tunaDownloadCacheCheck="true"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaDownloadGraphicsSrcBack="@drawable/tunaprogressbar_back"
+        tuna:tunaDownloadGraphicsSrcFront="@drawable/tunaprogressbar_front"
+        tuna:tunaDownloadGraphicsSrcFrontFractionBottom="90%"
+        tuna:tunaDownloadGraphicsSrcFrontFractionTop="30%"
+        tuna:tunaDownloadGraphicsSrcURLRequestHeight="180"
+        tuna:tunaDownloadGraphicsSrcURLRequestWidth="470"
+        tuna:tunaDownloadRadiusLeftBottom="10dp"
+        tuna:tunaDownloadRadiusRightBottom="10dp"
+        tuna:tunaDownloadTitleFractionVertical="10.225%"
+        tuna:tunaDownloadTitleTextColorNormal="#000000"
+        tuna:tunaDownloadTitleTextSize="16dp"
+        tuna:tunaTextPaddingLeft="5dp"
+        tuna:tunaTextPaddingRight="5dp"
+        tuna:tunaTouchType="none" />
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownloadTop"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        tuna:tunaDownloadCacheCheck="true"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaTouchType="none" />
+
+    <com.tunaPasta19.tuna.TunaGif
+        android:id="@+id/tunaGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        tuna:tunaGifGraphicsSrcURLRequestHeight="100"
+        tuna:tunaGifGraphicsSrcURLRequestWidth="100" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="tunaImageSrc设置图片源\ntunaImageRadius设置圆角\ntunaImageAlpha设置透明度\ntunaImageSepia设置怀旧\ntunaImageBacksheet设置底片\ntunaImageSketch设置素描\ntunaImageEmboss设置浮雕\ntunaImageSunshineFractionX,Y设置光照坐标\ntunaImageBright设置亮度0~2\ntunaImageHue设置色相-180~180\ntunaImageSaturation设置饱和度0~2"
+            android:textColor="#434343" />
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:id="@+id/tunaImage01"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:id="@+id/tunaImage02"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignTop="@id/tunaImage01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/tunaImage01"
+            tuna:tunaImageReverse="horizontal"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03"
+            tuna:tunaImageSunshineFractionX="50%"
+            tuna:tunaImageSunshineFractionY="50%" />
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignTop="@id/tunaImage02"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/tunaImage02"
+            tuna:tunaImageAlpha="80%"
+            tuna:tunaImageRadius="10dp"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:id="@+id/tunaImage04"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignLeft="@id/tunaImage01"
+            android:layout_below="@id/tunaImage01"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaImageSepia="true"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignTop="@id/tunaImage04"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/tunaImage04"
+            tuna:tunaImageBacksheet="true"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:id="@+id/tunaImage06"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignLeft="@id/tunaImage04"
+            android:layout_below="@id/tunaImage04"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaImageSketch="true"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+
+        <com.tunaPasta19.tuna.TunaImage
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_width"
+            android:layout_alignTop="@id/tunaImage06"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/tunaImage06"
+            tuna:tunaImageEmboss="true"
+            tuna:tunaImageSrc="@drawable/tunaviewtest_tunaview_clippitcure03" />
+
+        <SeekBar
+            android:id="@+id/seekBar01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tunaImage06"
+            android:layout_below="@id/tunaImage06"
+            android:layout_marginRight="@dimen/tuna_button_marginTop"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            android:progress="50" />
+
+        <SeekBar
+            android:id="@+id/seekBar02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tunaImage06"
+            android:layout_below="@id/seekBar01"
+            android:layout_marginRight="@dimen/tuna_button_marginTop"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            android:progress="50" />
+
+        <SeekBar
+            android:id="@+id/seekBar03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tunaImage06"
+            android:layout_below="@id/seekBar02"
+            android:layout_marginRight="@dimen/tuna_button_marginTop"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            android:progress="50" />
+
+    </RelativeLayout>
+</ScrollView>

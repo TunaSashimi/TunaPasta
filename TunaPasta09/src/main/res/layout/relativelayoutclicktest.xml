@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#FFFEEB">
+    <!-- 左边的部分 -->
+    <ImageView
+        android:id="@+id/wating_vip_car_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icn_vip_2" />
+
+    <TextView
+        android:id="@+id/wating_vip_car_type"
+        style="@style/TextColor_GreyDark_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/wating_vip_car_img"
+        android:text="舒适型" />
+
+    <TextView
+        android:id="@+id/wating_vip_car_tag_near"
+        style="@style/TextColor_white_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wating_vip_car_type"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/wating_vip_car_type"
+        android:background="@drawable/textview_background_recent"
+        android:text="最近" />
+
+    <TextView
+        android:id="@+id/wating_vip_car_tag_face"
+        style="@style/TextColor_white_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wating_vip_car_type"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/wating_vip_car_tag_near"
+        android:background="@drawable/textview_background_face"
+        android:text="有面子" />
+
+    <TextView
+        style="@style/TextColor_white_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wating_vip_car_type"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/wating_vip_car_tag_face"
+        android:background="@drawable/textview_background_cheap"
+        android:text="实惠" />
+
+    <TextView
+        style="@style/TextColor_Grey_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wating_vip_car_type"
+        android:layout_alignLeft="@id/wating_vip_car_type"
+        android:text="预估" />
+
+    <!-- 右边的部分 -->
+
+    <RelativeLayout
+        android:id="@+id/wating_vip_car_driver_layout"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/relativelayout_background_meet"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/wating_vip_car_driver"
+            style="@style/TextColor_GreyDark_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="黄师傅"
+            android:textSize="12dp" />
+
+        <TextView
+            style="@style/TextColor_GreyDark_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wating_vip_car_driver"
+            android:layout_centerHorizontal="true"
+            android:text="来接我"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_vertical_divice"
+        android:layout_width="@dimen/line_0.5"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/wating_vip_car_driver_layout"
+        android:background="@color/line_gray" />
+
+    <TextView
+        style="@style/TextColor_Grey_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wating_vip_car_type"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/line_vertical_divice"
+        android:text="距离0.5公里" />
+
+    <!-- 下滑分割线 -->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_gray" />
+
+</RelativeLayout>

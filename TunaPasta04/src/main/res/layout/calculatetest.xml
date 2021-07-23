@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3366CC"
+    android:orientation="vertical">
+
+    <TextSwitcher
+        android:id="@+id/calc_ts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3366CC"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="90px"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/calc_rabuB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="二位进制" />
+
+            <RadioButton
+                android:id="@+id/calc_rabuO"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="八位进制" />
+
+            <RadioButton
+                android:id="@+id/calc_rabuH"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="十六进制" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/calc_btnClear"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:textColor="#003399"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3366CC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calc_btn7"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn8"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn9"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btnDivide"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="÷"
+            android:textColor="#003399"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3366CC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calc_btn4"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn5"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn6"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btnMultiply"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="×"
+            android:textColor="#003399"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3366CC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calc_btn1"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn2"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn3"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btnCut"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="#003399"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3366CC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calc_btnPoint"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btn0"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/calc_btnEqual"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="="
+            android:textColor="#003399"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/calc_btnSum"
+            android:layout_width="30px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="#003399"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

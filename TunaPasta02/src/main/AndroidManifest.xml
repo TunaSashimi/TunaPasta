@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta02"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.tunaPasta02.activity.EntryAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tunaPasta02.activity.TextSwitcherTest" />
+        <activity android:name="com.tunaPasta02.activity.CircleProgressViewTest" />
+        <activity android:name="com.tunaPasta02.activity.ListActivityTest" />
+        <activity android:name="com.tunaPasta02.activity.AutoCompleteTextViewTest" />
+        <activity android:name="com.tunaPasta02.activity.ScaleTypeTest" />
+        <activity android:name="com.tunaPasta02.activity.MarqueeTextViewTest" />
+        <activity android:name="com.tunaPasta02.activity.MineTest" />
+        <activity android:name="com.tunaPasta02.activity.XMLShapeTest" />
+        <activity android:name="com.tunaPasta02.activity.LearnGameViewTest" />
+        <activity android:name="com.tunaPasta02.activity.MatrixViewTest" />
+        <activity android:name="com.tunaPasta02.activity.CanvasTest" />
+        <activity android:name="com.tunaPasta02.activity.MoveBackTest" />
+        <activity android:name="com.tunaPasta02.activity.WarpViewTest" />
+        <activity android:name="com.tunaPasta02.activity.PathInvalidataViewTest" />
+        <activity android:name="com.tunaPasta02.activity.DrawOnPathTest" />
+        <activity android:name="com.tunaPasta02.activity.WebViewTest" />
+        <activity android:name="com.tunaPasta02.activity.TelephoneTest" />
+        <activity android:name="com.tunaPasta02.activity.ReadContactTest" />
+        <activity android:name="com.tunaPasta02.activity.ServiceTest" />
+        <activity android:name="com.tunaPasta02.activity.SendbroadcastTest" />
+        <activity android:name="com.tunaPasta02.activity.GetImageMethodTest" />
+        <activity android:name="com.tunaPasta02.activity.EditTextTest" />
+        <activity android:name="com.tunaPasta02.activity.SharedPreferencesTest" />
+        <activity android:name="com.tunaPasta02.activity.TalkUITest" />
+        <activity
+            android:name="com.tunaPasta02.activity.SurfaceViewTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.tunaPasta02.activity.PalmistryTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.tunaPasta02.activity.ChartViewTest" />
+        <activity android:name="com.tunaPasta02.activity.GlowPadViewTest" />
+
+        <service
+            android:name="com.tunaPasta02.service.MyServiceA"
+            android:enabled="true" />
+        <service
+            android:name="com.tunaPasta02.service.MyBroadcastService"
+            android:enabled="true" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

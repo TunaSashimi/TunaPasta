@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+	 <com.tunaPasta06.widget.C_SlidingDrawer
+         android:orientation="vertical"
+	 	android:id="@+id/lyrics_sliding_drawer" 
+	 	android:layout_width="match_parent" 
+	 	android:layout_height="match_parent" 
+	 	android:layout_alignParentRight="true" 
+	 	android:bottomOffset="-50.0dp"
+	 	android:handle="@+id/lyrics_handle" 
+	 	android:content="@+id/lyric_content">
+	 	
+        <RelativeLayout android:id="@+id/lyrics_handle" 
+        	android:background="@drawable/lyrics_handle_bg" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="30.0dp">
+        	
+            <ImageView android:id="@+id/lyrics_handle_image" 
+            	android:clickable="true" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="13.0dp"
+            	android:src="@drawable/lyrics_handle_shrinkdrawable"
+            	android:layout_centerInParent="true" />
+            	
+        </RelativeLayout>
+        
+		<TextView android:id="@+id/lyric_content"
+			android:text="未找到歌词"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textSize="12.0sp"
+			android:textColor="@color/lyric_text_color"
+			android:textColorHint="@color/lyric_text_color"
+			android:gravity="center"/>
+			
+    </com.tunaPasta06.widget.C_SlidingDrawer>
+    
+</RelativeLayout>

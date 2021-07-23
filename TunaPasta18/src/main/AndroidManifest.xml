@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta18">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--android:largeHeap="true" 会请求系统为Dalvik虚拟机分配更大的内存空间-->
+    <application
+        android:name="com.tunaPasta18.application.AppApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="com.tunaPasta18.activity.EntryAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta18.activity.ImageFilterTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.TimerTaskTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.WebViewTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.InvoiceTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.IndentFocusListTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.InflateTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta18.activity.NotesListTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/NoteTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.tunaPasta18.activity.NoteEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/NoteTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/text_note" />
+                <data android:mimeType="vnd.android.cursor.item/call_note" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <provider
+            android:name="com.tunaPasta18.notes.data.NotesProvider"
+            android:authorities="micode_notes"
+            android:multiprocess="true" />
+
+        <receiver
+            android:name="com.tunaPasta18.notes.widget.NoteWidgetProvider_2x"
+            android:label="@string/app_widget2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x_info" />
+        </receiver>
+        <receiver
+            android:name="com.tunaPasta18.notes.widget.NoteWidgetProvider_4x"
+            android:label="@string/app_widget4x4">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x_info" />
+        </receiver>
+        <receiver
+            android:name="com.tunaPasta18.activity.AlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.tunaPasta18.activity.AlarmAlertActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" />
+        <activity
+            android:name="com.tunaPasta18.activity.OKHttpTest"
+            android:label="@string/title_activity_okhttp_test" />
+        <activity
+            android:name="com.tunaPasta18.activity.StethoTest"
+            android:label="@string/title_activity_stetho_test" />
+        <activity
+            android:name="com.tunaPasta18.activity.NotesPreferenceActivity"
+            android:label="@string/preferences_title"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <service
+            android:name="com.tunaPasta18.notes.gtask.remote.GTaskSyncService"
+            android:exported="false" />
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".ui.NoteEditActivity" />
+
+        <activity
+            android:name="com.tunaPasta18.activity.SoundRecorder"
+            android:configChanges="keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="audio/amr" />
+                <data android:mimeType="audio/3gpp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.MediaStore.RECORD_SOUND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tunaPasta18.activity.SoundRecorderPreferenceActivity"
+            android:label="@string/preferences_title"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name="com.tunaPasta18.activity.RecorderService"
+            android:exported="false" />
+
+        <activity android:name="com.tunaPasta18.activity.CropperSampleTest" />
+        <activity android:name="com.tunaPasta18.activity.SettingsActivity" />
+        <activity android:name="com.tunaPasta18.activity.GlideTest" />
+        <activity android:name="com.tunaPasta18.activity.SoundPoolTest" />
+        <activity android:name="com.tunaPasta18.activity.IDKeyBoardTest" />
+        <activity android:name="com.tunaPasta18.activity.RXJava2Test" />
+        <activity android:name="com.tunaPasta18.activity.LeakCanaryTest" />
+        <activity android:name="com.tunaPasta18.activity.LottieTest01" />
+        <activity android:name="com.tunaPasta18.activity.LottieTest02" />
+
+        <service
+            android:name="com.tunaPasta18.service.HongbaoService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessible_service_config" />
+        </service>
+    </application>
+
+</manifest>

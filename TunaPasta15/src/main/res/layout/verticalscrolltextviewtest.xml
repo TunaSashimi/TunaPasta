@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <com.tunaPasta15.widget.VerticalScrollTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="好雨知时节,当春乃发生.随风潜入夜,润物细无声.野径云俱黑,江船火独明.晓看红湿处,花重锦官城."
+        android:textSize="20dp" />
+
+</LinearLayout>

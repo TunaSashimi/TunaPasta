@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="设置android:layerType=software(开启硬件加速影响)" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCircleClockWise"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/text"
+        android:layout_margin="10dp"
+        tuna:tunaProgressArcBackgroundNormal="#ffcb17"
+        tuna:tunaProgressBoundBackgroundNormal="#ffcb17"
+        tuna:tunaProgressPromoteType="clockWise"
+        tuna:tunaProgressShapeType="circle" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCircleUpWard"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/tunaProgressCircleClockWise"
+        android:layout_toRightOf="@id/tunaProgressCircleClockWise"
+        tuna:tunaProgressArcBackgroundNormal="#ffcb17"
+        tuna:tunaProgressBoundBackgroundNormal="#ffcb17"
+        tuna:tunaProgressPromoteType="upWard"
+        tuna:tunaProgressShapeType="circle" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCircleUpDown"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/tunaProgressCircleClockWise"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tunaProgressCircleUpWard"
+        tuna:tunaProgressArcBackgroundNormal="#ffcb17"
+        tuna:tunaProgressBoundBackgroundNormal="#ffcb17"
+        tuna:tunaProgressPromoteType="upDown"
+        tuna:tunaProgressShapeType="circle" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCustomClockWise"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tunaProgressCircleUpDown"
+        android:layout_margin="10dp"
+        tuna:tunaProgressBitmapSrcBack="@drawable/tunaprogressbar_back"
+        tuna:tunaProgressBitmapSrcFront="@drawable/tunaprogressbar_front"
+        tuna:tunaProgressPromoteType="clockWise"
+        tuna:tunaProgressShapeType="custom" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCustomUpWard"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/tunaProgressCustomClockWise"
+        android:layout_toRightOf="@id/tunaProgressCustomClockWise"
+        tuna:tunaProgressBitmapSrcBack="@drawable/tunaprogressbar_back"
+        tuna:tunaProgressBitmapSrcFront="@drawable/tunaprogressbar_front"
+        tuna:tunaProgressPromoteType="upWard"
+        tuna:tunaProgressShapeType="custom" />
+
+    <com.tunaPasta19.tuna.TunaProgress
+        android:id="@+id/tunaProgressCustomUpDown"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/tunaProgressCustomUpWard"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tunaProgressCustomUpWard"
+        tuna:tunaProgressBitmapSrcBack="@drawable/tunaprogressbar_back"
+        tuna:tunaProgressBitmapSrcFront="@drawable/tunaprogressbar_front"
+        tuna:tunaProgressPromoteType="upDown"
+        tuna:tunaProgressShapeType="custom" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tunaProgressCustomClockWise"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>

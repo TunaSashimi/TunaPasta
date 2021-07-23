@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AnimatedSizingGallery">
+        <!-- defaults to 2.0 -->
+        <attr name="animationScale" format="float" />
+        <!-- defaults to 0.0 - no vertical movement -->
+        <attr name="animationOffsetY" format="float" />
+        <!-- defaults to 500 -->
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="PinProgressButton">
+        <attr name="pinned" format="boolean" />
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+</resources>

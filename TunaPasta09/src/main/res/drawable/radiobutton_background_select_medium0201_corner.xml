@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <stroke
+                android:width="0.5sp"
+                android:color="#999999" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+		<layer-list>
+		    <item>
+		        <shape>
+		            <solid android:color="#FFFFFF" />
+		            <stroke
+		                android:width="0.5sp"
+		                android:color="#77BC55" />
+		        </shape>
+		    </item>
+		    <item>
+		        <bitmap
+		            android:gravity="bottom|right"
+		            android:src="@drawable/radiobutton_background_select_medium0201_corner_1" />
+		    </item>
+		</layer-list>
+    </item>
+</selector>

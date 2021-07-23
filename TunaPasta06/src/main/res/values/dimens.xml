@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="pin_progress_inner_size">28dp</dimen>
+
+    <string name="use_dimen">屏幕宽度0-360dp,使用values文件夹内的配置</string>
+
+</resources>

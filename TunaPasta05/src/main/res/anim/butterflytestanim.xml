@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义动画循环播放 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="false">
+	<item android:drawable="@drawable/butterflytest_imageview_fly01" android:duration="120" />
+	<item android:drawable="@drawable/butterflytest_imageview_fly02" android:duration="120" />
+	<item android:drawable="@drawable/butterflytest_imageview_fly03" android:duration="120" />
+	<item android:drawable="@drawable/butterflytest_imageview_fly04" android:duration="120" />
+	<item android:drawable="@drawable/butterflytest_imageview_fly05" android:duration="120" />
+	<item android:drawable="@drawable/butterflytest_imageview_fly06" android:duration="120" />																
+</animation-list>

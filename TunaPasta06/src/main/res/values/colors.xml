@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected">#70f0</color>
+    <color name="white">#ffffffff</color>
+    <color name="black_1">#404040</color>
+    <color name="gray">#696969</color>
+    <color name="pink">#FF6EB4</color>
+    <color name="lyric_text_color">#ff278ca8</color>
+    <color name="pin_progress_default_circle_color">#80ffffff</color>
+    <color name="pin_progress_default_progress_color">#33b5e5</color>
+</resources>

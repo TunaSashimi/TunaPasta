@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.tunaPasta04" android:versionCode="1" android:versionName="1.0"
+	android:installLocation="preferExternal">
+
+    <application android:icon="@drawable/tunasashimi" android:label="@string/app_name"
+		android:name="com.tunaPasta04.application.PhotoTrans" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<activity android:name="com.tunaPasta04.activity.EntryAct" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Panel">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.BackFormTest" android:label="人造美女" />
+		<activity android:name="com.tunaPasta04.activity.CalculaterTest" android:label="我的算盘"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.CustomCamera" android:label="我的相机"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.ImageProcessTest" android:label="图片制作">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.GetPicture" android:label="获取图片">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.GetResult" android:label="处理结果">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.FaceTest" android:label="人脸识别">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.PhotoTest" android:label="照片识别">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.Result" android:label="照片识别">
+		</activity>
+		<activity android:name="com.tunaPasta04.activity.LocalFileManagerTest" android:label="照片识别">
+		</activity>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

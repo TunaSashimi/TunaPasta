@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+Properties propsDebug = new Properties()
+propsDebug.load(new FileInputStream(file('../TunaPasta17/config_d.properties')))
+
+Properties propsRelease = new Properties()
+propsRelease.load(new FileInputStream(file('../TunaPasta17/config_r.properties')))
+
+
+void setProperty(Properties props) {
+    def androidObj = project.extensions.findByName("android")
+    def defaultConfigObj = androidObj["defaultConfig"]
+    for (String key : props.stringPropertyNames()) {
+        if ("true".equalsIgnoreCase(props.getProperty(key)) || "false".equalsIgnoreCase(props.getProperty(key))) {
+            defaultConfigObj.buildConfigField("boolean", key, props.getProperty(key))
+        } else if (props.getProperty(key).isInteger()) {
+            defaultConfigObj.buildConfigField("int", key, props.getProperty(key))
+        } else if (props.getProperty(key).isDouble()) {
+            defaultConfigObj.buildConfigField("double", key, props.getProperty(key))
+        } else {
+            defaultConfigObj.buildConfigField("String", key, props.getProperty(key))
+        }
+    }
+}
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        generatedDensities = ['hdpi']
+        applicationId "com.tunaPasta17"
+        minSdkVersion 28
+        versionCode 1
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            setProperty(propsDebug)
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            setProperty(propsRelease)
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildToolsVersion = '29.0.0'
+}
+
+
+dependencies {
+    //
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.alibaba:arouter-api:1.4.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
+
+    // most often used way, enable notification to notify block event
+    api 'com.github.markzhai:blockcanary-android:1.5.0'
+}

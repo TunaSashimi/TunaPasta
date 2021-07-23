@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal" >
+
+            <com.tunaPasta19.tuna.TunaButton
+                android:id="@+id/tunaButton01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tuna:tunaButtonBackgroundNormal="#ffffff"
+                tuna:tunaButtonBitmapFractionBottom="63%"
+                tuna:tunaButtonBitmapFractionTop="13%"
+                tuna:tunaButtonBitmapSrcNormal="@drawable/tunabutton_bitmapsrc_now"
+                tuna:tunaButtonForegroundPress="#18000000"
+                tuna:tunaButtonTextColorNormal="#4a4a4a"
+                tuna:tunaButtonTextFractionBottom="86%"
+                tuna:tunaButtonTextFractionTop="72%"
+                tuna:tunaButtonTextSize="14dp"
+                tuna:tunaButtonTextValue="马上用车" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#dedede" />
+
+            <com.tunaPasta19.tuna.TunaButton
+                android:id="@+id/tunaButton02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tuna:tunaButtonBackgroundNormal="#ffffff"
+                tuna:tunaButtonBitmapFractionBottom="63%"
+                tuna:tunaButtonBitmapFractionTop="13%"
+                tuna:tunaButtonBitmapSrcNormal="@drawable/tunabutton_bitmapsrc_preordain"
+                tuna:tunaButtonForegroundPress="#18000000"
+                tuna:tunaButtonTextColorNormal="#4a4a4a"
+                tuna:tunaButtonTextFractionBottom="86%"
+                tuna:tunaButtonTextFractionTop="72%"
+                tuna:tunaButtonTextSize="14dp"
+                tuna:tunaButtonTextValue="预约用车" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#dedede" />
+
+            <com.tunaPasta19.tuna.TunaButton
+                android:id="@+id/tunaButton03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tuna:tunaButtonBackgroundNormal="#ffffff"
+                tuna:tunaButtonBitmapFractionBottom="63%"
+                tuna:tunaButtonBitmapFractionTop="13%"
+                tuna:tunaButtonBitmapSrcNormal="@drawable/tunabutton_bitmapsrc_picksend"
+                tuna:tunaButtonForegroundPress="#18000000"
+                tuna:tunaButtonTextColorNormal="#4a4a4a"
+                tuna:tunaButtonTextFractionBottom="86%"
+                tuna:tunaButtonTextFractionTop="72%"
+                tuna:tunaButtonTextSize="14dp"
+                tuna:tunaButtonTextValue="接机送机" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

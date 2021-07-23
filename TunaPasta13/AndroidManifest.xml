@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta13"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 允许程序访问有关GSM网络信息(Allows applications to accessinformation about networks) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 访问精确位置(如GPS) 权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 照相设备 权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动设备 权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 闪光灯 权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 网络套接字 权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读写 权限 -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+
+    <application
+        android:name="com.tunaPasta13.activity.FloatApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="com.tunaPasta13.activity.EntryAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tunaPasta13.activity.PentagramTest" />
+        <activity android:name="com.tunaPasta13.activity.RoundCornerTest" />
+        <activity android:name="com.tunaPasta13.activity.ClickThreeTimes" />
+        <activity android:name="com.tunaPasta13.activity.RoundImageViewTest" />
+        <activity android:name="com.tunaPasta13.activity.SoundRecordingTest" />
+        <activity android:name="com.tunaPasta13.activity.FloatingWindowsTest" />
+        <activity
+            android:name="com.tunaPasta13.activity.OptimalPathTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.tunaPasta13.activity.OptimalPathResult"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.tunaPasta13.activity.TakeBlowTest" />
+        <activity android:name="com.tunaPasta13.activity.WheelDemo" />
+        <activity android:name="com.tunaPasta13.activity.TimeActivity" />
+        <activity android:name="com.tunaPasta13.activity.PasswordActivity" />
+        <activity android:name="com.tunaPasta13.activity.CitiesActivity" />
+        <activity android:name="com.tunaPasta13.activity.EmptyLayout" />
+        <activity android:name="com.tunaPasta13.activity.SlideCutListViewTest" />
+        <activity android:name="com.tunaPasta13.activity.CurlTest" />
+        <activity android:name="com.tunaPasta13.activity.TunaStageTest" />
+        <activity android:name="com.tunaPasta13.activity.DifferentGetMeasuredWidth" />
+        <activity android:name="com.tunaPasta13.activity.UseJSResolveTest" />
+        <activity android:name="com.tunaPasta13.activity.CustomExceptionTest" />
+        <activity android:name="com.tunaPasta13.activity.ScrollerRelativeLayoutTest" />
+        <activity android:name="com.tunaPasta13.activity.ScrollerLinearLayoutTest" />
+        <activity android:name="com.tunaPasta13.activity.PagerContainerTest" />
+        <activity android:name="com.tunaPasta13.activity.IMETest" />
+        <activity android:name="com.tunaPasta13.activity.RequestFocusTest" />
+        <activity android:name="com.tunaPasta13.activity.SMSSendTest" />
+        <activity android:name="com.tunaPasta13.activity.MovieDecodeGifViewTest" />
+        <activity android:name="com.tunaPasta13.activity.PageTransformerTest01" />
+        <activity android:name="com.tunaPasta13.activity.PageTransformerTest03" />
+        <activity android:name="com.tunaPasta13.activity.PageTransformerTest02" />
+    </application>
+
+</manifest>

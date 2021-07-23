@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tuna_button_margin"
+        android:text="tunaLayout用法参考tunaView"
+        android:textColor="#434343" />
+
+    <com.tunaPasta19.tuna.TunaLayout
+        android:id="@+id/tunaLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tuna_layout_height"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+        android:layout_marginRight="@dimen/tuna_button_marginRight"
+        tuna:tunaLayoutBackgroundNormal="#fae500"
+        tuna:tunaLayoutRadius="@dimen/tuna_radius"
+        tuna:tunaLayoutStrokeColorNormal="#ac9696"
+        tuna:tunaLayoutStrokeWidthNormal="@dimen/tuna_stroke_width" >
+    </com.tunaPasta19.tuna.TunaLayout>
+
+    <com.tunaPasta19.tuna.TunaLayout
+        android:id="@+id/tunaLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tuna_layout_height"
+        android:layout_below="@id/tunaLayout01"
+        android:layout_margin="@dimen/tuna_button_margin"
+        tuna:tunaLayoutBackgroundNormal="#fae500"
+        tuna:tunaLayoutBackgroundNormalShadowColor="#998383"
+        tuna:tunaLayoutBackgroundNormalShadowDx="1dp"
+        tuna:tunaLayoutBackgroundNormalShadowDy="1dp"
+        tuna:tunaLayoutBackgroundNormalShadowRadius="2dp"
+        tuna:tunaLayoutRadius="@dimen/tuna_radius" >
+    </com.tunaPasta19.tuna.TunaLayout>
+
+    <com.tunaPasta19.tuna.TunaLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tuna_layout_height"
+        android:layout_below="@id/tunaLayout02"
+        android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+        android:layout_marginRight="@dimen/tuna_button_marginRight"
+        tuna:tunaLayoutBackgroundNormalAngle="270"
+        tuna:tunaLayoutBackgroundNormalGradientEnd="#ffca00"
+        tuna:tunaLayoutBackgroundNormalGradientStart="#ffec95"
+        tuna:tunaLayoutRadius="@dimen/tuna_radius" >
+    </com.tunaPasta19.tuna.TunaLayout>
+
+</RelativeLayout>

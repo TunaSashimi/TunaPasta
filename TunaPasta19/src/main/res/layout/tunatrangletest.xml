@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleTop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        tuna:tunaTextColorNormal="#592d2e"
+        tuna:tunaTrangleBackgroundNormal="#fae500"
+        tuna:tunaTrangleBackgroundPress="#d9c700"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="top" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tunaTrangleTop"
+        android:layout_toRightOf="@id/tunaTrangleTop"
+        tuna:tunaTextColorNormal="#592d2e"
+        tuna:tunaTrangleBackgroundNormal="#fae500"
+        tuna:tunaTrangleBackgroundPress="#d9c700"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="right" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleBottom"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tunaTrangleRight"
+        android:layout_toRightOf="@id/tunaTrangleRight"
+        tuna:tunaSelectType="same"
+        tuna:tunaTextColorNormal="#592d2e"
+        tuna:tunaTrangleBackgroundNormal="#fae500"
+        tuna:tunaTrangleBackgroundPress="#bc7955"
+        tuna:tunaTrangleBackgroundSelect="#592d2d"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="bottom" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tunaTrangleBottom"
+        android:layout_toRightOf="@id/tunaTrangleBottom"
+        tuna:tunaSelectType="same"
+        tuna:tunaTextColorNormal="#592d2e"
+        tuna:tunaTrangleBackgroundNormal="#fae500"
+        tuna:tunaTrangleBackgroundPress="#bc7955"
+        tuna:tunaTrangleBackgroundSelect="#592d2d"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="left" />
+
+    <com.tunaPasta19.tuna.TunaView
+        android:id="@+id/tunaViewDialog"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/tunaTrangleTop"
+        android:layout_marginLeft="10dp"
+        tuna:tunaBackgroundNormal="#fae500"
+        tuna:tunaStrokeColorNormal="#592d2e"
+        tuna:tunaStrokeWidthNormal="2dp"
+        tuna:tunaTextColorNormal="#592d2d"
+        tuna:tunaTextSize="10dp"
+        tuna:tunaTextValue="TunaSashimi" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleDialog"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/tunaViewDialog"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="-4.5dp"
+        tuna:tunaTrangleBackgroundNormal="#fae500"
+        tuna:tunaTrangleHideEdge="true"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="bottom" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleTopHide"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@id/tunaViewDialog"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tunaViewDialog"
+        tuna:tunaTrangleBackgroundNormal="#ffffff"
+        tuna:tunaTrangleHideEdge="true"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="top" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:id="@+id/tunaTrangleBottomHide"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@id/tunaViewDialog"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tunaViewDialog"
+        tuna:tunaTrangleBackgroundNormal="#ffffff"
+        tuna:tunaTrangleHideEdge="true"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="bottom" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@id/tunaTrangleTopHide"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tunaTrangleTopHide"
+        tuna:tunaTrangleBackgroundNormal="#ffffff"
+        tuna:tunaTrangleHideEdge="true"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="left" />
+
+    <com.tunaPasta19.tuna.TunaTrangle
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@id/tunaTrangleBottomHide"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tunaTrangleBottomHide"
+        tuna:tunaTrangleBackgroundNormal="#ffffff"
+        tuna:tunaTrangleHideEdge="true"
+        tuna:tunaTrangleStrokeColor="#592d2e"
+        tuna:tunaTrangleStrokeWidth="2dp"
+        tuna:tunaTrangleTowardType="right" />
+
+    <com.tunaPasta19.tuna.TunaView
+        android:id="@+id/tunaViewButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tunaTrangleDialog"
+        android:layout_margin="@dimen/tuna_button_margin"
+        tuna:tunaBackgroundNormal="#592d2d"
+        tuna:tunaBackgroundPress="#bc7955"
+        tuna:tunaRadius="5dp"
+        tuna:tunaStrokeColorNormal="#592d2d"
+        tuna:tunaStrokeWidthNormal="1dp"
+        tuna:tunaTextColorNormal="#ffffff"
+        tuna:tunaTextSize="14dp"
+        tuna:tunaTextValue="change the dialog name" />
+
+</RelativeLayout>

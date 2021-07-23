@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bg_dots" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:orientation="horizontal" android:id="@+id/linear_layout_1"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<Button android:layout_gravity="top|left|center" android:id="@+id/btn_exit_charts"
+			android:background="@drawable/ic_home" android:layout_width="25.0dp"
+			android:layout_height="25.0dp"  android:onClick="onClotheTypeClick" />
+		<ImageView android:id="@+id/img_category"
+			android:layout_width="60.0dp" android:layout_height="60.0dp"
+			android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" />
+		<Button android:layout_gravity="center" android:id="@+id/btn_icon1"
+			android:padding="5.0dp" android:layout_width="40.0dp"
+			android:layout_height="45.0dp" android:layout_marginRight="5.0dp"
+			android:layout_marginLeft="30dp" android:onClick="onClotheTypeClick" />
+		<Button android:layout_gravity="center" android:id="@+id/btn_icon2"
+			android:padding="0.0dp" android:layout_width="40.0dp"
+			android:layout_height="45.0dp" android:layout_marginRight="5.0dp"
+			android:onClick="onClotheTypeClick" />
+		<Button android:layout_gravity="center" android:id="@+id/btn_icon3"
+			android:padding="0.0dp" android:layout_width="40.0dp"
+			android:layout_height="45.0dp" android:layout_marginRight="5.0dp"
+			android:onClick="onClotheTypeClick" />
+		<Button android:layout_gravity="center" android:id="@+id/btn_icon4"
+			android:padding="0.0dp" android:layout_width="40.0dp"
+			android:layout_height="45.0dp" android:onClick="onClotheTypeClick" />
+	</LinearLayout>
+	<TextView android:textSize="16.0sp" android:textStyle="bold"
+		android:textColor="#ffffffff" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="10.0dp"
+		android:text="请先选择服装种类后匹配身高和体型" android:layout_below="@id/linear_layout_1"
+		android:layout_marginTop="10dp" android:layout_alignParentLeft="true" />
+	<LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout2"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="45.0dp" android:layout_below="@id/linear_layout_1"
+		android:layout_alignParentLeft="true">
+		<Spinner android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_dropdown_available"
+			android:paddingLeft="10.0dp" android:layout_width="160.0dp"
+			android:layout_height="40.0dp" android:layout_marginLeft="10.0dp"
+			android:saveEnabled="false" android:layout_marginRight="5.0dp" />
+		<Spinner android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_dropdown_available"
+			android:paddingLeft="10.0dp" android:layout_width="120.0dp"
+			android:layout_height="40.0dp" />
+	</LinearLayout>
+</RelativeLayout>

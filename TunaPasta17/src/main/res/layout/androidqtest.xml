@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="应用存储" />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="外部存储" />
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="读取视频" />
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="读取图片" />
+
+    <Button
+        android:id="@+id/button05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="读取音频" />
+
+    <Button
+        android:id="@+id/button06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="创建文档" />
+
+    <Button
+        android:id="@+id/button07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="编辑文档" />
+
+    <Button
+        android:id="@+id/button08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="删除文档" />
+
+    <Button
+        android:id="@+id/button09"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="分享文件" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="安装文件" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="调用拍照" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="调用裁剪" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick"
+        android:text="获取设备ID" />
+
+
+    <ImageView
+        android:id="@+id/image01"
+        android:layout_width="240dp"
+        android:layout_height="240dp" />
+
+</LinearLayout>

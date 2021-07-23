@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="身份证"
+            android:textColor="#585c64"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/text_id"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#222222"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <com.tunaPasta18.view.IDKeyboardView
+        android:id="@+id/idkeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#e6e6e6"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/bg_keyboard_btn"
+        android:keyTextColor="#000000"
+        android:keyTextSize="31dp"
+        android:labelTextSize="23.04sp"
+        android:shadowRadius="0" />
+
+</RelativeLayout>

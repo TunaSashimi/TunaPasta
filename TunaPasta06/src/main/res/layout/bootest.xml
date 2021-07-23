@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="  android程序之间的通信是广播broadcastReceiver，\n
+		程序之间的数据共享是用内容提供者Contentproved，\n
+		所以要在手机启动时，启动服务，就是要知道什么时候手机开机，\n
+		这时可以注册一个广播，用来接收action（程序通过action把信息广播出去，让 需要的程序知道的），\n
+		而手机开机会发出一个action，名为“android.intent.action.BOOT_COMPLETED”，只要接收器接收到这个广播，\n
+		就可以在接收器的重载方法（接收方法）onReceive(Context context, Intent intent)中处理相关事件，启动服务，或启动程序。\n 
+		代码详见AutoReceiver类\n
+		同时广播类需要在manifest.xml中说明。\n 
+		同时允许接收手机启动信息的权限： \n
+		uses-permission android:name=android.permission.RECEIVE_BOOT_COMPLETED\n
+	" />
+
+</LinearLayout>

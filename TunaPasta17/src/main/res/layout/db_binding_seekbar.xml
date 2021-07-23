@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="progress"
+            type="com.tunaPasta17.model.Progress" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.tunaPasta17.view.BindingSeekBar
+            android:id="@+id/bindingSeekBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            app:progress="@={progress.porgress}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bindingSeekBar"
+            android:layout_marginTop="16dp"
+            android:text="@{String.valueOf(progress.porgress)}"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="50dp" />
+    </RelativeLayout>
+</layout>

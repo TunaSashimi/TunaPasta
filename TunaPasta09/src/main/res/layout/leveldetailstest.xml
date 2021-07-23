@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4">
+
+    <!-- 次外层RelativeLayout高度将修改 -->
+
+    <RelativeLayout
+        android:id="@+id/leveldetailstest_relative01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/relative_root_margin"
+        android:background="@drawable/relativelayout_background_gradepanel">
+
+        <!-- ImageView会员卡宽高都设置为match_parent为了适应全屏幕 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/leveldetailstest_silver" />
+
+        <!-- Imageview车辆重新在代码中设置marginTop -->
+
+        <ImageView
+            android:id="@+id/leveldetailstest_imageview02"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="@dimen/textview_margin"
+            android:background="@drawable/leveldetailstest_imagecar" />
+
+        <ProgressBar
+            android:id="@+id/leveldetailstest_progressbar01"
+            style="@style/myProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/progressbar_height"
+            android:layout_below="@id/leveldetailstest_imageview02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:progress="100" />
+
+        <!-- 同步的Imageview -->
+        <ImageView
+            android:id="@+id/leveldetailstest_imageview_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/progressbar_height"
+            android:layout_below="@id/leveldetailstest_imageview02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leveldetailstest_progressbar01"
+            android:layout_marginLeft="@dimen/textview_margin"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:text="白银卡"
+            android:textColor="#666666"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leveldetailstest_progressbar01"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="@dimen/textview_margin"
+            android:gravity="right"
+            android:text="至尊卡"
+            android:textColor="#666666"
+            android:textSize="9sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/relativelayout_background_gradebottom">
+
+            <ImageView
+                android:id="@+id/leveldetailstest_imageview_divide"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CCCCCC" />
+
+            <ImageView
+                android:id="@+id/leveldetailstest_imageview03"
+                android:layout_width="@dimen/imageview_diamond_width"
+                android:layout_height="@dimen/imageview_diamond_height"
+                android:layout_centerVertical="true"
+                android:src="@drawable/leveldetailstest_imagediamond" />
+
+            <TextView
+                android:layout_width="@dimen/textview_diamond_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/textview_diamond_margin"
+                android:layout_toRightOf="@id/leveldetailstest_imageview03"
+                android:text="等级特权"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/leveldetailstest_imageview04"
+                android:layout_width="@dimen/imageview_information_width"
+                android:layout_height="@dimen/imageview_information_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/leveldetailstest_imageview_divide"
+                android:src="@drawable/leveldetailstest_imageinfo" />
+
+            <TextView
+                android:layout_width="@dimen/textview_diamond_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/textview_diamond_margin"
+                android:layout_toRightOf="@id/leveldetailstest_imageview04"
+                android:text="如何提升等级"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

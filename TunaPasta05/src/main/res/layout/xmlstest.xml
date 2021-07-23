@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用系统android命名空间的TextView" />
+
+    <com.tunaPasta05.widget.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        test:textColor="#FF0000"
+        test:textSize="20dp"
+        test:title="使用自定义test命名空间的TextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" xmlns:android = http://schemas.android.com/apk/res/android\n
+声明xml命名空间。xmlns意思为“xml namespace”.冒号后面是给这个引用起的别名。\n
+schemas是xml文档的两种约束文件其中的一种，规定了xml中有哪些元素(标签)、元素有哪些属性及各元素的关系，当然从面向对象的角度理解schemas文件可以认为它是被约束的xml文档的“类”或称为“模板”\n
+这个主要作用是在运行的时候那些控件的属性都是通过它来识别的，如果上面你写错了，不会有任何问题，但是在运行的时候就会有问题，提示你没有指定宽度等什么。这个是不用联网的。\n
+Android 自定义的xmlns其实很简单，语法规则是：\n
+在使用到自定义View的xml布局文件中需要加入xmlns:前缀=http://schemas.android.com/apk/res/你的应用程序包路径." />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/scrollbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/scroll_menu" />
+    <!-- 放置在drawable文件夹中的图片高度为66px,而这里设置为40dp(小),于是就有间距,66-44相差越大,间距越大 -->
+</FrameLayout>

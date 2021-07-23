@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="		单位:		"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+    <!-- 这里注意一下.自定义的text不能为"" -->
+
+    <com.tunaPasta19.widget.LineButton
+        android:id="@+id/linebtn01"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text01"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/linebtn01"
+        android:text="检查人:		"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <com.tunaPasta19.widget.LineButton
+        android:id="@+id/linebtn02"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text02"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <com.tunaPasta19.widget.LineButton
+        android:id="@+id/linebtn03"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/linebtn03"
+        android:text="检查日期:		"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" />
+
+</RelativeLayout>

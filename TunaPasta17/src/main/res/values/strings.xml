@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">TunaPasta17</string>
+    <string name="btn_fullscreen">使用全屏验证码</string>
+    <string name="btn_popup">使用弹框验证码</string>
+    <string name="outer_title">%1$s年%2$s月</string>
+    <string name="format">%s is %s</string>
+</resources>

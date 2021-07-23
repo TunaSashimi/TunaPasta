@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/camel" />
+
+    <ImageView
+        android:id="@+id/imageDP"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageWrap"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/camel" />
+
+    <ImageView
+        android:id="@+id/imagePX"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_below="@id/imageDP"
+        android:layout_margin="10dp"
+        android:background="@drawable/camel" />
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="48dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/imagePX"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/camel" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/imageBackground"
+        android:layout_margin="10dp"
+        android:src="@drawable/camel" />
+    
+</RelativeLayout>

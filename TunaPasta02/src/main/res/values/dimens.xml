@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="triangle_picture_width">20dp</dimen>
+    <dimen name="triangle_picture_height">18dp</dimen>
+
+    <!-- Size of alarm alert outer ring. -->
+    <dimen name="glowpadview_outerring_diameter">270dp</dimen>
+
+    <!-- Default target placement radius for GlowPadView. Should be 1/2 of outerring diameter. -->
+    <dimen name="glowpadview_target_placement_radius">135dp</dimen>
+
+    <!-- Default glow radius for GlowPadView -->
+    <dimen name="glowpadview_glow_radius">75dp</dimen>
+
+    <!-- Default distance beyond which GlowPadView snaps to the matching target -->
+    <dimen name="glowpadview_snap_margin">40dp</dimen>
+
+    <!-- Default distance from each snap target that GlowPadView considers a "hit" -->
+    <dimen name="glowpadview_inner_radius">15dp</dimen>
+    <dimen name="glowpadview_margin_bottom">-64dp</dimen>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolllayouttest_relativelayout_background" >
+
+    <com.tunaPasta19.widget.RollLayoutAnimatedRotateGallery
+        android:id="@+id/mygallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tunaPasta19.widget.MarqueeTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2FFFFFFF"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/app_news"
+        android:textColor="#00AA11"
+        android:textSize="20dp" />
+
+</RelativeLayout>

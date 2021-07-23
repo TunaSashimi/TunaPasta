@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tunaload_relative_background" >
+
+    <TextView
+        android:id="@+id/textStayFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tuna_layout_marginTop"
+        android:text="停留最初帧/居中(包含状态栏)"
+        android:textColor="#ffffff" />
+
+    <FrameLayout
+        android:id="@+id/frameStayFirst"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/textStayFirst"
+        android:layout_below="@id/textStayFirst" >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateDrawable="@anim/tunaload_anim_loadlight_rotate"
+            android:indeterminateDuration="1500" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tunaload_imageview_loadlight_foreground" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textStayFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameStayFirst"
+        android:layout_marginTop="@dimen/tuna_layout_marginTop"
+        android:text="停留最后帧/居中(不包含状态栏)"
+        android:textColor="#ffffff" />
+
+    <FrameLayout
+        android:id="@+id/frameStayFinal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/textStayFinal" >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateDrawable="@anim/tunaload_anim_loadlight_rotate"
+            android:indeterminateDuration="1500" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tunaload_imageview_loadlight_foreground" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textClipFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameStayFinal"
+        android:layout_marginTop="@dimen/tuna_layout_marginTop"
+        android:text="clipChildren=false"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/relativeClipFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textClipFalse"
+        android:layout_marginLeft="@dimen/tuna_layout_marginLeft"
+        android:layout_toRightOf="@id/textClipFalse"
+        android:clipChildren="false" >
+
+        <FrameLayout
+            android:id="@+id/frameClipFalse"
+            android:layout_width="80dp"
+            android:layout_height="80dp" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateDrawable="@anim/tunaload_anim_loaddark_rotate"
+                android:indeterminateDuration="1500" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tunaload_imageview_loaddark_foreground" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textClipTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeClipFalse"
+        android:layout_marginTop="@dimen/tuna_layout_marginTop"
+        android:text="clipChildren=true"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textClipTrue"
+        android:layout_marginLeft="@dimen/tuna_layout_marginLeft"
+        android:layout_toRightOf="@id/textClipFalse"
+        android:clipChildren="true" >
+
+        <FrameLayout
+            android:id="@+id/frameClipTrue"
+            android:layout_width="80dp"
+            android:layout_height="80dp" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateDrawable="@anim/tunaload_anim_loaddark_rotate"
+                android:indeterminateDuration="1500" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tunaload_imageview_loaddark_foreground" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_setting_bar" >
+
+    <!-- 左边栏在下面 -->
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <include layout="@layout/main_left" />
+    </LinearLayout>
+    
+    
+    <!-- 右边栏在上面,被包在 ScrollEffectLinearLayout 里面-->
+    
+    <com.tunaPasta07.widget.ScrollEffectLinearLayout
+        android:id="@+id/sliding_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+            <include layout="@layout/main_right" />
+    </com.tunaPasta07.widget.ScrollEffectLinearLayout>
+
+</RelativeLayout>

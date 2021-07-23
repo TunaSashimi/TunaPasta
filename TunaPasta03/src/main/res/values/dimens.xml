@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="imageview_width">36.0dp</dimen>
+	<dimen name="imageview_height">36.0dp</dimen>
+</resources>

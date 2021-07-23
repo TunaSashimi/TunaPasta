@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:layout_width="wrap_content"
+    Android:layout_height="wrap_content"
+    Android:background="#ffffff"
+    Android:orientation="vertical">
+
+    <EditText
+        Android:id="@+id/edit_text"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content" />
+
+    <LinearLayout
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content">
+
+        <Button
+            Android:id="@+id/bt_ok"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="确定" />
+
+        <Button
+            Android:id="@+id/bt_cancle"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

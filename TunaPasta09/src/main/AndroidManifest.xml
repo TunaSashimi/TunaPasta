@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta09"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 指南针 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--  -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.tunaPasta09.activity.EntryAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tunaPasta09.activity.ExpandableListViewTest" />
+        <activity android:name="com.tunaPasta09.activity.ViewStubTest" />
+        <activity android:name="com.tunaPasta09.activity.StringFormatTest" />
+        <activity android:name="com.tunaPasta09.activity.PullDownListViewTest" />
+        <activity android:name="com.tunaPasta09.activity.CompassTest" />
+        <activity android:name="com.tunaPasta09.activity.UnlockSuccessTest" />
+        <activity android:name="com.tunaPasta09.activity.GesturePasswordTest" />
+        <activity android:name="com.tunaPasta09.activity.SetPasswordTest" />
+        <activity android:name="com.tunaPasta09.activity.ViewTreeObserverTest" />
+        <activity android:name="com.tunaPasta09.activity.ClipDrawableTest" />
+
+        <activity android:name="com.tunaPasta09.activity.OrderConfirmPriceTest" />
+
+        <activity
+            android:name="com.tunaPasta09.activity.WidgetLibraryText"
+            android:screenOrientation="landscape" />
+
+        <activity android:name="com.tunaPasta09.activity.AnimatorFunctionTest" />
+        <activity android:name="com.tunaPasta09.activity.RelativeLayoutClickTest" />
+        <activity android:name="com.tunaPasta09.activity.LevelDetailsTest" />
+        <activity android:name="com.tunaPasta09.activity.LinearLayoutTest" />
+        <activity android:name="com.tunaPasta09.activity.DatePickerTest" />
+        <activity android:name="com.tunaPasta09.activity.ImageRotateTest" />
+        <activity android:name="com.tunaPasta09.activity.ThreePaintTypesCompare" />
+        <activity android:name="com.tunaPasta09.activity.DrawTextcenterTest" />
+        <activity android:name="com.tunaPasta09.activity.SlidingBarViewTest" />
+
+        <activity android:name="com.tunaPasta09.activity.OpenGLThreePyramidAndCubeRotationTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLGestureCubeRotationTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLThreeDimensionalMazeTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLReelWavesTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLMatrixRotationTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLFireworksCombustionTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLTwoDirectionsDisplacementTest" />
+        <activity android:name="com.tunaPasta09.activity.OpenGLCircularArrayTest" />
+        <activity android:name="com.tunaPasta09.activity.SoftKeyboardManagerTest" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>

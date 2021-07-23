@@ -1,0 +1,7 @@
+<resources>
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw360dp devices (e.g. 7" tablets) here.
+    -->
+<string name="use_dimen">屏幕宽度360-400dp,使用values-sw360dp文件夹内的配置</string>
+</resources>

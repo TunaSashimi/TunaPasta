@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TunaPasta13</string>
+
+    <string name="title">汕大地图最优路径</string>
+    <string name="lookfor">查找</string>
+    <string name="start">始发站:</string>
+    <string name="end">终点站:</string>
+    <string name="choice">交通方式:</string>
+    
+    <color name="line_color">#E1E2E4</color>
+</resources>

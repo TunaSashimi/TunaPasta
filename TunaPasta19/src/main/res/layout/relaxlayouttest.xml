@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60.0dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_viewMenCharts"
+            android:layout_width="90.0dp"
+            android:layout_height="90.0dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15.0dp"
+            android:background="@drawable/ic_man"
+            android:onClick="onMainBtnClick" />
+
+        <Button
+            android:id="@+id/btn_viewWomenCharts"
+            android:layout_width="90.0dp"
+            android:layout_height="90.0dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_woman"
+            android:onClick="onMainBtnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30.0dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_viewKidsCharts"
+            android:layout_width="90.0dp"
+            android:layout_height="90.0dp"
+            android:layout_marginRight="15.0dp"
+            android:background="@drawable/ic_kids"
+            android:onClick="onMainBtnClick" />
+
+        <Button
+            android:id="@+id/btn_viewCalculator"
+            android:layout_width="90.0dp"
+            android:layout_height="90.0dp"
+            android:background="@drawable/ic_calculator"
+            android:onClick="onMainBtnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15.0dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_support"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20.0dp"
+            android:background="@drawable/ic_env"
+            android:onClick="onMainBtnClick" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20.0dp"
+            android:background="@drawable/ic_questionmark"
+            android:onClick="onMainBtnClick" />
+
+        <Button
+            android:id="@+id/btn_moreapps"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20.0dp"
+            android:background="@drawable/ic_menue"
+            android:onClick="onMainBtnClick" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ic_exit"
+            android:onClick="onMainBtnClick" />
+    </LinearLayout>
+
+</LinearLayout>

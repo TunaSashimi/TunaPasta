@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tuna_button_margin"
+        android:text="tunaDumbbellDirection设置矩形方向\ntunaDumbbellRectColor设置矩形颜色\ntunaDumbbellRectWidth设置矩形宽度\ntunaDumbbellRectHeight设置矩形高度\ntunaDumbbellRectColor设置矩形颜色\ntunaDumbbellRectMargin设置矩形间距"
+        android:textColor="#434343" />
+
+    <com.tunaPasta19.tuna.TunaDumbbell
+        android:id="@+id/tunaDumbbell01"
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/text"
+        android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+        android:layout_marginRight="@dimen/tuna_button_marginRight"
+        tuna:tunaDumbbellDirection="vertical"
+        tuna:tunaDumbbellRectColor="#cccccc"
+        tuna:tunaDumbbellRectHeight="4dp"
+        tuna:tunaDumbbellRectMargin="1dp"
+        tuna:tunaDumbbellRectWidth="2dp" />
+
+    <com.tunaPasta19.tuna.TunaDumbbell
+        android:id="@+id/tunaDumbbell02"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/tunaDumbbell01"
+        android:layout_margin="@dimen/tuna_button_margin"
+        tuna:tunaDumbbellCircleColorAfter="#bc7955"
+        tuna:tunaDumbbellCircleColorBefore="#77bc55"
+        tuna:tunaDumbbellCircleMargin="0dp"
+        tuna:tunaDumbbellCircleRadius="0dp"
+        tuna:tunaDumbbellCircleStrokeWidth="0dp"
+        tuna:tunaDumbbellDirection="horizontal"
+        tuna:tunaDumbbellRectColor="#c8c8c8"
+        tuna:tunaDumbbellRectHeight="1dp"
+        tuna:tunaDumbbellRectMargin="1dp"
+        tuna:tunaDumbbellRectStrokeWidth="0dp"
+        tuna:tunaDumbbellRectWidth="4dp" />
+
+    <com.tunaPasta19.tuna.TunaDumbbell
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tunaDumbbell02"
+        android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+        android:layout_marginRight="@dimen/tuna_button_marginRight"
+        tuna:tunaDumbbellCircleColorAfter="#bc7955"
+        tuna:tunaDumbbellCircleColorBefore="#77bc55"
+        tuna:tunaDumbbellCircleMargin="1dp"
+        tuna:tunaDumbbellCircleRadius="12dp"
+        tuna:tunaDumbbellCircleStrokeWidth="1dp"
+        tuna:tunaDumbbellDirection="vertical"
+        tuna:tunaDumbbellRectColor="#cccccc"
+        tuna:tunaDumbbellRectHeight="4dp"
+        tuna:tunaDumbbellRectMargin="1dp"
+        tuna:tunaDumbbellRectStrokeWidth="0dp"
+        tuna:tunaDumbbellRectWidth="1.5dp"
+        tuna:tunaDumbbellTextSize="20dp"
+        tuna:tunaDumbbellTextStrokeWidth="0dp"
+        tuna:tunaDumbbellTextValueAfter="终"
+        tuna:tunaDumbbellTextValueBefore="起" />
+
+</RelativeLayout>

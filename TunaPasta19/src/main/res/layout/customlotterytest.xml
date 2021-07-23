@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textRedBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="红球杀号"
+            android:textColor="#444444" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall01"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/textRedBall"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="01" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall02"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall01"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="02" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall03"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall02"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="03" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall04"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall03"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="04" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall05"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall04"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="05" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall06"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall05"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="06" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall06"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="07" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall08"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/redBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="08" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall09"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall08"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="09" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall10"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall09"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="10" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall11"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall10"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="11" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall12"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall11"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="12" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall13"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall12"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="13" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall13"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="14" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall15"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/redBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="15" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall15"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="16" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall17"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall16"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="17" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall18"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall17"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="18" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall19"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall18"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="19" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall20"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall19"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="20" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall20"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="21" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall22"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/redBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="22" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall23"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall22"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="23" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall24"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall23"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="24" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall25"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall24"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="25" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall26"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall25"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="26" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall27"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall26"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="27" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall27"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="28" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall29"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/redBall22"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="29" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall30"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall29"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall29"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="30" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall31"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall29"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall30"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="31" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/redBall32"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall29"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall31"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="32" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/redBall29"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall32"
+            tuna:tunaBackgroundSelect="#ff0000"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#fdefee"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#ff0000"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="33" />
+
+        <TextView
+            android:id="@+id/textBlueBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redBall29"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="蓝球杀号"
+            android:textColor="#444444" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/blueBall01"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/textBlueBall"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="01" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall01"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="02" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall02"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="03" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall03"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="04" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall04"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="05" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall05"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="06" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall06"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="07" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/blueBall08"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/blueBall01"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="08" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall08"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="09" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall09"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="10" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall10"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="11" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall11"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="12" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall12"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="13" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall13"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="14" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/blueBall15"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/blueBall08"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginTop="@dimen/tuna_button_marginTop"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="15" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/blueBall16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@id/blueBall15"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/redBall15"
+            tuna:tunaBackgroundSelect="#0000ff"
+            tuna:tunaRadius="32dp"
+            tuna:tunaSelectType="reverse"
+            tuna:tunaStrokeColorNormal="#f0f9fe"
+            tuna:tunaStrokeWidthNormal="1dp"
+            tuna:tunaTextColorNormal="#0000ff"
+            tuna:tunaTextColorSelect="#ffffff"
+            tuna:tunaTextSize="18dp"
+            tuna:tunaTextValue="16" />
+
+        <View
+            android:id="@+id/viewDividLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/blueBall16"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:background="#cccccc" />
+
+        <Spinner
+            android:id="@+id/spinnerRedBall"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_marginRight="@dimen/tuna_button_marginRight"
+            android:layout_below="@id/viewDividLine" />
+
+        <Spinner
+            android:id="@+id/spinnerBlueBall"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/spinnerRedBall"
+            android:layout_toRightOf="@id/spinnerRedBall" />
+
+        <com.tunaPasta19.tuna.TunaView
+            android:id="@+id/tunaPredictionResults"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/spinnerBlueBall"
+            android:layout_toRightOf="@id/spinnerBlueBall"
+            tuna:tunaBackgroundNormal="#ff0000"
+            tuna:tunaBackgroundPress="#7b1d1d"
+            android:layout_marginRight="@dimen/tuna_button_marginRight"
+            tuna:tunaRadius="5dp"
+            tuna:tunaTextColorNormal="#ffffff"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            tuna:tunaTextSize="14dp"
+            tuna:tunaTextValue="预测" />
+
+        <TextView
+            android:id="@+id/textRedBallResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerRedBall"
+            android:layout_margin="@dimen/tuna_button_margin"
+            android:text="红球:"
+            android:textColor="#ff0000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textBlueBallResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRedBallResult"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:text="蓝球:"
+            android:textColor="#0000ff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

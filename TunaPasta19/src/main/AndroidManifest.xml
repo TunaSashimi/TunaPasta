@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaPasta19"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <application
+        android:name="com.tunaPasta19.application.DataTrans"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/tunasashimi"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Not use android: launchMode = "singleTask" will lead to an error -->
+        <activity
+            android:name="com.tunaPasta19.activity.MainEntryTest"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- 目录结构 -->
+        <activity
+            android:name="com.tunaPasta19.activity.LinkEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.LoginEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.LayoutEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.ReportEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.FunctionEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.WidgetEntryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.BusinessEntryTest"
+            android:screenOrientation="portrait" />
+
+        <!-- 环节目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.ViewPagerTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.SplashEffectTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.HollowEffectTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.UnlockGesturePasswordTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CreateGesturePasswordTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.GuideGesturePasswordTest"
+            android:screenOrientation="portrait" />
+
+        <!-- 登陆目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.UserLoginTest01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.UserLoginTest02"
+            android:screenOrientation="landscape" />
+
+        <!-- 布局目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.MoveBackGroundTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.RelaxLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.RelaxLayoutTestCharacter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.RelaxLayoutTestCalculate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.FlipLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.WaterFallTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.SlidingMenuLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.DoubleSlidingLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.DragGridViewTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.DialLayoutTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.Rotate3DLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.ProtrusionLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestChain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestTopic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestPic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestFollow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.MultiTagLayoutTestVote"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.RollLayoutTest"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.StageLayoutTest"
+            android:screenOrientation="portrait" />
+
+        <!-- 数据目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.AchartEngine4HistogramTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.AchartEngine4LineChartTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.FormSecurityCheckTest"
+            android:screenOrientation="landscape" />
+
+        <!-- 功能目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.CompassTest"
+            android:screenOrientation="portrait" />
+        <!-- 注意CaptureAct类,如果设置 android:launchMode="singleTask"扫描不到 -->
+        <activity
+            android:name="com.tunaPasta19.activity.QRCodeTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.tunaPasta19.activity.CaptureCodeTest"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.tunaPasta19.activity.FaceDetectTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.FaceDetectResult"
+            android:screenOrientation="portrait" />
+
+        <!-- 控件目录 -->
+
+        <activity
+            android:name="com.tunaPasta19.activity.TouchPaintTest"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.tunaPasta19.activity.TunaViewTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaAnimateTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaAnalysisTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaBetaTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaBubbleTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaTrackballTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaButtonTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDialogTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDownloadTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDownloadGifTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDownloadMultipleTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDragTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDumbbellTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaGifTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaHeartTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaHollowTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaHomeTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaImageTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaIrregularTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaLayoutTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaLineTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaLoad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaMaterialTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaDrawTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaProgressTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaRepeatTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaRippleTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaRowTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaScaleTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaScratchTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaSVGTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaTrapezoidTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaTrangleTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaWait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaWaveTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaWelcome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaMoveTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.TunaWrapTest"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 商业目录 -->
+        <activity
+            android:name="com.tunaPasta19.activity.CustomFoodTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CustomCakeChooseTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CustomCakeProcessTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CustomLotteryTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CustomThreadTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tunaPasta19.activity.CustomEffectTest"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

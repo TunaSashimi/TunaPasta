@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="root">
+		<item>我的算盘</item>
+		<item>图片截取</item>
+		<item>自定相机</item>
+		<item>人造美女</item>
+		<item>图片处理</item>
+		<item>人脸识别</item>
+		<item>照片识别</item>
+		<item>文件管理</item>
+	</string-array>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="Type here:" />
+
+        <EditText
+            android:id="@+id/entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/label"
+            android:layout_alignTop="@id/label"
+            android:layout_toRightOf="@id/label"
+            android:background="@android:drawable/editbox_background"
+            android:text="基准线测试" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/entry"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10px"
+            android:text="OK" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ok"
+            android:layout_toLeftOf="@id/ok"
+            android:text="Cancel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ok"
+            android:text="\nandroid:layout_alignBaseLine与指定ID的元素基准线对齐,比如TextView和EditText的里面的文字对齐
+android:layout_above 将该控件的底部至于给定ID的控件之上\n
+android:layout_below 将该控件的顶部至于给定ID的控件之下\n
+android:layout_toLeftOf 将该控件的右边缘和给定ID的控件的左边缘对齐\n
+android:layout_toRightOf 将该控件的左边缘和给定ID的控件的右边缘对齐\n
+android:layout_alignBaseline 该控件的baseline和给定ID的控件的baseline对齐\n
+android:layout_alignBottom 将该控件的底部边缘与给定ID控件的底部边缘\n
+android:layout_alignLeft 将该控件的左边缘与给定ID控件的左边缘对齐\n
+android:layout_alignRight 将该控件的右边缘与给定ID控件的右边缘对齐\n
+android:layout_alignTop 将给定控件的顶部边缘与给定ID控件的顶部对齐\n
+android:alignParentBottom 如果该值为true，则将该控件的底部和父控件的底部对齐\n
+android:layout_alignParentLeft 如果该值为true，则将该控件的左边与父控件的左边对齐\n
+android:layout_alignParentRight 如果该值为true，则将该控件的右边与父控件的右边对齐\n
+android:layout_alignParentTop 如果该值为true，则将空间的顶部与父控件的顶部对齐\n
+android:layout_centerHorizontal 如果值为真，该控件将被至于水平方向的中央\n
+android:layout_centerInParent 如果值为真，该控件将被至于父控件水平方向和垂直方向的中央\n
+android:layout_centerVertical 如果值为真，该控件将被至于垂直方向的中央\n" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+[{
+        "name":"连衣裙",
+        "code":"93321-A",
+        "oldPrice":null,
+        "price":"RMB 79.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"000000",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/5C15D2F9-0317-4995-8338-5BB4333451FB.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/5C15D2F9-0317-4995-8338-5BB4333451FB.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"93321",
+        "numericPrice":79.9,
+        "lookletArticleMetaData":"{\"id\":19171,\"pose\":1,\"category\":22,\"categoryType\":7,\"colors\":[\"#0c0d0c\"],\"variants\":[{\"id\":25711,\"view\":{\"front\":{\"id\":66943,\"image\":\"2011/04/20/e4f7f370-1f19-4373-bcf1-f99d8f3429fb_19171_25711_f.png\",\"crop\":{\"x\":182,\"y\":112,\"width\":104,\"height\":226}},\"back\":{\"id\":66942,\"image\":\"2011/04/20/e4f7f370-1f19-4373-bcf1-f99d8f3429fb_19171_25711_b.png\",\"crop\":{\"x\":188,\"y\":104,\"width\":113,\"height\":236}}}}]}",
+        "swatchName":"黑色"
+    },
+    {
+        "name":"连衣裙",
+        "code":"93321-B",
+        "oldPrice":null,
+        "price":"RMB 79.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"ffffff",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/81E3B9F9-4293-4275-9304-6600098E73A4.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/81E3B9F9-4293-4275-9304-6600098E73A4.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"93321",
+        "numericPrice":79.9,
+        "lookletArticleMetaData":"{\"id\":19172,\"pose\":1,\"category\":22,\"categoryType\":7,\"colors\":[\"#15161c\",\"#d4d7e0\"],\"variants\":[{\"id\":25712,\"view\":{\"front\":{\"id\":66944,\"image\":\"2011/04/20/c1e525dc-c915-4ecf-bc26-59f44339c3ab_19172_25712_f.png\",\"crop\":{\"x\":182,\"y\":112,\"width\":105,\"height\":222}},\"back\":{\"id\":66945,\"image\":\"2011/04/20/c1e525dc-c915-4ecf-bc26-59f44339c3ab_19172_25712_b.png\",\"crop\":{\"x\":191,\"y\":105,\"width\":109,\"height\":230}}}}]}",
+        "swatchName":"白色/条纹"
+    },
+    {
+        "name":"连衣裙",
+        "code":"93321-C",
+        "oldPrice":null,
+        "price":"RMB 79.90",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"981904",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/387F4B05-1CAE-4C6E-AB64-FE05DF9F9397.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/387F4B05-1CAE-4C6E-AB64-FE05DF9F9397.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"93321",
+        "numericPrice":79.9,
+        "lookletArticleMetaData":"{\"id\":19170,\"pose\":1,\"category\":22,\"categoryType\":7,\"colors\":[\"#85523c\"],\"variants\":[{\"id\":25710,\"view\":{\"front\":{\"id\":66940,\"image\":\"2011/04/20/20a6bed9-e68b-4ff4-8d13-f9ad51b33081_19170_25710_f.png\",\"crop\":{\"x\":182,\"y\":111,\"width\":105,\"height\":232}},\"back\":{\"id\":66941,\"image\":\"2011/04/20/20a6bed9-e68b-4ff4-8d13-f9ad51b33081_19170_25710_b.png\",\"crop\":{\"x\":186,\"y\":104,\"width\":114,\"height\":241}}}}]}",
+        "swatchName":"浅棕色"
+    }
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android 更新UI的两种方法——handler和runOnUiThread()\n
+在Android开发过程中，常需要更新界面的UI。而更新UI是要主线程来更新的，即UI线程更新。如果在主线线程之外的线程中直接更新页面显示常会报错。抛出异常：android.view.ViewRoot$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.\n
+只有原始创建这个视图层次(view hierachy)的线程才能修改它的视图(view)\n
+话不多说，贴出下面的代码\n
+方法一:\n
+在Activity.onCreate(Bundle savedInstanceState)中创建一个Handler类的实例， 在这个Handler实例的handleMessage回调函数中调用更新界面显示的函数。\n
+方法二：利用Activity.runOnUiThread(Runnable)把更新ui的代码创建在Runnable中，然后在需要更新ui时，把这个Runnable对象传给Activity.runOnUiThread(Runnable)。 这样Runnable对像就能在ui程序中被调用。如果当前线程是UI线程,那么行动是立即执行。如果当前线程不是UI线程,操作是发布到事件队列的UI线程" />
+
+</LinearLayout>

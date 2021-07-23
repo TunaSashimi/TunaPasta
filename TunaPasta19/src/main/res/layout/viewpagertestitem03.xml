@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tunaPasta19.tuna.TunaScale xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tuna:tunaScaleBitmap="@drawable/viewpagertest_imageview_resource03"
+    tuna:tunaScaleType="width_bottom" />

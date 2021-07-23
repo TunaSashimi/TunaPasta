@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="finance_list_edit_view_title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2.0px</item>
+        <item name="android:layout_marginTop">1.0px</item>
+        <item name="android:layout_marginRight">2.0px</item>
+        <item name="android:layout_marginBottom">1.0px</item>
+    </style>
+
+    <style name="radiobutton_taxi">
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/radiobutton_taxi_s</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">65dp</item>
+    </style>
+    
+    <style name="radiobutton_vip">
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/radiobutton_vip_s</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">65dp</item>
+    </style>
+	
+        <style name="PinProgressButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+    
+</resources>

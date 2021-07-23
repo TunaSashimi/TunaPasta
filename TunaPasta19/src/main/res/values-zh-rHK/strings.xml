@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Activity use -->
+
+
+    <!-- Exclusive TunaView or any of its subclasses use -->
+
+
+    <!-- Other use -->
+
+    <string name="display_dimen">宽度区间 0&#8211;360dp , 使用默认values文件夹配置</string>
+
+    <!-- TunaHome -->
+    <string name="tunahome_tunaview_top">訂車</string>
+    <string name="tunahome_tunaview_left">接機</string>
+    <string name="tunahome_tunaview_middle">送機</string>
+    <string name="tunahome_tunaview_right">包車</string>
+    <string name="tunahome_textview_middle">現在用車</string>
+
+    <!-- TunaWelcome -->
+    <string name="tunawelcome_textview">善 待 自 己 在 每 一 條 路 上</string>
+    <string name="tunawelcome_tunaview_skip">跳過</string>
+    <string name="tunawelcome_tunaview_login">登入</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto">
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaDownloadGraphicsSrcURLRequestHeight="960"
+        tuna:tunaDownloadGraphicsSrcURLRequestWidth="540"
+        tuna:tunaTouchType="none" />
+
+    <com.tunaPasta19.tuna.TunaGif
+        android:id="@+id/tunaGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        tuna:tunaGifGraphicsSrcURLRequestHeight="100"
+        tuna:tunaGifGraphicsSrcURLRequestWidth="100" />
+</merge>

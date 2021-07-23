@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="
+利用Notification的属性和标志位，可以给通知添加更多的特性。
+\n下面列出了其中一些常用的特性：
+\n“FLAG_AUTO_CANCEL”标志
+\n在flags属性中增加此标志，则在通知窗口点选后能自动取消通知。
+\n“FLAG_INSISTENT”标志
+\n在flags属性中增加此标志，则在用户响应前一直循环播放声音。
+“\nFLAG_ONGOING_EVENT”标志
+\n在flags属性中增加此标志，则将通知放入通知窗口的“正在运行”（Ongoing）组中。表示应用程序正在运行——进程仍在后台运行，即使应用程序不可见（比如播放音乐或接听电话）。
+\n“FLAG_NO_CLEAR”标志
+\n在flags属性中增加此标志，表示通知不允许被“清除通知”按钮清除。这在期望通知保持运行时特别有用。
+\nnumber属性
+\n表示通知所代表的事件数量。此数字显示在状态栏图标上。要利用此属性，必须在第一次创建通知时设为1。（如果只是在更新通知时才把此值从0改成任意大于0的数，则数字不会显示出来。）
+\niconLevel属性
+\n表示通知图标当前的LevelListDrawable等级。通过改变这个值，可以在状态栏中显示图标的动画，这个值与LevelListDrawable中drawable的定义相关。详情请参阅LevelListDrawable。
+\n程序能自定义更多特性，详情请参阅Notification。
+" />
+</LinearLayout>

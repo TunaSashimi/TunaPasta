@@ -1,0 +1,52 @@
+[{
+        "name":"便帽",
+        "code":"92332-A",
+        "oldPrice":null,
+        "price":"RMB 129",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"ec4ea0",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/27893F1D-9D61-47B3-8E48-EADBC8F7B053.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/27893F1D-9D61-47B3-8E48-EADBC8F7B053.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"92332",
+        "numericPrice":129,
+        "lookletArticleMetaData":"{\"id\":27021,\"pose\":1,\"category\":1,\"categoryType\":2,\"colors\":[\"#bab7a8\",\"#f06ca3\"],\"variants\":[{\"id\":35574,\"view\":{\"front\":{\"id\":91091,\"image\":\"2011/09/09/a11ed4be-6881-4018-ac79-1f637ea7be0e_27021_35574_f.png\",\"crop\":{\"x\":216,\"y\":20,\"width\":55,\"height\":67},\"masks\":{\"head\":[[{\"x\":0,\"y\":0},{\"x\":490,\"y\":0},{\"x\":490,\"y\":600},{\"x\":0,\"y\":600}]],\"behind\":[[{\"x\":210,\"y\":87.4},{\"x\":225,\"y\":67},{\"x\":258.4,\"y\":65},{\"x\":291.4,\"y\":101},{\"x\":293.7,\"y\":165},{\"x\":196.4,\"y\":169.4},{\"x\":193,\"y\":88.4}]],\"eraseHead\":[[{\"x\":170,\"y\":72},{\"x\":220,\"y\":72},{\"x\":230,\"y\":44},{\"x\":252,\"y\":42},{\"x\":265,\"y\":64},{\"x\":266,\"y\":73},{\"x\":337,\"y\":77},{\"x\":341,\"y\":9},{\"x\":237,\"y\":3},{\"x\":131,\"y\":7}]]}},\"back\":{\"id\":91090,\"image\":\"2011/09/09/a11ed4be-6881-4018-ac79-1f637ea7be0e_27021_35574_b.png\",\"crop\":{\"x\":223,\"y\":5,\"width\":72,\"height\":81},\"masks\":{\"armsOverlap\":[],\"behind\":[[{\"x\":261,\"y\":85},{\"x\":261,\"y\":83},{\"x\":263,\"y\":84},{\"x\":262,\"y\":86}]],\"arms\":[[{\"x\":490,\"y\":0},{\"x\":245,\"y\":0},{\"x\":245,\"y\":107},{\"x\":287,\"y\":179.5},{\"x\":490,\"y\":179.5}]],\"eraseBody\":[[{\"x\":182,\"y\":38},{\"x\":225,\"y\":59},{\"x\":257,\"y\":32},{\"x\":226,\"y\":3},{\"x\":178,\"y\":37}]],\"head\":[[{\"x\":0,\"y\":0},{\"x\":490,\"y\":0},{\"x\":490,\"y\":600},{\"x\":0,\"y\":600}]],\"eraseHead\":[[{\"x\":184,\"y\":23},{\"x\":227,\"y\":58},{\"x\":265,\"y\":32},{\"x\":272,\"y\":78},{\"x\":392,\"y\":155},{\"x\":468,\"y\":150},{\"x\":459,\"y\":4},{\"x\":181,\"y\":1}]]}}}}]}",
+        "swatchName":"粉红"
+    },
+    {
+        "name":"便帽",
+        "code":"92332-B",
+        "oldPrice":null,
+        "price":"RMB 129",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"d6ba9a",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/7FAA08F8-821F-41BC-8CD5-BA09C4430527.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/7FAA08F8-821F-41BC-8CD5-BA09C4430527.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"92332",
+        "numericPrice":129,
+        "lookletArticleMetaData":"{\"id\":21941,\"pose\":1,\"category\":1,\"categoryType\":2,\"colors\":[\"#aba194\",\"#edebe7\"],\"variants\":[{\"id\":29966,\"view\":{\"front\":{\"id\":78183,\"image\":\"2011/07/05/449f5f7e-fca7-4256-aeaa-be77525beaed_21941_29966_f.png\",\"crop\":{\"x\":216,\"y\":19,\"width\":53,\"height\":72},\"masks\":{\"head\":[[{\"x\":0,\"y\":0},{\"x\":490,\"y\":0},{\"x\":490,\"y\":600},{\"x\":0,\"y\":600}]],\"eraseHead\":[[{\"x\":182.7,\"y\":88},{\"x\":218,\"y\":81},{\"x\":219,\"y\":59},{\"x\":230.7,\"y\":42},{\"x\":251.7,\"y\":40.4},{\"x\":264.4,\"y\":53.4},{\"x\":266.4,\"y\":80},{\"x\":307.7,\"y\":98.7},{\"x\":300.4,\"y\":3},{\"x\":164.4,\"y\":3.7}]],\"behind\":[[{\"x\":227.7,\"y\":64.4},{\"x\":207.7,\"y\":87},{\"x\":206.4,\"y\":134.7},{\"x\":292.4,\"y\":137.7},{\"x\":276.7,\"y\":88.7},{\"x\":256,\"y\":64}]]}},\"back\":{\"id\":78184,\"image\":\"2011/07/05/449f5f7e-fca7-4256-aeaa-be77525beaed_21941_29966_b.png\",\"crop\":{\"x\":224,\"y\":5,\"width\":63,\"height\":79}}}}]}",
+        "swatchName":"自然白"
+    },
+    {
+        "name":"便帽",
+        "code":"92332-C",
+        "oldPrice":null,
+        "price":"RMB 129",
+        "siblingArticles":[],
+        "swatch":{
+            "col":"b89576",
+            "fab":"//192.168.80.128/hmprod?set=source[/fabric/2011/3F963186-8EF9-4425-B394-505A982D5AB0.jpg]&call=url[file:/product/fabric]",
+            "smallfab":"//192.168.80.128/hmprod?set=source[//192.168.80.128/hmprod?set=source[/fabric/2011/3F963186-8EF9-4425-B394-505A982D5AB0.jpg]&call=url[file:/product/fabric]]&call=url[file:/product/fabricSmall]"
+        },
+        "availabilityText":"",
+        "parentProductId":"92332",
+        "numericPrice":129,
+        "lookletArticleMetaData":"{\"id\":21942,\"pose\":1,\"category\":1,\"categoryType\":2,\"colors\":[\"#3b1f13\",\"#85776a\",\"#afada1\"],\"variants\":[{\"id\":29967,\"view\":{\"front\":{\"id\":78187,\"image\":\"2011/07/05/be1eb934-4b67-45d8-920e-6b0e927fe762_21942_29967_f.png\",\"crop\":{\"x\":215,\"y\":20,\"width\":54,\"height\":72},\"masks\":{\"head\":[[{\"x\":0,\"y\":0},{\"x\":490,\"y\":0},{\"x\":490,\"y\":600},{\"x\":0,\"y\":600}]],\"eraseHead\":[[{\"x\":204.5,\"y\":79.8},{\"x\":216.8,\"y\":77.3},{\"x\":219,\"y\":59},{\"x\":229,\"y\":45},{\"x\":255.8,\"y\":43.8},{\"x\":263,\"y\":60.5},{\"x\":266.3,\"y\":80.5},{\"x\":312.8,\"y\":94.8},{\"x\":302.5,\"y\":1.8},{\"x\":198.8,\"y\":3.3}]],\"behind\":[[{\"x\":226,\"y\":63.5},{\"x\":212.3,\"y\":83.8},{\"x\":200,\"y\":106},{\"x\":196.5,\"y\":149.3},{\"x\":291.5,\"y\":150.5},{\"x\":283.8,\"y\":95.3},{\"x\":262.5,\"y\":74.3},{\"x\":257,\"y\":64.8}]]}},\"back\":{\"id\":78186,\"image\":\"2011/07/05/be1eb934-4b67-45d8-920e-6b0e927fe762_21942_29967_b.png\",\"crop\":{\"x\":225,\"y\":3,\"width\":70,\"height\":82}}}}]}",
+        "swatchName":"米色"
+    }
+]

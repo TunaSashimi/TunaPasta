@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rolllayouttest_relativelayout_background" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_last"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diallayouttest_framelayout_background" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/facedetecttest_imageview_background" >
+
+        <include layout="@layout/rotate3dlayouttestbutton" />
+    </RelativeLayout>
+
+</FrameLayout>

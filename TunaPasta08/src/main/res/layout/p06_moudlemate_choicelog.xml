@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+	Android:orientation="vertical" Android:layout_height="match_parent"
+	Android:background="#FFFFFF" Android:id="@+id/popchoicelog">
+	<ImageView Android:layout_height="161dp"
+		Android:layout_width="104dp" Android:id="@+id/dialog_im_style" />
+	<LinearLayout Android:orientation="horizontal"
+		Android:layout_width="match_parent" Android:layout_height="wrap_content">
+		<ImageView Android:layout_height="30dp"
+			Android:layout_width="30dp" />
+		<ImageView Android:layout_height="30dp"
+			Android:layout_width="30dp" />
+		<ImageView Android:layout_height="30dp"
+			Android:layout_width="30dp" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TunaPasta14</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="buttom_home">收藏</string>
+    <string name="buttom_wall">订单</string>
+    <string name="buttom_camera">首页</string>
+    <string name="buttom_message">个人中心</string>
+    <string name="buttom_me">设置</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="agenda_today">TODAY, %1$s</string>
+    <string name="agenda_yesterday">YESTERDAY, %1$s</string>
+    <string name="agenda_tomorrow">TOMORROW, %1$s</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today_at_time_fmt">Today at %s</string>
+    <string name="tomorrow_at_time_fmt">Tomorrow at %s</string>
+    <string name="date_time_fmt" formatted="false">%s, %s</string>
+    <string name="no_title_label">(No title)</string>
+    <string name="event_create">"New event"</string>
+    <string name="day_view_new_event_hint">+ New event</string>
+    <string name="new_event_dialog_label">"New event"</string>
+    <string name="new_event_dialog_option">"New event"</string>
+    <string name="template_announce_item_index">Event</string>
+
+    <string name="static_layout_text">她一身紫衣，身段曼妙，面容姣好。眉心生有一只晶莹的白玉小角，令她多了一种异样的美丽。
+        这是月犀族的女修，很明显修出了一道仙气。实力强大，而她所说的绿陀师兄。就那个在天神书院声如神雷，震的所有人都气血翻腾的绿发人，平日被混沌笼罩，总是在打坐修行。
+        “凭那人也配用来与绿陀师兄对比，终究是下界的修士而已，他们不会明白这真正的长生血脉多么的可怕！”有人不屑的撇嘴。
+        “这些人懂什么，所谓三千州道州有仙血后裔吗？根本没有一个，永远不会懂真正的仙道世家多么的恐怖！”
+    </string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="documentation">Documentation</string>
+    <string name="rotation_only">Rotation only</string>
+    <string name="path_morph_only">Path morph only</string>
+
+    <string name="love_it">Love it</string>
+
+    <string name="path_circle">
+        M 50,50
+        m -48,0
+        a 48,48 0 1,0 96,0
+        a 48,48 0 1,0 -96,0
+    </string>
+    <string name="path_face_left_eye">
+        M 35,40
+        m -7,0
+        a 7,7 0 1,0 14,0
+        a 7,7 0 1,0 -14,0
+    </string>
+    <string name="path_face_right_eye">
+        M 65,40
+        m -7,0
+        a 7,7 0 1,0 14,0
+        a 7,7 0 1,0 -14,0
+    </string>
+    <string name="path_face_mouth_sad">
+        M 30,75
+        Q 50,55 70,75
+    </string>
+    <string name="path_face_mouth_happy">
+        M 30,65
+        Q 50,85 70,65
+    </string>
+    <string name="heart">
+        M25.119,2.564c12.434,0.023,18.68,5.892,24.88,17.612  c6.2-11.721,12.446-17.589,24.877-17.612c13.81-0.025,25.035,10.575,25.061,23.66c0.033,23.708-24.952,47.46-49.938,71.212  C25.016,73.685,0.03,49.932,0.064,26.224C0.085,13.14,11.309,2.539,25.119,2.564z
+    </string>
+
+</resources>

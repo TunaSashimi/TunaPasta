@@ -1,0 +1,5 @@
+include ':TunaPasta0A', ':TunaPasta0B'
+include ':TunaPasta01', ':TunaPasta02', ':TunaPasta03', ':TunaPasta04', ':TunaPasta05'
+include ':TunaPasta06', ':TunaPasta07', ':TunaPasta08', ':TunaPasta09', ':TunaPasta10'
+include ':TunaPasta11', ':TunaPasta12', ':TunaPasta13', ':TunaPasta14', ':TunaPasta15'
+include ':TunaPasta16', ':TunaPasta17', ':TunaPasta18', ':TunaPasta19', ':TunaPasta20'

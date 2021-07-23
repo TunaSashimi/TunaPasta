@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <!-- 主页面 -->
+    <style name="main_right_sytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/main_menu</item>
+        <item name="android:textColor">@drawable/toolbar_txt_states</item>
+    </style>
+
+    <dimen name="main_menu">16sp</dimen>
+
+</resources>

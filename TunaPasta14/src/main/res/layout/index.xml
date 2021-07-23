@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#545454"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="15.0dp"
+                    android:src="@drawable/dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="15.0dp"
+                    android:src="@drawable/dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="15.0dp"
+                    android:src="@drawable/dot" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="15.0dp"
+                    android:src="@drawable/dot" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical" >
+
+                <com.tunaPasta14.util.HomeButton
+                    android:id="@+id/hotel"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    ptr:backcolor="0"
+                    ptr:big="true"
+                    ptr:home="0"
+                    ptr:text="酒店"
+                    ptr:textSize="24sp" />
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    ptr:backcolor="1"
+                    ptr:big="true"
+                    ptr:home="1"
+                    ptr:text="团购"
+                    ptr:textSize="24sp" />
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    ptr:backcolor="2"
+                    ptr:big="false"
+                    ptr:home="2"
+                    ptr:text="火车票"
+                    ptr:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical" >
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    ptr:backcolor="3"
+                    ptr:big="false"
+                    ptr:home="3"
+                    ptr:text="团购"
+                    ptr:textSize="24sp" />
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    ptr:backcolor="4"
+                    ptr:big="true"
+                    ptr:home="4"
+                    ptr:text="机票"
+                    ptr:textSize="24sp" />
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    ptr:backcolor="5"
+                    ptr:big="false"
+                    ptr:home="5"
+                    ptr:text="送机"
+                    ptr:textSize="24sp" />
+
+                <com.tunaPasta14.util.HomeButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    ptr:backcolor="6"
+                    ptr:big="false"
+                    ptr:home="6"
+                    ptr:text="景点门户"
+                    ptr:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

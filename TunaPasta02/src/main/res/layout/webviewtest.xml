@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/webview_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://www.baidu.com/" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/webview_btn01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="连接网址" />
+
+        <Button
+            android:id="@+id/webview_btn02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="连接assets" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/webview_btn03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="scheme跳转" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

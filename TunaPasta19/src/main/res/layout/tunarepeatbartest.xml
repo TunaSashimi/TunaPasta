@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tunarepeatbartest_relativelayout_background" >
+
+        <CheckBox
+            android:id="@+id/checkReason01"
+            android:layout_width="@dimen/checkbox_width"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tunarepeatbartest_checkbox_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="服务态度不好"
+            android:textColor="#666666"
+            android:textSize="@dimen/checkbox_textSize" />
+
+        <CheckBox
+            android:layout_width="@dimen/checkbox_width"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/checkReason01"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tunarepeatbartest_checkbox_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="司机不熟悉路况"
+            android:textColor="#666666"
+            android:textSize="@dimen/checkbox_textSize" />
+
+        <CheckBox
+            android:id="@+id/checkReason03"
+            android:layout_width="@dimen/checkbox_width"
+            android:layout_height="36dp"
+            android:layout_below="@id/checkReason01"
+            android:layout_margin="20dp"
+            android:background="@drawable/tunarepeatbartest_checkbox_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="司机迟到"
+            android:textColor="#666666"
+            android:textSize="@dimen/checkbox_textSize" />
+
+        <CheckBox
+            android:layout_width="@dimen/checkbox_width"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/checkReason03"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tunarepeatbartest_checkbox_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="车型车牌不符"
+            android:textColor="#666666"
+            android:textSize="@dimen/checkbox_textSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/checkReason03"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tunarepeatbartest_edittext_background"
+            android:gravity="top|left"
+            android:hint="请输入原因...(非必填)"
+            android:padding="20dp"
+            android:textColor="#666666"
+            android:textSize="@dimen/checkbox_textSize" />
+    </RelativeLayout>
+
+    <com.tunaPasta19.tuna.TunaLine
+        android:id="@+id/tunaLine"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-3px"
+        tuna:tunaLineArrowColor="#ffffff"
+        tuna:tunaLineArrowHeight="16dp"
+        tuna:tunaLineArrowStrokeColor="#b2b2b2"
+        tuna:tunaLineArrowStrokeWidth="2px"
+        tuna:tunaLineArrowWidth="22dp"
+        tuna:tunaLineBackgroundNormal="#f0eff5"
+        tuna:tunaLineTowardType="bottom" />
+
+    <com.tunaPasta19.tuna.TunaRepeat
+        android:id="@+id/tunaRepeatStar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/tunaLine"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        tuna:tunaRepeatBitmapSrcNormal="@drawable/tunarepeatbartest_relativelayout_titlesetting_1"
+        tuna:tunaRepeatBitmapSrcSelect="@drawable/tunarepeatbartest_relativelayout_titlesetting_2"
+        tuna:tunaRepeatSelectType="connect"
+        tuna:tunaRepeatShapeType="custom"
+        tuna:tunaRepeatTotal="5"
+        tuna:tunaTouchType="always" />
+
+    <com.tunaPasta19.tuna.TunaRepeat
+        android:id="@+id/tunaRepeatCar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tunaRepeatStar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        tuna:tunaRepeatBitmapSrcNormal="@drawable/icn_car_type_1"
+        tuna:tunaRepeatBitmapSrcSelect="@drawable/icn_car_type_2"
+        tuna:tunaRepeatItemFractionBottom="50%"
+        tuna:tunaRepeatItemTextColorNormal="#b2b2b2"
+        tuna:tunaRepeatItemTextColorSelect="#000000"
+        tuna:tunaRepeatItemTextFractionBottom="86%"
+        tuna:tunaRepeatItemTextFractionTop="72%"
+        tuna:tunaRepeatItemTextSize="14dp"
+        tuna:tunaRepeatSelectType="current"
+        tuna:tunaRepeatShapeType="custom" />
+
+    <com.tunaPasta19.tuna.TunaRepeat
+        android:id="@+id/tunaRepeatTips"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/tunaRepeatCar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        tuna:tunaRepeatItemBackgroundNormal="#ffffff"
+        tuna:tunaRepeatItemBackgroundSelect="#999999"
+        tuna:tunaRepeatShapeType="circle"
+        tuna:tunaRepeatSelectType="current"
+        tuna:tunaRepeatTotal="5" />
+
+    <Spinner
+        android:id="@+id/spinnerEvaluation01"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tunaRepeatTips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/spinnerEvaluation01"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/spinnerEvaluation01"
+        android:text="Choice"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/buttonEvaluation01"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/spinnerEvaluation01"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/spinnerEvaluation01"
+        android:text="Unable"
+        android:textSize="@dimen/checkbox_textSize" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+[{
+        "name":"半身裙",
+        "code":"75015-C",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "availabilityText":"",
+        "swatch":{
+            "col":"b89576",
+            "fab":"//lp.hm.com/hmprod?set=source[/fabric/2011 /C166EFD5-87EE-4F26-B8CB-70A572632043.jpg]&call=url[file:/product /fabric]",
+            "smallfab":"//lp.hm.com/hmprod?set=source[//lp.hm.com /hmprod?set=source[/fabric/2011/C166EFD5-87EE-4F26-B8CB- 70A572632043.jpg]&call=url[file:/product/fabric]]&call=url[file: /product /fabricSmall]"
+        },
+        "parentProductId":"75015",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":" {\"id\":20591,\"pose\":1,\"category\":37,\"categoryType\":13,\"colors\": [\"#725b3c\"],\"variants\":[{\"id\":27801,\"view\":{\"front\":{\"id \":72641,\"image\":\"2011/07/18/38a23a36-381f-4327-9edc-de33b6998902_20591_27801_f.png\",\"crop\":{\"x\":182,\"y\":210,\"width \":103,\"height\":122}},\"back\":{\"id\":72642,\"image\":\"2011/07/18 /38a23a36-381f-4327-9edc-de33b6998902_20591_27801_b.png\",\"crop\":{\"x \":189,\"y\":210,\"width\":111,\"height\":127}}}}]}",
+        "swatchName":"驼色"
+    },
+  
+    {
+        "name":"半身裙",
+        "code":"75015-Z",
+        "oldPrice":null,
+        "price":"RMB 49.90",
+        "siblingArticles":[],
+        "availabilityText":"",
+        "swatch":{
+            "col":"c41503",
+            "fab":"//lp.hm.com/hmprod?set=source[/fabric/2011 /78695FDC-F676-4E5E-9EA4-C065CF7F6A94.jpg]&call=url[file:/product /fabric]",
+            "smallfab":"//lp.hm.com/hmprod?set=source[//lp.hm.com /hmprod?set=source[/fabric/2011/78695FDC-F676-4E5E-9EA4- C065CF7F6A94.jpg]&call=url[file:/product/fabric]]&call=url[file: /product /fabricSmall]"
+        },
+        "parentProductId":"75015",
+        "numericPrice":49.9,
+        "lookletArticleMetaData":" {\"id\":20593,\"pose\":1,\"category\":37,\"categoryType\":13,\"colors\": [\"#a70906\"],\"variants\":[{\"id\":27803,\"view\":{\"front\":{\"id \":72645,\"image\":\"2011/05/23/2557a284-8b2f-44d5-b1f9-cf029a2b8e46_20593_27803_f.png\",\"crop\":{\"x\":182,\"y\":207,\"width \":103,\"height\":123}},\"back\":{\"id\":72646,\"image\":\"2011/05/23 /2557a284-8b2f-44d5-b1f9-cf029a2b8e46_20593_27803_b.png\",\"crop\":{\"x \":190,\"y\":207,\"width\":110,\"height\":125}}}}]}",
+        "swatchName":"红色"
+    }
+]

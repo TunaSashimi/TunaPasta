@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/title"
+            android:textSize="@dimen/textsize" />
+
+        <ImageButton
+            android:id="@+id/lookfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/lookfor"
+            android:src="@drawable/optimalpathtest_imagebutton_search" />
+
+        <ImageButton
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/lookfor"
+            android:src="@drawable/optimalpathtest_imagebutton_refresh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_map_content"
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/optimalpathtest_imageview_roadmap" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showpath"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/line_color"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/showpic1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="270px"
+        android:layout_marginTop="240px"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/showpic2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="950px"
+        android:layout_marginTop="350px"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/showpic3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="650px"
+        android:layout_marginTop="320px"
+        android:background="@android:color/transparent" />
+
+</FrameLayout>

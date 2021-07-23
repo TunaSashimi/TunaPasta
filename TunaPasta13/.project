@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<hotelInfo>Tuna13</hotelInfo>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<hotelInfo>com.android.ide.eclipse.adt.ResourceManagerBuilder</hotelInfo>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<hotelInfo>com.android.ide.eclipse.adt.PreCompilerBuilder</hotelInfo>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<hotelInfo>org.eclipse.jdt.core.javabuilder</hotelInfo>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<hotelInfo>com.android.ide.eclipse.adt.ApkBuilder</hotelInfo>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

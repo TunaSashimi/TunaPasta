@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="观察R.drawable.wheel_bg和R.drawable.wheel_val(上下框线)" />
+    <LinearLayout
+        android:id="@+id/linearWheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <com.tunaPasta09.widget.WheelView
+            android:id="@+id/dateWheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="24" />
+        <com.tunaPasta09.widget.WheelView
+            android:id="@+id/hoursWheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="38" />
+        <com.tunaPasta09.widget.WheelView
+            android:id="@+id/minsWheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="38" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/linearWheel"
+        android:background="#ffffff">
+        <Button
+            style="@style/buttonStyleSelectSmall04Direct"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:textSize="12dp" />
+        <Button
+            style="@style/buttonStyleSelectSmall04Direct"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="确定"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</RelativeLayout>

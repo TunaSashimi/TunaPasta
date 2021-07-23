@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="制作unicode的效果如下,代码见activity,其实在文件里面不论是 &apos;波士登&apos; 还是 &apos;\\u6ce2\\u58eb\\u767b&apos; 均可被识别"
+        android:textColor="#00FF00" />
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示值可以从文件读取,和可以从系统自带的数组中获取\n如果从文件里面读取,就算inputstream读取的时候用的是utf-8,说明你的那个 txt是utf-8的,和处理的文件无关\n\\u 就是代表unicode \n尝试输入 &apos;质&apos;  字获取提示"
+        android:textColor="#0000FF" />
+
+    <!-- completionThreshold属性设置了一个阀值，规定用户打了多少字符之后才出现自动提示 -->
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="showDropdown" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompletetextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:gravity="center"
+        android:hint="自行输入"
+        android:padding="10dp"
+        android:textSize="16dp" />
+
+</LinearLayout>

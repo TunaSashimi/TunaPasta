@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TunaPasta07</string>
+
+    <!-- 主页面 -->
+    <string name="title_activity_navigation">智驾导航</string>
+    <string name="title_activity_help_main">智驾救援</string>
+    <string name="title_activity_diagnosis_index">智驾诊断</string>
+    <string name="listen_main_title">智驾听</string>
+    <string name="title_activity_main">智驾酒店</string>
+    <string name="title_activity_golf_index">智驾高尔夫</string>
+    <string name="title_activity_shopping_main">智驾商城</string>
+    <string name="title_activity_tj_main">智驾推荐</string>
+    <string name="title_activity_qidai_main">智驾助理</string>
+
+    <!-- 主页面  end -->
+
+    <!-- TabNewsActivity -->
+    <string name="title_news_category_tops">头条</string>
+    <string name="title_news_category_sport">体育</string>
+    <string name="title_news_category_play">娱乐</string>
+    <string name="title_news_category_finance">财经</string>
+    <string name="title_news_category_science">科技</string>
+    <string name="title_news_category_more">更多</string>
+    <string name="news_top_left_text">新闻</string>
+    <string name="topic_top_left_text">话题</string>
+    <string name="picture_top_left_text">图片</string>
+    <string name="follow_top_left_text">跟帖</string>
+    <string name="vote_top_left_text">投票</string>
+    <string name="hint_unlock">向右滑动结束提醒</string>
+    <string name="first_page_title">[1] OpenAphid 0.2 is Available</string>
+    <string name="first_page_description">AphidMobile is pleased to announce the availability of OpenAphid 0.2.
+		\n\n
+		Highlights of the 0.2 release include:
+		\n\n
+		- New binding system for exposing Objective-C methods to JavaScript
+		\n\n
+		- Hide constructor when enumerating attributs of an OpenAphid JavaScript object
+		\n\n
+		- Fix incorrect value of node.onframeupdate when it’s not set; should be null instead of an invalid empty value
+		\n\n
+		- Add a new target of ObjCBindingTest in Demos
+		\n\n
+		- Support Google Analytics iOS SDK in Boilerplate-iOS</string>
+    <string name="second_page_title">[2] JavaScript and Cocos2D-iPhone: A Sneak Peek of OpenAphid</string>
+    <string name="second_page_description">		OpenAphid is our secret OSS project to combine the power of JavaScript and Cocos2d-iPhone for native game
+		development on mobile devices. It allows developers to write fast and native quality games in JavaScript language.
+		\n\n
+		A set of Cocos2D-style JavaScript APIs are provided for composing scenes, applying actions on nodes, handling
+		events, etc. The core runtime of OpenAphid is wrote in C++, which adopts the architecture of Cocos2d-iPhone. The
+		JavaScript binding module bridges the C++ runtime and the JavaScript engine, which allows games to use native
+		features in pure JavaScript.
+		\n\n
+		A set of Cocos2D-style JavaScript APIs are provided for composing scenes, applying actions on nodes, handling
+		events, etc. The core runtime of OpenAphid is wrote in C++, which adopts the architecture of Cocos2d-iPhone. The
+		JavaScript binding module bridges the C++ runtime and the JavaScript engine, which allows games to use native
+		features in pure JavaScript.</string>
+    <string name="item_about">about</string>
+
+</resources>

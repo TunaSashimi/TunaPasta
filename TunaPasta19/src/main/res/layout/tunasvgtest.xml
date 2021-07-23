@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg01"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_margin="@dimen/tuna_button_margin"
+            tuna:tunaSVGSrc="@drawable/tunasashimi" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg02"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg01"
+            android:layout_toRightOf="@id/tunaSvg01"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg03"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg02"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg02"
+            tuna:tunaPorterDuffXfermode="src_in"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="circle" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg04"
+            android:layout_width="@dimen/tuna_spinner_width"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg03"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg03"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="circle" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg05"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_below="@id/tunaSvg01"
+            android:layout_alignLeft="@id/tunaSvg01"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="star" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg06"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg05"
+            android:layout_marginLeft="@dimen/tuna_button_marginLeft"
+            android:layout_toRightOf="@id/tunaSvg05"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="star" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg07"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg06"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg06"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="heart" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg08"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg07"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg07"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="heart" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg09"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_below="@id/tunaSvg05"
+            android:layout_alignLeft="@id/tunaSvg05"
+            android:layout_marginTop="@dimen/tuna_button_margin"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="flower" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg10"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg09"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg09"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="flower" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg11"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg10"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg10"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="pentagon" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg12"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg11"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg11"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="pentagon" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg13"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_below="@id/tunaSvg09"
+            android:layout_alignLeft="@id/tunaSvg09"
+            android:layout_marginTop="@dimen/tuna_button_margin"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="sixteenedge" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg14"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg13"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg13"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="sixteenedge" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg15"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg14"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg14"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="fortyedge" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg16"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg15"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg15"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="fortyedge" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg17"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_below="@id/tunaSvg13"
+            android:layout_alignLeft="@id/tunaSvg13"
+            android:layout_marginTop="@dimen/tuna_button_margin"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="snail" />
+
+        <com.tunaPasta19.tuna.TunaSVG
+            android:id="@+id/tunaSvg18"
+            android:layout_width="@dimen/tuna_spinner_height"
+            android:layout_height="@dimen/tuna_spinner_height"
+            android:layout_alignTop="@id/tunaSvg17"
+            android:layout_marginLeft="@dimen/tuna_button_margin"
+            android:layout_toRightOf="@id/tunaSvg17"
+            tuna:tunaPorterDuffXfermode="src_out"
+            tuna:tunaSVGSrc="@drawable/tunasashimi"
+            tuna:tunaSVGType="snail" />
+
+    </RelativeLayout>
+</ScrollView>

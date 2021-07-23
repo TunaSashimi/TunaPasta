@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuna="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tuna_layout_marginTop_Adjust"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaDownloadGraphicsSrcFill="@drawable/tunahome_tunaview_tunabitmapleft"
+        tuna:tunaDownloadGraphicsSrcURLRequestHeight="340"
+        tuna:tunaDownloadGraphicsSrcURLRequestWidth="202"
+        tuna:tunaTouchType="none" />
+
+    <TextView
+        android:id="@+id/textDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/tunahome_tunaview_left"
+        android:textColor="#3a3230"
+        android:textSize="20dp" />
+
+    <com.tunaPasta19.tuna.TunaDownload
+        android:id="@+id/tunaDownloadImage"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        tuna:tunaDownloadCacheFolder="VIPOneCar"
+        tuna:tunaDownloadGraphicsSrcFill="@drawable/tunahome_imageview_left"
+        tuna:tunaDownloadGraphicsSrcURLRequestHeight="78"
+        tuna:tunaDownloadGraphicsSrcURLRequestWidth="76"
+        tuna:tunaTouchType="none" />
+
+</RelativeLayout>
