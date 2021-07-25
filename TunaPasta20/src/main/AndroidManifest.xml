@@ -37,7 +37,7 @@
         <activity android:name="com.tunaPasta20.activity.ChoiceMultipleActivity" />
         <activity android:name="com.tunaPasta20.activity.ChoiceSingleActivity" />
         <activity android:name="com.tunaPasta20.activity.GridViewActivity" />
-        <activity android:name="com.tunaPasta20.activity.LoadingActivity" />
+        <activity android:name="com.tunaPasta20.activity.TLoadingActivity" />
         <activity android:name="com.tunaPasta20.activity.TViewSrcActivity" />
         <activity android:name="com.tunaPasta20.activity.TwoWayBindingActivity" />
         <activity android:name="com.tunaPasta20.activity.TWrapActivity" />

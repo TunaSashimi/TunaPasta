@@ -14,7 +14,7 @@
 
         <variable
             name="model"
-            type="com.tunaPasta20.model.LoadingModel" />
+            type="com.tunaPasta20.model.TLoadingModel" />
     </data>
 
     <RelativeLayout

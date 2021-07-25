@@ -2,8 +2,8 @@ package com.tunaPasta20.model;
 
 import android.content.Intent;
 
-import com.tunaPasta20.activity.LoadingActivity;
-import com.tunaPasta20.databinding.ActivityLoadingBinding;
+import com.tunaPasta20.activity.TLoadingActivity;
+import com.tunaPasta20.databinding.ActivityTLoadingBinding;
 
 /**
  * @author Tunasashimi
@@ -11,12 +11,12 @@ import com.tunaPasta20.databinding.ActivityLoadingBinding;
  * @Copyright 2020 TunaSashimi. All rights reserved.
  * @Description
  */
-public class LoadingModel extends BindingModel<ActivityLoadingBinding> {
-    private LoadingActivity activity;
-    public LoadingModel(ActivityLoadingBinding binding, Intent intent) {
+public class TLoadingModel extends BindingModel<ActivityTLoadingBinding> {
+    private TLoadingActivity activity;
+    public TLoadingModel(ActivityTLoadingBinding binding, Intent intent) {
         super(binding);
         this.binding = binding;
-        this.activity = (LoadingActivity) binding.getRoot().getContext();
+        this.activity = (TLoadingActivity) binding.getRoot().getContext();
         initData(intent);
     }
     protected void initData(Intent intent) {

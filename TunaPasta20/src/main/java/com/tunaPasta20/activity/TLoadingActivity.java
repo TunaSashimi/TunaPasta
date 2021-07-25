@@ -11,9 +11,9 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.tunaPasta20.R;
-import com.tunaPasta20.databinding.ActivityLoadingBinding;
+import com.tunaPasta20.databinding.ActivityTLoadingBinding;
 import com.tunaPasta20.model.BindingModel;
-import com.tunaPasta20.model.LoadingModel;
+import com.tunaPasta20.model.TLoadingModel;
 import com.tunasushi.view.TLoad;
 
 /**
@@ -22,15 +22,15 @@ import com.tunasushi.view.TLoad;
  * @Copyright 2020 TunaSashimi. All rights reserved.
  * @Description
  */
-public class LoadingActivity extends BindingActivity<ActivityLoadingBinding> {
+public class TLoadingActivity extends BindingActivity<ActivityTLoadingBinding> {
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_loading;
+        return R.layout.activity_t_loading;
     }
 
     @Override
     protected BindingModel getModel() {
-        return new LoadingModel(binding, getIntent());
+        return new TLoadingModel(binding, getIntent());
     }
 
     @Override

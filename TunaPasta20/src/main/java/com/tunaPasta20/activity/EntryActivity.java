@@ -15,7 +15,7 @@ import java.util.List;
 public class EntryActivity extends BindingActivity<ActivityEntryBinding> {
     private Class<?>[] cla = {
             BindingDataActivity.class, ChoiceMultipleActivity.class, ChoiceSingleActivity.class, GridViewActivity.class,
-            LoadingActivity.class, TViewSrcActivity.class, TwoWayBindingActivity.class, TWrapActivity.class,
+            TLoadingActivity.class, TViewSrcActivity.class, TwoWayBindingActivity.class, TWrapActivity.class,
     };
 
     @Override
