@@ -9,7 +9,7 @@ import android.provider.Settings;
 import android.view.View;
 
 import com.tunaPasta18.R;
-import com.tunaPasta18.util.UpdateTask;
+import com.tunaPasta18.util.UpdateUtil;
 
 /**
  * Created by Zhongyi on 1/19/16.
@@ -29,7 +29,7 @@ public class SettingsActivity extends PreferenceActivity {
         Preference updatePref = findPreference("pref_etc_check_update");
         updatePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
-                new UpdateTask(getApplicationContext(),true).update();
+                new UpdateUtil(getApplicationContext(),true).update();
                 return false;
             }
         });

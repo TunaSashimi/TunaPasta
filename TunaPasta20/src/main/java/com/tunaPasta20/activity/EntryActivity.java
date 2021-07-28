@@ -7,15 +7,14 @@ import android.widget.ArrayAdapter;
 
 import com.tunaPasta20.R;
 import com.tunaPasta20.databinding.ActivityEntryBinding;
-import com.tunaPasta20.model.BindingModel;
+import com.tunasteak.activity.TBindingActivity;
+import com.tunasteak.model.TBindingModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class EntryActivity extends BindingActivity<ActivityEntryBinding> {
+public class EntryActivity extends TBindingActivity<ActivityEntryBinding> {
     private Class<?>[] cla = {
-            BindingDataActivity.class, ChoiceMultipleActivity.class, ChoiceSingleActivity.class, GridViewActivity.class,
-            TLoadingActivity.class, TViewSrcActivity.class, TwoWayBindingActivity.class, TWrapActivity.class,
     };
 
     @Override
@@ -24,7 +23,12 @@ public class EntryActivity extends BindingActivity<ActivityEntryBinding> {
     }
 
     @Override
-    protected BindingModel getModel() {
+    protected TBindingModel getModel() {
+        return null;
+    }
+
+    @Override
+    protected Object getData() {
         return null;
     }
 

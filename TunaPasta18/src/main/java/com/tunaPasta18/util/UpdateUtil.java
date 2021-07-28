@@ -18,16 +18,12 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-/**
- * Created by Zhongyi on 1/20/16.
- * Util for app update task.
- */
-public class UpdateTask extends AsyncTask<String, String, String> {
+public class UpdateUtil extends AsyncTask<String, String, String> {
     private Context context;
     private boolean isUpdateOnRelease;
     public static final String updateUrl = "https://api.github.com/repos/geeeeeeeeek/WeChatLuckyMoney/releases/latest";
 
-    public UpdateTask(Context context, boolean needUpdate) {
+    public UpdateUtil(Context context, boolean needUpdate) {
         this.context = context;
         this.isUpdateOnRelease = needUpdate;
         if (this.isUpdateOnRelease) Toast.makeText(context, "正在检查新版本……", Toast.LENGTH_SHORT).show();

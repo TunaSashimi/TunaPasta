@@ -1,4 +1,4 @@
-package com.tunaPasta18.util;
+package com.tunaPasta18.web;
 
 import com.tunaPasta18.bean.ResponseBean;
 import okhttp3.RequestBody;

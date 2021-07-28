@@ -41,7 +41,6 @@ public class InnerClassTest {
                 System.out.println(n);
             }
         }
-
     }
 
     public static void main(String[] args) {

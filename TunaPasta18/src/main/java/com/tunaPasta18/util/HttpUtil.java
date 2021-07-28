@@ -3,6 +3,7 @@ package com.tunaPasta18.util;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.tunaPasta18.BuildConfig;
+import com.tunaPasta18.web.WebService;
 
 import java.util.Arrays;
 import java.util.Map;

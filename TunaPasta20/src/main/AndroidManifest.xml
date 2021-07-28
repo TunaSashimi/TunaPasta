@@ -32,14 +32,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.tunaPasta20.activity.BindingDataActivity" />
-        <activity android:name="com.tunaPasta20.activity.ChoiceMultipleActivity" />
-        <activity android:name="com.tunaPasta20.activity.ChoiceSingleActivity" />
-        <activity android:name="com.tunaPasta20.activity.GridViewActivity" />
-        <activity android:name="com.tunaPasta20.activity.TLoadingActivity" />
-        <activity android:name="com.tunaPasta20.activity.TViewSrcActivity" />
-        <activity android:name="com.tunaPasta20.activity.TwoWayBindingActivity" />
-        <activity android:name="com.tunaPasta20.activity.TWrapActivity" />
     </application>
 </manifest>

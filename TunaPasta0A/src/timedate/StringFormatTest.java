@@ -3,8 +3,6 @@ package timedate;
 import java.util.Date;
 import java.util.Locale;
 
-import sun.applet.Main;
-
 /**
  * @author Tunasashimi
  * @date 10/30/16 19:33
