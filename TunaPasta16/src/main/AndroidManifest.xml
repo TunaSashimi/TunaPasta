@@ -65,6 +65,18 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat" />
 
+        <activity
+            android:name="com.tunaPasta16.activity.LaunchModeTest"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.tunaPasta16.activity.LaunchJumpTest"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat" />
+
         <!-- CIRCLE INDICATOR -->
         <activity
             android:name="com.tunaPasta16.activity.SampleCirclesDefault"

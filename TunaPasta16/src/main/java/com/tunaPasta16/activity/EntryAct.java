@@ -17,12 +17,12 @@ public class EntryAct extends Activity {
 
     private String[] s = {"ListSamples", "CardViewTest", "SwipeRefreshLayoutTest", "FloatTouchListenerTest"
             , "TSectorTest", "SoftKeyBoardListenerTest", "TextInputLayoutTest", "VerificationCodeViewTest"
-            , "CountDownTimerTest", "RelativeLayoutCodeTest",
+            , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest",
     };
 
     private Class<?>[] c = {ListSamples.class, CardViewTest.class, SwipeRefreshLayoutTest.class, FloatTouchListenerTest.class
             , TSectorTest.class, SoftKeyBoardListenerTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class
-            , CountDownTimerTest.class, RelativeLayoutCodeTest.class,
+            , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class,
     };
 
     @Override
