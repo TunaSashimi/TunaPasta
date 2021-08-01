@@ -18,10 +18,11 @@ import android.os.Environment;
 import android.os.ParcelFileDescriptor;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.constraint.BuildConfig;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.tunaPasta17.BuildConfig;
 import com.tunaPasta17.R;
 import com.tunaPasta17.model.AudioInfo;
 import com.tunaPasta17.model.ImageInfo;

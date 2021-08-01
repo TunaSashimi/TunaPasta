@@ -16,8 +16,8 @@ android {
 }
 
 dependencies {
-    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.google.code.gson:gson:2.8.7'
     api files('libs/GifView.jar')
     api files('libs/dom4j-1.6.1.jar')
-    api group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
+    api group: 'cz.msebera.android' , name: 'httpclient', version: '4.5.8'
 }

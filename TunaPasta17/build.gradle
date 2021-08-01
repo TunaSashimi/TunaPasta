@@ -57,12 +57,12 @@ android {
 dependencies {
     //
     api 'androidx.legacy:legacy-support-v4:1.0.0'
-    api 'androidx.constraintlayout:constraintlayout:1.1.2'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    api 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
     //
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.alibaba:arouter-api:1.4.0'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.alibaba:arouter-api:1.5.2'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
 
     // most often used way, enable notification to notify block event
     api 'com.github.markzhai:blockcanary-android:1.5.0'

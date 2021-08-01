@@ -4,8 +4,9 @@ package com.tunaPasta18.application;
 import android.app.Application;
 
 import com.facebook.stetho.Stetho;
-import com.squareup.leakcanary.LeakCanary;
 import com.tunaPasta18.BuildConfig;
+
+import leakcanary.LeakCanary;
 
 /**
  * @author Tunasashimi
@@ -22,13 +23,12 @@ public class AppApplication extends Application {
             Stetho.initializeWithDefaults(this);
         }
 
-        //
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            // This process is dedicated to LeakCanary for heap analysis.
-            // You should not init your app in this process.
-            return;
-        }
-        LeakCanary.install(this);
-
+        //新API用法改变
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            // This process is dedicated to LeakCanary for heap analysis.
+//            // You should not init your app in this process.
+//            return;
+//        }
+//        LeakCanary.install(this);
     }
 }
