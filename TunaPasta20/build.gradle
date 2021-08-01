@@ -20,6 +20,6 @@ android {
 
 dependencies {
     implementation 'com.github.TunaSashimi:TunaSushi:1.0.04'
-    implementation 'com.github.TunaSashimi:TunaSteak:1.0.04'
+    implementation 'com.github.TunaSashimi:TunaSteak:1.0.03'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
 }

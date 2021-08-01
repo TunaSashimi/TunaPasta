@@ -74,7 +74,6 @@
         <activity
             android:name="com.tunaPasta16.activity.LaunchJumpTest"
             android:label="@string/app_name"
-            android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat" />
 
         <!-- CIRCLE INDICATOR -->

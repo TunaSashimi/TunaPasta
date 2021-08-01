@@ -28,11 +28,6 @@ public class EntryActivity extends TBindingActivity<ActivityEntryBinding> {
     }
 
     @Override
-    protected Object getData() {
-        return null;
-    }
-
-    @Override
     public void onInit() {
         List<String> stringList = new ArrayList();
         for (int i = 0; i < cla.length; i++) {
@@ -45,10 +40,5 @@ public class EntryActivity extends TBindingActivity<ActivityEntryBinding> {
                 startActivity(new Intent(EntryActivity.this, cla[arg2]));
             }
         });
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 }
