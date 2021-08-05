@@ -36,6 +36,8 @@ suspend fun main() {
     //
     println(2f.pow(10))
 
+    //
+    val a = A(6)
 }
 
 suspend fun getImage(imageId: String) {
@@ -46,6 +48,12 @@ suspend fun getImage(imageId: String) {
 
 fun getNetImage() {
 
+}
+
+class A {
+    companion object Factory {
+        operator fun invoke (any: Any) = any
+    }
 }
 
 object SingleTon {
