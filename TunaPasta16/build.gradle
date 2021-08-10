@@ -20,4 +20,7 @@ dependencies {
     api 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
     implementation 'com.google.android.material:material:1.4.0-alpha02'
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.0"
 }
