@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc0cb">
+
+    <TextView
+        android:id="@+id/textViewBanner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#765"
+        android:gravity="center"
+        android:text="Banner"
+        app:layout_constraintDimensionRatio="16:6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="140dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#fd3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBanner"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="马云一年缴税70多亿马云一年缴税70多亿马云一年缴税70多亿"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@id/textView01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView01" />
+
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="8分钟前"
+        android:textColor="#333"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView01"
+        app:layout_constraintLeft_toRightOf="@id/textView01" />
+
+    <TextView
+        android:id="@+id/textViewTab1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:text="Tab1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewTab2"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTab2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#a67"
+        android:gravity="center"
+        android:text="Tab2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewTab3"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/textViewTab1" />
+
+    <TextView
+        android:id="@+id/textViewTab3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="Tab3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/textViewTab2" />
+
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#612"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#fd3"
+        app:layout_constraintCircle="@+id/textView04"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="100dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

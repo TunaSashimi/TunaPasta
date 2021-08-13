@@ -1,6 +1,5 @@
 package com.tunaPasta03.activity;
 
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -322,5 +321,4 @@ public class DialogMenuTest extends Activity {
         super.onResume();
         ViewServer.get(this).setFocusedWindow(this);
     }
-
 }
