@@ -19,6 +19,7 @@ public class EntryAct extends Activity {
             , "TSectorTest", "SoftKeyBoardListenerTest", "TextInputLayoutTest", "VerificationCodeViewTest"
             , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest"
             , "LiveDataTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DividerTest"
+            , "CircularTest", "MotionLayoutTest", "MotionSceneTest"
 
     };
 
@@ -26,6 +27,7 @@ public class EntryAct extends Activity {
             , TSectorTest.class, SoftKeyBoardListenerTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class
             , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class
             , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DividerTest.class
+            , CircularTest.class, MotionLayoutTest.class, MotionSceneTest.class
     };
 
     @Override

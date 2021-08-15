@@ -44,7 +44,6 @@ public class DrawPoints extends GraphicsActivity {
         public SampleView(Context context) {
             super(context);
 
-
             displayDensity = getResources().getDisplayMetrics().density;
 
             SIZE = SIZE * displayDensity + 0.5f;

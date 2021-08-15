@@ -18,17 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.tunaPasta16.activity.CardViewTest"
-            android:label="@string/app_name" />
+        <activity android:name="com.tunaPasta16.activity.CardViewTest" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.ListSamples"
-            android:label="@string/app_name" />
+        <activity android:name="com.tunaPasta16.activity.ListSamples" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.SwipeRefreshLayoutTest"
-            android:label="@string/app_name" />
+        <activity android:name="com.tunaPasta16.activity.SwipeRefreshLayoutTest" />
 
         <activity
             android:name="com.tunaPasta16.activity.TSectorTest"
@@ -45,57 +39,35 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.TextInputLayoutTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name="com.tunaPasta16.activity.TextInputLayoutTest" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.VerificationCodeViewTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name="com.tunaPasta16.activity.VerificationCodeViewTest" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.CountDownTimerTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name="com.tunaPasta16.activity.CountDownTimerTest" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.RelativeLayoutCodeTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name="com.tunaPasta16.activity.RelativeLayoutCodeTest" />
 
         <activity
             android:name="com.tunaPasta16.activity.LaunchModeTest"
-            android:label="@string/app_name"
-            android:launchMode="singleTask"
-            android:theme="@style/Theme.AppCompat" />
+            android:launchMode="singleTask" />
+
+        <activity android:name="com.tunaPasta16.activity.LaunchJumpTest" />
+
+        <activity android:name="com.tunaPasta16.activity.LiveDataTest" />
+
+        <activity android:name="com.tunaPasta16.activity.CoordinatorLayoutTest" />
+
+        <activity android:name="com.tunaPasta16.activity.ConstraintLayoutTest" />
+
+        <activity android:name="com.tunaPasta16.activity.DividerTest" />
 
         <activity
-            android:name="com.tunaPasta16.activity.LaunchJumpTest"
-            android:label="@string/app_name"
+            android:name="com.tunaPasta16.activity.CircularTest"
             android:theme="@style/Theme.AppCompat" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.LiveDataTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
+        <activity android:name="com.tunaPasta16.activity.MotionLayoutTest" />
+        <activity android:name="com.tunaPasta16.activity.MotionSceneTest" />
 
-        <activity
-            android:name="com.tunaPasta16.activity.CoordinatorLayoutTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
-
-        <activity
-            android:name="com.tunaPasta16.activity.ConstraintLayoutTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
-
-        <activity
-            android:name="com.tunaPasta16.activity.DividerTest"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat" />
-d
         <!-- CIRCLE INDICATOR -->
         <activity
             android:name="com.tunaPasta16.activity.SampleCirclesDefault"

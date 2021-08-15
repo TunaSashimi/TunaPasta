@@ -25,21 +25,21 @@ public class Patterns extends Activity {
 
     private static Bitmap makeBitmap1() {
         Bitmap bm = Bitmap.createBitmap(40, 40, Bitmap.Config.RGB_565);
-        Canvas c = new Canvas(bm);
-        c.drawColor(Color.RED);
+        Canvas canvas = new Canvas(bm);
+        canvas.drawColor(Color.RED);
         Paint p = new Paint();
         p.setColor(Color.BLUE);
-        c.drawRect(5, 5, 35, 35, p);
+        canvas.drawRect(5, 5, 35, 35, p);
         return bm;
     }
 
     private static Bitmap makeBitmap2() {
         Bitmap bm = Bitmap.createBitmap(64, 64, Bitmap.Config.ARGB_8888);
-        Canvas c = new Canvas(bm);
-        Paint p = new Paint(Paint.ANTI_ALIAS_FLAG);
-        p.setColor(Color.GREEN);
-        p.setAlpha(0xCC);
-        c.drawCircle(32, 32, 27, p);
+        Canvas canvas = new Canvas(bm);
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setColor(Color.GREEN);
+        paint.setAlpha(0xCC);
+        canvas.drawCircle(32, 32, 27, paint);
         return bm;
     }
 

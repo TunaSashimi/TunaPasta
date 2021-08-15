@@ -46,13 +46,57 @@
         android:id="@+id/textView03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:text="8分钟前"
         android:textColor="#333"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="@id/textView01"
         app:layout_constraintLeft_toRightOf="@id/textView01" />
+
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="QQQQQQQQ"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/textView01"
+        app:layout_constraintTop_toBottomOf="@+id/textView01" />
+
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView04"
+        app:layout_constraintTop_toTopOf="@id/textView04" />
+
+    <TextView
+        android:id="@+id/textView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="QQQQQQQQ"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/textView04"
+        app:layout_constraintTop_toBottomOf="@+id/textView04" />
+
+    <TextView
+        android:id="@+id/textView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
+        android:textColor="#000000"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView06"
+        app:layout_constraintTop_toTopOf="@id/textView06" />
 
     <TextView
         android:id="@+id/textViewTab1"
@@ -92,7 +136,7 @@
         app:layout_constraintStart_toEndOf="@id/textViewTab2" />
 
     <TextView
-        android:id="@+id/textView04"
+        android:id="@+id/textView08"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="#612"
@@ -104,11 +148,12 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <TextView
-        android:id="@+id/textView05"
+        android:id="@+id/textView09"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="#fd3"
-        app:layout_constraintCircle="@+id/textView04"
+        app:layout_constraintCircle="@+id/textView08"
         app:layout_constraintCircleAngle="45"
-        app:layout_constraintCircleRadius="100dp" />
+        app:layout_constraintCircleRadius="90dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
