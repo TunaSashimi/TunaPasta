@@ -4,7 +4,7 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_motion_scene">
+    app:layoutDescription="@xml/motionlayoutonclickscene">
 
     <ImageView
         android:id="@+id/image"

@@ -39,9 +39,13 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
-        <activity android:name="com.tunaPasta16.activity.TextInputLayoutTest" />
+        <activity
+            android:name="com.tunaPasta16.activity.TextInputLayoutTest"
+            android:theme="@style/Theme.AppCompat" />
 
-        <activity android:name="com.tunaPasta16.activity.VerificationCodeViewTest" />
+        <activity
+            android:name="com.tunaPasta16.activity.VerificationCodeViewTest"
+            android:theme="@style/Theme.AppCompat" />
 
         <activity android:name="com.tunaPasta16.activity.CountDownTimerTest" />
 
@@ -49,23 +53,32 @@
 
         <activity
             android:name="com.tunaPasta16.activity.LaunchModeTest"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat" />
 
-        <activity android:name="com.tunaPasta16.activity.LaunchJumpTest" />
+        <activity
+            android:name="com.tunaPasta16.activity.LaunchJumpTest"
+            android:theme="@style/Theme.AppCompat" />
 
         <activity android:name="com.tunaPasta16.activity.LiveDataTest" />
 
-        <activity android:name="com.tunaPasta16.activity.CoordinatorLayoutTest" />
+        <activity
+            android:name="com.tunaPasta16.activity.CoordinatorLayoutTest"
+            android:theme="@style/Theme.AppCompat" />
 
         <activity android:name="com.tunaPasta16.activity.ConstraintLayoutTest" />
 
+        <activity
+            android:name="com.tunaPasta16.activity.DialogFragmentTest"
+            android:theme="@style/Theme.AppCompat" />
         <activity android:name="com.tunaPasta16.activity.DividerTest" />
 
         <activity
             android:name="com.tunaPasta16.activity.CircularTest"
             android:theme="@style/Theme.AppCompat" />
 
-        <activity android:name="com.tunaPasta16.activity.MotionLayoutTest" />
+        <activity android:name="com.tunaPasta16.activity.MotionLayoutOnClickTest" />
+        <activity android:name="com.tunaPasta16.activity.MotionLayoutOnSwipeTest" />
         <activity android:name="com.tunaPasta16.activity.MotionSceneTest" />
 
         <!-- CIRCLE INDICATOR -->

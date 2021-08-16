@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@layout/motionlayoutonclicktest02"
+        app:constraintSetStart="@layout/motionlayoutonclicktest01"
+        app:duration="1000">
+
+        <!-- toggle 在 Start 场景和 End 场景之间循环的切换  -->
+        <OnClick app:clickAction="toggle" />
+
+    </Transition>
+
+</MotionScene>

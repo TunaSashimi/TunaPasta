@@ -148,16 +148,16 @@ public class DialogMenuTest extends Activity {
         btn06.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                ProgressDialog pd = new ProgressDialog(DialogMenuTest.this);
-                pd.setTitle("环形进度条对话框");
-                pd.setIcon(R.drawable.dialog00);
-                pd.setCancelable(false);
-                pd.setMessage("这是一个环形进度条！");
-                pd.setButton("取消", new DialogInterface.OnClickListener() {
+                ProgressDialog progressDialog = new ProgressDialog(DialogMenuTest.this);
+                progressDialog.setTitle("环形进度条对话框");
+                progressDialog.setIcon(R.drawable.dialog00);
+                progressDialog.setCancelable(false);
+                progressDialog.setMessage("这是一个环形进度条！");
+                progressDialog.setButton("取消", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     }
                 });
-                pd.show();
+                progressDialog.show();
             }
         });
         btn07.setOnClickListener(new OnClickListener() {
@@ -194,8 +194,8 @@ public class DialogMenuTest extends Activity {
             public void onClick(View v) {
                 View layout = getLayoutInflater().inflate(R.layout.mydialog, null);
                 // 不用上面的实例化Builder ,而是用创建Dialog的方法~
-                final AlertDialog dialog = new AlertDialog.Builder(DialogMenuTest.this).create();
-                dialog.setTitle("自定义对话框");
+                final AlertDialog alertDialog = new AlertDialog.Builder(DialogMenuTest.this).create();
+                alertDialog.setTitle("自定义对话框");
 
                 Button bu = (Button) layout.findViewById(R.id.mydialogbt);
                 Button st = (Button) layout.findViewById(R.id.mydialogst);
@@ -218,11 +218,11 @@ public class DialogMenuTest extends Activity {
                 bu.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        dialog.dismiss();
+                        alertDialog.dismiss();
                     }
                 });
-                dialog.setView(layout);
-                dialog.show();
+                alertDialog.setView(layout);
+                alertDialog.show();
             }
         });
         btn09.setOnClickListener(new OnClickListener() {
@@ -261,9 +261,9 @@ public class DialogMenuTest extends Activity {
 
                     ;
                 }.start();
-                Dialog progressdialog = new Dialog(DialogMenuTest.this, R.style.NoTitleDialog);
-                progressdialog.setContentView(view);
-                progressdialog.show();
+                Dialog dialog = new Dialog(DialogMenuTest.this, R.style.NoTitleDialog);
+                dialog.setContentView(view);
+                dialog.show();
             }
         });
         btn11.setOnClickListener(new OnClickListener() {
@@ -272,12 +272,10 @@ public class DialogMenuTest extends Activity {
                 LayoutInflater layoutInflater = LayoutInflater.from(DialogMenuTest.this);
                 View view = layoutInflater.inflate(R.layout.ordernotice, null);
 
-//				Dialog progressdialog = new Dialog(DialogMenuTest.this,android.R.style.Theme_Light_NoTitleBar_Fullscreen);
-//				Dialog progressdialog = new Dialog(DialogMenuTest.this,R.style.Dialog_Fullscreen);
-                Dialog progressdialog = new Dialog(DialogMenuTest.this, R.style.NoTitleDialog);
+                Dialog dialog = new Dialog(DialogMenuTest.this, R.style.NoTitleDialog);
 
-                progressdialog.setContentView(view);
-                progressdialog.show();
+                dialog.setContentView(view);
+                dialog.show();
             }
         });
 

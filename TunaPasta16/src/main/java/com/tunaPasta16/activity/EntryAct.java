@@ -18,16 +18,16 @@ public class EntryAct extends Activity {
     private String[] s = {"ListSamples", "CardViewTest", "SwipeRefreshLayoutTest", "FloatTouchListenerTest"
             , "TSectorTest", "SoftKeyBoardListenerTest", "TextInputLayoutTest", "VerificationCodeViewTest"
             , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest"
-            , "LiveDataTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DividerTest"
-            , "CircularTest", "MotionLayoutTest", "MotionSceneTest"
-
-    };
+            , "LiveDataTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest"
+            , "DividerTest", "CircularTest", "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest"
+            , "MotionSceneTest"};
 
     private Class<?>[] c = {ListSamples.class, CardViewTest.class, SwipeRefreshLayoutTest.class, FloatTouchListenerTest.class
             , TSectorTest.class, SoftKeyBoardListenerTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class
             , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class
-            , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DividerTest.class
-            , CircularTest.class, MotionLayoutTest.class, MotionSceneTest.class
+            , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class
+            , DividerTest.class, CircularTest.class, MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class
+            , MotionSceneTest.class
     };
 
     @Override
