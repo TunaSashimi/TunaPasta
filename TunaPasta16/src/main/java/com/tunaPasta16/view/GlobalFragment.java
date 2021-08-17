@@ -1,6 +1,5 @@
 package com.tunaPasta16.view;
 
-import android.app.FragmentManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,13 +16,13 @@ import androidx.fragment.app.DialogFragment;
 
 import com.tunaPasta16.R;
 
-public class GlobalInteractiveFragment extends DialogFragment {
+public class GlobalFragment extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Window window = this.getDialog().getWindow();
         setWindowStyle(window);
-        View view = inflater.inflate(R.layout.dialog_global_interactive, null);
+        View view = inflater.inflate(R.layout.fragment_global, null);
         return view;
     }
 

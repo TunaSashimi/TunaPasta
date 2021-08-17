@@ -79,6 +79,7 @@
 
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnClickTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnSwipeTest" />
+        <activity android:name="com.tunaPasta16.activity.MotionLayoutConstraintSetTest" />
         <activity android:name="com.tunaPasta16.activity.MotionSceneTest" />
 
         <!-- CIRCLE INDICATOR -->

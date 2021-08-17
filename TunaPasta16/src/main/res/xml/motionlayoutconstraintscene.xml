@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/tools">
+
+    <!-- 定义 Start 场景的属性约束集 -->
+    <ConstraintSet android:id="@+id/motion_layout_constraintset_start">
+
+        <!-- 定义布局中 id 为 image 的 View 的属性约束 -->
+        <Constraint
+            android:id="@id/button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <!-- 使用自定义属性 -->
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorPrimary" />
+
+        </Constraint>
+
+    </ConstraintSet>
+
+
+    <!-- 定义 End 场景的属性约束集 -->
+    <ConstraintSet android:id="@+id/motion_layout_constraintset_end">
+
+        <!-- 定义布局中 id 为 image 的 View 的属性约束 -->
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!-- 使用自定义属性 -->
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/colorAccent" />
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/motion_layout_constraintset_end"
+        app:constraintSetStart="@id/motion_layout_constraintset_start"
+        app:duration="1000">
+
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@id/button" />
+    </Transition>
+
+</MotionScene>
