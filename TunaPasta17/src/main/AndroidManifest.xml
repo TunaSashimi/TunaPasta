@@ -92,6 +92,7 @@
         <activity android:name="com.tunaPasta17.activity.DBRecyclerTest" />
         <activity android:name="com.tunaPasta17.activity.DBSeekBarTest" />
         <activity android:name="com.tunaPasta17.activity.TLoadingViewTest" />
+        <activity android:name="com.tunaPasta17.activity.NetworkMonitorActivity" />
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

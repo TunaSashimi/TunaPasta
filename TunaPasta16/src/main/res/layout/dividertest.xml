@@ -30,14 +30,14 @@
         app:layout_constraintTop_toBottomOf="@id/img_back" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constrantlayout01"
+        android:id="@+id/constraint_money"
         android:layout_width="0dp"
         android:layout_height="105dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/report_query_service"
-        app:layout_constraintEnd_toStartOf="@id/constrantlayout02"
+        app:layout_constraintEnd_toStartOf="@id/constraint_coupons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_medical_service">
 
@@ -69,21 +69,21 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constrantlayout02"
+        android:id="@+id/constraint_coupons"
         android:layout_width="0dp"
         android:layout_height="105dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/my_appointment_service"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/constrantlayout01"
-        app:layout_constraintTop_toTopOf="@id/constrantlayout01">
+        app:layout_constraintStart_toEndOf="@id/constraint_money"
+        app:layout_constraintTop_toTopOf="@id/constraint_money">
 
         <TextView
             android:id="@+id/text_my_appointment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="报告查询"
+            android:text="我的预约"
             android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="报告一键查询"
+            android:text="查看预约信息"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/text_my_appointment"
@@ -111,15 +111,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/layout_background_global_white"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_background_ffffff"
         android:divider="@drawable/divider"
         android:orientation="vertical"
         android:showDividers="middle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constrantlayout01">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_money">
 
         <TextView
             android:id="@+id/text_my_declaration"
@@ -171,9 +171,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/layout_background_global_white"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_background_ffffff"
         android:divider="@drawable/divider"
         android:orientation="vertical"
         android:showDividers="middle"

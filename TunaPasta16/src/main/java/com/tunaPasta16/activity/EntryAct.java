@@ -19,14 +19,18 @@ public class EntryAct extends Activity {
             , "TSectorTest", "SoftKeyBoardListenerTest", "TextInputLayoutTest", "VerificationCodeViewTest"
             , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest"
             , "LiveDataTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest"
-            , "DividerTest", "CircularTest", "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest"
+            , "DividerTest", "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest"
+            , "MineTest"
+            , "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest"
             , "MotionLayoutConstraintSetTest", "MotionSceneTest"};
 
     private Class<?>[] c = {ListSamples.class, CardViewTest.class, SwipeRefreshLayoutTest.class, FloatTouchListenerTest.class
             , TSectorTest.class, SoftKeyBoardListenerTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class
             , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class
             , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class
-            , DividerTest.class, CircularTest.class, MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class
+            , DividerTest.class, CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class
+            , MineTest.class
+            , MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class
             , MotionLayoutConstraintSetTest.class, MotionSceneTest.class
     };
 

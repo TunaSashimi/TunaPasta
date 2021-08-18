@@ -1,7 +1,6 @@
 package com.tunaPasta16.activity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.Nullable;
@@ -18,11 +17,6 @@ public class DialogFragmentTest extends AppCompatActivity {
         setContentView(R.layout.dialogfragmenttest);
 
         Button button=findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new GlobalFragment().show(getSupportFragmentManager(), "GlobalFragment");
-            }
-        });
+        button.setOnClickListener(v -> new GlobalFragment().show(getSupportFragmentManager(), "GlobalFragment"));
     }
 }

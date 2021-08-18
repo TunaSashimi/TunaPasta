@@ -12,6 +12,7 @@ import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.DialogFragment;
 
 import com.tunaPasta16.R;
@@ -22,8 +23,8 @@ public class GlobalFragment extends DialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Window window = this.getDialog().getWindow();
         setWindowStyle(window);
-        View view = inflater.inflate(R.layout.fragment_global, null);
-        return view;
+        ConstraintLayout constraintLayout = (ConstraintLayout) inflater.inflate(R.layout.fragment_global, null);
+        return constraintLayout;
     }
 
     /**

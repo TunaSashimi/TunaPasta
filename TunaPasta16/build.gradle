@@ -24,4 +24,5 @@ dependencies {
     // ViewModel and LiveData
     implementation "android.arch.lifecycle:extensions:1.1.0"
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
 }

@@ -18,12 +18,12 @@ public class EntryAct extends Activity {
     private String[] s = {"GetConfigValueTest", "PermissionUtilTest", "ArouterTest", "AndroidQTest",
             "WebPTest", "VerifyTest", "SVGTest", "TCalendarTest",
             "CalendarSelectTest", "ExpandViewTest", "MVPTest", "DataBindingDemo",
-            "TLoadingViewTest"};
+            "TLoadingViewTest", "NetworkMonitorActivity"};
 
     private Class<?>[] c = {GetConfigValueTest.class, PermissionUtilTest.class, ArouterTest.class, AndroidQTest.class,
             WebPTest.class, VerifyTest.class, SVGTest.class, TCalendarTest.class,
             CalendarSelectTest.class, ExpandViewTest.class, MVPTest.class, DataBindingDemo.class,
-            TLoadingViewTest.class};
+            TLoadingViewTest.class, NetworkMonitorActivity.class};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
