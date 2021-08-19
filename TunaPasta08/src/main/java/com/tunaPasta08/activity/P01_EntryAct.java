@@ -21,7 +21,6 @@ import android.widget.ImageView;
 import com.tunaPasta08.R;
 
 public class P01_EntryAct extends Activity implements OnGestureListener, OnTouchListener {
-
     private int[] centerp = {
             R.drawable.circle0, R.drawable.circle1,
             R.drawable.circle2, R.drawable.circle3,
@@ -40,7 +39,7 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
             P06_MoudleMateTest.class, P07_TypeMyselfTest.class,
             P08_SizeChooseTest.class};
 
-    private GestureDetector myGestureDetector;
+    private GestureDetector gestureDetector;
     private FrameLayout frame;
     private ImageView ground, word, center;
     private int screenWidth, screenHeight;
@@ -64,14 +63,14 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
         screenWidth = display.getWidth();
         screenHeight = display.getHeight();
         // 获取手势类，定义可接触属性
-        myGestureDetector = new GestureDetector(this);
-        frame =  findViewById(R.id.main);
+        gestureDetector = new GestureDetector(this);
+        frame = findViewById(R.id.main);
         frame.setLongClickable(true);
         frame.setOnTouchListener(this);
 
-        ground =  findViewById(R.id.img_ground);
-        word =  findViewById(R.id.img_word);
-        center =  findViewById(R.id.img_center);
+        ground = findViewById(R.id.img_ground);
+        word = findViewById(R.id.img_word);
+        center = findViewById(R.id.img_center);
         //修改的代码~
         index = 1;
 
@@ -98,8 +97,8 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
         bitmap = Bitmap.createScaledBitmap(bitmap, screenWidth * 8 / 10, screenWidth * 8 / 10, false);
         view.setImageBitmap(bitmap);
         view.setPadding((screenWidth - screenWidth * ratio / 20) / 2,
-            (screenHeight - screenWidth * ratio / 20) / 2,
-            (screenWidth - screenWidth * ratio / 20) / 2,
+                (screenHeight - screenWidth * ratio / 20) / 2,
+                (screenWidth - screenWidth * ratio / 20) / 2,
                 (screenHeight - screenWidth * ratio / 20) / 2);
     }
 
@@ -114,7 +113,7 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
 //			System.out.println(index);		
             startActivity(new android.content.Intent(this, cc[index]));
         }
-        return myGestureDetector.onTouchEvent(e);
+        return gestureDetector.onTouchEvent(e);
     }
 
     @Override

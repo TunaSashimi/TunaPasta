@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
     android:layout_marginBottom="20dp"
-    app:layoutDescription="@xml/motion_scene"
-    app:showPaths="true">
+    app:layoutDescription="@xml/motion_scene">
 
     <ImageView
         android:id="@+id/main_image1"
@@ -48,5 +47,4 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.motion.widget.MotionLayout>

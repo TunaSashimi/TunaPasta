@@ -7,10 +7,7 @@
         motion:constraintSetStart="@id/start"
         motion:duration="4000"
         motion:motionInterpolator="easeInOut">
-        <OnClick
-            motion:clickAction="toggle"
-            motion:targetId="@id/main_image1" />
-
+        <OnClick motion:clickAction="toggle" />
         <KeyFrameSet>
             <KeyPosition
                 motion:framePosition="20"

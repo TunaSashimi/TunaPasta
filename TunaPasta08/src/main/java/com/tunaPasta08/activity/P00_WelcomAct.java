@@ -22,7 +22,6 @@ import com.tunaPasta08.R;
 
 public class P00_WelcomAct extends Activity {
     private boolean started; // 用于取消开头动画的布尔标记~
-
     // 基本适应各种大小的屏幕
 
     @Override

@@ -86,6 +86,9 @@
         <activity
             android:name="com.tunaPasta16.activity.MineTest"
             android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.tunaPasta16.activity.RotateTest"
+            android:theme="@style/Theme.AppCompat" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnClickTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnSwipeTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutConstraintSetTest" />
