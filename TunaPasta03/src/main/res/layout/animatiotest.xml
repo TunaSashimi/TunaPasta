@@ -10,10 +10,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView00"
+            android:id="@+id/image_target"
             android:layout_width="@dimen/imageview_width"
             android:layout_height="@dimen/imageview_height"
-            android:src="@drawable/icon" />
+            android:src="@drawable/tunasashimi" />
 
         <Button
             android:id="@+id/anim_btn01"
@@ -57,32 +57,6 @@
             android:layout_gravity="right"
             android:text="GroupAnimation_2" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
 
-            <ImageView
-                android:id="@+id/imageView01"
-                android:layout_width="50dp"
-                android:layout_height="36dp"
-                android:layout_alignParentRight="true"
-                android:background="#ff0000"
-                android:visibility="visible" />
-
-            <ImageView
-                android:id="@+id/imageView02"
-                android:layout_width="30dp"
-                android:layout_height="36dp"
-                android:layout_alignParentRight="true"
-                android:background="#00ff00"
-                android:visibility="gone" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/anim_btn07"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="改变" />
     </LinearLayout>
 </ScrollView>

@@ -21,7 +21,7 @@ public class EntryAct extends Activity {
             "PathAnimationActivity", "Toggles", "VPADemo", "TestSrc", "TestViewUnitTest",
             "FragmentSwitchTest", "FragmentShowHideTest", "LinkMoveListViewTest",
             "VideoViewTest", "VideoViewControllerTest", "WeightTest", "VerticalScrollTestViewTest",
-            "CustomAnimationTest", "MoveLineQuadCubicArcToDiffence", "BezierViewTest",
+            "CustomAnimationTest", "MoveLineQuadCubicArcTest", "BezierDrawViewTest",
             "WaveEffectTest",
     };
 
@@ -31,7 +31,7 @@ public class EntryAct extends Activity {
             PathAnimationActivity.class, Toggles.class, VPADemo.class, ImageSrcTest.class, TestViewUnitTest.class,
             FragmentSwitchTest.class, FragmentShowHideTest.class, LinkMoveListViewTest.class,
             VideoViewTest.class, VideoViewControllerTest.class, WeightTest.class, VerticalScrollTestViewTest.class,
-            CustomAnimationTest.class, MoveLineQuadCubicArcToDiffence.class, BezierViewTest.class,
+            CustomAnimationTest.class, MoveLineQuadCubicArcTest.class, BezierDrawViewTest.class,
             WaveEffectTest.class,
     };
 

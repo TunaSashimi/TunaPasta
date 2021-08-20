@@ -55,8 +55,8 @@
         <activity android:name="com.tunaPasta15.activity.WeightTest" />
         <activity android:name="com.tunaPasta15.activity.VerticalScrollTestViewTest" />
         <activity android:name="com.tunaPasta15.activity.CustomAnimationTest" />
-        <activity android:name="com.tunaPasta15.activity.MoveLineQuadCubicArcToDiffence" />
-        <activity android:name="com.tunaPasta15.activity.BezierViewTest" />
+        <activity android:name="com.tunaPasta15.activity.MoveLineQuadCubicArcTest" />
+        <activity android:name="com.tunaPasta15.activity.BezierDrawViewTest" />
         <activity android:name="com.tunaPasta15.activity.WaveEffectTest" />
     </application>
 

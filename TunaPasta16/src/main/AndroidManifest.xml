@@ -87,7 +87,7 @@
             android:name="com.tunaPasta16.activity.MineTest"
             android:theme="@style/Theme.AppCompat" />
         <activity
-            android:name="com.tunaPasta16.activity.RotateTest"
+            android:name="com.tunaPasta16.activity.PathInterpolatorTest"
             android:theme="@style/Theme.AppCompat" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnClickTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnSwipeTest" />
