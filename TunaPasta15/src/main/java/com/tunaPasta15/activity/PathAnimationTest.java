@@ -9,18 +9,16 @@ import android.widget.Button;
 import com.tunaPasta15.R;
 import com.tunaPasta15.widget.AnimatorProxy;
 
-public class PathAnimationActivity extends Activity {
-    Button mButton;
-    AnimatorProxy mButtonProxy;
-    PathEvaluator mEvaluator = new PathEvaluator();
-
+public class PathAnimationTest extends Activity {
+    Button button;
+    AnimatorProxy animatorProxy;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pathanimator);
+        setContentView(R.layout.pathanimatontest);
 
-        mButton = findViewById(R.id.button);
-        mButtonProxy = AnimatorProxy.wrap(mButton);
+        button = findViewById(R.id.button);
+        animatorProxy = AnimatorProxy.wrap(button);
 
         // Set up the path we're animating along
         AnimatorPath path = new AnimatorPath();
@@ -29,17 +27,16 @@ public class PathAnimationActivity extends Activity {
         path.curveTo(100, 0, 300, 900, 400, 500);
 
         // Set up the animation
-        final ObjectAnimator anim = ObjectAnimator.ofObject(this, "buttonLoc",
-                new PathEvaluator(), path.getPoints().toArray());
-        anim.setDuration(1000);
+        final ObjectAnimator anim = ObjectAnimator.ofObject(
+                this, "buttonLation",new PathEvaluator(), path.getPoints().toArray());
+        anim.setDuration(5000);
 
-        mButton.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 anim.start();
             }
         });
-
     }
 
     /**
@@ -49,8 +46,8 @@ public class PathAnimationActivity extends Activity {
      * setter will be called by the ObjectAnimator given the 'buttonLoc'
      * property string.
      */
-    public void setButtonLoc(PathPoint newLoc) {
-        mButtonProxy.setTranslationX(newLoc.mX);
-        mButtonProxy.setTranslationY(newLoc.mY);
+    public void setButtonLation(PathPoint pathPoint) {
+        animatorProxy.setTranslationX(pathPoint.mX);
+        animatorProxy.setTranslationY(pathPoint.mY);
     }
 }

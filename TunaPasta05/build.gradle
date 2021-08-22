@@ -5,8 +5,21 @@ android {
     defaultConfig {
         applicationId "com.tunaPasta05"
         minSdkVersion 21
+        ndk {
+            // 设置支持的SO库架构，第三方给的so库哪几种架构，就配置这几种架构
+            abiFilters 'armeabi'
+        }
+        splits {
+            abi {
+                enable true
+                reset()
+                include  'armeabi-v7a' //select ABIs to build APKs for
+                universalApk true //generate an additional APK that contains all the ABIs
+            }
+        }
+        // map for the version code
+        project.ext.versionCodes = ['armeabi': 1]
     }
-
 
     sourceSets {
         main {
@@ -20,10 +33,6 @@ android {
             proguardFiles 'proguard.cfg'
         }
     }
-}
-
-dependencies {
-
 }
 
 dependencies {

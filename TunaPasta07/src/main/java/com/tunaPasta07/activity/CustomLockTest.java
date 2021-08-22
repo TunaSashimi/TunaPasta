@@ -1,6 +1,7 @@
 package com.tunaPasta07.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.tunaPasta07.R;
+import com.tunaPasta07.service.CustomLockService;
 import com.tunaPasta07.widget.SliderRelativeLayout;
 
 public class CustomLockTest extends Activity {
@@ -39,7 +41,7 @@ public class CustomLockTest extends Activity {
         initViews();
 
         //改变系统锁屏
-        //startService(new Intent(CustomLockTest.this, CustomLockService.class));
+//        startService(new Intent(CustomLockTest.this, CustomLockService.class));
 
         sliderLayout.setMainHandler(mHandler);
     }

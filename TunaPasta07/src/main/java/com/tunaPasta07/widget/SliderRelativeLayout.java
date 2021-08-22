@@ -23,7 +23,7 @@ public class SliderRelativeLayout extends RelativeLayout {
 
     private static String TAG = "SliderRelativeLayout";
 
-    private TextView tv_slider_icon = null; // 初始控件，用来判断是否为拖动
+    private View tv_slider_icon = null; // 初始控件，用来判断是否为拖动
 
     private Bitmap dragBitmap = null; // 拖拽图片
     private Context mContext; // 初始化图片拖拽时的Bitmap对象

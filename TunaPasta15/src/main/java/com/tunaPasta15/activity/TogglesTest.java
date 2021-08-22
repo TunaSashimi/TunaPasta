@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class Toggles extends Activity {
+public class TogglesTest extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.toggles);
+        setContentView(R.layout.togglestest);
 
         final View target = findViewById(R.id.target);
         final int duration = 2 * 1000;

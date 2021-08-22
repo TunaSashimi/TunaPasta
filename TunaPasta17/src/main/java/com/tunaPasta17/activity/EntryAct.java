@@ -22,7 +22,7 @@ public class EntryAct extends Activity {
 
     private Class<?>[] c = {GetConfigValueTest.class, PermissionUtilTest.class, ArouterTest.class, AndroidQTest.class,
             WebPTest.class, VerifyTest.class, SVGTest.class, TCalendarTest.class,
-            CalendarSelectTest.class, ExpandViewTest.class, MVPTest.class, DataBindingDemo.class,
+            CalendarSelectTest.class, ExpandViewTest.class, MVPTest.class, DataBindingTest.class,
             TLoadingViewTest.class, NetworkMonitorActivity.class};
 
     @Override

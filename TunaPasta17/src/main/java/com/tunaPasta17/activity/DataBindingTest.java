@@ -7,12 +7,12 @@ import android.view.View;
 
 import com.tunaPasta17.R;
 
-public class DataBindingDemo extends Activity {
+public class DataBindingTest extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.databindingdemo);
+        setContentView(R.layout.databindingtest);
     }
 
     private void startActivity(Class c) {

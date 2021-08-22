@@ -202,11 +202,4 @@ public class CustomPlayerTest extends Activity implements OnGestureListener, OnT
             e.printStackTrace();
         }
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this, "onDestroy方法中的System.exit(0)会直接退出程序", Toast.LENGTH_LONG).show();
-        System.exit(0);//保证完全退出程序
-    }
 }

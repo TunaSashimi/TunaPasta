@@ -42,9 +42,9 @@
         <activity android:name="com.tunaPasta15.activity.MultiPropertyAnimation" />
         <activity android:name="com.tunaPasta15.activity.ReversingAnimation" />
         <activity android:name="com.tunaPasta15.activity.Droidflakes" />
-        <activity android:name="com.tunaPasta15.activity.PathAnimationActivity" />
-        <activity android:name="com.tunaPasta15.activity.Toggles" />
-        <activity android:name="com.tunaPasta15.activity.VPADemo" />
+        <activity android:name="com.tunaPasta15.activity.PathAnimationTest" />
+        <activity android:name="com.tunaPasta15.activity.TogglesTest" />
+        <activity android:name="com.tunaPasta15.activity.ViewPropertyAnimatorTest" />
         <activity android:name="com.tunaPasta15.activity.ImageSrcTest" />
         <activity android:name="com.tunaPasta15.activity.TestViewUnitTest" />
         <activity android:name="com.tunaPasta15.activity.FragmentSwitchTest" />

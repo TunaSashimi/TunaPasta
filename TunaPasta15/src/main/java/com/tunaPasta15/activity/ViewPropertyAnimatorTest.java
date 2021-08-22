@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class VPADemo extends Activity {
+public class ViewPropertyAnimatorTest extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vpademo);
+        setContentView(R.layout.propertyanimationtest);
 
         final LinearLayout container = findViewById(R.id.container);
 

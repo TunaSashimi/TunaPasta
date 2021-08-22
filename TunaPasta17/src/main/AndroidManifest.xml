@@ -79,7 +79,7 @@
         <activity android:name="com.tunaPasta17.activity.ExpandViewTest" />
         <activity android:name="com.tunaPasta17.activity.MVPTest" />
 
-        <activity android:name="com.tunaPasta17.activity.DataBindingDemo" />
+        <activity android:name="com.tunaPasta17.activity.DataBindingTest" />
         <activity android:name="com.tunaPasta17.activity.DBModelTest" />
         <activity android:name="com.tunaPasta17.activity.DBOnClickTest" />
         <activity android:name="com.tunaPasta17.activity.DBObservableTest" />
