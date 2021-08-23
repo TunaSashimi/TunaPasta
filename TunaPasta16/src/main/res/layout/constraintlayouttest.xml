@@ -148,6 +148,8 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/textView09"
         android:layout_width="60dp"
         android:layout_height="60dp"

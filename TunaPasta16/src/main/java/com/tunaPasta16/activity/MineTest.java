@@ -21,10 +21,8 @@ public class MineTest extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= 21) {
             View decorView = getWindow().getDecorView();
             int option =
-                    //导航栏
-                    View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                            //状态栏
-                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION //导航栏
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN //状态栏
                             | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
             decorView.setSystemUiVisibility(option);
             getWindow().setNavigationBarColor(Color.TRANSPARENT);
