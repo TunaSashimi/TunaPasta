@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.tunaPasta16.R;
+import com.tunaPasta16.view.MeasureView;
 
 public class PathInterpolatorTest extends AppCompatActivity {
     @Override
@@ -68,15 +69,9 @@ public class PathInterpolatorTest extends AppCompatActivity {
 
             ImageView image_head_man_common = findViewById(R.id.image_head_man_common);
 //            playAnimation(image_head_man_common, left, top, right, bottom, 0, 60, 1f, 0.75f, 1, 0.4f, 3000);
-            playAnimation(image_head_man_common, 0, 0, 412.5f, 412.5f, 90, 60, 1f, 0.75f, 1, 0.4f, 3000);
+//            playAnimation(image_head_man_common, 0, 0, 412.5f, 412.5f, 0, 345, 1f, 1f, 1, 1f, 10000);
+            playAnimation(image_head_man_common, 0, 0, dpToPx(130), dpToPx(130), 0, 360, 1f, 1f, 1, 1f, 10000);
         });
-    }
-
-    //
-    private float dpToPx(int dp) {
-        return TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics()
-        );
     }
 
     //
@@ -98,19 +93,25 @@ public class PathInterpolatorTest extends AppCompatActivity {
             animatorSet.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
-                    if (animatorSet != null) {
-                        animatorSet.cancel();
-                    }
-                    view.setX(0);
-                    view.setY(0);
-                    view.setAlpha(1f);
-                    view.setScaleX(1.0f);
-                    view.setScaleY(1.0f);
+//                    if (animatorSet != null) {
+//                        animatorSet.cancel();
+//                    }
+//                    view.setX(0);
+//                    view.setY(0);
+//                    view.setAlpha(1f);
+//                    view.setScaleX(1.0f);
+//                    view.setScaleY(1.0f);
                 }
             });
             animatorSet.start();
         } else {
             // Create animator without using curved path
         }
+    }
+
+    public  float dpToPx(int dp) {
+        return TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics()
+        );
     }
 }
