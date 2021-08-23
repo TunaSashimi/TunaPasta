@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/image_my_family"
@@ -39,24 +40,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/head_boy_common" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/image_head_man_common"-->
-<!--        android:layout_width="65dp"-->
-<!--        android:layout_height="65dp"-->
-<!--        app:layout_constraintCircle="@+id/image_add"-->
-<!--        app:layout_constraintCircleAngle="225"-->
-<!--        app:layout_constraintCircleRadius="75dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/head_man_common" />-->
-
-        <ImageView
-            android:id="@+id/image_head_man_common"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/head_man_common" />
+    <ImageView
+        android:id="@+id/image_head_man_common"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintCircle="@+id/image_add"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/head_man_common" />
 
     <ImageView
         android:id="@+id/head_woman_common"
@@ -69,4 +62,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/head_woman_common" />
+
+    <ImageView
+        android:id="@+id/image_test"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/head_man_common" />
 </androidx.constraintlayout.widget.ConstraintLayout>

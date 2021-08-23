@@ -54,9 +54,6 @@ public class PathInterpolatorTest extends AppCompatActivity {
             float centerX = image_add.getX() + image_add.getWidth() / 2;
             float centerY = image_add.getY() + image_add.getHeight() / 2;
 
-            System.out.println("centerX==>" + centerX);
-            System.out.println("centerY==>" + centerY);
-
             float left = centerX - radiusPX;
             float top = centerY - radiusPX;
             float right = centerX + radiusPX;
@@ -67,10 +64,10 @@ public class PathInterpolatorTest extends AppCompatActivity {
             System.out.println("right==>" + right);
             System.out.println("bottom==>" + bottom);
 
-            ImageView image_head_man_common = findViewById(R.id.image_head_man_common);
+            ImageView image_test = findViewById(R.id.image_test);
 //            playAnimation(image_head_man_common, left, top, right, bottom, 0, 60, 1f, 0.75f, 1, 0.4f, 3000);
 //            playAnimation(image_head_man_common, 0, 0, 412.5f, 412.5f, 0, 345, 1f, 1f, 1, 1f, 10000);
-            playAnimation(image_head_man_common, 0, 0, dpToPx(130), dpToPx(130), 0, 360, 1f, 1f, 1, 1f, 10000);
+            playAnimation(image_test, 0, 0, dpToPx(130), dpToPx(130), 0, 359, 1f, 1f, 1, 1f, 10000);
         });
     }
 
