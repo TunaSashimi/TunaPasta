@@ -57,11 +57,6 @@ public class ObjectAnimatorFragment extends Fragment {
         return constraintLayout;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
     private void playAnimation(ImageView centerView, ImageView targetView, float radiusPX, int resId
             , int startAngle, int sweepAngle, float startScale, float endScale, float startAlpha, float endAlpha, int duration) {
 
