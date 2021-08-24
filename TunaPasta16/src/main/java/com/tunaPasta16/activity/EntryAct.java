@@ -20,7 +20,7 @@ public class EntryAct extends Activity {
             , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest"
             , "LiveDataTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest"
             , "DividerTest", "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest"
-            , "MineTest","PathInterpolatorTest"
+            , "ObjectAnimatorTest"
             , "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest"
             , "MotionLayoutConstraintSetTest", "MotionSceneTest"};
 
@@ -29,7 +29,7 @@ public class EntryAct extends Activity {
             , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class
             , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class
             , DividerTest.class, CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class
-            , MineTest.class, PathInterpolatorTest.class
+            , ObjectAnimatorTest.class
             , MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class
             , MotionLayoutConstraintSetTest.class, MotionSceneTest.class
     };

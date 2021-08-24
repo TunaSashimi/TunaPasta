@@ -1,79 +1,69 @@
-package com.tunaPasta16.activity;
+package com.tunaPasta16.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
 
 import com.tunaPasta16.R;
-import com.tunaPasta16.view.MeasureView;
 
-public class PathInterpolatorTest extends AppCompatActivity {
+public class ObjectAnimatorFragment extends Fragment {
     //
     ImageView image_add,
-            head_top_common,head_boy_common,image_head_man_common,head_woman_common,head_bottom_common;
+            head_top_common, head_boy_common, head_man_common, head_woman_common, head_bottom_common;
 
+    //
+    int[] resourceArray = {R.drawable.head_woman_common, R.drawable.head_woman_common, R.drawable.head_man_common, R.drawable.head_boy_common, R.drawable.head_boy_common};
+    int dialNum;
+
+    @Nullable
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.pathinterpolatortest);
-
-        //
-        if (Build.VERSION.SDK_INT >= 21) {
-            View decorView = getWindow().getDecorView();
-            int option =
-                    View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION //导航栏
-                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN //状态栏
-                            | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-            decorView.setSystemUiVisibility(option);
-            getWindow().setNavigationBarColor(Color.TRANSPARENT);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-        }
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ConstraintLayout constraintLayout = (ConstraintLayout) inflater.inflate(R.layout.fragment_objectanimator, container, false);
 
         //要跟XML里面的一致
         float radiusPX = dpToPx(75);
 
-        image_add = findViewById(R.id.image_add);
-        head_top_common = findViewById(R.id.head_top_common);
-        head_boy_common = findViewById(R.id.head_boy_common);
-        image_head_man_common = findViewById(R.id.image_head_man_common);
-        head_woman_common = findViewById(R.id.head_woman_common);
-        head_bottom_common = findViewById(R.id.head_bottom_common);
+        image_add = constraintLayout.findViewById(R.id.image_add);
+        head_top_common = constraintLayout.findViewById(R.id.head_top_common);
+        head_boy_common = constraintLayout.findViewById(R.id.head_boy_common);
+        head_man_common = constraintLayout.findViewById(R.id.head_man_common);
+        head_woman_common = constraintLayout.findViewById(R.id.head_woman_common);
+        head_bottom_common = constraintLayout.findViewById(R.id.head_bottom_common);
 
         //
         image_add.setOnClickListener(v -> {
+            dialNum++;
             //
-            playAnimation(image_add, head_top_common, radiusPX, 255, -60, 1f, 1f, 0.4f, 0.4f, 2000);
-            playAnimation(image_add, head_boy_common, radiusPX, 195, -60, 1f, 1.4f, 0.4f, 1f, 2000);
-            playAnimation(image_add, image_head_man_common, radiusPX, 135, -60, 1f, 0.7f, 1f, 0.4f, 2000);
-            playAnimation(image_add, head_woman_common, radiusPX, 75, -60, 1f, 1f, 0.4f, 0.4f, 2000);
-            playAnimation(image_add, head_bottom_common, radiusPX, 15, -60, 1f, 1f, 0.4f, 0.4f, 2000);
+            playAnimation(image_add, head_top_common, radiusPX, resourceArray[(4 + dialNum) % 5], 255, -60, 1f, 1f, 0.4f, 0.4f, 2000);
+            playAnimation(image_add, head_boy_common, radiusPX, resourceArray[(3 + dialNum) % 5], 195, -60, 1f, 1.4f, 0.4f, 1f, 2000);
+            playAnimation(image_add, head_man_common, radiusPX, resourceArray[(2 + dialNum) % 5], 135, -60, 1f, 0.7f, 1f, 0.4f, 2000);
+            playAnimation(image_add, head_woman_common, radiusPX, resourceArray[(1 + dialNum) % 5], 75, -60, 1f, 1f, 0.4f, 0.4f, 2000);
+            playAnimation(image_add, head_bottom_common, radiusPX, resourceArray[(0 + dialNum) % 5], 15, -60, 1f, 1f, 0.4f, 0.4f, 2000);
         });
+        return constraintLayout;
     }
 
-    //
-    private void playAnimation(View centerView, View targetView, float radiusPX
-            , int startAngle, int sweepAngle, float startScale, float endScale
-            , float startAlpha, float endAlpha, int duration) {
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    private void playAnimation(ImageView centerView, ImageView targetView, float radiusPX, int resId
+            , int startAngle, int sweepAngle, float startScale, float endScale, float startAlpha, float endAlpha, int duration) {
 
         //
         float centerX = centerView.getX() + centerView.getWidth() * 0.5f;
@@ -84,12 +74,6 @@ public class PathInterpolatorTest extends AppCompatActivity {
         float top = centerY - radiusPX - targetView.getHeight() * 0.5f;
         float right = centerX + radiusPX - targetView.getWidth() * 0.5f;
         float bottom = centerY + radiusPX - targetView.getHeight() * 0.5f;
-
-        //大头像的矩形框
-        System.out.println("left==>" + (left));
-        System.out.println("top==>" + (top));
-        System.out.println("right==>" + (right + targetView.getWidth()));
-        System.out.println("bottom==>" + (bottom + targetView.getHeight()));
 
         float originalX = targetView.getX();
         float originalY = targetView.getY();
@@ -120,6 +104,7 @@ public class PathInterpolatorTest extends AppCompatActivity {
                     targetView.setAlpha(originalAlpha);
                     targetView.setScaleX(originalScaleX);
                     targetView.setScaleY(originalScaleY);
+                    targetView.setImageResource(resId);
                 }
             });
             animatorSet.start();
