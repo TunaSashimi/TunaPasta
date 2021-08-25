@@ -6,12 +6,13 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 
 import com.tunaPasta16.R;
+import com.tunaPasta16.view.FlingView;
 
-public class DividerTest extends Activity {
+public class FlingViewTest extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.dividertest);
+        setContentView(new FlingView(this));
     }
 }

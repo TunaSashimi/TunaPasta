@@ -29,7 +29,6 @@ public class FloatingWindowsTest extends Activity  implements OnClickListener{
        	createView(); 
     }
 
-
 	public void onDestroy() {
 		super.onDestroy();
 		// 在程序退出(Activity销毁）时销毁悬浮窗口

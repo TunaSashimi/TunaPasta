@@ -110,7 +110,6 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
                         * (e.getX() - screenWidth * 0.5)
                         + (e.getY() - screenHeight * 0.5)
                         * (e.getY() - screenHeight * 0.5), 0.5) <= screenHeight / 6) {
-//			System.out.println(index);		
             startActivity(new android.content.Intent(this, cc[index]));
         }
         return gestureDetector.onTouchEvent(e);
@@ -122,8 +121,7 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
     }
 
     @Override
-    public boolean onFling(MotionEvent e0, MotionEvent e1, float arg2,
-                           float arg3) {
+    public boolean onFling(MotionEvent e0, MotionEvent e1, float arg2,  float arg3) {
         // 前一个直角三角形的角度减去后一个直角三角形的角度
         double d1 = Math.toDegrees(Math.atan((screenHeight * 0.5 - e0.getY()) / (e0.getX() - screenWidth * 0.5)));
         double d2 = Math.toDegrees(Math.atan((screenHeight * 0.5 - e1.getY()) / (e1.getX() - screenWidth * 0.5)));

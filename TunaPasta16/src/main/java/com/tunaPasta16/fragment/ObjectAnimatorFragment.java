@@ -1,4 +1,4 @@
-package com.tunaPasta16.view;
+package com.tunaPasta16.fragment;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -24,10 +25,13 @@ public class ObjectAnimatorFragment extends Fragment {
     //
     ImageView image_add,
             head_top_common, head_boy_common, head_man_common, head_woman_common, head_bottom_common;
-
     //
     int[] resourceArray = {R.drawable.head_woman_common, R.drawable.head_woman_common, R.drawable.head_man_common, R.drawable.head_boy_common, R.drawable.head_boy_common};
     int dialNum;
+
+    //
+    private static long DURATION = 2000;
+    private long lastTime;
 
     @Nullable
     @Override
@@ -46,20 +50,24 @@ public class ObjectAnimatorFragment extends Fragment {
 
         //
         image_add.setOnClickListener(v -> {
+            if (System.currentTimeMillis() - lastTime < DURATION) {
+                return;
+            }
+
+            lastTime = System.currentTimeMillis();
             dialNum++;
             //
-            playAnimation(image_add, head_top_common, radiusPX, resourceArray[(4 + dialNum) % 5], 255, -60, 1f, 1f, 0.4f, 0.4f, 2000);
-            playAnimation(image_add, head_boy_common, radiusPX, resourceArray[(3 + dialNum) % 5], 195, -60, 1f, 1.4f, 0.4f, 1f, 2000);
-            playAnimation(image_add, head_man_common, radiusPX, resourceArray[(2 + dialNum) % 5], 135, -60, 1f, 0.7f, 1f, 0.4f, 2000);
-            playAnimation(image_add, head_woman_common, radiusPX, resourceArray[(1 + dialNum) % 5], 75, -60, 1f, 1f, 0.4f, 0.4f, 2000);
-            playAnimation(image_add, head_bottom_common, radiusPX, resourceArray[(0 + dialNum) % 5], 15, -60, 1f, 1f, 0.4f, 0.4f, 2000);
+            playAnimation(image_add, head_top_common, radiusPX, resourceArray[(4 + dialNum) % 5], 255, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
+            playAnimation(image_add, head_boy_common, radiusPX, resourceArray[(3 + dialNum) % 5], 195, -60, 1f, 1.4f, 0.4f, 1f, DURATION);
+            playAnimation(image_add, head_man_common, radiusPX, resourceArray[(2 + dialNum) % 5], 135, -60, 1f, 0.7f, 1f, 0.4f, DURATION);
+            playAnimation(image_add, head_woman_common, radiusPX, resourceArray[(1 + dialNum) % 5], 75, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
+            playAnimation(image_add, head_bottom_common, radiusPX, resourceArray[(0 + dialNum) % 5], 15, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
         });
         return constraintLayout;
     }
 
     private void playAnimation(ImageView centerView, ImageView targetView, float radiusPX, int resId
-            , int startAngle, int sweepAngle, float startScale, float endScale, float startAlpha, float endAlpha, int duration) {
-
+            , int startAngle, int sweepAngle, float startScale, float endScale, float startAlpha, float endAlpha, long duration) {
         //
         float centerX = centerView.getX() + centerView.getWidth() * 0.5f;
         float centerY = centerView.getY() + centerView.getHeight() * 0.5f;

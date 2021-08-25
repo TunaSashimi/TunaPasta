@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
-        android:name="com.tunaPasta16.view.ObjectAnimatorFragment"
+        android:name="com.tunaPasta16.fragment.ObjectAnimatorFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
