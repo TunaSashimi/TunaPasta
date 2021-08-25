@@ -14,13 +14,13 @@
         android:paddingRight="12dp"
         android:paddingTop="10dp" >
 
-        <com.tunaPasta13.widget.WheelView
+        <com.tunaPasta13.adapter.WheelView
             android:id="@+id/hour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <com.tunaPasta13.widget.WheelView
+        <com.tunaPasta13.adapter.WheelView
             android:id="@+id/mins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

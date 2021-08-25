@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.ArrayWheelAdapter;
-import com.tunaPasta13.widget.OnWheelChangedListener;
-import com.tunaPasta13.widget.WheelView;
+import com.tunaPasta13.adapter.ArrayWheelAdapter;
+import com.tunaPasta13.listener.OnWheelChangedListener;
+import com.tunaPasta13.adapter.WheelView;
 
 public class CitiesActivity extends Activity {
     @Override

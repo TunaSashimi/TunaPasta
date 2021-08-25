@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray" >
 
-    <com.tunaPasta13.widget.SlideCutListView
+    <com.tunaPasta13.view.SlideCutListView
         android:id="@+id/slideCutListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

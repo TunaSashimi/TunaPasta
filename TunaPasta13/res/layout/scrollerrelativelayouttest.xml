@@ -10,7 +10,7 @@
         android:onClick="scroll"
         android:text="scroll" />
 
-    <com.tunaPasta13.widget.ScrollerRelativeLayout
+    <com.tunaPasta13.view.ScrollerRelativeLayout
         android:id="@+id/myviewGroup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,5 +21,5 @@
             android:layout_height="match_parent"
             android:background="#ff0000"
             android:text="text" />
-    </com.tunaPasta13.widget.ScrollerRelativeLayout>
+    </com.tunaPasta13.view.ScrollerRelativeLayout>
 </LinearLayout>

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.ScrollerRelativeLayout;
+import com.tunaPasta13.view.ScrollerRelativeLayout;
 
 public class ScrollerRelativeLayoutTest extends Activity {
     private ScrollerRelativeLayout myViewGroup;

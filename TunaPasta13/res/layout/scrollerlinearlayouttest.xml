@@ -1,4 +1,4 @@
-<com.tunaPasta13.widget.ScrollerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tunaPasta13.view.ScrollerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
@@ -11,4 +11,4 @@
         android:gravity="center_horizontal"
         android:text="下拉"
         android:textSize="32sp" />
-</com.tunaPasta13.widget.ScrollerLinearLayout>
+</com.tunaPasta13.view.ScrollerLinearLayout>

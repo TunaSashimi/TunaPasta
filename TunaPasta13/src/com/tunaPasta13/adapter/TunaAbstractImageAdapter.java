@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import com.tunaPasta13.widget.TunaStage;
+import com.tunaPasta13.view.TunaStage;
 
 /**
  * This class is an adapter that provides base, abstract class for images  adapter.

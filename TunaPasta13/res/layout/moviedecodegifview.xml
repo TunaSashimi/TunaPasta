@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:text="=====Gif图片测试布局=====" />
 
-    <com.tunaPasta13.widget.MovieDecodeGifView
+    <com.tunaPasta13.view.MovieDecodeGifView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="20dp" />

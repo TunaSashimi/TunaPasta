@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.tunaPasta13.R;
 import com.tunaPasta13.adapter.TunaResourceImageAdapter;
-import com.tunaPasta13.widget.TunaStage;
+import com.tunaPasta13.view.TunaStage;
 
 public class TunaStageTest extends Activity {
     private TunaStage tunaStage;

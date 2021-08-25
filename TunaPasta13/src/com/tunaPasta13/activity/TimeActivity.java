@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.widget.TimePicker;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.NumericWheelAdapter;
-import com.tunaPasta13.widget.OnWheelChangedListener;
-import com.tunaPasta13.widget.OnWheelScrollListener;
-import com.tunaPasta13.widget.WheelView;
+import com.tunaPasta13.adapter.NumericWheelAdapter;
+import com.tunaPasta13.listener.OnWheelChangedListener;
+import com.tunaPasta13.listener.OnWheelScrollListener;
+import com.tunaPasta13.adapter.WheelView;
 
 public class TimeActivity extends Activity {
 	// Time changed flag

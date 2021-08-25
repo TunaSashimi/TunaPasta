@@ -12,9 +12,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.SlideCutListView;
-import com.tunaPasta13.widget.SlideCutListView.RemoveDirection;
-import com.tunaPasta13.widget.SlideCutListView.RemoveListener;
+import com.tunaPasta13.view.SlideCutListView;
+import com.tunaPasta13.view.SlideCutListView.RemoveDirection;
+import com.tunaPasta13.view.SlideCutListView.RemoveListener;
 
 public class SlideCutListViewTest extends Activity implements RemoveListener {
     private SlideCutListView slideCutListView;

@@ -5,7 +5,7 @@
     android:background="@drawable/layout_bg"
     android:orientation="vertical" >
 
-    <com.tunaPasta13.widget.WheelView
+    <com.tunaPasta13.adapter.WheelView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"

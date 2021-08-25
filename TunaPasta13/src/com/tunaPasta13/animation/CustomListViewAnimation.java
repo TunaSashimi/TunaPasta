@@ -7,43 +7,43 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class CustomListViewAnimation extends Animation {
 
-	private View mAnimationView = null;
-	private LayoutParams mViewLayoutParams = null;
-	private int mStart = 0;
-	private int mEnd = 0;
+    private View mAnimationView = null;
+    private LayoutParams mViewLayoutParams = null;
+    private int mStart = 0;
+    private int mEnd = 0;
 
-	public CustomListViewAnimation(View view) {
-		animationSettings(view, 500);
-	}
+    public CustomListViewAnimation(View view) {
+        animationSettings(view, 500);
+    }
 
-	public CustomListViewAnimation(View view, int duration) {
-		animationSettings(view, duration);
-	}
+    public CustomListViewAnimation(View view, int duration) {
+        animationSettings(view, duration);
+    }
 
-	private void animationSettings(View view, int duration) {
-		setDuration(duration);
-		mAnimationView = view;
-		mViewLayoutParams = (LayoutParams) view.getLayoutParams();
-		mStart = mViewLayoutParams.bottomMargin;
-		mEnd = (mStart == 0 ? (0 - view.getHeight()) : 0);
-		view.setVisibility(View.VISIBLE);
-	}
+    private void animationSettings(View view, int duration) {
+        setDuration(duration);
+        mAnimationView = view;
+        mViewLayoutParams = (LayoutParams) view.getLayoutParams();
+        mStart = mViewLayoutParams.bottomMargin;
+        mEnd = (mStart == 0 ? (0 - view.getHeight()) : 0);
+        view.setVisibility(View.VISIBLE);
+    }
 
-	@Override
-	protected void applyTransformation(float interpolatedTime, Transformation t) {
-		super.applyTransformation(interpolatedTime, t);
+    @Override
+    protected void applyTransformation(float interpolatedTime, Transformation t) {
+        super.applyTransformation(interpolatedTime, t);
 
-		if (interpolatedTime < 1.0f) {
-			mViewLayoutParams.bottomMargin = mStart + (int) ((mEnd - mStart) * interpolatedTime);
-			// invalidate
-			mAnimationView.requestLayout();
-		} else {
-			mViewLayoutParams.bottomMargin = mEnd;
-			mAnimationView.requestLayout();
-			if (mEnd != 0) {
-				mAnimationView.setVisibility(View.GONE);
-			}
-		}
-	}
+        if (interpolatedTime < 1.0f) {
+            mViewLayoutParams.bottomMargin = mStart + (int) ((mEnd - mStart) * interpolatedTime);
+            // invalidate
+            mAnimationView.requestLayout();
+        } else {
+            mViewLayoutParams.bottomMargin = mEnd;
+            mAnimationView.requestLayout();
+            if (mEnd != 0) {
+                mAnimationView.setVisibility(View.GONE);
+            }
+        }
+    }
 
 }

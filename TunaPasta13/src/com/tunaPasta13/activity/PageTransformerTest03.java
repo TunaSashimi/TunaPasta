@@ -12,9 +12,9 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.TextView;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.JazzyViewPager;
-import com.tunaPasta13.widget.JazzyViewPager.TransitionEffect;
-import com.tunaPasta13.widget.OutlineContainer;
+import com.tunaPasta13.view.JazzyViewPager;
+import com.tunaPasta13.view.JazzyViewPager.TransitionEffect;
+import com.tunaPasta13.view.OutlineContainer;
 
 import androidx.viewpager.widget.PagerAdapter;
 

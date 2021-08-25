@@ -23,14 +23,14 @@
         android:paddingRight="12dp"
         android:paddingTop="4dp" >
 
-        <com.tunaPasta13.widget.WheelView
+        <com.tunaPasta13.adapter.WheelView
             android:id="@+id/country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1" />
 
-        <com.tunaPasta13.widget.WheelView
+        <com.tunaPasta13.adapter.WheelView
             android:id="@+id/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

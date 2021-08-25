@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.NumericWheelAdapter;
-import com.tunaPasta13.widget.OnWheelChangedListener;
-import com.tunaPasta13.widget.OnWheelScrollListener;
-import com.tunaPasta13.widget.WheelView;
+import com.tunaPasta13.adapter.NumericWheelAdapter;
+import com.tunaPasta13.listener.OnWheelChangedListener;
+import com.tunaPasta13.listener.OnWheelScrollListener;
+import com.tunaPasta13.adapter.WheelView;
 
 public class PasswordActivity extends Activity {
     @Override

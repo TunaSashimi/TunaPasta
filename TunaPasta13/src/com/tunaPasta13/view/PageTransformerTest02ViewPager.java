@@ -1,4 +1,4 @@
-package com.tunaPasta13.widget;
+package com.tunaPasta13.view;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

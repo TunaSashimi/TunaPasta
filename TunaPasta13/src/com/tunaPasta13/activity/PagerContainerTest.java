@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Gallery.LayoutParams;
 
 import com.tunaPasta13.R;
-import com.tunaPasta13.widget.PagerContainer;
+import com.tunaPasta13.view.PagerContainer;
 
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
