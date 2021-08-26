@@ -10,4 +10,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="移至边沿" />
+
+    <Button
+        android:id="@+id/btn_Visible"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_move"
+        android:layout_centerHorizontal="true"
+        android:text="隐藏" />
 </RelativeLayout>
