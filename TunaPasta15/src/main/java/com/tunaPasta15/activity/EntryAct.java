@@ -18,21 +18,19 @@ public class EntryAct extends Activity {
     private String[] s = {"WheelTest", "RadialWidgetTest", "PageddragTest", "AnimationCloning",
             "AnimationLoading", "AnimationSeeking", "AnimatorEvents", "BouncingBalls",
             "CustomEvaluator", "MultiPropertyAnimation", "ReversingAnimation", "Droidflakes",
-            "PathAnimationTest", "TogglesTest", "ViewPropertyAnimatorTest", "ImageSrcTest", "TestViewUnitTest",
-            "FragmentSwitchTest", "FragmentShowHideTest", "LinkMoveListViewTest",
+            "PathAnimationTest", "TogglesTest", "ViewPropertyAnimatorTest", "ImageSrcTest",
+            "TestViewUnitTest", "FragmentSwitchTest", "FragmentShowHideTest", "LinkMoveListViewTest",
             "VideoViewTest", "VideoViewControllerTest", "WeightTest", "VerticalScrollTestViewTest",
-            "CustomAnimationTest", "MoveLineQuadCubicArcTest", "BezierDrawViewTest",
-            "WaveEffectTest",
+            "CustomAnimationTest", "MoveLineQuadCubicArcTest", "BezierDrawViewTest", "WaveEffectTest",
     };
 
     private Class<?>[] c = {WheelTest.class, RadialWidgetTest.class, PageddragTest.class, AnimationCloning.class,
             AnimationLoading.class, AnimationSeeking.class, AnimatorEvents.class, BouncingBalls.class,
             CustomEvaluator.class, MultiPropertyAnimation.class, ReversingAnimation.class, Droidflakes.class,
-            PathAnimationTest.class, TogglesTest.class, ViewPropertyAnimatorTest.class, ImageSrcTest.class, TestViewUnitTest.class,
-            FragmentSwitchTest.class, FragmentShowHideTest.class, LinkMoveListViewTest.class,
+            PathAnimationTest.class, TogglesTest.class, ViewPropertyAnimatorTest.class, ImageSrcTest.class,
+            TestViewUnitTest.class, FragmentSwitchTest.class, FragmentShowHideTest.class, LinkMoveListViewTest.class,
             VideoViewTest.class, VideoViewControllerTest.class, WeightTest.class, VerticalScrollTestViewTest.class,
-            CustomAnimationTest.class, MoveLineQuadCubicArcTest.class, BezierDrawViewTest.class,
-            WaveEffectTest.class,
+            CustomAnimationTest.class, MoveLineQuadCubicArcTest.class, BezierDrawViewTest.class, WaveEffectTest.class,
     };
 
     @Override

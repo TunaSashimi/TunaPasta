@@ -1,4 +1,4 @@
-package com.tunaPasta13.view;
+package com.tunaPasta16.view;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -20,21 +21,21 @@ import androidx.core.view.ViewConfigurationCompat;
  * @Copyright 2021 TunaSashimi. All rights reserved.
  * @Description
  */
-public class DragFloatActionButton extends FloatingActionButton {
+public class FloatingDragView extends androidx.appcompat.widget.AppCompatImageView {
 
     private int parentHeight;
     private int parentWidth;
     private int slop;
 
-    public DragFloatActionButton(@NonNull Context context) {
+    public FloatingDragView(@NonNull Context context) {
         this(context, null);
     }
 
-    public DragFloatActionButton(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public FloatingDragView(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public DragFloatActionButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public FloatingDragView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         slop = ViewConfigurationCompat.getScaledPagingTouchSlop(ViewConfiguration.get(context));
     }

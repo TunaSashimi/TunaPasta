@@ -81,6 +81,7 @@
         <activity android:name="com.tunaPasta11.activity.MeasureTextTest" />
         <activity android:name="com.tunaPasta11.activity.PathEffectsTest" />
         <activity android:name="com.tunaPasta11.activity.PathFillTypesTest" />
+        <activity android:name="com.tunaPasta11.activity.CardViewTest" />
     </application>
 
 </manifest>

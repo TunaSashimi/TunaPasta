@@ -27,7 +27,6 @@
 
 
     <application
-        android:name="com.tunaPasta13.activity.FloatApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/tunasashimi"
@@ -47,11 +46,10 @@
         <activity android:name="com.tunaPasta13.activity.ClickThreeTimes" />
         <activity android:name="com.tunaPasta13.activity.RoundImageViewTest" />
         <activity android:name="com.tunaPasta13.activity.SoundRecordingTest" />
-        <activity android:name="com.tunaPasta13.activity.FloatingWindowsTest" />
         <activity
             android:name="com.tunaPasta13.activity.OptimalPathTest"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape"/>
         <activity
             android:name="com.tunaPasta13.activity.OptimalPathResult"
             android:configChanges="keyboardHidden|orientation"

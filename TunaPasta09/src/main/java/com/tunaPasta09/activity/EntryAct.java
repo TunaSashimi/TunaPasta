@@ -15,19 +15,21 @@ import com.tunaPasta09.R;
 
 public class EntryAct extends Activity {
 
-    private String[] s = {"ViewStubTest", "StringFormatTest", "PullDownListViewTest", "CompassTest", "GesturePasswordTest",
-            "ViewTreeObserverTest", "ClipDrawableTest", "ExpandableListViewTest", "OrderConfirmPriceTest", "WidgetLibraryText",
-            "AnimatorFunctionTest", "RelativeLayoutClickTest", "LevelDetailsTest", "LinearLayoutTest", "DatePickerTest",
-            "ImageRotateTest", "ThreePaintTypesCompare", "DrawTextCenterTest", "SlidingBarViewTest", "OpenGLThreePyramidAndCubeRotationTest",
-            "OpenGLGestureCubeRotationTest", "OpenGLThreeDimensionalMazeTest", "OpenGLReelWavesTest", "OpenGLMatrixRotationTest", "OpenGLFireworksCombustionTest",
-            "OpenGLTwoDirectionsDisplacementTest", "OpenGLCircularArrayTest", "SoftKeyboardManagerTest"};
+    private String[] s = {"ViewStubTest", "StringFormatTest", "PullDownListViewTest", "CompassTest",
+            "GesturePasswordTest", "ViewTreeObserverTest", "ClipDrawableTest", "ExpandableListViewTest",
+            "OrderConfirmPriceTest", "WidgetLibraryText", "AnimatorFunctionTest", "RelativeLayoutClickTest",
+            "LevelDetailsTest", "LinearLayoutTest", "DatePickerTest", "ImageRotateTest",
+            "ThreePaintTypesCompare", "DrawTextCenterTest", "SlidingBarViewTest", "OpenGLThreePyramidAndCubeRotationTest",
+            "OpenGLGestureCubeRotationTest", "OpenGLThreeDimensionalMazeTest", "OpenGLReelWavesTest", "OpenGLMatrixRotationTest",
+            "OpenGLFireworksCombustionTest", "OpenGLTwoDirectionsDisplacementTest", "OpenGLCircularArrayTest", "SoftKeyboardManagerTest"};
 
-    private Class<?>[] c = {ViewStubTest.class, StringFormatTest.class, PullDownListViewTest.class, CompassTest.class, GesturePasswordTest.class,
-            ViewTreeObserverTest.class, ClipDrawableTest.class, ExpandableListViewTest.class, OrderConfirmPriceTest.class, WidgetLibraryText.class,
-            AnimatorFunctionTest.class, RelativeLayoutClickTest.class, LevelDetailsTest.class, LinearLayoutTest.class, DatePickerTest.class,
-            ImageRotateTest.class, ThreePaintTypesCompare.class, DrawTextcenterTest.class, SlidingBarViewTest.class, OpenGLThreePyramidAndCubeRotationTest.class,
-            OpenGLGestureCubeRotationTest.class, OpenGLThreeDimensionalMazeTest.class, OpenGLReelWavesTest.class, OpenGLMatrixRotationTest.class, OpenGLFireworksCombustionTest.class,
-            OpenGLTwoDirectionsDisplacementTest.class, OpenGLCircularArrayTest.class, SoftKeyboardManagerTest.class};
+    private Class<?>[] c = {ViewStubTest.class, StringFormatTest.class, PullDownListViewTest.class, CompassTest.class,
+            GesturePasswordTest.class, ViewTreeObserverTest.class, ClipDrawableTest.class, ExpandableListViewTest.class,
+            OrderConfirmPriceTest.class, WidgetLibraryText.class, AnimatorFunctionTest.class, RelativeLayoutClickTest.class,
+            LevelDetailsTest.class, LinearLayoutTest.class, DatePickerTest.class, ImageRotateTest.class,
+            ThreePaintTypesCompare.class, DrawTextcenterTest.class, SlidingBarViewTest.class, OpenGLThreePyramidAndCubeRotationTest.class,
+            OpenGLGestureCubeRotationTest.class, OpenGLThreeDimensionalMazeTest.class, OpenGLReelWavesTest.class, OpenGLMatrixRotationTest.class,
+            OpenGLFireworksCombustionTest.class, OpenGLTwoDirectionsDisplacementTest.class, OpenGLCircularArrayTest.class, SoftKeyboardManagerTest.class};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

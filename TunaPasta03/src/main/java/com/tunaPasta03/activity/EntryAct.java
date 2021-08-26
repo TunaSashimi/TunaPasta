@@ -16,10 +16,10 @@ import android.widget.ListView;
 import com.tunaPasta03.R;
 
 public class EntryAct extends Activity {
-    private String[] s = {"DressUpGameTest", "DialogMenuTest", "DataBaseTest", "ContactDatabaseTest",
-            "AnimationTest", "FrameAnimationTest", "AnimationListenerTest", "BroadcastReceiverTest"};
-    private Class<?>[] c = {DressUpGameTest.class, DialogMenuTest.class, DataBaseTest.class, ContactDatabaseTest.class,
-            AnimationTest.class, FrameAnimationTest.class, AnimationListenerTest.class, BroadcastReceiverTest.class};
+    private String[] s = {"DressUpGameTest", "DialogMenuTest", "DataBaseTest", "ContactDatabaseTest"
+            , "AnimationTest", "FrameAnimationTest", "AnimationListenerTest", "BroadcastReceiverTest"};
+    private Class<?>[] c = {DressUpGameTest.class, DialogMenuTest.class, DataBaseTest.class, ContactDatabaseTest.class
+            ,AnimationTest.class, FrameAnimationTest.class, AnimationListenerTest.class, BroadcastReceiverTest.class};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

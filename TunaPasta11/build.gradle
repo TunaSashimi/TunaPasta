@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.tunaPasta11"
-        minSdkVersion 14
+        minSdkVersion 28
     }
 
     buildTypes {
@@ -13,4 +13,8 @@ android {
             proguardFiles 'proguard.cfg'
         }
     }
+}
+
+dependencies {
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

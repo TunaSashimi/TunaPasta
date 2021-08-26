@@ -15,16 +15,17 @@ import com.tunaPasta13.R;
 
 public class EntryAct extends Activity {
 
-    private String[] s = {"PentagramTest", "RoundCornerTest", "ClickThreeTimes", "RoundImageViewTest", "SoundRecordingTest", "FloatingWindowsTest", "OptimalPathTest",
-            "TakeBlowTest", "WheelDemo", "SlideCutListViewTest", "CurlTest", "TunaStageTest", "DifferentGetMeasuredWidth", "UseJSResolveTest", "CustomExceptionTest",
-            "ScrollerRelativeLayoutTest", "ScrollerLinearLayoutTest", "PagerContainerTest", "IMETest", "RequestFocusTest", "SMSSendTest", "MyGifViewTest", "PageTransformerTest01",
-            "PageTransformerTest02", "PageTransformerTest03",};
+    private String[] s = {"PentagramTest", "RoundCornerTest", "ClickThreeTimes", "RoundImageViewTest", "SoundRecordingTest",
+            "OptimalPathTest", "TakeBlowTest", "WheelDemo", "SlideCutListViewTest",
+            "CurlTest", "TunaStageTest", "DifferentGetMeasuredWidth", "UseJSResolveTest", "CustomExceptionTest",
+            "ScrollerRelativeLayoutTest", "ScrollerLinearLayoutTest", "PagerContainerTest", "IMETest", "RequestFocusTest",
+            "SMSSendTest", "MovieDecodeGifViewTest", "PageTransformerTest01", "PageTransformerTest02", "PageTransformerTest03",};
 
-    private Class<?>[] c = {PentagramTest.class, RoundCornerTest.class, ClickThreeTimes.class, RoundImageViewTest.class, SoundRecordingTest.class, FloatingWindowsTest.class,
-            OptimalPathTest.class, TakeBlowTest.class, WheelDemo.class, SlideCutListViewTest.class, CurlTest.class, TunaStageTest.class, DifferentGetMeasuredWidth.class,
-            UseJSResolveTest.class, CustomExceptionTest.class, ScrollerRelativeLayoutTest.class, ScrollerLinearLayoutTest.class, PagerContainerTest.class, IMETest.class,
-            RequestFocusTest.class, SMSSendTest.class, MovieDecodeGifViewTest.class, PageTransformerTest01.class,
-            PageTransformerTest02.class, PageTransformerTest03.class,};
+    private Class<?>[] c = {PentagramTest.class, RoundCornerTest.class, ClickThreeTimes.class, RoundImageViewTest.class, SoundRecordingTest.class,
+            OptimalPathTest.class, TakeBlowTest.class, WheelDemo.class, SlideCutListViewTest.class,
+            CurlTest.class, TunaStageTest.class, DifferentGetMeasuredWidth.class, UseJSResolveTest.class, CustomExceptionTest.class,
+            ScrollerRelativeLayoutTest.class, ScrollerLinearLayoutTest.class, PagerContainerTest.class, IMETest.class, RequestFocusTest.class,
+            SMSSendTest.class, MovieDecodeGifViewTest.class, PageTransformerTest01.class, PageTransformerTest02.class, PageTransformerTest03.class,};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

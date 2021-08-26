@@ -18,8 +18,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.tunaPasta16.activity.CardViewTest" />
-
         <activity android:name="com.tunaPasta16.activity.ListSamples" />
 
         <activity android:name="com.tunaPasta16.activity.SwipeRefreshLayoutTest" />
@@ -29,15 +27,9 @@
             android:label="@string/app_name" />
 
         <activity
-            android:name="com.tunaPasta16.activity.FloatTouchListenerTest"
-            android:label="@string/app_name" />
-
-        <activity
-            android:name="com.tunaPasta16.activity.SoftKeyBoardListenerTest"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+            android:name="com.tunaPasta16.activity.FloatingDragViewTest"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name="com.tunaPasta16.activity.FloatingDecorViewTest" />
 
         <activity
             android:name="com.tunaPasta16.activity.TextInputLayoutTest"

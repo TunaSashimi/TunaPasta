@@ -18,11 +18,10 @@ public class MovieDecodeGifView extends View {
     public MovieDecodeGifView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         // 以文件流（InputStream）读取进gif图片资源
-        movie = Movie.decodeStream(getResources().openRawResource(R.drawable.tunasashimi));
+        movie = Movie.decodeStream(getResources().openRawResource(R.raw.tunasashimi0));
 
         //不是gif的话movie为null
 //		System.out.println("movie==>"+movie);
-
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
     }
 

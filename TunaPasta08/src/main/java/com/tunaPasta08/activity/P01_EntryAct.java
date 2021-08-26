@@ -22,22 +22,16 @@ import com.tunaPasta08.R;
 
 public class P01_EntryAct extends Activity implements OnGestureListener, OnTouchListener {
     private int[] centerp = {
-            R.drawable.circle0, R.drawable.circle1,
-            R.drawable.circle2, R.drawable.circle3,
-            R.drawable.circle4, R.drawable.circle5,
-            R.drawable.circle6};
+            R.drawable.circle0, R.drawable.circle1, R.drawable.circle2, R.drawable.circle3,
+            R.drawable.circle4, R.drawable.circle5, R.drawable.circle6};
 
     private int[] wordp = {
-            R.drawable.round0, R.drawable.round1,
-            R.drawable.round2, R.drawable.round3,
-            R.drawable.round4, R.drawable.round5,
-            R.drawable.round6};
+            R.drawable.round0, R.drawable.round1, R.drawable.round2, R.drawable.round3,
+            R.drawable.round4, R.drawable.round5, R.drawable.round6};
 
     private Class<?>[] cc = {
-            P02_WeatherWearTest.class, P03_MyWardrobeTest.class,
-            P05_StoreRecommedTest.class, P04_FashionGuiderTest.class,
-            P06_MoudleMateTest.class, P07_TypeMyselfTest.class,
-            P08_SizeChooseTest.class};
+            P02_WeatherWearTest.class, P03_MyWardrobeTest.class, P05_StoreRecommedTest.class, P04_FashionGuiderTest.class,
+            P06_MoudleMateTest.class, P07_TypeMyselfTest.class, P08_SizeChooseTest.class};
 
     private GestureDetector gestureDetector;
     private FrameLayout frame;
@@ -121,7 +115,7 @@ public class P01_EntryAct extends Activity implements OnGestureListener, OnTouch
     }
 
     @Override
-    public boolean onFling(MotionEvent e0, MotionEvent e1, float arg2,  float arg3) {
+    public boolean onFling(MotionEvent e0, MotionEvent e1, float arg2, float arg3) {
         // 前一个直角三角形的角度减去后一个直角三角形的角度
         double d1 = Math.toDegrees(Math.atan((screenHeight * 0.5 - e0.getY()) / (e0.getX() - screenWidth * 0.5)));
         double d2 = Math.toDegrees(Math.atan((screenHeight * 0.5 - e1.getY()) / (e1.getX() - screenWidth * 0.5)));

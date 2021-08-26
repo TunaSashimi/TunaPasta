@@ -18,21 +18,19 @@ public class EntryAct extends Activity {
     private String[] s = {"Patterns", "DrawPoints", "PolyToPoly", "Xfermodes",
             "Vertices", "UnicodeChart", "Typefaces", "TouchPaint",
             "TextAlign", "Sweep", "SurfaceViewOverlay", "ScaleToFit",
-            "RoundRects", "Regions", "PurgeableBitmap",
-            "CompressedTextureActivity", "CubeMapActivity", "FrameBufferObjectActivity",
-            "GLSurfaceViewActivity", "Cube", "MatrixPaletteActivity", "SpriteTextActivity",
-            "TouchRotateActivity", "TranslucentGLSurfaceViewActivity",
-            "AlertDialogSamples", "RotatingButton", "InputMethodManagerTest",
+            "RoundRects", "Regions", "PurgeableBitmap", "CompressedTextureActivity",
+            "CubeMapActivity", "FrameBufferObjectActivity", "GLSurfaceViewActivity", "Kube",
+            "MatrixPaletteActivity", "SpriteTextActivity", "TouchRotateActivity", "TranslucentGLSurfaceViewActivity",
+            "AlertDialogSamples", "RotatingButton", "InputMethodManagerTest", "SoftKeyBoardListenerTest",
     };
 
     private Class<?>[] c = {Patterns.class, DrawPoints.class, PolyToPoly.class, Xfermodes.class,
             Vertices.class, UnicodeChart.class, Typefaces.class, TouchPaintTest.class,
             TextAlign.class, Sweep.class, SurfaceViewOverlay.class, ScaleToFit.class,
-            RoundRects.class, Regions.class, PurgeableBitmap.class,
-            CompressedTextureActivity.class, CubeMapActivity.class, FrameBufferObjectActivity.class,
-            GLSurfaceViewActivity.class, Kube.class, MatrixPaletteActivity.class, SpriteTextActivity.class,
-            TouchRotateActivity.class, TranslucentGLSurfaceViewActivity.class,
-            AlertDialogSamples.class, RotatingButton.class, InputOpenClosedAutomaticTest.class,
+            RoundRects.class, Regions.class, PurgeableBitmap.class, CompressedTextureActivity.class,
+            CubeMapActivity.class, FrameBufferObjectActivity.class, GLSurfaceViewActivity.class, Kube.class,
+            MatrixPaletteActivity.class, SpriteTextActivity.class, TouchRotateActivity.class, TranslucentGLSurfaceViewActivity.class,
+            AlertDialogSamples.class, RotatingButton.class, InputOpenClosedAutomaticTest.class, SoftKeyBoardListenerTest.class,
     };
 
     @Override

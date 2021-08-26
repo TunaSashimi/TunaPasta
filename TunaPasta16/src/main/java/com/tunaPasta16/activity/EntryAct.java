@@ -15,23 +15,17 @@ import java.util.List;
 
 public class EntryAct extends Activity {
 
-    private String[] s = {"ListSamples", "CardViewTest", "SwipeRefreshLayoutTest", "FloatTouchListenerTest"
-            , "TSectorTest", "SoftKeyBoardListenerTest", "TextInputLayoutTest", "VerificationCodeViewTest"
-            , "CountDownTimerTest", "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest"
-            , "LayoutDividerTest", "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest"
-            , "DividerTest", "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest"
-            , "ObjectAnimatorTest", "FlingViewTest"
-            , "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest"
-            , "MotionLayoutConstraintSetTest", "MotionSceneTest"};
+    private String[] s = {"ListSamples", "SwipeRefreshLayoutTest", "FloatingDragViewTest", "FloatingDecorViewTest",
+            "TSectorTest", "TextInputLayoutTest", "VerificationCodeViewTest", "CountDownTimerTest",
+            "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest", "LayoutDividerTest",
+            "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest", "DividerTest",
+            "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest", "ObjectAnimatorTest", "FlingViewTest", "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest", "MotionLayoutConstraintSetTest", "MotionSceneTest"};
 
-    private Class<?>[] c = {ListSamples.class, CardViewTest.class, SwipeRefreshLayoutTest.class, FloatTouchListenerTest.class
-            , TSectorTest.class, SoftKeyBoardListenerTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class
-            , CountDownTimerTest.class, RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class
-            , LiveDataTest.class, CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class
-            , LayoutDividerTest.class, CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class
-            , ObjectAnimatorTest.class, FlingViewTest.class
-            , MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class
-            , MotionLayoutConstraintSetTest.class, MotionSceneTest.class
+    private Class<?>[] c = {ListSamples.class, SwipeRefreshLayoutTest.class, FloatingDragViewTest.class, FloatingDecorViewTest.class,
+            TSectorTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class, CountDownTimerTest.class,
+            RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class, LiveDataTest.class,
+            CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class, LayoutDividerTest.class,
+            CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class, ObjectAnimatorTest.class, FlingViewTest.class, MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class, MotionLayoutConstraintSetTest.class, MotionSceneTest.class
     };
 
     @Override

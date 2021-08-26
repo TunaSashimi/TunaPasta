@@ -1,11 +1,11 @@
-package com.tunaPasta16.activity;
+package com.tunaPasta12.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.tunaPasta16.listener.SoftKeyBoardListener;
-import com.tunaPasta16.R;
+import com.tunaPasta12.R;
+
 
 /**
  * @author TunaSashimi

@@ -23,21 +23,21 @@ import android.widget.Toast;
 import com.tunaPasta02.R;
 
 public class EntryAct extends Activity implements OnGestureListener, OnTouchListener {
-    private String[] s = {"TextSwitcherTest", "AutoCompleteTextViewTest", "ListActivityTest", "GetImageMethodTest",
-            "ScaleTypeTest", "EditTextTest", "SharedPreferencesTest", "MarqueeTextViewTest",
-            "SurfaceViewText", "LearnGameViewTest", "MineTest", "MatrixViewTest",
-            "CanvasTest", "MoveBackTest", "WarpViewTest", "DrawOnPathTest",
-            "PathInvalidataTest", "XMLShapeTest", "WebViewTest", "TelephoneTest",
-            "ReadContactTest", "ServiceTest", "SendbroadcastTest", "PalmistryTest",
-            "CircleProgressViewTest", "TalkUITest", "ChartViewTest", "GlowPadTest"};
+    private String[] s = {"TextSwitcherTest", "AutoCompleteTextViewTest", "ListActivityTest", "GetImageMethodTest"
+            , "ScaleTypeTest", "EditTextTest", "SharedPreferencesTest", "MarqueeTextViewTest"
+            , "SurfaceViewText", "LearnGameViewTest", "MineTest", "MatrixViewTest"
+            , "CanvasTest", "MoveBackTest", "WarpViewTest", "DrawOnPathTest"
+            , "PathInvalidataTest", "XMLShapeTest", "WebViewTest", "TelephoneTest"
+            , "ReadContactTest", "ServiceTest", "SendbroadcastTest", "PalmistryTest"
+            , "CircleProgressViewTest", "TalkUITest", "ChartViewTest", "GlowPadTest"};
 
-    private Class<?>[] c = {TextSwitcherTest.class, AutoCompleteTextViewTest.class, ListActivityTest.class, GetImageMethodTest.class,
-            ScaleTypeTest.class, EditTextTest.class, SharedPreferencesTest.class, MarqueeTextViewTest.class,
-            SurfaceViewTest.class, LearnGameViewTest.class, MineTest.class, MatrixViewTest.class,
-            CanvasTest.class, MoveBackTest.class, WarpViewTest.class, DrawOnPathTest.class,
-            PathInvalidataViewTest.class, XMLShapeTest.class, WebViewTest.class, TelephoneTest.class,
-            ReadContactTest.class, ServiceTest.class, SendbroadcastTest.class, PalmistryTest.class,
-            CircleProgressViewTest.class, TalkUITest.class, ChartViewTest.class, GlowPadViewTest.class};
+    private Class<?>[] c = {TextSwitcherTest.class, AutoCompleteTextViewTest.class, ListActivityTest.class, GetImageMethodTest.class
+            , ScaleTypeTest.class, EditTextTest.class, SharedPreferencesTest.class, MarqueeTextViewTest.class
+            , SurfaceViewTest.class, LearnGameViewTest.class, MineTest.class, MatrixViewTest.class
+            , CanvasTest.class, MoveBackTest.class, WarpViewTest.class, DrawOnPathTest.class
+            , PathInvalidataViewTest.class, XMLShapeTest.class, WebViewTest.class, TelephoneTest.class
+            , ReadContactTest.class, ServiceTest.class, SendbroadcastTest.class, PalmistryTest.class
+            , CircleProgressViewTest.class, TalkUITest.class, ChartViewTest.class, GlowPadViewTest.class};
 
     private GestureDetector myGestureDetector; // 定义一个GestureDetector(手势识别类)对象的引用
     private LinearLayout linear;

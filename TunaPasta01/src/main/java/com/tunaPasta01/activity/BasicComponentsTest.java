@@ -33,7 +33,7 @@ public class BasicComponentsTest extends Activity {
     private RadioButton radio01, radio02, radio03;
     private DatePicker date01;
     private TimePicker time01;
-    private ToggleButton toogle01;
+    private ToggleButton toggle01;
     private ScrollView scroll;
 
     @Override
@@ -132,7 +132,7 @@ public class BasicComponentsTest extends Activity {
         date01 = findViewById(R.id.main_date01);
         time01 = findViewById(R.id.main_time01);
 
-        toogle01 = findViewById(R.id.main_toogle01);
+        toggle01 = findViewById(R.id.main_toogle01);
 
         scroll = findViewById(R.id.scroll);
 
@@ -155,7 +155,7 @@ public class BasicComponentsTest extends Activity {
             }
         });
 
-        toogle01.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+        toggle01.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 Toast.makeText(BasicComponentsTest.this, "scrollview的位置为" + scroll.getScrollY() + "scrollview距离底部的位置为" + scroll.getPaddingBottom(), Toast.LENGTH_SHORT).show();
             }
@@ -184,7 +184,7 @@ public class BasicComponentsTest extends Activity {
                 stringBuffer.append("\n");
                 stringBuffer.append("DatePicker:" + date01.getYear() + "-" + (date01.getMonth() + 1) + "-" + date01.getDayOfMonth() + "\n");
                 stringBuffer.append("TimePicker:" + time01.getCurrentHour() + ":" + time01.getCurrentMinute() + "\n");
-                stringBuffer.append("ToggleButton:" + toogle01.isChecked());
+                stringBuffer.append("ToggleButton:" + toggle01.isChecked());
 
                 Intent it = new Intent(BasicComponentsTest.this, BasicComponentsTestResult.class);
                 it.putExtra("values", stringBuffer.toString());

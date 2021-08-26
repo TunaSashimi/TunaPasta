@@ -45,7 +45,11 @@
         <activity android:name="com.tunaPasta12.activity.TranslucentGLSurfaceViewActivity" />
         <activity android:name="com.tunaPasta12.activity.AlertDialogSamples" />
         <activity android:name="com.tunaPasta12.activity.RotatingButton" />
-        <activity android:name="com.tunaPasta12.activity.InputOpenClosedAutomaticTest" />
+        <activity
+            android:name="com.tunaPasta12.activity.SoftKeyBoardListenerTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
     </application>
-
 </manifest>

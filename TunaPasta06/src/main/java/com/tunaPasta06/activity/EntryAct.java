@@ -18,19 +18,21 @@ import com.tunaPasta06.R;
 
 public class EntryAct extends Activity {
 
-    private String[] s = {"GalleryAutoChangeTest", "BootTest", "ImproveListViewTest", "Rotata3DEffectTest", "OutOfMemoryErrorTest",
-            "AnimatedGalleryTest", "DragListViewTest", "SmileyParserTest", "PageTurningTest", "ViewPagerTest",
-            "ActivityGroupTest01", "ActivityGroupTest02", "ActivityGroupTest03", "MeasureSizeTest", "IncludeTest",
-            "MergeTest", "SlidePageViewTest", "TopNavigationBarTest", "NavigationBarTest", "NavigationBarRelevanceTest",
-            "GridViewTest", "QueryActivityTest", "GetPhoneSpecificationsTest", "PieChartTest", "AppWidgetProviderIntroduce",
-            "GetPhoneLanguageTest", "Offect3DAnimationTest", "PinProgressButtonTest",};
+    private String[] s = {"GalleryAutoChangeTest", "BootTest", "ImproveListViewTest", "Rotata3DEffectTest",
+            "OutOfMemoryErrorTest", "AnimatedGalleryTest", "DragListViewTest", "SmileyParserTest",
+            "PageTurningTest", "ViewPagerTest", "ActivityGroupTest01", "ActivityGroupTest02",
+            "ActivityGroupTest03", "MeasureSizeTest", "IncludeTest", "MergeTest",
+            "SlidePageViewTest", "TopNavigationBarTest", "NavigationBarTest", "NavigationBarRelevanceTest",
+            "GridViewTest", "QueryActivityTest", "GetPhoneSpecificationsTest", "PieChartTest",
+            "AppWidgetProviderIntroduce", "GetPhoneLanguageTest", "Offect3DAnimationTest", "PinProgressButtonTest",};
 
-    private Class<?>[] c = {GalleryAutoChangeTest.class, BootTest.class, ImproveListViewTest.class, Rotate3DEffectTest.class, OutOfMemoryErrorTest.class,
-            AnimatedGalleryTest.class, DragListViewTest.class, SmileyParserTest.class, PageTurningTest.class, ViewPagerTest.class,
-            ActivityGroupTest01.class, ActivityGroup02.class, ActivityGroup03.class, MeasureSizeTest.class, IncludeTest.class,
-            MergeTest.class, SlidePageViewTest.class, TopNavigationBarTest.class, NavigationBarTest.class, NavigationBarRelevanceTest.class,
-            GridViewTest.class, QueryActivityTest.class, GetPhoneSpecificationsTest.class, PieChartTest.class, AppWidgetProviderIntroduceTest.class,
-            GetPhoneLanguageTest.class, Offect3DAnimationTest.class, PinProgressButtonTest.class,};
+    private Class<?>[] c = {GalleryAutoChangeTest.class, BootTest.class, ImproveListViewTest.class, Rotate3DEffectTest.class,
+            OutOfMemoryErrorTest.class, AnimatedGalleryTest.class, DragListViewTest.class, SmileyParserTest.class,
+            PageTurningTest.class, ViewPagerTest.class, ActivityGroupTest01.class, ActivityGroup02.class,
+            ActivityGroup03.class, MeasureSizeTest.class, IncludeTest.class, MergeTest.class,
+            SlidePageViewTest.class, TopNavigationBarTest.class, NavigationBarTest.class, NavigationBarRelevanceTest.class,
+            GridViewTest.class, QueryActivityTest.class, GetPhoneSpecificationsTest.class, PieChartTest.class,
+            AppWidgetProviderIntroduceTest.class, GetPhoneLanguageTest.class, Offect3DAnimationTest.class, PinProgressButtonTest.class,};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

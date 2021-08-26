@@ -14,8 +14,7 @@ import android.widget.FrameLayout;
 
 import java.lang.reflect.Field;
 
-
-public class FloatTouchListener implements View.OnTouchListener {
+public class FloatingDecorTouchListener implements View.OnTouchListener {
     //
     public static class Builder {
         private Activity activity;
@@ -53,12 +52,12 @@ public class FloatTouchListener implements View.OnTouchListener {
             return this;
         }
 
-        public FloatTouchListener build() {
+        public FloatingDecorTouchListener build() {
             return createDragView(this);
         }
     }
 
-    private static FloatTouchListener createDragView(FloatTouchListener.Builder builder) {
+    private static FloatingDecorTouchListener createDragView(FloatingDecorTouchListener.Builder builder) {
         if (builder == null) {
             throw new NullPointerException("the param builder is null when execute method create");
         }
@@ -68,7 +67,7 @@ public class FloatTouchListener implements View.OnTouchListener {
         if (builder.view == null) {
             throw new NullPointerException("the view is null");
         }
-        FloatTouchListener dragTouchListener = new FloatTouchListener(builder);
+        FloatingDecorTouchListener dragTouchListener = new FloatingDecorTouchListener(builder);
         return dragTouchListener;
     }
 
@@ -80,7 +79,7 @@ public class FloatTouchListener implements View.OnTouchListener {
     private int mStartX, mStartY, mLastX, mLastY;
     private boolean mTouchResult = false;
 
-    private FloatTouchListener(FloatTouchListener.Builder builder) {
+    private FloatingDecorTouchListener(FloatingDecorTouchListener.Builder builder) {
         mBuilder = builder;
         initDragView();
     }
