@@ -36,6 +36,7 @@ public class FloatingDecorViewTest extends Activity {
                 .setSize(100, 100)
                 .setView(imageView)
                 .build();
+
         //
         button = findViewById(R.id.btn_move);
         button.setOnClickListener(new View.OnClickListener() {
