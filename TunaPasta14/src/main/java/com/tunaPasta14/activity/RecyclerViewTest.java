@@ -29,7 +29,6 @@ public class RecyclerViewTest extends Activity {
     private RecycleViewAdapter recycleViewAdapter;
     private RecyclerView recyclerView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
