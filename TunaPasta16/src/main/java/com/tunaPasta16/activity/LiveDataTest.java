@@ -2,6 +2,7 @@ package com.tunaPasta16.activity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import com.tunaPasta16.livedata.UserViewModel;
 
 public class LiveDataTest extends FragmentActivity {
     private TextView mContentTv;
+    private Button btn_test;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,23 +25,24 @@ public class LiveDataTest extends FragmentActivity {
         setContentView(R.layout.livedatatest);
 
         mContentTv = findViewById(R.id.tv_content);
+        btn_test = findViewById(R.id.btn_test);
 
-        //构建ViewModel实例
-        UserViewModel userModel = ViewModelProviders.of(this).get(UserViewModel.class);
+        //构建userViewModel实例
+        UserViewModel userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
 
         //让TextView观察ViewModel中数据的变化,并实时展示
-        userModel.userMutableLiveData.observe(this, new Observer<User>() {
+        userViewModel.userMutableLiveData.observe(this, new Observer<User>() {
             @Override
             public void onChanged(User user) {
                 mContentTv.setText(user.toString());
             }
         });
 
-        findViewById(R.id.btn_test).setOnClickListener(new View.OnClickListener() {
+        btn_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //点击按钮  更新User数据  观察TextView变化
-                userModel.doSomething();
+                userViewModel.update();
             }
         });
     }
