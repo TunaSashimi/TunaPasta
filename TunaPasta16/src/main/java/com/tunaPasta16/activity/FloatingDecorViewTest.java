@@ -1,8 +1,14 @@
 package com.tunaPasta16.activity;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -32,9 +38,10 @@ public class FloatingDecorViewTest extends Activity {
 
         floatingDecorTouchListener = new FloatingDecorTouchListener.Builder()
                 .setActivity(this)
-                .setLoacation(30, 30)
+                .setLoacation(getScreenWidth(this) - (int)(dp2px(115f)),
+                        getScreenHeight(this) - (int)(dp2px(115f)))
+                .setSize((int)(dp2px(95f)),(int)( dp2px(95f)))
                 .setNeedSuctEdge(false)
-                .setSize(100, 100)
                 .setView(imageView)
                 .build();
 
@@ -66,5 +73,23 @@ public class FloatingDecorViewTest extends Activity {
                 }
             }
         });
+    }
+
+    public  float dp2px(float dp) {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+    }
+
+    //获取屏幕宽度
+    public static int getScreenWidth(Context context) {
+        WindowManager windowManager = ((Activity) context).getWindowManager();
+        Display display = windowManager.getDefaultDisplay();
+        return display.getWidth();
+    }
+
+    //获取屏幕高度
+    public static int getScreenHeight(Context context) {
+        WindowManager windowManager = ((Activity) context).getWindowManager();
+        Display display = windowManager.getDefaultDisplay();
+        return display.getHeight();
     }
 }
