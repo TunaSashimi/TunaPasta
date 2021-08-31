@@ -17,8 +17,8 @@ public class CustomAnimationTest extends Activity{
 
 		setContentView(R.layout.customanimationtest);
 
-		Button button = (Button) findViewById(R.id.button);
-		final ImageView image = (ImageView) findViewById(R.id.image);
+		Button button =  findViewById(R.id.button);
+		final ImageView image =  findViewById(R.id.image);
 		
 		final CustomAnimation customAnimation=new CustomAnimation();
 		
@@ -28,6 +28,5 @@ public class CustomAnimationTest extends Activity{
 				image.startAnimation(customAnimation);
 			}
 		});
-		
 	}
 }

@@ -9,7 +9,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -24,13 +23,13 @@ import com.tunaPasta16.R;
 public class ObjectAnimatorFragment extends Fragment {
     //
     ImageView image_add,
-            head_top_common, head_boy_common, head_man_common, head_woman_common, head_bottom_common;
+            img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105;
     //
     int[] resourceArray = {R.drawable.head_woman_common, R.drawable.head_woman_common, R.drawable.head_man_common, R.drawable.head_boy_common, R.drawable.head_boy_common};
     int dialNum;
 
     //
-    private static long DURATION = 2000;
+    private static long DURATION = 1500;
     private long lastTime;
 
     @Nullable
@@ -42,11 +41,11 @@ public class ObjectAnimatorFragment extends Fragment {
         float radiusPX = dpToPx(75);
 
         image_add = constraintLayout.findViewById(R.id.image_add);
-        head_top_common = constraintLayout.findViewById(R.id.head_top_common);
-        head_boy_common = constraintLayout.findViewById(R.id.head_boy_common);
-        head_man_common = constraintLayout.findViewById(R.id.head_man_common);
-        head_woman_common = constraintLayout.findViewById(R.id.head_woman_common);
-        head_bottom_common = constraintLayout.findViewById(R.id.head_bottom_common);
+        img_angle_345 = constraintLayout.findViewById(R.id.img_angle_345);
+        img_angle_285 = constraintLayout.findViewById(R.id.img_angle_285);
+        img_angle_225 = constraintLayout.findViewById(R.id.img_angle_225);
+        img_angle_165 = constraintLayout.findViewById(R.id.img_angle_165);
+        img_angle_105 = constraintLayout.findViewById(R.id.img_angle_105);
 
         //
         image_add.setOnClickListener(v -> {
@@ -57,11 +56,11 @@ public class ObjectAnimatorFragment extends Fragment {
             lastTime = System.currentTimeMillis();
             dialNum++;
             //
-            playAnimation(image_add, head_top_common, radiusPX, resourceArray[(4 + dialNum) % 5], 255, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
-            playAnimation(image_add, head_boy_common, radiusPX, resourceArray[(3 + dialNum) % 5], 195, -60, 1f, 1.4f, 0.4f, 1f, DURATION);
-            playAnimation(image_add, head_man_common, radiusPX, resourceArray[(2 + dialNum) % 5], 135, -60, 1f, 0.7f, 1f, 0.4f, DURATION);
-            playAnimation(image_add, head_woman_common, radiusPX, resourceArray[(1 + dialNum) % 5], 75, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
-            playAnimation(image_add, head_bottom_common, radiusPX, resourceArray[(0 + dialNum) % 5], 15, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
+            playAnimation(image_add, img_angle_345, radiusPX, resourceArray[(4 + dialNum) % 5], 255, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
+            playAnimation(image_add, img_angle_285, radiusPX, resourceArray[(3 + dialNum) % 5], 195, -60, 1f, 1.4f, 0.4f, 1f, DURATION);
+            playAnimation(image_add, img_angle_225, radiusPX, resourceArray[(2 + dialNum) % 5], 135, -60, 1f, 0.7f, 1f, 0.4f, DURATION);
+            playAnimation(image_add, img_angle_165, radiusPX, resourceArray[(1 + dialNum) % 5], 75, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
+            playAnimation(image_add, img_angle_105, radiusPX, resourceArray[(0 + dialNum) % 5], 15, -60, 1f, 1f, 0.4f, 0.4f, DURATION);
         });
         return constraintLayout;
     }

@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/btn_add" />
 
     <ImageView
-        android:id="@+id/head_top_common"
+        android:id="@+id/img_angle_345"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:alpha="0.4"
@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/head_boy_common" />
 
     <ImageView
-        android:id="@+id/head_boy_common"
+        android:id="@+id/img_angle_285"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:alpha="0.4"
@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/head_boy_common" />
 
     <ImageView
-        android:id="@+id/head_man_common"
+        android:id="@+id/img_angle_225"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintCircle="@+id/image_add"
@@ -68,7 +68,7 @@
         app:srcCompat="@drawable/head_man_common" />
 
     <ImageView
-        android:id="@+id/head_woman_common"
+        android:id="@+id/img_angle_165"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:alpha="0.4"
@@ -80,7 +80,7 @@
         app:srcCompat="@drawable/head_woman_common" />
 
     <ImageView
-        android:id="@+id/head_bottom_common"
+        android:id="@+id/img_angle_105"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:alpha="0.4"
