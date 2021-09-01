@@ -25,7 +25,10 @@ public class ObjectAnimatorFragment extends Fragment {
     ImageView image_add,
             img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105;
     //
-    int[] resourceArray = {R.drawable.head_woman_common, R.drawable.head_woman_common, R.drawable.head_man_common, R.drawable.head_boy_common, R.drawable.head_boy_common};
+    int[] resourceArray =
+            {R.drawable.head_woman_common, R.drawable.head_woman_common,
+                    R.drawable.head_man_common, R.drawable.head_boy_common,
+                    R.drawable.head_boy_common};
     int dialNum;
 
     //
@@ -49,7 +52,7 @@ public class ObjectAnimatorFragment extends Fragment {
 
         //
         image_add.setOnClickListener(v -> {
-            if (System.currentTimeMillis() - lastTime < DURATION) {
+            if (System.currentTimeMillis() - lastTime < DURATION + 100) {
                 return;
             }
 

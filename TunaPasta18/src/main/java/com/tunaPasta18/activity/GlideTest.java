@@ -36,15 +36,19 @@ public class GlideTest extends Activity {
         Glide.with(this).load(R.drawable.gif_shake_head).into(iv_act_gif03);
 
 //        Glide.with(this)
-//            .load("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2303073818,2669135227&fm=27&gp=0.jpg")
-//            .into(iv_act_gif04);
+//                .load("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2303073818,2669135227&fm=27&gp=0.jpg")
+//                .placeholder(R.drawable.gif_blink)
+//                .circleCrop()
+//                .error(R.drawable.gif_blink)
+//                .into(iv_act_gif04);
 
         final WeakReference<ImageView> imageViewWeakReference = new WeakReference<>(iv_act_gif04);
         ImageView target = imageViewWeakReference.get();
         if (target != null) {
+            //可以直接下载圆形头像只要使用.circleCrop()
             Glide.with(GlideTest.this)
-                .load("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2303073818,2669135227&fm=27&gp=0.jpg")
-                .into(target);
+                    .load("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2303073818,2669135227&fm=27&gp=0.jpg")
+                    .into(target);
         }
     }
 
