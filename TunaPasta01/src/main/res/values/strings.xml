@@ -16,7 +16,5 @@
     <string name="spinnerdemo">Spinner</string>
     <string name="listview">ListView</string>
     <string name="fileaccess">FileAccess</string>
-
     <string name="text">%1$tF销售额增长%2$d%%，奖励%3$s马尔代夫游。</string>
-
 </resources>

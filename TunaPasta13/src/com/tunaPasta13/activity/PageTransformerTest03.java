@@ -89,6 +89,5 @@ public class PageTransformerTest03 extends Activity {
             }
         });
         mJazzy.setPageMargin(30);
-        // mJazzy.setOutlineEnabled(true);
     }
 }

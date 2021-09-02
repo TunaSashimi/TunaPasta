@@ -61,6 +61,7 @@ public class RecyclerViewTest extends Activity {
 
         //Item间的间隔
         recyclerView.addItemDecoration(new RecyclerItemDecoration(this));
+
         //Item删减动画
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 

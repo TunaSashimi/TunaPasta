@@ -92,5 +92,4 @@ class DepthPageTransformer implements ViewPager.PageTransformer {
 
         }
     }
-
 }

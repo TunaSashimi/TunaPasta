@@ -8,5 +8,11 @@
     <string name="end">终点站:</string>
     <string name="choice">交通方式:</string>
     
-    <color name="line_color">#E1E2E4</color>
+    <color name="line_color">#e1e2e4</color>
+
+    <string-array name="flexWrapArray">
+        <item>nowrap</item>
+        <item>wrap </item>
+        <item>wrap_reverse</item>
+    </string-array>
 </resources>

@@ -95,5 +95,4 @@ public class PageTransformerTest02 extends Activity {
             }
         }
     }
-
 }

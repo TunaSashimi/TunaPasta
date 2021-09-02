@@ -76,6 +76,7 @@
         <activity android:name="com.tunaPasta13.activity.PageTransformerTest01" />
         <activity android:name="com.tunaPasta13.activity.PageTransformerTest03" />
         <activity android:name="com.tunaPasta13.activity.PageTransformerTest02" />
+        <activity android:name="com.tunaPasta13.activity.FlexBoxLayoutTest" />
     </application>
 
 </manifest>
