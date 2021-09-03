@@ -6,8 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.tunaPasta14.R;
-import com.tunaPasta14.widget.NowImageAdapter;
-import com.tunaPasta14.widget.PlusImageAdapter;
+import com.tunaPasta14.adapter.NowImageAdapter;
+import com.tunaPasta14.adapter.PlusImageAdapter;
 import com.tunaPasta14.widget.SpeedScrollListener;
 
 public class SugaredlistAnimationsTest extends ListActivity {

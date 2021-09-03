@@ -118,7 +118,7 @@ public class Index_Fragment extends Fragment implements OnClickListener,
 	}
 
 	private void initDots() {
-		LinearLayout ll = (LinearLayout) view.findViewById(R.id.ll);
+		LinearLayout ll = (LinearLayout) view.findViewById(R.id.linear);
 		dots = new ImageView[pics.length];
 
 		// 循环取得小点图片

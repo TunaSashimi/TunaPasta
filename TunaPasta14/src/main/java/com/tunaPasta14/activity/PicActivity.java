@@ -51,13 +51,11 @@ public class PicActivity extends Activity implements OnTouchListener {
         setContentView(R.layout.layoutpic);
         current_page = (TextView) findViewById(R.id.pages);
 
-
         gallery = (MyGallery) findViewById(R.id.mygallery);
         gallery.setVerticalFadingEdgeEnabled(false);
         gallery.setHorizontalFadingEdgeEnabled(false);//);// 设置view在水平滚动时，水平边不淡出。
         galleryAdapter = new GalleryAdapter(this);
         galleryAdapter.setOnPageChangListener(new ImageChangeListener() {
-
             @Override
             public void onChange(int i) {
                 current_page.setText(i + "/" + galleryAdapter.getCount());
@@ -131,7 +129,6 @@ public class PicActivity extends Activity implements OnTouchListener {
                 isScale = false;
                 break;
         }
-
         return false;
     }
 }

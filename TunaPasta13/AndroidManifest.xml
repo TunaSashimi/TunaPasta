@@ -49,7 +49,7 @@
         <activity
             android:name="com.tunaPasta13.activity.OptimalPathTest"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name="com.tunaPasta13.activity.OptimalPathResult"
             android:configChanges="keyboardHidden|orientation"
@@ -77,6 +77,9 @@
         <activity android:name="com.tunaPasta13.activity.PageTransformerTest03" />
         <activity android:name="com.tunaPasta13.activity.PageTransformerTest02" />
         <activity android:name="com.tunaPasta13.activity.FlexBoxLayoutTest" />
+        <activity android:name="com.tunaPasta13.activity.LEDViewTest" />
+        <activity android:name="com.tunaPasta13.activity.TimerTaskTest" />
+        <activity android:name="com.tunaPasta13.activity.InvoiceTest" />
     </application>
 
 </manifest>

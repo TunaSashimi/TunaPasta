@@ -8,7 +8,7 @@ import android.widget.CompoundButton;
 import android.widget.RadioButton;
 
 import com.tunaPasta14.R;
-import com.tunaPasta14.widget.RecycleViewAdapter;
+import com.tunaPasta14.adapter.RecycleViewAdapter;
 import com.tunaPasta14.widget.RecyclerItemDecoration;
 
 import java.util.ArrayList;

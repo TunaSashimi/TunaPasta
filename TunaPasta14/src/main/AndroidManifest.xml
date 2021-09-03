@@ -51,11 +51,16 @@
         <activity android:name="com.tunaPasta14.activity.RotateActivity" />
         <activity android:name="com.tunaPasta14.activity.PathMorphActivity" />
         <activity android:name="com.tunaPasta14.activity.FillInHeartActivity" />
-        <activity android:name="com.tunaPasta14.activity.LEDViewTest" />
+
         <activity android:name="com.tunaPasta14.activity.MetaballViewTest" />
         <activity android:name="com.tunaPasta14.activity.RecyclerViewTest" />
         <activity android:name="com.tunaPasta14.activity.RecyclerViewMultiTest" />
         <activity android:name="com.tunaPasta14.activity.PicActivity" />
+        <activity android:name="com.tunaPasta14.activity.InflateTest" />
+        <activity android:name="com.tunaPasta14.activity.SoundPoolTest" />
+        <activity android:name="com.tunaPasta14.activity.IDKeyBoardTest" />
+        <activity android:name="com.tunaPasta14.activity.GlideTest" />
+        <activity android:name="com.tunaPasta14.activity.IndentFocusListTest" />
 
         <receiver
             android:name="com.tunaPasta14.activity.LocaleChangedReceiver"

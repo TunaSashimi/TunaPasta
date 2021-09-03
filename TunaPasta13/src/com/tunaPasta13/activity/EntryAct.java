@@ -21,7 +21,7 @@ public class EntryAct extends Activity {
             "UseJSResolveTest", "CustomExceptionTest", "ScrollerRelativeLayoutTest", "ScrollerLinearLayoutTest",
             "PagerContainerTest", "IMETest", "RequestFocusTest", "SMSSendTest",
             "MovieDecodeGifViewTest", "PageTransformerTest01", "PageTransformerTest02", "PageTransformerTest03",
-            "FlexBoxLayoutTest",};
+            "FlexBoxLayoutTest", "LEDViewTest", "TimerTaskTest", "InvoiceTest"};
 
     private Class<?>[] c = {PentagramTest.class, RoundCornerTest.class, ClickThreeTimes.class, RoundImageViewTest.class,
             SoundRecordingTest.class, OptimalPathTest.class, TakeBlowTest.class, WheelDemo.class,
@@ -29,7 +29,7 @@ public class EntryAct extends Activity {
             UseJSResolveTest.class, CustomExceptionTest.class, ScrollerRelativeLayoutTest.class, ScrollerLinearLayoutTest.class,
             PagerContainerTest.class, IMETest.class, RequestFocusTest.class, SMSSendTest.class,
             MovieDecodeGifViewTest.class, PageTransformerTest01.class, PageTransformerTest02.class, PageTransformerTest03.class,
-            FlexBoxLayoutTest.class,};
+            FlexBoxLayoutTest.class, LEDViewTest.class, TimerTaskTest.class, InvoiceTest.class};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

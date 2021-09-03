@@ -39,21 +39,11 @@
         <activity
             android:name="com.tunaPasta18.activity.ImageFilterTest"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.tunaPasta18.activity.TimerTaskTest"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name="com.tunaPasta18.activity.WebViewTest"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.tunaPasta18.activity.InvoiceTest"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.tunaPasta18.activity.IndentFocusListTest"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.tunaPasta18.activity.InflateTest"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name="com.tunaPasta18.activity.NotesListTest"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -173,9 +163,6 @@
 
         <activity android:name="com.tunaPasta18.activity.CropperSampleTest" />
         <activity android:name="com.tunaPasta18.activity.SettingsActivity" />
-        <activity android:name="com.tunaPasta18.activity.GlideTest" />
-        <activity android:name="com.tunaPasta18.activity.SoundPoolTest" />
-        <activity android:name="com.tunaPasta18.activity.IDKeyBoardTest" />
         <activity android:name="com.tunaPasta18.activity.RXJava2Test" />
         <activity android:name="com.tunaPasta18.activity.LeakCanaryTest" />
         <activity android:name="com.tunaPasta18.activity.LottieTest01" />
