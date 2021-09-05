@@ -157,14 +157,8 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             animatorSet.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationStart(Animator animation) {
-                    if (clockwise) {
-                        if (startAngle == 315) {
-                            imageView.setImageResource(resourceArray[getIndex(1 + dialCount, resourceArray.length)]);
-                        }
-                    } else {
-                        if (startAngle == 315) {
-                            imageView.setImageResource(resourceArray[getIndex(-1 + dialCount, resourceArray.length)]);
-                        }
+                    if (startAngle == 315) {
+                        imageView.setImageResource(resourceArray[getIndex(clockwise ? 1 + dialCount : -1 + dialCount, resourceArray.length)]);
                     }
                 }
             });
