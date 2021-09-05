@@ -124,22 +124,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
         int startAngle = getIndex(firstAngle + SWEEP_ANGLE * dialCount, 360);
 
-        if (clockwise) {
-            if (startAngle == 75) {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, true);
-            } else if (startAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, true);
-            } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, true);
-            }
+        if (startAngle == 135) {
+            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+        } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
+            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
         } else {
-            if (startAngle == 195) {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, false);
-            } else if (startAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, false);
-            } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, false);
-            }
+            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
         }
     }
 
