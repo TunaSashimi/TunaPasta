@@ -73,5 +73,5 @@
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
 
-
+    <dimen name="clock_radius">75dp</dimen>
 </resources>

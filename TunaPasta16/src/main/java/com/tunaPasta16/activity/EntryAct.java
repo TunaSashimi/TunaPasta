@@ -19,16 +19,17 @@ public class EntryAct extends Activity {
             "TSectorTest", "TextInputLayoutTest", "VerificationCodeViewTest", "CountDownTimerTest",
             "RelativeLayoutCodeTest", "LaunchModeTest", "LaunchJumpTest", "LiveDataTest",
             "CoordinatorLayoutTest", "ConstraintLayoutTest", "DialogFragmentTest", "LayoutDividerTest",
-            "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest", "ObjectAnimatorTest",
-            "FlingViewTest", "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest", "MotionLayoutConstraintSetTest",
-            "MotionSceneTest"};
+            "CircularTest", "TransparentStatusBarTest", "ImmersiveStatusBarTest", "FlingImageViewTest",
+            "ObjectAnimatorTest", "MotionLayoutOnClickTest", "MotionLayoutOnSwipeTest", "MotionLayoutConstraintSetTest",
+            "MotionSceneTest"
+    };
 
     private Class<?>[] c = {ListSamples.class, SwipeRefreshLayoutTest.class, FloatingDragViewTest.class, FloatingDecorViewTest.class,
             TSectorTest.class, TextInputLayoutTest.class, VerificationCodeViewTest.class, CountDownTimerTest.class,
             RelativeLayoutCodeTest.class, LaunchModeTest.class, LaunchJumpTest.class, LiveDataTest.class,
             CoordinatorLayoutTest.class, ConstraintLayoutTest.class, DialogFragmentTest.class, LayoutDividerTest.class,
-            CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class, ObjectAnimatorTest.class,
-            FlingViewTest.class, MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class, MotionLayoutConstraintSetTest.class,
+            CircularTest.class, TransparentStatusBarTest.class, ImmersiveStatusBarTest.class, FlingImageViewTest.class,
+            ObjectAnimatorTest.class, MotionLayoutOnClickTest.class, MotionLayoutOnSwipeTest.class, MotionLayoutConstraintSetTest.class,
             MotionSceneTest.class
     };
 

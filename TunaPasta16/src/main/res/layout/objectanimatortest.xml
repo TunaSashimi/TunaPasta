@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/btn_add" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_345"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -42,12 +42,11 @@
         android:scaleY="0.7"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="345"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_285"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -56,23 +55,21 @@
         android:scaleY="0.7"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="285"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_225"
         android:layout_width="65dp"
         android:layout_height="65dp"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="225"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_165"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -81,12 +78,11 @@
         android:scaleY="0.7"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="165"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_105"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -95,12 +91,11 @@
         android:scaleY="0.7"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="105"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.tunaPasta16.view.FlingImageView
         android:id="@+id/img_angle_045"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -109,10 +104,9 @@
         android:scaleY="0.7"
         app:layout_constraintCircle="@+id/image_add"
         app:layout_constraintCircleAngle="045"
-        app:layout_constraintCircleRadius="75dp"
+        app:layout_constraintCircleRadius="@dimen/clock_radius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/head_default_common" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/img_setting"

@@ -78,7 +78,7 @@
         <activity
             android:name="com.tunaPasta16.activity.ObjectAnimatorTest"
             android:theme="@style/Theme.AppCompat" />
-        <activity android:name="com.tunaPasta16.activity.FlingViewTest" />
+        <activity android:name="com.tunaPasta16.activity.FlingImageViewTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnClickTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutOnSwipeTest" />
         <activity android:name="com.tunaPasta16.activity.MotionLayoutConstraintSetTest" />

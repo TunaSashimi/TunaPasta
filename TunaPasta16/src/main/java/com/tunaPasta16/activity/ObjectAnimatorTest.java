@@ -1,12 +1,13 @@
 package com.tunaPasta16.activity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.graphics.Color;
 import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -15,23 +16,26 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.tunaPasta16.R;
+import com.tunaPasta16.view.FlingImageView;
 
 public class ObjectAnimatorTest extends AppCompatActivity {
+
     //要跟XML里面的一致
-    private static int RADIUS_PX = 75;
-    private static int SWEEP_ANGLE = -60;
+    private static int SWEEP_ANGLE = 60;
     private static long DURATION = 1500;
     private long lastTime;
     //
     int dialCount;
-
-    //
-    ImageView image_add,
-            img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105, img_angle_045;
     //
     int[] resourceArray =
             {R.drawable.head_man_common, R.drawable.head_woman_common,
                     R.drawable.head_boy_common, R.drawable.head_boy_common};
+    //
+    ImageView image_add;
+    //
+    FlingImageView img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105, img_angle_045;
+    //
+    FlingImageView.ClockListener clockListener;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,60 +67,85 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         img_angle_045 = findViewById(R.id.img_angle_045);
 
         //img_angle_045不需要设置
-        img_angle_345.setImageResource(resourceArray[getIndex(-1, resourceArray.length)]);
-        img_angle_285.setImageResource(resourceArray[getIndex(0, resourceArray.length)]);
-        img_angle_225.setImageResource(resourceArray[getIndex(1, resourceArray.length)]);
-        img_angle_165.setImageResource(resourceArray[getIndex(2, resourceArray.length)]);
-        img_angle_105.setImageResource(resourceArray[getIndex(3, resourceArray.length)]);
+        img_angle_345.setImageResource(resourceArray[getIndex(0, resourceArray.length)]);
+        img_angle_285.setImageResource(resourceArray[getIndex(1, resourceArray.length)]);
+        img_angle_225.setImageResource(resourceArray[getIndex(2, resourceArray.length)]);
+        img_angle_165.setImageResource(resourceArray[getIndex(3, resourceArray.length)]);
+        img_angle_105.setImageResource(resourceArray[getIndex(4, resourceArray.length)]);
 
         //
-        image_add.setOnClickListener(v -> {
-            if (System.currentTimeMillis() - lastTime < DURATION + 100) {
-                return;
+        clockListener = new FlingImageView.ClockListener() {
+            @Override
+            public void clockWise() {
+                clockTurn(true);
             }
-            lastTime = System.currentTimeMillis();
 
-            //
-//            readyAnimation(image_add, img_angle_345, getIndex(255 - 60 * dialCount, 360));
-            readyAnimation(image_add, img_angle_285, getIndex(195 - 60 * dialCount, 360));
-            readyAnimation(image_add, img_angle_225, getIndex(135 - 60 * dialCount, 360));
-            readyAnimation(image_add, img_angle_165, getIndex(75 - 60 * dialCount, 360));
-//            readyAnimation(image_add, img_angle_105, getIndex(15 - 60 * dialCount, 360));
-//            readyAnimation(image_add, img_angle_045, getIndex(-45 - 60 * dialCount, 360));
-            dialCount++;
-        });
+            @Override
+            public void clockWiseAnti() {
+                clockTurn(false);
+            }
+        };
+
+        //
+        img_angle_345.setClockListener(clockListener);
+        img_angle_285.setClockListener(clockListener);
+        img_angle_225.setClockListener(clockListener);
+        img_angle_165.setClockListener(clockListener);
+        img_angle_105.setClockListener(clockListener);
+        img_angle_045.setClockListener(clockListener);
+
+//        image_add.setOnClickListener(v -> {
+//            clockTurn(true);
+//        });
     }
 
-    private float dpToPx(float dp) {
-        return TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics()
-        );
-    }
-
-    private int getIndex(int count, int modulo) {
-        int index = count % modulo;
-        if (index < 0) {
-            index = index + modulo;
+    private void clockTurn(boolean clockwise) {
+        if (System.currentTimeMillis() - lastTime < DURATION + 100) {
+            return;
         }
-        return index;
+        lastTime = System.currentTimeMillis();
+        //
+        readyAnimation(image_add, img_angle_345, 255, clockwise);
+        readyAnimation(image_add, img_angle_285, 195, clockwise);
+        readyAnimation(image_add, img_angle_225, 135, clockwise);
+        readyAnimation(image_add, img_angle_165, 75, clockwise);
+        readyAnimation(image_add, img_angle_105, 15, clockwise);
+        readyAnimation(image_add, img_angle_045, -45, clockwise);
+        if (clockwise) {
+            dialCount++;
+        } else {
+            dialCount--;
+        }
     }
 
-    private void readyAnimation(View view, ImageView imageView, int startAngle) {
-        float radiusPX = dpToPx(RADIUS_PX);
+    private void readyAnimation(View view, ImageView imageView, int firstAngle, boolean clockwise) {
         float centerX = view.getX() + view.getWidth() * 0.5f;
         float centerY = view.getY() + view.getHeight() * 0.5f;
+        float radiusPX = getResources().getDimension(R.dimen.clock_radius);
+        int startAngle = getIndex(firstAngle + SWEEP_ANGLE * dialCount, 360);
 
-        if (startAngle == 195) {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION);
-        } else if (startAngle == 135) {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION);
+        if (clockwise) {
+            if (startAngle == 75) {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, true);
+            } else if (startAngle == 135) {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, true);
+            } else {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, true);
+            }
         } else {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION);
+            if (startAngle == 195) {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, false);
+            } else if (startAngle == 135) {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, false);
+            } else {
+                playAnimation(centerX, centerY, radiusPX, imageView, startAngle, -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, false);
+            }
         }
     }
 
-    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView
-            , int startAngle, int sweepAngle, float startScale, float endScale, float startAlpha, float endAlpha, long duration) {
+    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView,
+                               int startAngle, int sweepAngle, float startScale, float endScale,
+                               float startAlpha, float endAlpha, long duration, boolean clockwise) {
         //
         float left = centerX - radiusPX - imageView.getWidth() * 0.5f;
         float top = centerY - radiusPX - imageView.getHeight() * 0.5f;
@@ -135,9 +164,31 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             AnimatorSet animatorSet = new AnimatorSet();
             animatorSet.setDuration(duration);
             animatorSet.playTogether(animTranslation, animationAlpha, animationScaleX, animationScaleY);
+            animatorSet.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                    if (clockwise) {
+                        if (startAngle == 315) {
+                            imageView.setImageResource(resourceArray[getIndex(1 + dialCount, resourceArray.length)]);
+                        }
+                    } else {
+                        if (startAngle == 315) {
+                            imageView.setImageResource(resourceArray[getIndex(-1 + dialCount, resourceArray.length)]);
+                        }
+                    }
+                }
+            });
             animatorSet.start();
         } else {
             // Create animator without using curved path
         }
+    }
+
+    private int getIndex(int count, int modulo) {
+        int index = count % modulo;
+        if (index < 0) {
+            index = index + modulo;
+        }
+        return index;
     }
 }
