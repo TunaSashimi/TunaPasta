@@ -19,8 +19,6 @@ import com.tunaPasta16.R;
 import com.tunaPasta16.view.FlingImageView;
 
 public class ObjectAnimatorTest extends AppCompatActivity {
-
-    //要跟XML里面的一致
     private static int SWEEP_ANGLE = 60;
     private static long DURATION = 1500;
     private long lastTime;
@@ -66,7 +64,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         img_angle_105 = findViewById(R.id.img_angle_105);
         img_angle_045 = findViewById(R.id.img_angle_045);
 
-        //img_angle_045不需要设置
+        //逆时针拜访,img_angle_045不需要设置
         img_angle_345.setImageResource(resourceArray[getIndex(0, resourceArray.length)]);
         img_angle_285.setImageResource(resourceArray[getIndex(1, resourceArray.length)]);
         img_angle_225.setImageResource(resourceArray[getIndex(2, resourceArray.length)]);
@@ -77,12 +75,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         clockListener = new FlingImageView.ClockListener() {
             @Override
             public void clockWise() {
-                clockTurn(true);
+                clockTurn(resourceArray, true);
             }
 
             @Override
             public void clockWiseAnti() {
-                clockTurn(false);
+                clockTurn(resourceArray, false);
             }
         };
 
@@ -93,24 +91,28 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         img_angle_165.setClockListener(clockListener);
         img_angle_105.setClockListener(clockListener);
         img_angle_045.setClockListener(clockListener);
-
-//        image_add.setOnClickListener(v -> {
-//            clockTurn(true);
-//        });
     }
 
-    private void clockTurn(boolean clockwise) {
+    private int getIndex(int count, int modulo) {
+        int index = count % modulo;
+        if (index < 0) {
+            index += modulo;
+        }
+        return index;
+    }
+
+    private void clockTurn(int[] intArray, boolean clockwise) {
         if (System.currentTimeMillis() - lastTime < DURATION + 100) {
             return;
         }
         lastTime = System.currentTimeMillis();
         //
-        readyAnimation(image_add, img_angle_345, 255, clockwise);
-        readyAnimation(image_add, img_angle_285, 195, clockwise);
-        readyAnimation(image_add, img_angle_225, 135, clockwise);
-        readyAnimation(image_add, img_angle_165, 75, clockwise);
-        readyAnimation(image_add, img_angle_105, 15, clockwise);
-        readyAnimation(image_add, img_angle_045, -45, clockwise);
+        readyAnimation(image_add, img_angle_345, intArray, 255, clockwise);
+        readyAnimation(image_add, img_angle_285, intArray, 195, clockwise);
+        readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
+        readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
+        readyAnimation(image_add, img_angle_105, intArray, 15, clockwise);
+        readyAnimation(image_add, img_angle_045, intArray, -45, clockwise);
         if (clockwise) {
             dialCount++;
         } else {
@@ -118,22 +120,22 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         }
     }
 
-    private void readyAnimation(View view, ImageView imageView, int firstAngle, boolean clockwise) {
+    private void readyAnimation(View view, ImageView imageView, int[] intArray, int firstAngle, boolean clockwise) {
         float centerX = view.getX() + view.getWidth() * 0.5f;
         float centerY = view.getY() + view.getHeight() * 0.5f;
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
         int startAngle = getIndex(firstAngle + SWEEP_ANGLE * dialCount, 360);
 
         if (startAngle == 135) {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
         } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
         } else {
-            playAnimation(centerX, centerY, radiusPX, imageView, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
+            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
         }
     }
 
-    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView,
+    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView, int[] intArray,
                                int startAngle, int sweepAngle, float startScale, float endScale,
                                float startAlpha, float endAlpha, long duration, boolean clockwise) {
         //
@@ -158,7 +160,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
                 @Override
                 public void onAnimationStart(Animator animation) {
                     if (startAngle == 315) {
-                        imageView.setImageResource(resourceArray[getIndex(clockwise ? 1 + dialCount : -1 + dialCount, resourceArray.length)]);
+                        imageView.setImageResource(intArray[getIndex(clockwise ? 1 + dialCount : -1 + dialCount, resourceArray.length)]);
                     }
                 }
             });
@@ -166,13 +168,5 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         } else {
             // Create animator without using curved path
         }
-    }
-
-    private int getIndex(int count, int modulo) {
-        int index = count % modulo;
-        if (index < 0) {
-            index = index + modulo;
-        }
-        return index;
     }
 }

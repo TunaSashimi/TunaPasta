@@ -285,7 +285,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_more"
+            android:id="@+id/text_medical_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -472,7 +472,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraint_order_service">
 
         <TextView
-            android:id="@+id/text__follow_doctor"
+            android:id="@+id/text_follow_doctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -484,15 +484,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text__follow_doctor_number"
+            android:id="@+id/text_follow_doctor_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:text="您还未关注过医生，去看看 >"
             android:textColor="#86949e"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@id/text__follow_doctor"
-            app:layout_constraintTop_toBottomOf="@id/text__follow_doctor" />
+            app:layout_constraintStart_toStartOf="@id/text_follow_doctor"
+            app:layout_constraintTop_toBottomOf="@id/text_follow_doctor" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

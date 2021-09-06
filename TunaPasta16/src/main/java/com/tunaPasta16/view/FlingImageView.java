@@ -1,5 +1,6 @@
 package com.tunaPasta16.view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 
+@SuppressLint("AppCompatCustomView")
 public class FlingImageView extends ImageView {
     private ClockListener clockListener;
     private GestureDetector gestureDetector;
