@@ -12,62 +12,54 @@ import androidx.annotation.Nullable;
 @SuppressLint("AppCompatCustomView")
 public class FlingImageView extends ImageView {
     private ClockListener clockListener;
-    private GestureDetector gestureDetector;
-    int MAJOR_MOVE = 20;
+    private float actionDownX, actionDownY;
+    private static int THRESHOLD_DISTANCE = 10;
 
     public FlingImageView(Context context) {
         super(context);
-        setGestureDetector(context);
     }
 
     public FlingImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        setGestureDetector(context);
     }
 
     public FlingImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setGestureDetector(context);
-    }
-
-    private void setGestureDetector(Context context) {
-        gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
-            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-                int dx = (int) (e2.getX() - e1.getX());
-                int dy = (int) (e2.getY() - e1.getY());
-                //降噪处理，必须有较大的动作才识别
-                if (Math.abs(dx) > MAJOR_MOVE && Math.abs(velocityX) > Math.abs(velocityY)) {
-                    if (velocityX > 0) {
-                        if (clockListener != null) {
-                            clockListener.clockWiseAnti();
-                        }
-                    } else {
-                        if (clockListener != null) {
-                            clockListener.clockWise();
-                        }
-                    }
-                    return true;
-                } else if (Math.abs(dy) > MAJOR_MOVE && Math.abs(velocityY) > Math.abs(velocityX)) {
-                    if (velocityY > 0) {
-                        if (clockListener != null) {
-                            clockListener.clockWiseAnti();
-                        }
-                    } else {
-                        if (clockListener != null) {
-                            clockListener.clockWise();
-                        }
-                    }
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        });
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        gestureDetector.onTouchEvent(event);
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                actionDownX = event.getX();
+                actionDownY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (actionDownX == 0 || actionDownY == 0) {
+                    return true;
+                }
+                float diffenceX = event.getX() - actionDownX;
+                float diffenceY = event.getY() - actionDownY;
+
+                if (Math.abs(diffenceX) > Math.abs(diffenceY) && Math.abs(diffenceX) > THRESHOLD_DISTANCE) {
+                    if (diffenceX >= 0) {
+                        clockListener.clockWiseAnti();
+                    } else {
+                        clockListener.clockWise();
+                    }
+                } else if (Math.abs(diffenceY) > Math.abs(diffenceX) && Math.abs(diffenceY) > THRESHOLD_DISTANCE) {
+                    if (diffenceY >= 0) {
+                        clockListener.clockWiseAnti();
+                    } else {
+                        clockListener.clockWise();
+                    }
+                }
+                break;
+            case MotionEvent.ACTION_UP:
+                actionDownX = 0f;
+                actionDownY = 0f;
+                break;
+        }
         return true;
     }
 
