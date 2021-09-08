@@ -29,6 +29,9 @@ public class FlingImageView extends ImageView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (clockListener == null) {
+            return true;
+        }
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 actionDownX = event.getX();
