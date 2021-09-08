@@ -8,7 +8,10 @@ public class DoTest extends Thread {
         t.join();
         t.doit();
 
-        System.out.println(57256 % 800);
+        System.out.println(4 % 2);
+        System.out.println(3 % 2);
+        System.out.println(-2 % 2);
+        System.out.println(-1 % 2);
     }
 
     public void run() {

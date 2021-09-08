@@ -29,8 +29,8 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             {
                     R.drawable.head_man_common,
                     R.drawable.head_woman_common,
-                    R.drawable.head_boy_common,
-                    R.drawable.head_boy_common,
+//                    R.drawable.head_boy_common,
+//                    R.drawable.head_boy_common,
             };
     //
     ImageView image_add;
@@ -80,15 +80,14 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     }
 
     private void setValue(int[] intArray) {
+        //2个,底下两个
         //3个,两边各补一个
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
 
-        if(intArray.length == 2){
-
-        }
-
-        //
-        if (intArray.length == 3) {
+        if (intArray.length == 2) {
+            img_angle_225.setImageResource(intArray[0]);
+            img_angle_165.setImageResource(intArray[1]);
+        } else if (intArray.length == 3) {
             img_angle_345.setImageResource(intArray[getIndex(-1, intArray.length)]);
             img_angle_285.setImageResource(intArray[getIndex(0, intArray.length)]);
             img_angle_225.setImageResource(intArray[getIndex(1, intArray.length)]);
@@ -116,12 +115,17 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         };
 
         //
-        img_angle_345.setClockListener(clockListener);
-        img_angle_285.setClockListener(clockListener);
-        img_angle_225.setClockListener(clockListener);
-        img_angle_165.setClockListener(clockListener);
-        img_angle_105.setClockListener(clockListener);
-        img_angle_045.setClockListener(clockListener);
+        if (intArray.length == 2) {
+            img_angle_225.setClockListener(clockListener);
+            img_angle_165.setClockListener(clockListener);
+        } else {
+            img_angle_345.setClockListener(clockListener);
+            img_angle_285.setClockListener(clockListener);
+            img_angle_225.setClockListener(clockListener);
+            img_angle_165.setClockListener(clockListener);
+            img_angle_105.setClockListener(clockListener);
+            img_angle_045.setClockListener(clockListener);
+        }
     }
 
     private void clockTurn(int[] intArray, boolean clockwise) {
@@ -129,13 +133,24 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             return;
         }
         lastTime = System.currentTimeMillis();
-        //
-        readyAnimation(image_add, img_angle_345, intArray, 255, clockwise);
-        readyAnimation(image_add, img_angle_285, intArray, 195, clockwise);
-        readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
-        readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
-        readyAnimation(image_add, img_angle_105, intArray, 15, clockwise);
-        readyAnimation(image_add, img_angle_045, intArray, -45, clockwise);
+
+        if (intArray.length == 2) {
+            if (dialCount % 2 == 0) {
+                readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
+                readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
+            } else {
+                readyAnimation(image_add, img_angle_225, intArray, 75, clockwise);
+                readyAnimation(image_add, img_angle_165, intArray, 135, clockwise);
+            }
+        } else {
+            readyAnimation(image_add, img_angle_345, intArray, 255, clockwise);
+            readyAnimation(image_add, img_angle_285, intArray, 195, clockwise);
+            readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
+            readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
+            readyAnimation(image_add, img_angle_105, intArray, 15, clockwise);
+            readyAnimation(image_add, img_angle_045, intArray, -45, clockwise);
+        }
+
         if (clockwise) {
             dialCount++;
         } else {
@@ -149,12 +164,20 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
         int startAngle = getIndex(firstAngle + SWEEP_ANGLE * dialCount, 360);
 
-        if (startAngle == 135) {
-            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
-        } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
-            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+        if (intArray.length == 2) {
+            if (firstAngle == 135) {
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+            } else {
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+            }
         } else {
-            playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
+            if (startAngle == 135) {
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+            } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+            } else {
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
+            }
         }
     }
 
@@ -182,11 +205,16 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             animatorSet.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationStart(Animator animation) {
-                    if (startAngle == 315) {
-                        if (intArray.length == 3) {
-                            imageView.setImageResource(intArray[getIndex(clockwise ? 4 + dialCount : -2 + dialCount, resourceArray.length)]);
-                        } else if (intArray.length >= 4) {
-                            imageView.setImageResource(intArray[getIndex(clockwise ? 5 + dialCount : -1 + dialCount, resourceArray.length)]);
+
+                    if (intArray.length == 2) {
+
+                    } else {
+                        if (startAngle == 315) {
+                            if (intArray.length == 3) {
+                                imageView.setImageResource(intArray[getIndex(clockwise ? 4 + dialCount : -2 + dialCount, resourceArray.length)]);
+                            } else if (intArray.length >= 4) {
+                                imageView.setImageResource(intArray[getIndex(clockwise ? 5 + dialCount : -1 + dialCount, resourceArray.length)]);
+                            }
                         }
                     }
                 }
