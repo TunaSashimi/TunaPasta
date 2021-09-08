@@ -26,8 +26,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     int dialCount;
     //
     int[] resourceArray =
-            {R.drawable.head_man_common, R.drawable.head_woman_common,
-                    R.drawable.head_boy_common, R.drawable.head_boy_common};
+            {
+                    R.drawable.head_man_common,
+                    R.drawable.head_woman_common,
+                    R.drawable.head_boy_common,
+                    R.drawable.head_boy_common,
+            };
     //
     ImageView image_add;
     //
@@ -64,23 +68,50 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         img_angle_105 = findViewById(R.id.img_angle_105);
         img_angle_045 = findViewById(R.id.img_angle_045);
 
-        //逆时针拜访,img_angle_045不需要设置
-        img_angle_345.setImageResource(resourceArray[getIndex(0, resourceArray.length)]);
-        img_angle_285.setImageResource(resourceArray[getIndex(1, resourceArray.length)]);
-        img_angle_225.setImageResource(resourceArray[getIndex(2, resourceArray.length)]);
-        img_angle_165.setImageResource(resourceArray[getIndex(3, resourceArray.length)]);
-        img_angle_105.setImageResource(resourceArray[getIndex(4, resourceArray.length)]);
+        setValue(resourceArray);
+    }
+
+    private int getIndex(int count, int modulo) {
+        int index = count % modulo;
+        if (index < 0) {
+            index += modulo;
+        }
+        return index;
+    }
+
+    private void setValue(int[] intArray) {
+        //3个,两边各补一个
+        //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
+
+        if(intArray.length == 2){
+
+        }
+
+        //
+        if (intArray.length == 3) {
+            img_angle_345.setImageResource(intArray[getIndex(-1, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(0, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(1, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(2, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(3, intArray.length)]);
+        } else if (intArray.length >= 4) {
+            img_angle_345.setImageResource(intArray[getIndex(0, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(1, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(2, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(3, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(4, intArray.length)]);
+        }
 
         //
         clockListener = new FlingImageView.ClockListener() {
             @Override
             public void clockWise() {
-                clockTurn(resourceArray, true);
+                clockTurn(intArray, true);
             }
 
             @Override
             public void clockWiseAnti() {
-                clockTurn(resourceArray, false);
+                clockTurn(intArray, false);
             }
         };
 
@@ -91,14 +122,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         img_angle_165.setClockListener(clockListener);
         img_angle_105.setClockListener(clockListener);
         img_angle_045.setClockListener(clockListener);
-    }
-
-    private int getIndex(int count, int modulo) {
-        int index = count % modulo;
-        if (index < 0) {
-            index += modulo;
-        }
-        return index;
     }
 
     private void clockTurn(int[] intArray, boolean clockwise) {
@@ -160,7 +183,11 @@ public class ObjectAnimatorTest extends AppCompatActivity {
                 @Override
                 public void onAnimationStart(Animator animation) {
                     if (startAngle == 315) {
-                        imageView.setImageResource(intArray[getIndex(clockwise ? 1 + dialCount : -1 + dialCount, resourceArray.length)]);
+                        if (intArray.length == 3) {
+                            imageView.setImageResource(intArray[getIndex(clockwise ? 4 + dialCount : -2 + dialCount, resourceArray.length)]);
+                        } else if (intArray.length >= 4) {
+                            imageView.setImageResource(intArray[getIndex(clockwise ? 5 + dialCount : -1 + dialCount, resourceArray.length)]);
+                        }
                     }
                 }
             });
