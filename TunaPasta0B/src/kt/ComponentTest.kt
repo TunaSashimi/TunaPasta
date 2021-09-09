@@ -1,6 +1,5 @@
 package kt
 
-
 fun main() {
     //字符模板,避免拼接字符
     var number = 100
