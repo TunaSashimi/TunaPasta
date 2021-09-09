@@ -41,7 +41,6 @@ public class DateFormatTest {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-
         System.out.println(dateFormat.format(date));
         System.out.println(dateFormat.format(cal1.getTime()));
 

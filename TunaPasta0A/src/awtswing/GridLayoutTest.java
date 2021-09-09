@@ -10,8 +10,6 @@ public class GridLayoutTest extends JFrame {
     public GridLayoutTest() {
         this.setSize(300, 400);
         this.setLayout(new GridLayout(3, 4, 15, 5));
-
-        //如果不添加监听的话无法关闭
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 setVisible(false);

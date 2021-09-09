@@ -10,7 +10,6 @@ public class FlowLayoutTest extends JFrame {
     public FlowLayoutTest() {
         this.setSize(300, 400);
         this.setLayout(new FlowLayout());
-        //如果不添加监听的话无法关闭
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 setVisible(false);

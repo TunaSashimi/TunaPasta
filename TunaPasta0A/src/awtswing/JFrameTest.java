@@ -19,7 +19,7 @@ public class JFrameTest {
     public void testFrame() {
         final JFrame win = new JFrame();
         win.setLayout(new FlowLayout());
-        win.setTitle("我的第一个窗口");
+        win.setTitle("My first window");
         final JLabel text = new JLabel("Hello World!");
         win.add(text);
         JButton button = new JButton("Click me!");
@@ -34,14 +34,11 @@ public class JFrameTest {
         win.add(button);
         win.setSize(400, 300);
         win.setVisible(true);
-
-        //如果不添加监听的话无法关闭
         win.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 win.setVisible(false);
                 System.exit(-1);
             }
         });
-
     }
 }
