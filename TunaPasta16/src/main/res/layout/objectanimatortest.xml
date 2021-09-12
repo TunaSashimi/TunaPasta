@@ -127,15 +127,12 @@
         app:layout_constraintTop_toTopOf="@id/img_setting"
         app:srcCompat="@drawable/img_message" />
 
-    <TextView
-        android:id="@+id/text_register_login"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="20dp"
-        android:text="注册/登录"
-        android:textColor="#36444e"
-        android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_setting" />
 
@@ -150,7 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_register_login">
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
 
         <TextView
             android:id="@+id/text_jiahui_member"
