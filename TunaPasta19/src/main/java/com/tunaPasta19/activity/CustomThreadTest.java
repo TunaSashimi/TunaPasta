@@ -21,30 +21,22 @@ import rx.schedulers.Schedulers;
  */
 public class CustomThreadTest extends Activity {
     private Button button01;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.customthreadtest);
 
-        button01 =  findViewById(R.id.button01);
+        button01 = findViewById(R.id.button01);
 
-        Observable.create(new Observable.OnSubscribe<Integer>() {
-            @Override
-            public void call(Subscriber<? super Integer> subscriber) {
-                for (int i = 0; i < 5; i++) {
-                    SystemClock.sleep(1000);
-                    subscriber.onNext(i + 1);
-                }
+        Observable.create((Observable.OnSubscribe<Integer>) subscriber -> {
+            for (int i = 0; i < 5; i++) {
+                SystemClock.sleep(1000);
+                subscriber.onNext(i + 1);
             }
         }).observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.newThread())
-                .subscribe(new Action1<Integer>() {
-                    @Override
-                    public void call(Integer integer) {
-                        button01.setText("Observer==>" + integer);
-                    }
-                });
+                .subscribe(integer -> button01.setText("Observer==>" + integer));
     }
-
 }

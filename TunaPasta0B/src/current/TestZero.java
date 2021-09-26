@@ -1,6 +1,6 @@
 package current;
 
-public class ZeroTest {
+public class TestZero {
     public static void main(String[] args) {
         System.out.println(Math.hypot(3, 4));
         String str;

@@ -24,8 +24,8 @@ public class AchartEngine4LineChartTest extends Activity {
 
 		String[] titles = new String[] { "First", "Second" };
 
-		List<double[]> x = new ArrayList<double[]>();
-		List<double[]> y = new ArrayList<double[]>();
+		List<double[]> x = new ArrayList<>();
+		List<double[]> y = new ArrayList<>();
 
 		x.add(new double[] { 1, 3, 5, 7, 9, 11 });
 		x.add(new double[] { 0, 2, 4, 6, 8, 10 });

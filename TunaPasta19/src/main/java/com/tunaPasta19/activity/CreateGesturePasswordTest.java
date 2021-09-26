@@ -353,20 +353,16 @@ public class CreateGesturePasswordTest extends Activity implements
                 mLockPatternView.setPattern(DisplayMode.Animate, mAnimatePattern);
                 break;
             case ChoiceTooShort:
-                mLockPatternView.setDisplayMode(DisplayMode.Wrong);
-                postClearPatternRunnable();
-                break;
-            case FirstChoiceValid:
-                break;
-            case NeedToConfirm:
-                mLockPatternView.clearPattern();
-                updatePreviewViews();
-                break;
             case ConfirmWrong:
                 mLockPatternView.setDisplayMode(DisplayMode.Wrong);
                 postClearPatternRunnable();
                 break;
+            case FirstChoiceValid:
             case ChoiceConfirmed:
+                break;
+            case NeedToConfirm:
+                mLockPatternView.clearPattern();
+                updatePreviewViews();
                 break;
         }
     }

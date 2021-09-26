@@ -43,7 +43,7 @@ public class MultiTagLayoutTestChain extends Activity {
 		mHorizontalScrollView =  findViewById(R.id.horizontalScrollView);
 		mImageView =  findViewById(R.id.img1);
 
-		viewList = new ArrayList<View>();
+		viewList = new ArrayList<>();
 		viewList.add(getLayoutInflater().inflate(
 				R.layout.multitaglayouttestchainitem01, null));
 		viewList.add(getLayoutInflater().inflate(

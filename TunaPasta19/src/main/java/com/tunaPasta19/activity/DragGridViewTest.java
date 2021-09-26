@@ -54,46 +54,38 @@ public class DragGridViewTest extends Activity {
         mAddBtn = findViewById(R.id.add_item_btn);
         mViewBtn = findViewById(R.id.view_poem_item);
 
-        mDragGridView.setOnRearrangeListener(new OnRearrangeListener() {
-            public void onRearrange(int oldIndex, int newIndex) {
+        mDragGridView.setOnRearrangeListener((oldIndex, newIndex) -> {
 
-                String word = poem.remove(oldIndex);
+            String word = poem.remove(oldIndex);
 
-                if (oldIndex < newIndex)
-                    poem.add(newIndex, word);
-                else
-                    poem.add(newIndex, word);
-            }
+            if (oldIndex < newIndex)
+                poem.add(newIndex, word);
+            else
+                poem.add(newIndex, word);
         });
 
-        mDragGridView.setOnItemClickListener(new OnItemClickListener() {
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                mDragGridView.removeViewAt(arg2);
-                poem.remove(arg2);
-            }
+        mDragGridView.setOnItemClickListener((arg0, arg1, arg2, arg3) -> {
+            mDragGridView.removeViewAt(arg2);
+            poem.remove(arg2);
         });
 
-        mAddBtn.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-                String word = wordsArray[random.nextInt(wordsArray.length)];
-                ImageView imageview = new ImageView(DragGridViewTest.this);
-                imageview.setImageBitmap(getBlock(word));
-                mDragGridView.addView(imageview);
-                poem.add(word);
-            }
+        mAddBtn.setOnClickListener(arg0 -> {
+            String word = wordsArray[random.nextInt(wordsArray.length)];
+            ImageView imageview = new ImageView(DragGridViewTest.this);
+            imageview.setImageBitmap(getBlock(word));
+            mDragGridView.addView(imageview);
+            poem.add(word);
         });
 
-        mViewBtn.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
+        mViewBtn.setOnClickListener(arg0 -> {
 
-                String finishedPoem = "";
+            String finishedPoem = "";
 
-                for (String s : poem)
-                    finishedPoem += s + " ";
+            for (String s : poem)
+                finishedPoem += s + " ";
 
-                new AlertDialog.Builder(DragGridViewTest.this).setTitle("排列名称:")
-                    .setMessage(finishedPoem).show();
-            }
+            new AlertDialog.Builder(DragGridViewTest.this).setTitle("排列名称:")
+                .setMessage(finishedPoem).show();
         });
     }
 

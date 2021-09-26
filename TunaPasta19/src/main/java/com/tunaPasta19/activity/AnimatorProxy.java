@@ -21,7 +21,7 @@ public final class AnimatorProxy extends Animation {
     public static final boolean NEEDS_PROXY = Integer.valueOf(Build.VERSION.SDK).intValue() < Build.VERSION_CODES.HONEYCOMB;
 
     private static final WeakHashMap<View, AnimatorProxy> PROXIES =
-            new WeakHashMap<View, AnimatorProxy>();
+            new WeakHashMap<>();
 
     /**
      * Create a proxy to allow for modifying post-3.0 view properties on all
@@ -64,7 +64,7 @@ public final class AnimatorProxy extends Animation {
         setDuration(0); //perform transformation immediately
         setFillAfter(true); //persist transformation beyond duration
         view.setAnimation(this);
-        mView = new WeakReference<View>(view);
+        mView = new WeakReference<>(view);
     }
 
     public float getAlpha() {

@@ -28,7 +28,6 @@ public class DoubleSlidingLayoutTest extends FragmentActivity {
         init();
 
         initListener();
-
     }
 
     private void init() {
@@ -39,32 +38,28 @@ public class DoubleSlidingLayoutTest extends FragmentActivity {
         mSlidingMenu.setRightView(getLayoutInflater().inflate(R.layout.doubleslidinglayouttestrightframe, null));
         mSlidingMenu.setCenterView(getLayoutInflater().inflate(R.layout.doubleslidinglayouttestcenterframe, null));
 
-        FragmentTransaction fragementtransaction = this.getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
         leftFragment = new DoubleSlidingLayoutLeftFragment();
-        fragementtransaction.replace(R.id.left_frame, leftFragment);
+        fragmentTransaction.replace(R.id.left_frame, leftFragment);
 
         rightFragment = new DoubleSlidingLayoutRightFragment();
-        fragementtransaction.replace(R.id.right_frame, rightFragment);
+        fragmentTransaction.replace(R.id.right_frame, rightFragment);
 
         viewPageFragment = new DoubleSlidingLayoutViewPageFragment();
-        fragementtransaction.replace(R.id.center_frame, viewPageFragment);
-        fragementtransaction.commit();
+        fragmentTransaction.replace(R.id.center_frame, viewPageFragment);
+        fragmentTransaction.commit();
     }
 
     private void initListener() {
 
-        viewPageFragment.setMyPageChangeListener(new MyPageChangeListener() {
-
-            @Override
-            public void onPageSelected(int position) {
-                if (viewPageFragment.isFirst()) {
-                    mSlidingMenu.setCanSliding(true, false);
-                } else if (viewPageFragment.isEnd()) {
-                    mSlidingMenu.setCanSliding(false, true);
-                } else {
-                    mSlidingMenu.setCanSliding(false, false);
-                }
+        viewPageFragment.setMyPageChangeListener(position -> {
+            if (viewPageFragment.isFirst()) {
+                mSlidingMenu.setCanSliding(true, false);
+            } else if (viewPageFragment.isEnd()) {
+                mSlidingMenu.setCanSliding(false, true);
+            } else {
+                mSlidingMenu.setCanSliding(false, false);
             }
         });
     }

@@ -46,9 +46,9 @@ public class CustomCakeChooseTest extends Activity {
 
         //
         spinner01 =  findViewById(R.id.spinner01);
-        List<Map<String, Object>> data01 = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> data01 = new ArrayList<>();
         for (int i = 0; i < texts01.length; i++) {
-            Map<String, Object> map = new HashMap<String, Object>();
+            Map<String, Object> map = new HashMap<>();
             map.put("text", texts01[i]);
             data01.add(map);
         }
@@ -68,9 +68,9 @@ public class CustomCakeChooseTest extends Activity {
 
         //
         spinner03 =  findViewById(R.id.spinner03);
-        List<Map<String, Object>> data03 = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> data03 = new ArrayList<>();
         for (int i = 0; i < texts03.length; i++) {
-            Map<String, Object> map = new HashMap<String, Object>();
+            Map<String, Object> map = new HashMap<>();
             map.put("img", images03[i]);
             map.put("text", texts03[i]);
             data03.add(map);
@@ -80,9 +80,9 @@ public class CustomCakeChooseTest extends Activity {
 
         //
         spinner04 =  findViewById(R.id.spinner04);
-        List<Map<String, Object>> data04 = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> data04 = new ArrayList<>();
         for (int i = 0; i < texts04.length; i++) {
-            Map<String, Object> map = new HashMap<String, Object>();
+            Map<String, Object> map = new HashMap<>();
             map.put("img", images04[i]);
             map.put("text", texts04[i]);
             data04.add(map);
@@ -129,12 +129,7 @@ public class CustomCakeChooseTest extends Activity {
         });
 
         Button button01=  findViewById(R.id.button01);
-        button01.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CustomCakeChooseTest.this, CustomCakeProcessTest.class));
-            }
-        });
+        button01.setOnClickListener(v -> startActivity(new Intent(CustomCakeChooseTest.this, CustomCakeProcessTest.class)));
 
     }
 }

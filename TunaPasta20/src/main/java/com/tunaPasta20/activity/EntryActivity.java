@@ -40,11 +40,7 @@ public class EntryActivity extends TBindingActivity<ActivityEntryBinding> {
 
         }
         binding.listView.setAdapter(new ArrayAdapter(this, R.layout.activity_entry_item, stringList));
-        binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                startActivity(new Intent(EntryActivity.this, cla[arg2]));
-            }
-        });
+        binding.listView.setOnItemClickListener((arg0, arg1, arg2, arg3) -> startActivity(new Intent(EntryActivity.this, cla[arg2])));
     }
 
     @Override

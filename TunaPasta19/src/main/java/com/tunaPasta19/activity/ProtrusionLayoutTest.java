@@ -37,41 +37,37 @@ public class ProtrusionLayoutTest extends Activity {
         level3 = findViewById(R.id.level3);
 
         // 二级的菜单键
-        menu.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                if (isLevel3Show) {
-                    // 如果3级布局处于显示状态,就隐藏3级导航菜单
-                    ProtrusionLayoutAnimation.startAnimationOUT(level3, 500, 0);
-                } else {
-                    // 否则就显示3级导航菜单
-                    ProtrusionLayoutAnimation.startAnimationIN(level3, 500);
-                }
-                // 同时每次点击都改变3级布局判断变量的布尔值类型
-                isLevel3Show = !isLevel3Show;
+        menu.setOnClickListener(v -> {
+            if (isLevel3Show) {
+                // 如果3级布局处于显示状态,就隐藏3级导航菜单
+                ProtrusionLayoutAnimation.startAnimationOUT(level3, 500, 0);
+            } else {
+                // 否则就显示3级导航菜单
+                ProtrusionLayoutAnimation.startAnimationIN(level3, 500);
             }
+            // 同时每次点击都改变3级布局判断变量的布尔值类型
+            isLevel3Show = !isLevel3Show;
         });
         // 一级的home键
-        home.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                if (!isLevel2Show) {
-                    // 如果2级布局处于未显示状态,就显示2级导航菜单
-                    ProtrusionLayoutAnimation.startAnimationIN(level2, 500);
-                } else {
-                    // 否则分两种情况：
-                    if (isLevel3Show) {
-                        // 如果3级布局显示,隐藏3级导航菜单
-                        ProtrusionLayoutAnimation.startAnimationOUT(level3, 500, 0);
-                        // 也隐藏2级导航菜单
-                        ProtrusionLayoutAnimation.startAnimationOUT(level2, 500, 500);
-                        // 同时每次点击都改变3级布局判断变量的布尔值类型
-                        isLevel3Show = !isLevel3Show;
-                    } else {// 如果只有2级布局显示
-                        // 就只隐藏2级导航菜单
-                        ProtrusionLayoutAnimation.startAnimationOUT(level2, 500, 0);
-                    }
+        home.setOnClickListener(v -> {
+            if (!isLevel2Show) {
+                // 如果2级布局处于未显示状态,就显示2级导航菜单
+                ProtrusionLayoutAnimation.startAnimationIN(level2, 500);
+            } else {
+                // 否则分两种情况：
+                if (isLevel3Show) {
+                    // 如果3级布局显示,隐藏3级导航菜单
+                    ProtrusionLayoutAnimation.startAnimationOUT(level3, 500, 0);
+                    // 也隐藏2级导航菜单
+                    ProtrusionLayoutAnimation.startAnimationOUT(level2, 500, 500);
+                    // 同时每次点击都改变3级布局判断变量的布尔值类型
+                    isLevel3Show = !isLevel3Show;
+                } else {// 如果只有2级布局显示
+                    // 就只隐藏2级导航菜单
+                    ProtrusionLayoutAnimation.startAnimationOUT(level2, 500, 0);
                 }
-                isLevel2Show = !isLevel2Show;// 每次点击都改变2级布局判断变量的布尔值类型
             }
+            isLevel2Show = !isLevel2Show;// 每次点击都改变2级布局判断变量的布尔值类型
         });
     }
 }

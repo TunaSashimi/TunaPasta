@@ -33,11 +33,6 @@ public class LinkEntryTest extends Activity {
         }
 
         lv.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, list));
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                startActivity(new Intent(LinkEntryTest.this, c[arg2]));
-            }
-        });
+        lv.setOnItemClickListener((arg0, arg1, arg2, arg3) -> startActivity(new Intent(LinkEntryTest.this, c[arg2])));
     }
 }

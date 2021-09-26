@@ -73,5 +73,4 @@ public class MultiTagLayoutTest extends TabActivity {
 			}
 		}
 	};
-
 }

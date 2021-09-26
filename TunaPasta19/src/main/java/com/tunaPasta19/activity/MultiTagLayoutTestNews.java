@@ -111,5 +111,4 @@ public class MultiTagLayoutTestNews extends Activity {
 
         }
     };
-
 }

@@ -38,7 +38,6 @@ public class FaceDetectResult extends Activity {
             case R.id.btn01:
                 setBitmap(image00, "/image00.jpg");
                 setBitmap(image01, "/image01.jpg");
-
                 break;
         }
     }

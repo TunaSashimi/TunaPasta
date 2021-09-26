@@ -64,12 +64,7 @@ public class CustomCakeProcessTest extends Activity {
             case COLOR_MENU_ID:
                 TunaColorPickerDialog tunaColorPicker = new TunaColorPickerDialog(this,
                         tunaPainting.getTunaPaintingPaint().getColor(),
-                        new TunaColorPickerDialog.TunaColorSelectListener() {
-                            @Override
-                            public void tunaColorSelect(int color) {
-                                tunaPainting.getTunaPaintingPaint().setColor(color);
-                            }
-                        });
+                        color -> tunaPainting.getTunaPaintingPaint().setColor(color));
                 tunaColorPicker.show();
                 return true;
             case EMBOSS_MENU_ID:
