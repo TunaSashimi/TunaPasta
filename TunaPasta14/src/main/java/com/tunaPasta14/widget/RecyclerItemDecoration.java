@@ -20,7 +20,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 
 public class RecyclerItemDecoration extends RecyclerView.ItemDecoration {
-
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
     private Drawable mDivider;
 

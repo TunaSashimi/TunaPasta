@@ -23,7 +23,7 @@ import com.tunaPasta16.view.FlingImageView;
 
 public class ObjectAnimatorTest extends AppCompatActivity {
     private static int SWEEP_ANGLE = 60;
-    private static long DURATION = 1500;
+    private static long DURATION = 500;
     private long lastTime;
     //
     int dialCount;
@@ -32,8 +32,8 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             {
                     R.drawable.head_man_common,
                     R.drawable.head_woman_common,
-                    R.drawable.head_boy_common,
-                    R.drawable.head_boy_common,
+//                    R.drawable.head_boy_common,
+//                    R.drawable.head_boy_common,
             };
     //
     ImageView image_add;

@@ -1,10 +1,13 @@
 package history;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class CollectionsTest {
     public static void main(String[] args) {
-        java.util.ArrayList<String> list = new java.util.ArrayList();
+        ArrayList<String> list = new ArrayList();
         list.add("Tom");
         list.add("Michael Scofield");
         list.add("Jerry");
@@ -13,21 +16,21 @@ public class CollectionsTest {
         list.add("Mac");
         System.out.println(list);
         // 排序,使用字符串的compareTo方法，即按字典顺序排序
-        java.util.Collections.sort(list);
+        Collections.sort(list);
         System.out.println(list);
         // 使用自定义比较器（按字符长度排序），给字符集合list排序
         // 第一个参数：要排序的集合；
         // 第二个参数：排序原则
         // 数据和排序原则分开
         // CallBack：回调
-        java.util.Collections.sort(list, new java.util.Comparator<String>() {
+        Collections.sort(list, new Comparator<String>() {
             public int compare(String o1, String o2) {
                 return o2.length() - o1.length();
             }
         });
         System.out.println(list);
 
-        java.util.List<Per> personList = new java.util.ArrayList();
+        List<Per> personList = new ArrayList();
         personList.add(new Per(1001, "张无忌", 78, 25));
         personList.add(new Per(1000, "张三丰", 89, 90));
         personList.add(new Per(1002, "赵敏", 95, 20));
