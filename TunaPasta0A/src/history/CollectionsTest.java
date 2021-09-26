@@ -2,7 +2,6 @@ package history;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class CollectionsTest {
@@ -23,11 +22,7 @@ public class CollectionsTest {
         // 第二个参数：排序原则
         // 数据和排序原则分开
         // CallBack：回调
-        Collections.sort(list, new Comparator<String>() {
-            public int compare(String o1, String o2) {
-                return o2.length() - o1.length();
-            }
-        });
+        Collections.sort(list, (o1, o2) -> o2.length() - o1.length());
         System.out.println(list);
 
         List<Per> personList = new ArrayList();
