@@ -33,7 +33,6 @@ public class SpannableStringTest extends Activity {
         TextView textview01 = findViewById(R.id.textview01);
         String displayStr = "您还未关注过医生，去看看 >";
 
-
         int index = displayStr.indexOf("，");
         SpannableString spannableString01 = new SpannableString(displayStr);
 
