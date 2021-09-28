@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import android.annotation.SuppressLint;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -57,7 +58,7 @@ public class EntryAct extends ListActivity {
      * @return
      */
     private List<Map<String, Object>> actionData(String path) {
-        List<Map<String, Object>> actionData = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> actionData = new ArrayList<>();
         path = path + "/";
 
         Intent main = new Intent();
@@ -65,7 +66,7 @@ public class EntryAct extends ListActivity {
         main.setAction(Intent.ACTION_MAIN);
         main.addCategory(category);
 
-        List<ResolveInfo> list = pm.queryIntentActivities(main, PackageManager.PERMISSION_GRANTED);
+        @SuppressLint("WrongConstant") List<ResolveInfo> list = pm.queryIntentActivities(main, PackageManager.PERMISSION_GRANTED);
 
         Map<String, Object> data;
         Set<String> set = new HashSet();
@@ -101,5 +102,4 @@ public class EntryAct extends ListActivity {
         }
         return actionData;
     }
-
 }

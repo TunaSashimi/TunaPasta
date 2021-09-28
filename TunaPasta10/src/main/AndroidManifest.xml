@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tunaPasta10.activity.SpannableStringBuilderTest"
+            android:name="com.tunaPasta10.activity.SpannableStringTest"
             android:label="@string/label_06" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">TunaPasta10</string>
-    
+
     <string name="label_01">CheckBoxListTest</string>
-	<string name="label_02">PerformClickTest</string>
-	<string name="label_03">FireWorkTest</string>
-	<string name="label_04">BezierCurveTest</string>
-	<string name="label_05">FollowFingerBallViewTest</string>
-	<string name="label_06">SpannableStringBuilderTest</string>
-	<string name="label_07">AutoLinkTest</string>
-	<string name="label_08">StaticLayoutTest</string>
-	<string name="label_09">PhotoView/SimpleSampleTest</string>
-	<string name="label_10">PhotoView/ViewPagerTest</string>
-	<string name="label_11">AchartEngine/AchartEngine4HistogramTest</string>
-	<string name="label_12">AchartEngine/AchartEngine4LineChartTest</string>
+    <string name="label_02">PerformClickTest</string>
+    <string name="label_03">FireWorkTest</string>
+    <string name="label_04">BezierCurveTest</string>
+    <string name="label_05">FollowFingerBallViewTest</string>
+    <string name="label_06">SpannableStringTest</string>
+    <string name="label_07">AutoLinkTest</string>
+    <string name="label_08">StaticLayoutTest</string>
+    <string name="label_09">PhotoViewTest/SimpleSampleTest</string>
+    <string name="label_10">PhotoViewTest/ViewPagerTest</string>
+    <string name="label_11">AchartEngineTest/AchartEngine4HistogramTest</string>
+    <string name="label_12">AchartEngineTest/AchartEngine4LineChartTest</string>
 
 </resources>

@@ -19,7 +19,7 @@ public class PerformClickTest extends Activity {
         setContentView(R.layout.performclicktest);
 
         btn1 = findViewById(R.id.button1);
-        tv1 = findViewById(R.id.textview1);
+        tv1 = findViewById(R.id.textview);
 
 //		btn1.performClick();
 
