@@ -28,17 +28,15 @@ public class WaterFallTestScrollView extends ScrollView {
 	public void getView() {
 		this.view = getChildAt(0);
 		if (view != null) {
-			this.setOnTouchListener(new OnTouchListener() {
-				public boolean onTouch(View v, MotionEvent event) {
-					switch (event.getAction()) {
-					case MotionEvent.ACTION_UP:
-						if (view != null && onScrollListener != null) {
-							handler.sendMessageDelayed(handler.obtainMessage(1), 200);
-						}
-						break;
+			this.setOnTouchListener((v, event) -> {
+				switch (event.getAction()) {
+				case MotionEvent.ACTION_UP:
+					if (view != null && onScrollListener != null) {
+						handler.sendMessageDelayed(handler.obtainMessage(1), 200);
 					}
-					return false;
+					break;
 				}
+				return false;
 			});
 			handler = new Handler() {
 				public void handleMessage(Message msg) {

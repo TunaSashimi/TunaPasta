@@ -145,51 +145,42 @@ public class BasicComponentsTest extends Activity {
 //      因为setTextSize默认是SP单位，我传进去却是像素的数值，结果字体变异常大了。应该如下:
         text01.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.my_text_size));
 
-        check01.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                if (check01.isChecked()) {
-                    edit02.setVisibility(View.VISIBLE);
-                } else {
-                    edit02.setVisibility(View.GONE);
-                }
+        check01.setOnClickListener(v -> {
+            if (check01.isChecked()) {
+                edit02.setVisibility(View.VISIBLE);
+            } else {
+                edit02.setVisibility(View.GONE);
             }
         });
 
-        toggle01.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Toast.makeText(BasicComponentsTest.this, "scrollview的位置为" + scroll.getScrollY() + "scrollview距离底部的位置为" + scroll.getPaddingBottom(), Toast.LENGTH_SHORT).show();
-            }
-        });
-        btn01.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(android.view.View v) {
-                StringBuffer stringBuffer = new StringBuffer();
-                stringBuffer.append("EditText01:" + edit01.getText().toString() + "\n");
-                stringBuffer.append("CheckBox:" + check01.isChecked() + "\n");
+        toggle01.setOnCheckedChangeListener((buttonView, isChecked) -> Toast.makeText(BasicComponentsTest.this, "scrollview的位置为" + scroll.getScrollY() + "scrollview距离底部的位置为" + scroll.getPaddingBottom(), Toast.LENGTH_SHORT).show());
+        btn01.setOnClickListener(v -> {
+            StringBuffer stringBuffer = new StringBuffer();
+            stringBuffer.append("EditText01:" + edit01.getText().toString() + "\n");
+            stringBuffer.append("CheckBox:" + check01.isChecked() + "\n");
 
-                if (check01.isChecked())
-                    stringBuffer.append("EditText02:" + edit02.getText().toString() + "\n");
+            if (check01.isChecked())
+                stringBuffer.append("EditText02:" + edit02.getText().toString() + "\n");
 
-                stringBuffer.append("RadioButton:");
+            stringBuffer.append("RadioButton:");
 
-                if (radio01.isChecked())
-                    stringBuffer.append(radio01.getText());
+            if (radio01.isChecked())
+                stringBuffer.append(radio01.getText());
 
-                if (radio02.isChecked())
-                    stringBuffer.append(radio02.getText());
+            if (radio02.isChecked())
+                stringBuffer.append(radio02.getText());
 
-                if (radio03.isChecked())
-                    stringBuffer.append(radio03.getText());
+            if (radio03.isChecked())
+                stringBuffer.append(radio03.getText());
 
-                stringBuffer.append("\n");
-                stringBuffer.append("DatePicker:" + date01.getYear() + "-" + (date01.getMonth() + 1) + "-" + date01.getDayOfMonth() + "\n");
-                stringBuffer.append("TimePicker:" + time01.getCurrentHour() + ":" + time01.getCurrentMinute() + "\n");
-                stringBuffer.append("ToggleButton:" + toggle01.isChecked());
+            stringBuffer.append("\n");
+            stringBuffer.append("DatePicker:" + date01.getYear() + "-" + (date01.getMonth() + 1) + "-" + date01.getDayOfMonth() + "\n");
+            stringBuffer.append("TimePicker:" + time01.getCurrentHour() + ":" + time01.getCurrentMinute() + "\n");
+            stringBuffer.append("ToggleButton:" + toggle01.isChecked());
 
-                Intent it = new Intent(BasicComponentsTest.this, BasicComponentsTestResult.class);
-                it.putExtra("values", stringBuffer.toString());
-                startActivity(it);
-            }
+            Intent it = new Intent(BasicComponentsTest.this, BasicComponentsTestResult.class);
+            it.putExtra("values", stringBuffer.toString());
+            startActivity(it);
         });
 
         //

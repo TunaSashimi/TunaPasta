@@ -1,19 +1,24 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
 
-    <TextView
-        android:id="@+id/textview01"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="#86949e" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textview02"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textview01"
-        android:layout_marginTop="16dp" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textview01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#86949e" />
+
+        <TextView
+            android:id="@+id/textview02"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview01"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

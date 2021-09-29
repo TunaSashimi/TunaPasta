@@ -52,107 +52,93 @@ public class MineTest extends Activity {
         rabuc = findViewById(R.id.mine_c);
         button = findViewById(R.id.minebutton);
         tv = findViewById(R.id.mine_textview);
-        rabus.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    flag = true;
-                }
+        rabus.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                flag = true;
             }
         });
-        rabuc.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    flag = false;
-                }
+        rabuc.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                flag = false;
             }
         });
-        button.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                button.setText("再来一次");
-                Builder builder = new Builder(MineTest.this);
-                final EditText et = new EditText(MineTest.this);
-                builder.setTitle(" 输入雷数(布置密度不超过75%)");
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            if (Integer.parseInt(et.getText().toString()) >= 0 && Integer.parseInt(et.getText().toString()) < 75) {
-                                mines = new MineHelper(Integer.parseInt(et.getText().toString())).layoutMines();
 
-                                Cearance();
+        button.setOnClickListener(v -> {
+            button.setText("再来一次");
+            Builder builder = new Builder(MineTest.this);
+            final EditText et = new EditText(MineTest.this);
+            builder.setTitle(" 输入雷数(布置密度不超过75%)");
+            builder.setPositiveButton("确定", (dialog, which) -> {
+                try {
+                    if (Integer.parseInt(et.getText().toString()) >= 0 && Integer.parseInt(et.getText().toString()) < 75) {
+                        mines = new MineHelper(Integer.parseInt(et.getText().toString())).layoutMines();
 
-                                flagrun = false;
-                                Thread.sleep(1000);
-                                flagrun = true;
-                                t = new Thread() {
-                                    @Override
-                                    public void run() {
-                                        for (i = 0; i < 999 && flagrun; i++) {
-                                            try {
-                                                Thread.sleep(1000);
-                                                handler.sendEmptyMessage(0);
-                                            } catch (InterruptedException e) {
-                                                e.printStackTrace();
-                                            }
-                                        }
-                                    }
-                                };
-
-                                t.start();
-                            } else {
-                                throw new Exception();
-                            }
-                        } catch (Exception e) {
-                            Toast.makeText(MineTest.this, "输入错误请重新输入", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                    }
-                });
-                builder.setView(et);
-                builder.create().show();
-            }
-        });
-        gv.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (flag) {
-                    if (mines[position].endsWith(" ")) {
-                        mines[position] = mines[position].substring(0, mines[position].length() - 1);
-                    }
-                    if (mines[position].startsWith("-1")) {
-                        for (int i = 0; i < mines.length; i++) {
-                            mines[i] = " " + mines[i];
-                        }
-                        Toast.makeText(getApplicationContext(), "你输了", Toast.LENGTH_SHORT).show();
-                    } else {
-                        if ((mines[position]).startsWith("0")) {
-                            Circle(position);
-                        }
-                        mines[position] = " " + mines[position];
-                        // 判断是否获胜
-                        int total = 0;
-                        for (int i = 0; i < mines.length; i++) {
-                            if (mines[i].startsWith("-1") || mines[i].startsWith(" "))
-                                total++;
-                            if (total == 100) {
-                                Toast.makeText(getApplicationContext(), "你赢了", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                        // System.out.println(total); //计算进度~
-                    }
-                    Cearance();
-                } else { // 不以空格开头的话~
-                    if (!mines[position].startsWith(" ")) {
-                        mines[position] = mines[position] + " ";
                         Cearance();
+
+                        flagrun = false;
+                        Thread.sleep(1000);
+                        flagrun = true;
+                        t = new Thread() {
+                            @Override
+                            public void run() {
+                                for (i = 0; i < 999 && flagrun; i++) {
+                                    try {
+                                        Thread.sleep(1000);
+                                        handler.sendEmptyMessage(0);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
+                        };
+
+                        t.start();
+                    } else {
+                        throw new Exception();
                     }
+                } catch (Exception e) {
+                    Toast.makeText(MineTest.this, "输入错误请重新输入", Toast.LENGTH_LONG).show();
+                }
+            });
+            builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                }
+            });
+            builder.setView(et);
+            builder.create().show();
+        });
+        gv.setOnItemClickListener((parent, view, position, id) -> {
+            if (flag) {
+                if (mines[position].endsWith(" ")) {
+                    mines[position] = mines[position].substring(0, mines[position].length() - 1);
+                }
+                if (mines[position].startsWith("-1")) {
+                    for (int i = 0; i < mines.length; i++) {
+                        mines[i] = " " + mines[i];
+                    }
+                    Toast.makeText(getApplicationContext(), "你输了", Toast.LENGTH_SHORT).show();
+                } else {
+                    if ((mines[position]).startsWith("0")) {
+                        Circle(position);
+                    }
+                    mines[position] = " " + mines[position];
+                    // 判断是否获胜
+                    int total = 0;
+                    for (int i = 0; i < mines.length; i++) {
+                        if (mines[i].startsWith("-1") || mines[i].startsWith(" "))
+                            total++;
+                        if (total == 100) {
+                            Toast.makeText(getApplicationContext(), "你赢了", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    // System.out.println(total); //计算进度~
+                }
+                Cearance();
+            } else { // 不以空格开头的话~
+                if (!mines[position].startsWith(" ")) {
+                    mines[position] = mines[position] + " ";
+                    Cearance();
                 }
             }
         });
