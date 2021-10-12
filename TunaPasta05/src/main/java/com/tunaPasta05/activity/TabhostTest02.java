@@ -15,7 +15,6 @@ public class TabhostTest02 extends TabActivity {
     private TabHost tabhost;
     private int times;
 
-    //	private ArrayList<TextView> textlist=new ArrayList<TextView>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,29 +30,6 @@ public class TabhostTest02 extends TabActivity {
         addTabItem("信息", R.drawable.icon_meassage, new Intent(this, ButterflyTest.class));
         addTabItem("广场", R.drawable.icon_square, new Intent(this, LoseWeightTest.class));
         addTabItem("更多", R.drawable.icon_more, new Intent(this, RatioListDemo.class));
-
-//		修改的按下去变换图标(图标另找)
-//		tabhost.setOnTabChangedListener(new OnTabChangeListener() {
-//			@Override
-//			public void onTabChanged(String tabId) {
-//				textlist.get(0).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_home1, 0, 0);	//这里不同因为第一个
-//				textlist.get(1).setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.tab_zeyi1, 0, 0);
-//				textlist.get(2).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_try1, 0, 0);
-//				textlist.get(3).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_collect1, 0, 0);
-//				textlist.get(4).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_more1, 0, 0);
-//				if (tabId.equals("1")) 
-//					textlist.get(0).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_home2, 0, 0);
-//				if (tabId.equals("2")) 
-//					textlist.get(1).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_zeyi2, 0, 0);
-//				if (tabId.equals("3")) 
-//					textlist.get(2).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_try2, 0, 0);
-//				if (tabId.equals("4")) 
-//					textlist.get(3).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_collect2, 0, 0);
-//				if (tabId.equals("5")) 
-//					textlist.get(4).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.tab_more2, 0, 0);
-//			}
-//		});
-
     }
 
     //自定义头部布局和标签页分割线
