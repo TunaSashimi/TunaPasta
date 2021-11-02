@@ -42,6 +42,16 @@
             android:text="XMLShapeTestButton03"
             android:textColor="#0f000000" />
 
+        <!--        android:background="@drawable/backgroundshadowdown"-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/backgrounddown"
+            android:elevation="8dp"
+            android:text="XMLShapeTestButton04"
+            android:textColor="#0f000000" />
+
         <SeekBar
             android:layout_width="313dp"
             android:layout_height="wrap_content"

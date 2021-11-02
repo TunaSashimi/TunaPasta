@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
     <!-- 按下去的item状态放在前面否则可能不显示 -->
     <item android:state_pressed="true">
         <!-- shape标签代表形状,android:shape中rectagle矩形,oval椭圆,line水平直线,ring环形,默认rectagle -->
