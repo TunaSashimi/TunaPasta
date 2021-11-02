@@ -12,29 +12,94 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:text="Android中使用shape来定义控件的一些显示属性，详细用法见selector中介绍"
             android:textColor="#000000" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/xmlshapetest_button_select01_s"
             android:text="XMLShapeTestButton01" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_margin="20dp"
             android:background="@drawable/xmlshapetest_button_select02_s"
             android:text="XMLShapeTestButton02" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/backgroundshadowrectangle"
+            android:text="XMLShapeTestButton03"
+            android:textColor="#0f000000" />
+
+        <SeekBar
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="16"
+            android:maxHeight="11dp"
+            android:progress="7"
+            android:progressDrawable="@drawable/oilstocksseekbargraduation"
+            android:thumb="@drawable/backgroundshadowoval" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="16"
+            android:maxHeight="5dp"
+            android:progress="7"
+            android:progressDrawable="@drawable/oilstocksseekbardrawable"
+            android:thumb="@drawable/backgroundshadowoval" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/xmlshapetest_btn_top_layer_s"
+            android:paddingLeft="19dp"
+            android:text="LAYER-LIST01"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/xmlshapetest_btn_mid_layer_s"
+            android:paddingLeft="19dp"
+            android:text="LAYER-LIST02"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/xmlshapetest_btn_down_layer_s"
+            android:paddingLeft="19dp"
+            android:text="LAYER-LIST03"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_margin="20dp"
             android:background="@drawable/xmlshapetest_linaerlayout_background"
             android:orientation="vertical">
 
@@ -56,68 +121,5 @@
                 android:background="@drawable/xmlshapetest_btn_down_s"
                 android:text="基于XML的 Graphics按钮" />
         </LinearLayout>
-
-        <SeekBar
-            android:layout_width="313dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:max="16"
-            android:maxHeight="11dp"
-            android:progress="7"
-            android:progressDrawable="@drawable/oilstocksseekbargraduation"
-            android:thumb="@drawable/backgroundshadowoval" />
-
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:max="16"
-            android:maxHeight="5dp"
-            android:progress="7"
-            android:progressDrawable="@drawable/oilstocksseekbardrawable"
-            android:thumb="@drawable/backgroundshadowoval" />
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/backgroundshadowrectangle"
-            android:text="sendUuuid" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/xmlshapetest_btn_top_layer_s"
-            android:paddingLeft="19dp"
-            android:text="始发"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/xmlshapetest_btn_mid_layer_s"
-            android:paddingLeft="19dp"
-            android:text="终到"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/xmlshapetest_btn_down_layer_s"
-            android:paddingLeft="19dp"
-            android:text="机车交路图"
-            android:textSize="30dp"
-            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

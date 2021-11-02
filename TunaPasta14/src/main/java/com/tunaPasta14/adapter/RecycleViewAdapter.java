@@ -59,5 +59,4 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             textView = view.findViewById(R.id.textview);
         }
     }
-
 }
