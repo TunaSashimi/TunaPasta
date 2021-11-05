@@ -21,7 +21,7 @@ public class EntryAct extends Activity {
             "LayoutAnimation4", "LayoutAnimation5", "LayoutAnimation6", "LayoutAnimation7",
             "SensorsTest", "ArcsTest", "BitmapDecodeTest", "CameraPreviewTest", "CreateBitmapTest",
             "ColorMatrixTest", "GradientDrawable", "ShapeDrawableTest", "FingerPaint",
-            "MeasureTextTest", "PathEffectsTest", "PathFillTypesTest", "CardViewTest",
+            "MeasureTextTest", "PathEffectsTest", "PathFillTypesTest", "CardViewElevationTest",
     };
 
     private Class<?>[] c = {UnlockGesturePasswordTest.class, SwipeListViewTest.class, RelativeLayoutLayoutTest.class,
@@ -30,7 +30,7 @@ public class EntryAct extends Activity {
             LayoutAnimation4.class, LayoutAnimation5.class, LayoutAnimation6.class, LayoutAnimation7.class,
             SensorsTest.class, ArcsTest.class, BitmapDecodeTest.class, CameraPreviewTest.class, CreateBitmapTest.class,
             ColorMatrixTest.class, GradientDrawableTest.class, ShapeDrawableTest.class, FingerPaintTest.class,
-            MeasureTextTest.class, PathEffectsTest.class, PathFillTypesTest.class, CardViewTest.class,
+            MeasureTextTest.class, PathEffectsTest.class, PathFillTypesTest.class, CardViewElevationTest.class,
     };
 
     @Override

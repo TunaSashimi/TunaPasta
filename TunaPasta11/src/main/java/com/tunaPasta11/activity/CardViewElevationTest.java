@@ -5,10 +5,10 @@ import android.os.Bundle;
 
 import com.tunaPasta11.R;
 
-public class CardViewTest extends Activity {
+public class CardViewElevationTest extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cardviewtest);
+        setContentView(R.layout.cardviewelevationtest);
     }
 }

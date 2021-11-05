@@ -5,8 +5,6 @@
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
 
-    <!-- Application theme. -->
-
     <style name="ButtonGreen" parent="@android:style/Widget.Button">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@drawable/skin_color_button</item>

@@ -44,7 +44,7 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="160dp"
             android:layout_margin="20dp"
             android:background="@drawable/backgrounddown"
             android:elevation="8dp"
