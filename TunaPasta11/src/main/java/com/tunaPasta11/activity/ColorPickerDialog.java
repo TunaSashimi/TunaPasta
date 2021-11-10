@@ -1,10 +1,16 @@
 
 package com.tunaPasta11.activity;
 
-import android.os.Bundle;
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.*;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.ColorMatrix;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.graphics.Shader;
+import android.graphics.SweepGradient;
+import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -82,7 +88,7 @@ public class ColorPickerDialog extends Dialog {
         private static final int CENTER_RADIUS = 32;
 
         private int floatToByte(float x) {
-            int n = java.lang.Math.round(x);
+            int n = Math.round(x);
             return n;
         }
         private int pinToByte(int n) {
@@ -93,11 +99,11 @@ public class ColorPickerDialog extends Dialog {
             }
             return n;
         }
-        
+
         private int ave(int s, int d, float p) {
-            return s + java.lang.Math.round(p * (d - s));
+            return s + Math.round(p * (d - s));
         }
-        
+
         private int interpColor(int colors[], float unit) {
             if (unit <= 0) {
                 return colors[0];
@@ -105,7 +111,7 @@ public class ColorPickerDialog extends Dialog {
             if (unit >= 1) {
                 return colors[colors.length - 1];
             }
-            
+
             float p = unit * (colors.length - 1);
             int i = (int)p;
             p -= i;
@@ -117,16 +123,16 @@ public class ColorPickerDialog extends Dialog {
             int r = ave(Color.red(c0), Color.red(c1), p);
             int g = ave(Color.green(c0), Color.green(c1), p);
             int b = ave(Color.blue(c0), Color.blue(c1), p);
-            
+
             return Color.argb(a, r, g, b);
         }
-        
+
         private int rotateColor(int color, float rad) {
             float deg = rad * 180 / 3.1415927f;
             int r = Color.red(color);
             int g = Color.green(color);
             int b = Color.blue(color);
-            
+
             ColorMatrix cm = new ColorMatrix();
             ColorMatrix tmp = new ColorMatrix();
 
@@ -135,25 +141,25 @@ public class ColorPickerDialog extends Dialog {
             cm.postConcat(tmp);
             tmp.setYUV2RGB();
             cm.postConcat(tmp);
-            
+
             final float[] a = cm.getArray();
 
             int ir = floatToByte(a[0] * r +  a[1] * g +  a[2] * b);
             int ig = floatToByte(a[5] * r +  a[6] * g +  a[7] * b);
             int ib = floatToByte(a[10] * r + a[11] * g + a[12] * b);
-            
+
             return Color.argb(Color.alpha(color), pinToByte(ir),
                               pinToByte(ig), pinToByte(ib));
         }
-        
+
         private static final float PI = 3.1415926f;
 
         @Override
         public boolean onTouchEvent(MotionEvent event) {
             float x = event.getX() - CENTER_X;
             float y = event.getY() - CENTER_Y;
-            boolean inCenter = java.lang.Math.sqrt(x*x + y*y) <= CENTER_RADIUS;
-            
+            boolean inCenter = Math.sqrt(x*x + y*y) <= CENTER_RADIUS;
+
             switch (event.getAction()) {
                 case MotionEvent.ACTION_DOWN:
                     mTrackingCenter = inCenter;
@@ -169,7 +175,7 @@ public class ColorPickerDialog extends Dialog {
                             invalidate();
                         }
                     } else {
-                        float angle = (float)java.lang.Math.atan2(y, x);
+                        float angle = (float) Math.atan2(y, x);
                         // need to turn angle [-PI ... PI] into unit [0....1]
                         float unit = angle/(2*PI);
                         if (unit < 0) {

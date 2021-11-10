@@ -1,7 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.io.ByteArrayOutputStream;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +8,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+
+import java.io.ByteArrayOutputStream;
 
 public class CreateBitmapTest extends GraphicsActivity {
 

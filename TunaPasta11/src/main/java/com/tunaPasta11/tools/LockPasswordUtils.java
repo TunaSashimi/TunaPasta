@@ -1,5 +1,12 @@
 package com.tunaPasta11.tools;
 
+import android.app.admin.DevicePolicyManager;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.FileObserver;
+import android.util.Log;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,13 +16,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import android.app.admin.DevicePolicyManager;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.os.FileObserver;
-import android.util.Log;
 
 public class LockPasswordUtils {
 	private static final String TAG = "LockPasswordUtils";

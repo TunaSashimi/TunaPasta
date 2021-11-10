@@ -1,7 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -19,6 +17,8 @@ import com.tunaPasta11.tools.DataTrans;
 import com.tunaPasta11.tools.LockPatternUtils;
 import com.tunaPasta11.widget.LockPatternView;
 import com.tunaPasta11.widget.LockPatternView.Cell;
+
+import java.util.List;
 
 public class UnlockGesturePasswordTest extends Activity {
     private LockPatternView mLockPatternView;

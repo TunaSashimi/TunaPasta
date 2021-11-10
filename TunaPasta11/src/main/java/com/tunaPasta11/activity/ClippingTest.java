@@ -88,28 +88,28 @@ public class ClippingTest extends GraphicsActivity {
             mPath.reset();
             canvas.clipPath(mPath); // makes the clip empty
             mPath.addCircle(50, 50, 50, Path.Direction.CCW);
-            canvas.clipPath(mPath, Region.Op.REPLACE);
+            canvas.clipPath(mPath, Region.Op.INTERSECT);
             drawScene(canvas);
             canvas.restore();
             
             canvas.save();
             canvas.translate(160, 160);
             canvas.clipRect(0, 0, 60, 60);
-            canvas.clipRect(40, 40, 100, 100, Region.Op.UNION);
+            canvas.clipRect(40, 40, 100, 100, Region.Op.INTERSECT);
             drawScene(canvas);
             canvas.restore();
             
             canvas.save();
             canvas.translate(10, 310);
             canvas.clipRect(0, 0, 60, 60);
-            canvas.clipRect(40, 40, 100, 100, Region.Op.XOR);
+            canvas.clipRect(40, 40, 100, 100, Region.Op.INTERSECT);
             drawScene(canvas);
             canvas.restore();
             
             canvas.save();
             canvas.translate(160, 310);
             canvas.clipRect(0, 0, 60, 60);
-            canvas.clipRect(40, 40, 100, 100, Region.Op.REVERSE_DIFFERENCE);
+            canvas.clipRect(40, 40, 100, 100, Region.Op.DIFFERENCE);
             drawScene(canvas);
             canvas.restore();
         }

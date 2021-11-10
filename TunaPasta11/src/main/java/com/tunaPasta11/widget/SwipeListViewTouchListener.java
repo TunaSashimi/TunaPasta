@@ -1,9 +1,5 @@
 package com.tunaPasta11.widget;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -27,7 +23,11 @@ import android.widget.TextView;
 
 import com.tunaPasta11.R;
 
-public class SwipeListViewTouchListener implements View.OnTouchListener{
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class SwipeListViewTouchListener implements OnTouchListener{
 	private Context context;
 	// Cached ViewConfiguration and system-wide constant values
 	private int mSlop;

@@ -1,8 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.tunaPasta11.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EntryAct extends Activity {
 

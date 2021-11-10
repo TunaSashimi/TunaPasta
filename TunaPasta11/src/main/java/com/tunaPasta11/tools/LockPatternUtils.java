@@ -1,5 +1,12 @@
 package com.tunaPasta11.tools;
 
+import android.content.Context;
+import android.os.FileObserver;
+import android.util.Log;
+
+
+import com.tunaPasta11.widget.LockPatternView;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,12 +17,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import android.content.Context;
-import android.os.FileObserver;
-import android.util.Log;
-
-import com.tunaPasta11.widget.LockPatternView;
 
 /**
  * 图案解锁加密、解密工具类

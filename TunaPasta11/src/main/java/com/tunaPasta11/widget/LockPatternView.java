@@ -1,8 +1,5 @@
 package com.tunaPasta11.widget;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -24,9 +21,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
+
 import com.tunaPasta11.R;
 import com.tunaPasta11.tools.LockPatternUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -1126,7 +1126,7 @@ public class LockPatternView extends View {
 			dest.writeValue(mTactileFeedbackEnabled);
 		}
 
-		public static final Parcelable.Creator<SavedState> CREATOR = new Creator<SavedState>() {
+		public static final Creator<SavedState> CREATOR = new Creator<SavedState>() {
 			public SavedState createFromParcel(Parcel in) {
 				return new SavedState(in);
 			}

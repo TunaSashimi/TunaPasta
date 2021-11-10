@@ -1,7 +1,5 @@
 package com.tunaPasta11.activity;
 
-import com.tunaPasta11.tools.NativeRequest;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BlurMaskFilter;
@@ -17,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.tunaPasta11.tools.NativeRequest;
 
 public class FingerPaintTest extends GraphicsActivity implements
         ColorPickerDialog.OnColorChangedListener {

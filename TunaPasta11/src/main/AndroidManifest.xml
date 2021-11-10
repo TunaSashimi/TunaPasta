@@ -28,12 +28,14 @@
     <application
         android:name="com.tunaPasta11.tools.DataTrans"
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
         android:icon="@drawable/tunasashimi"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <!--使用android:theme="@android:style/Theme.NoTitleBar之后CardView就看不清楚了 -->
+
         <activity
-            android:exported="true"
             android:name="com.tunaPasta11.activity.EntryAct"
+            android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,8 +83,9 @@
         <activity android:name="com.tunaPasta11.activity.MeasureTextTest" />
         <activity android:name="com.tunaPasta11.activity.PathEffectsTest" />
         <activity android:name="com.tunaPasta11.activity.PathFillTypesTest" />
-        <activity android:name="com.tunaPasta11.activity.CardViewElevationTest"
-            android:exported="true"/>
+        <activity
+            android:name="com.tunaPasta11.activity.CardViewElevationTest"
+            android:exported="true" />
     </application>
 
 </manifest>

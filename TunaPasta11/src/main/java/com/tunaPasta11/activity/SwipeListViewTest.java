@@ -1,7 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -11,6 +9,8 @@ import com.tunaPasta11.R;
 import com.tunaPasta11.adapter.SwipeListViewAdapter;
 import com.tunaPasta11.widget.DumpClass;
 import com.tunaPasta11.widget.SwipeListViewTouchListener;
+
+import java.util.ArrayList;
 
 public class SwipeListViewTest extends Activity {
 

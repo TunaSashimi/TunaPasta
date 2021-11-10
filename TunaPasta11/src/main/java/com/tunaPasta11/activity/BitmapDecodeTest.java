@@ -1,8 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +13,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.tunaPasta11.R;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 
 public class BitmapDecodeTest extends GraphicsActivity {
 
@@ -55,7 +55,7 @@ public class BitmapDecodeTest extends GraphicsActivity {
             super(context);
             setFocusable(true);
 
-            java.io.InputStream is;
+            InputStream is;
             is = context.getResources().openRawResource(R.drawable.beach);
 
             BitmapFactory.Options opts = new BitmapFactory.Options();

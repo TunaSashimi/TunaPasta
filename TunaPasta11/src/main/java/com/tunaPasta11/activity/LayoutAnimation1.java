@@ -1,7 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
@@ -14,6 +12,8 @@ import android.widget.ImageView;
 
 import com.tunaPasta11.R;
 
+import java.util.List;
+
 public class LayoutAnimation1 extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class LayoutAnimation1 extends Activity {
 
 		setContentView(R.layout.layout_animation_1);
 		GridView grid =  findViewById(R.id.grid);
-		grid.setAdapter(new LayoutAnimation1.AppsAdapter());
+		grid.setAdapter(new AppsAdapter());
 	}
 
 	private List<ResolveInfo> mApps;

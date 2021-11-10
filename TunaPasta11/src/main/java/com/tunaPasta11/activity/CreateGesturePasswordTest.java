@@ -1,8 +1,5 @@
 package com.tunaPasta11.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +17,9 @@ import com.tunaPasta11.tools.LockPatternUtils;
 import com.tunaPasta11.widget.LockPatternView;
 import com.tunaPasta11.widget.LockPatternView.Cell;
 import com.tunaPasta11.widget.LockPatternView.DisplayMode;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CreateGesturePasswordTest extends Activity implements
 		OnClickListener {

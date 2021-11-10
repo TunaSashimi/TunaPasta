@@ -1,7 +1,4 @@
 package com.tunaPasta11.tools;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +9,10 @@ import android.view.Display;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 
 public class NativeRequest {
 	//获取屏幕宽度

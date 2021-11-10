@@ -1,7 +1,5 @@
 package com.tunaPasta11.adapter;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.tunaPasta11.R;
 import com.tunaPasta11.widget.DumpClass;
+
+import java.util.ArrayList;
 
 public class SwipeListViewAdapter extends BaseAdapter{
 	private Activity activity;

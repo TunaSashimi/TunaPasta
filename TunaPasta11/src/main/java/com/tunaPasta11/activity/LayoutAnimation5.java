@@ -16,8 +16,6 @@
 
 package com.tunaPasta11.activity;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
@@ -29,6 +27,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.tunaPasta11.R;
+
+import java.util.List;
 
 public class LayoutAnimation5 extends Activity {
     @Override
