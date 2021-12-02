@@ -90,7 +90,7 @@ public class Time2Activity extends Activity {
                 weekday.setText(format.format(newCalendar.getTime()));
             }
 
-            TextView monthday = (TextView) view.findViewById(R.id.time2_monthday);
+            TextView monthday = view.findViewById(R.id.time2_monthday);
             if (day == 0) {
                 monthday.setText("Today");
                 monthday.setTextColor(0xFF0000F0);
