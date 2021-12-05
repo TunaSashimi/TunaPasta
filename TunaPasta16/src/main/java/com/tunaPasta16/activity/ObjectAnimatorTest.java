@@ -26,7 +26,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     private static long DURATION = 500;
     private long lastTime;
     //
-    int dialCount;
+    int dialCount = 1;//转动次数
     //
     int[] resourceArray =
             {
@@ -97,9 +97,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
             }
         });
-
-
-        setValue(resourceArray);
+        setValue(resourceArray, dialCount);
     }
 
     private int getIndex(int count, int modulo) {
@@ -110,26 +108,30 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         return index;
     }
 
-    private void setValue(int[] intArray) {
+    //setValue 增加转动过后的保存恢复功能
+    private void setValue(int[] intArray, int dialCount) {
         //2个,底下两个
         //3个,两边各补一个
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
 
+        //两个的时候图标是不换的只换位置,所以多移动一次
         if (intArray.length == 2) {
-            img_angle_225.setImageResource(intArray[0]);
-            img_angle_165.setImageResource(intArray[1]);
+            img_angle_225.setImageResource(intArray[getIndex(0, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(1, intArray.length)]);
+//            clockTurn(intArray, true);
+
         } else if (intArray.length == 3) {
-            img_angle_345.setImageResource(intArray[getIndex(-1, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(0, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(1, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(2, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(3, intArray.length)]);
+            img_angle_345.setImageResource(intArray[getIndex(-1 + dialCount, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(0 + dialCount, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(1 + dialCount, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(2 + dialCount, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(3 + dialCount, intArray.length)]);
         } else if (intArray.length >= 4) {
-            img_angle_345.setImageResource(intArray[getIndex(0, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(1, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(2, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(3, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(4, intArray.length)]);
+            img_angle_345.setImageResource(intArray[getIndex(0 + dialCount, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(1 + dialCount, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(2 + dialCount, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(3 + dialCount, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(4 + dialCount, intArray.length)]);
         }
 
         //
@@ -160,28 +162,33 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     }
 
     private void clockTurn(int[] intArray, boolean clockwise) {
-        if (System.currentTimeMillis() - lastTime < DURATION + 100) {
+        clockTurn(intArray, clockwise, DURATION);
+    }
+
+    private void clockTurn(int[] intArray, boolean clockwise, long duration) {
+        if (System.currentTimeMillis() - lastTime < duration + 100) {
             return;
         }
         lastTime = System.currentTimeMillis();
 
         if (intArray.length == 2) {
-            if (dialCount % 2 == 0) {
+            if ((dialCount) % 2 == 0) {
                 readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
-                readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
+                //   readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
             } else {
                 readyAnimation(image_add, img_angle_225, intArray, 75, clockwise);
-                readyAnimation(image_add, img_angle_165, intArray, 135, clockwise);
+                //    readyAnimation(image_add, img_angle_165, intArray, 135, clockwise);
             }
         } else {
-            readyAnimation(image_add, img_angle_345, intArray, 255, clockwise);
-            readyAnimation(image_add, img_angle_285, intArray, 195, clockwise);
-            readyAnimation(image_add, img_angle_225, intArray, 135, clockwise);
-            readyAnimation(image_add, img_angle_165, intArray, 75, clockwise);
-            readyAnimation(image_add, img_angle_105, intArray, 15, clockwise);
-            readyAnimation(image_add, img_angle_045, intArray, -45, clockwise);
+            readyAnimation(image_add, img_angle_345, intArray, 255, clockwise, duration);
+            readyAnimation(image_add, img_angle_285, intArray, 195, clockwise, duration);
+            readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, duration);
+            readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, duration);
+            readyAnimation(image_add, img_angle_105, intArray, 15, clockwise, duration);
+            readyAnimation(image_add, img_angle_045, intArray, -45, clockwise, duration);
         }
 
+        //顺时针加一
         if (clockwise) {
             dialCount++;
         } else {
@@ -190,6 +197,10 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     }
 
     private void readyAnimation(View view, ImageView imageView, int[] intArray, int firstAngle, boolean clockwise) {
+        readyAnimation(view, imageView, intArray, firstAngle, clockwise, DURATION);
+    }
+
+    private void readyAnimation(View view, ImageView imageView, int[] intArray, int firstAngle, boolean clockwise, long duration) {
         float centerX = view.getX() + view.getWidth() * 0.5f;
         float centerY = view.getY() + view.getHeight() * 0.5f;
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
@@ -197,17 +208,17 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         if (intArray.length == 2) {
             if (firstAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
             }
         } else {
             if (startAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
             } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, duration, clockwise);
             }
         }
     }
