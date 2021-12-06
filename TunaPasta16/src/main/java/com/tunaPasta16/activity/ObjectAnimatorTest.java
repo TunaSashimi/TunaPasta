@@ -26,7 +26,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     private static long DURATION = 500;
     private long lastTime;
     //
-    private int dialStart = 0;//默认转动次数
+    private int dialStart = 1;//默认转动次数
     private int dialCount = 0;//已经转动次数
     //
     int[] resourceArray =
@@ -116,24 +116,24 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
 
         if (intArray.length == 2) {
-            img_angle_225.setImageResource(intArray[getIndex(0 + dialStart, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(1 + dialStart, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
         } else if (intArray.length == 3) {
             //
-            img_angle_345.setImageResource(intArray[getIndex(-1 + dialStart, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(0 + dialStart, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(1 + dialStart, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(2 + dialStart, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(3 + dialStart, intArray.length)]);
+            img_angle_345.setImageResource(intArray[getIndex(dialStart - 1, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
             if (dialCount != 0) {
                 dialCount = 0;
             }
         } else if (intArray.length >= 4) {
-            img_angle_345.setImageResource(intArray[getIndex(0 + dialStart, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(1 + dialStart, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(2 + dialStart, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(3 + dialStart, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(4 + dialStart, intArray.length)]);
+            img_angle_345.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+            img_angle_285.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
+            img_angle_225.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
+            img_angle_165.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
+            img_angle_105.setImageResource(intArray[getIndex(dialStart + 4, intArray.length)]);
         }
 
         //
@@ -182,7 +182,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, duration);
             readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, duration);
             readyAnimation(image_add, img_angle_105, intArray, 15, clockwise, duration);
-            readyAnimation(image_add, img_angle_045, intArray, -45, clockwise, duration);
+            readyAnimation(image_add, img_angle_045, intArray, 315, clockwise, duration);
         }
         //顺时针为正
         if (clockwise) {
@@ -243,9 +243,9 @@ public class ObjectAnimatorTest extends AppCompatActivity {
                     if (intArray.length != 2) {
                         if (startAngle == 315) {
                             if (intArray.length == 3) {
-                                imageView.setImageResource(intArray[getIndex(clockwise ? 4 + dialStart + dialCount : -2 + dialStart + dialCount, resourceArray.length)]);
+                                imageView.setImageResource(intArray[getIndex(clockwise ? dialStart + dialCount + 4 : dialStart + dialCount - 2, resourceArray.length)]);
                             } else if (intArray.length >= 4) {
-                                imageView.setImageResource(intArray[getIndex(clockwise ? 5 + dialStart + dialCount : -1 + dialStart + dialCount, resourceArray.length)]);
+                                imageView.setImageResource(intArray[getIndex(clockwise ? dialStart + dialCount + 5 : dialStart + dialCount - 1, resourceArray.length)]);
                             }
                         }
                     }
