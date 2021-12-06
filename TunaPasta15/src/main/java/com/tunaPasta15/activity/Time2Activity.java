@@ -25,13 +25,13 @@ public class Time2Activity extends Activity {
 
         setContentView(R.layout.time2_layout);
 
-        final WheelView hours = (WheelView) findViewById(R.id.hour);
+        final WheelView hours = findViewById(R.id.hour);
         NumericWheelAdapter hourAdapter = new NumericWheelAdapter(this, 0, 23);
         hourAdapter.setItemResource(R.layout.wheel_text_item);
         hourAdapter.setItemTextResource(R.id.text);
         hours.setViewAdapter(hourAdapter);
 
-        final WheelView mins = (WheelView) findViewById(R.id.mins);
+        final WheelView mins = findViewById(R.id.mins);
         NumericWheelAdapter minAdapter = new NumericWheelAdapter(this, 0, 59, "%02d");
         minAdapter.setItemResource(R.layout.wheel_text_item);
         minAdapter.setItemTextResource(R.id.text);
@@ -82,7 +82,7 @@ public class Time2Activity extends Activity {
             newCalendar.roll(Calendar.DAY_OF_YEAR, day);
 
             View view = super.getItem(index, cachedView, parent);
-            TextView weekday = (TextView) view.findViewById(R.id.time2_weekday);
+            TextView weekday = view.findViewById(R.id.time2_weekday);
             if (day == 0) {
                 weekday.setText("");
             } else {
