@@ -17,6 +17,12 @@
             android:textColor="#000000" />
 
         <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/xmlshapetest_button_layer01" />
+
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
