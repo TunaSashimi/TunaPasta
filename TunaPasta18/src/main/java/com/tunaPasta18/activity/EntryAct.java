@@ -14,18 +14,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EntryAct extends Activity {
-    private String[] s = {"ImageFilterTest", "WebViewTest",
-            "OKHttpTest", "StethoTest"
-            , "RXJava2Test", "NotesListTest"
-            , "SoundRecorder", "CropperSampleTest"
-            , "LeakCanaryTest", "LottieTest01", "LottieTest02"
+    private String[] s = {"ImageFilterTest", "WebViewTest", "OKHttpTest", "StethoTest",
+            "RXJava2Test", "NotesListTest", "SoundRecorder", "CropperSampleTest",
+            "LeakCanaryTest", "LottieTest01", "LottieTest02", "LottieTest03"
     };
 
-    private Class<?>[] c = {ImageFilterTest.class, WebViewTest.class,
-            OKHttpTest.class, StethoTest.class
-            , RXJava2Test.class, NotesListTest.class
-            , SoundRecorder.class, CropperSampleTest.class
-            , LeakCanaryTest.class, LottieTest01.class, LottieTest02.class
+    private Class<?>[] c = {ImageFilterTest.class, WebViewTest.class, OKHttpTest.class, StethoTest.class,
+            RXJava2Test.class, NotesListTest.class, SoundRecorder.class, CropperSampleTest.class,
+            LeakCanaryTest.class, LottieTest01.class, LottieTest02.class, LottieTest03.class
     };
 
     @Override

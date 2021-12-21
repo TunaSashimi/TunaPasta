@@ -198,8 +198,6 @@
         <activity
             android:name="com.tunaPasta19.activity.TouchPaintTest"
             android:screenOrientation="portrait" />
-
-
         <activity
             android:name="com.tunaPasta19.activity.TunaViewTest"
             android:screenOrientation="portrait" />
@@ -315,7 +313,6 @@
             android:name="com.tunaPasta19.activity.TunaWrapTest"
             android:screenOrientation="portrait" />
 
-
         <!-- 商业目录 -->
         <activity
             android:name="com.tunaPasta19.activity.CustomFoodTest"
@@ -335,7 +332,5 @@
         <activity
             android:name="com.tunaPasta19.activity.CustomEffectTest"
             android:screenOrientation="portrait" />
-
     </application>
-
 </manifest>

@@ -167,6 +167,9 @@
         <activity android:name="com.tunaPasta18.activity.LeakCanaryTest" />
         <activity android:name="com.tunaPasta18.activity.LottieTest01" />
         <activity android:name="com.tunaPasta18.activity.LottieTest02" />
+        <activity
+            android:name="com.tunaPasta18.activity.LottieTest03"
+            android:theme="@style/Theme.AppCompat.Light" />
 
         <service
             android:name="com.tunaPasta18.service.HongbaoService"
