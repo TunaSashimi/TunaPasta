@@ -29,16 +29,28 @@
             android:text="瀑布流" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="ADD" />
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/buttonGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set" />
     </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewSource"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/radioGroup" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLink"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_toRightOf="@id/recyclerViewSource" />
 </RelativeLayout>

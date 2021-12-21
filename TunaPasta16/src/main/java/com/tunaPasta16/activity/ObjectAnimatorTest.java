@@ -48,7 +48,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.objectanimatortest);
-
         //
         if (Build.VERSION.SDK_INT >= 21) {
             View decorView = getWindow().getDecorView();
