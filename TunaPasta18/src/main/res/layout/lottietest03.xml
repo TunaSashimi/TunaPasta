@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="Guide.json"
+        app:lottie_fileName="guide.json"
         app:lottie_imageAssetsFolder="images"
         app:lottie_loop="true" />
 </RelativeLayout>

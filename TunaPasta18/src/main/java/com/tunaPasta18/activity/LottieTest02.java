@@ -8,11 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieComposition;
-import com.airbnb.lottie.OnCompositionLoadedListener;
 import com.tunaPasta18.R;
-
-import androidx.annotation.Nullable;
 
 public class LottieTest02 extends Activity {
     private Button button1, button2;
@@ -42,7 +38,7 @@ public class LottieTest02 extends Activity {
                 stopAnima();
             }
         });
-        lottieAnimationView.setAnimation("LottieLogo.json");
+        lottieAnimationView.setAnimation("logo.json");
         lottieAnimationView.playAnimation();
         lottieAnimationView.addAnimatorUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override

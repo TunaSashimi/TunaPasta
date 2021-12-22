@@ -50,7 +50,7 @@ dependencies {
     api 'io.reactivex:rxandroid:1.2.1'
 
     //Lottie
-    api 'com.airbnb.android:lottie:4.0.0'
+    api 'com.airbnb.android:lottie:4.2.1'
 
     //ASM
     api 'org.ow2.asm:asm:9.2'

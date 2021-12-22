@@ -63,7 +63,7 @@ public class CropperSampleTest extends Activity {
         setContentView(R.layout.croppersampletest);
 
         // Sets fonts for all
-        Typeface mFont = Typeface.createFromAsset(getAssets(), "Roboto-Thin.ttf");
+        Typeface mFont = Typeface.createFromAsset(getAssets(), "roboto-thin.ttf");
         ViewGroup root = (ViewGroup) findViewById(R.id.mylayout);
         setFont(root, mFont);
 
