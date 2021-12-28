@@ -110,7 +110,6 @@ public class PopupWindowTest extends Activity {
         //以下两句代码保证在点击popupWindow外部的地方也能让popupWindow消失
         popupWindow.setFocusable(true);
         popupWindow.setBackgroundDrawable(new ColorDrawable(0x00000000));
-
     }
 
     /* 获取PopupWindow实例
