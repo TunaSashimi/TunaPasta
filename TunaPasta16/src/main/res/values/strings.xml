@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TunaPasta16</string>
-
-    <string-array name="flexWrapArray">
-        <item>nowrap</item>
-        <item>wrap </item>
-        <item>wrap_reverse</item>
-    </string-array>
 </resources>

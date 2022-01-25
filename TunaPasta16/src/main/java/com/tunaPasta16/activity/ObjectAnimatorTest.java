@@ -9,39 +9,43 @@ import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.Spinner;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.tunaPasta16.R;
+import com.tunaPasta16.application.DataTrans;
 import com.tunaPasta16.view.FlingImageView;
+
+import java.util.ArrayList;
 
 public class ObjectAnimatorTest extends AppCompatActivity {
     private static int SWEEP_ANGLE = 60;
     private static long DURATION = 500;
     private long lastTime;
+
     //
-    private int dialStart = 1;//默认转动次数
+    private int dialStart = DataTrans.dialStart;//默认转动次数
     private int dialCount = 0;//已经转动次数
+
     //
-    int[] resourceArray =
+    ImageView image_add;
+//    FlingImageView img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105, img_angle_045;
+    FlingImageView.ClockListener clockListener;
+
+    //
+    private ImageView[] imageArray = new ImageView[6];
+
+    private int[] resourceArray =
             {
                     R.drawable.head_man_common,
                     R.drawable.head_woman_common,
                     R.drawable.head_boy_common,
                     R.drawable.head_girl_common,
             };
-    //
-    ImageView image_add;
-    //
-    FlingImageView img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105, img_angle_045;
-    //
-    FlingImageView.ClockListener clockListener;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,46 +68,21 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         //
         image_add = findViewById(R.id.image_add);
-        img_angle_345 = findViewById(R.id.img_angle_345);
-        img_angle_285 = findViewById(R.id.img_angle_285);
-        img_angle_225 = findViewById(R.id.img_angle_225);
-        img_angle_165 = findViewById(R.id.img_angle_165);
-        img_angle_105 = findViewById(R.id.img_angle_105);
-        img_angle_045 = findViewById(R.id.img_angle_045);
+        imageArray[0] = findViewById(R.id.img_angle_345);
+        imageArray[1] = findViewById(R.id.img_angle_285);
+        imageArray[2] = findViewById(R.id.img_angle_225);
+        imageArray[3] = findViewById(R.id.img_angle_165);
+        imageArray[4] = findViewById(R.id.img_angle_105);
+        imageArray[5] = findViewById(R.id.img_angle_045);
 
-        Spinner spinner = findViewById(R.id.spinner);
-        String[] stringArray = getResources().getStringArray(R.array.flexWrapArray);
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, stringArray);
-        spinner.setAdapter(arrayAdapter);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-//                        flexboxLayout.setFlexWrap(FlexWrap.NOWRAP);
-                        break;
-                    case 1:
-//                        flexboxLayout.setFlexWrap(FlexWrap.WRAP);
-                        break;
-                    case 2:
-//                        flexboxLayout.setFlexWrap(FlexWrap.WRAP_REVERSE);
-                        break;
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+        //
         setValue(resourceArray);
     }
 
-    private int getIndex(int count, int modulo) {
-        int index = count % modulo;
+    private int getIndex(int count, int size) {
+        int index = count % size;
         if (index < 0) {
-            index += modulo;
+            index += size;
         }
         return index;
     }
@@ -115,24 +94,23 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
 
         if (intArray.length == 2) {
-            img_angle_225.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
+            //
+//            img_angle_225.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+//            img_angle_165.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
         } else if (intArray.length == 3) {
             //
-            img_angle_345.setImageResource(intArray[getIndex(dialStart - 1, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
-            if (dialCount != 0) {
-                dialCount = 0;
-            }
+//            img_angle_345.setImageResource(intArray[getIndex(dialStart - 1, intArray.length)]);
+//            img_angle_285.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+//            img_angle_225.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
+//            img_angle_165.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
+//            img_angle_105.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
         } else if (intArray.length >= 4) {
-            img_angle_345.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-            img_angle_285.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
-            img_angle_225.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
-            img_angle_165.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
-            img_angle_105.setImageResource(intArray[getIndex(dialStart + 4, intArray.length)]);
+            //
+//            img_angle_345.setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
+//            img_angle_285.setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
+//            img_angle_225.setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
+//            img_angle_165.setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
+//            img_angle_105.setImageResource(intArray[getIndex(dialStart + 4, intArray.length)]);
         }
 
         //
@@ -150,15 +128,15 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         //
         if (intArray.length == 2) {
-            img_angle_225.setClockListener(clockListener);
-            img_angle_165.setClockListener(clockListener);
+//            img_angle_225.setClockListener(clockListener);
+//            img_angle_165.setClockListener(clockListener);
         } else {
-            img_angle_345.setClockListener(clockListener);
-            img_angle_285.setClockListener(clockListener);
-            img_angle_225.setClockListener(clockListener);
-            img_angle_165.setClockListener(clockListener);
-            img_angle_105.setClockListener(clockListener);
-            img_angle_045.setClockListener(clockListener);
+//            img_angle_345.setClockListener(clockListener);
+//            img_angle_285.setClockListener(clockListener);
+//            img_angle_225.setClockListener(clockListener);
+//            img_angle_165.setClockListener(clockListener);
+//            img_angle_105.setClockListener(clockListener);
+//            img_angle_045.setClockListener(clockListener);
         }
     }
 
@@ -169,19 +147,19 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         lastTime = System.currentTimeMillis();
         if (intArray.length == 2) {
             if (dialCount % 2 == 0) {
-                readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, DURATION);
-                readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, DURATION);
+//                readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, DURATION);
+//                readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, DURATION);
             } else {
-                readyAnimation(image_add, img_angle_225, intArray, 75, clockwise, DURATION);
-                readyAnimation(image_add, img_angle_165, intArray, 135, clockwise, DURATION);
+//                readyAnimation(image_add, img_angle_225, intArray, 75, clockwise, DURATION);
+//                readyAnimation(image_add, img_angle_165, intArray, 135, clockwise, DURATION);
             }
         } else {
-            readyAnimation(image_add, img_angle_345, intArray, 255, clockwise, duration);
-            readyAnimation(image_add, img_angle_285, intArray, 195, clockwise, duration);
-            readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, duration);
-            readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, duration);
-            readyAnimation(image_add, img_angle_105, intArray, 15, clockwise, duration);
-            readyAnimation(image_add, img_angle_045, intArray, 315, clockwise, duration);
+//            readyAnimation(image_add, img_angle_345, intArray, 255, clockwise, duration);
+//            readyAnimation(image_add, img_angle_285, intArray, 195, clockwise, duration);
+//            readyAnimation(image_add, img_angle_225, intArray, 135, clockwise, duration);
+//            readyAnimation(image_add, img_angle_165, intArray, 75, clockwise, duration);
+//            readyAnimation(image_add, img_angle_105, intArray, 15, clockwise, duration);
+//            readyAnimation(image_add, img_angle_045, intArray, 315, clockwise, duration);
         }
         //顺时针为正
         if (clockwise) {
@@ -254,5 +232,11 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         } else {
             // Create animator without using curved path
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        DataTrans.dialStart = dialCount;
     }
 }
