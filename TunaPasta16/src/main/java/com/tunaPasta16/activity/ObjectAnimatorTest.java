@@ -19,8 +19,6 @@ import com.tunaPasta16.R;
 import com.tunaPasta16.application.DataTrans;
 import com.tunaPasta16.view.FlingImageView;
 
-import java.util.ArrayList;
-
 public class ObjectAnimatorTest extends AppCompatActivity {
     private static int SWEEP_ANGLE = 60;
     private static long DURATION = 500;
@@ -32,7 +30,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
     //
     ImageView image_add;
-//    FlingImageView img_angle_345, img_angle_285, img_angle_225, img_angle_165, img_angle_105, img_angle_045;
     FlingImageView.ClockListener clockListener;
 
     //
