@@ -75,14 +75,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         setValue(resourceArray);
     }
 
-    private int getIndex(int count, int size) {
-        int index = count % size;
-        if (index < 0) {
-            index += size;
-        }
-        return index;
-    }
-
     //setValue 增加转动过后的保存恢复功能
     private void setValue(int[] intArray) {
         //2个,底下两个
@@ -134,6 +126,14 @@ public class ObjectAnimatorTest extends AppCompatActivity {
             imageArray[4].setClockListener(clockListener);
             imageArray[5].setClockListener(clockListener);
         }
+    }
+
+    private int getIndex(int count, int size) {
+        int index = count % size;
+        if (index < 0) {
+            index += size;
+        }
+        return index;
     }
 
     private void clockTurn(int[] intArray, boolean clockwise, long duration) {
