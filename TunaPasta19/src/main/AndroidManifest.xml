@@ -28,8 +28,11 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/tunasashimi"
+        android:theme="@android:style/Theme.NoTitleBar"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+
+        >
+<!--        android:theme="@style/AppTheme"-->
 
         <!-- Not use android: launchMode = "singleTask" will lead to an error -->
         <activity
@@ -287,6 +290,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.tunaPasta19.activity.TunaScratchTest"
+
             android:screenOrientation="portrait" />
         <activity
             android:name="com.tunaPasta19.activity.TunaSVGTest"

@@ -7,16 +7,16 @@
 
     <com.tunaPasta19.tuna.TunaScratch
         android:id="@+id/tunaScratch"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:layout_margin="@dimen/tuna_button_margin"
         android:layerType="software"
         tuna:tunaScratchCoverColor="#000000"
         tuna:tunaScratchCoverStrokeWidth="20dp"
         tuna:tunaScratchRadius="10dp"
-        tuna:tunaScratchSrc="@drawable/tunaprogressbar_front"
-        tuna:tunaScratchText="TunaSashimi"
-        tuna:tunaScratchTextColor="#0000ff"
+        tuna:tunaScratchSrc="@drawable/tunasashimi"
+        tuna:tunaScratchText="生日快乐,心里有心心"
+        tuna:tunaScratchTextColor="#e77c8e"
         tuna:tunaScratchTextSize="22sp" />
 
 </RelativeLayout>
