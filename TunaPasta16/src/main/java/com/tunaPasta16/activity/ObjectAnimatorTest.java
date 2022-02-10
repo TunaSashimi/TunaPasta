@@ -107,12 +107,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         clockListener = new FlingImageView.ClockListener() {
             @Override
             public void clockWise() {
-                clockTurn(resourceArray, true, DURATION);
+                clockTurn(resourceArray, true);
             }
 
             @Override
             public void clockWiseAnti() {
-                clockTurn(resourceArray, false, DURATION);
+                clockTurn(resourceArray, false);
             }
         };
 
@@ -139,26 +139,26 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     }
 
     //代码检查到这里
-    private void clockTurn(int[] resourceArray, boolean clockwise, long duration) {
-        if (System.currentTimeMillis() - lastTime < duration + 100) {
+    private void clockTurn(int[] resourceArray, boolean clockwise) {
+        if (System.currentTimeMillis() - lastTime < DURATION + 100) {
             return;
         }
         lastTime = System.currentTimeMillis();
         if (resourceArray.length == 2) {
             if (dialCount % 2 == 0) {
-                readyAnimation(image_add, image225, resourceArray, 135, clockwise, DURATION);
-                readyAnimation(image_add, image165, resourceArray, 75, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 135, clockwise);
+                readyAnimation(image_add, image165, resourceArray, 75, clockwise);
             } else {
-                readyAnimation(image_add, image225, resourceArray, 75, clockwise, DURATION);
-                readyAnimation(image_add, image165, resourceArray, 135, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 75, clockwise);
+                readyAnimation(image_add, image165, resourceArray, 135, clockwise);
             }
         } else {
-            readyAnimation(image_add, image345, resourceArray, 255, clockwise, duration);
-            readyAnimation(image_add, image285, resourceArray, 195, clockwise, duration);
-            readyAnimation(image_add, image225, resourceArray, 135, clockwise, duration);
-            readyAnimation(image_add, image165, resourceArray, 75, clockwise, duration);
-            readyAnimation(image_add, image105, resourceArray, 15, clockwise, duration);
-            readyAnimation(image_add, image045, resourceArray, -45, clockwise, duration);
+            readyAnimation(image_add, image345, resourceArray, 255, clockwise);
+            readyAnimation(image_add, image285, resourceArray, 195, clockwise);
+            readyAnimation(image_add, image225, resourceArray, 135, clockwise);
+            readyAnimation(image_add, image165, resourceArray, 75, clockwise);
+            readyAnimation(image_add, image105, resourceArray, 15, clockwise);
+            readyAnimation(image_add, image045, resourceArray, -45, clockwise);
         }
         //顺时针为正
         if (clockwise) {
@@ -168,7 +168,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         }
     }
 
-    private void readyAnimation(View view, ImageView imageView, int[] resourceArray, int firstAngle, boolean clockwise, long duration) {
+    private void readyAnimation(View view, ImageView imageView, int[] resourceArray, int firstAngle, boolean clockwise) {
         float centerX = view.getX() + view.getWidth() * 0.5f;
         float centerY = view.getY() + view.getHeight() * 0.5f;
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
@@ -176,17 +176,17 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         if (resourceArray.length == 2) {
             if (firstAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
             }
         } else {
             if (startAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
             } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
-                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
             }
         }
     }
