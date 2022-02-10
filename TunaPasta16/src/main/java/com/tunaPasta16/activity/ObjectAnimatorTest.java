@@ -29,7 +29,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     private FlingImageView.ClockListener clockListener;
 
     //
-    private FlingImageView[] imageArray = new FlingImageView[6];
+    private FlingImageView image345, image285, image225, image165, image105, image045;
 
     private int[] resourceArray =
             {
@@ -67,12 +67,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         image_add = findViewById(R.id.image_add);
 
         //
-        imageArray[0] = findViewById(R.id.img_angle_345);
-        imageArray[1] = findViewById(R.id.img_angle_285);
-        imageArray[2] = findViewById(R.id.img_angle_225);
-        imageArray[3] = findViewById(R.id.img_angle_165);
-        imageArray[4] = findViewById(R.id.img_angle_105);
-        imageArray[5] = findViewById(R.id.img_angle_045);
+        image345 = findViewById(R.id.img_angle_345);
+        image285 = findViewById(R.id.img_angle_285);
+        image225 = findViewById(R.id.img_angle_225);
+        image165 = findViewById(R.id.img_angle_165);
+        image105 = findViewById(R.id.img_angle_105);
+        image045 = findViewById(R.id.img_angle_045);
 
         //
         setValue(resourceArray);
@@ -85,22 +85,22 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
         if (resourceArray.length == 2) {
             //
-            imageArray[2].setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
-            imageArray[3].setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+            image225.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
         } else if (resourceArray.length == 3) {
             //
-            imageArray[0].setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
-            imageArray[1].setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
-            imageArray[2].setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
-            imageArray[3].setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
-            imageArray[4].setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image345.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image285.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image225.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image105.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
         } else if (resourceArray.length >= 4) {
             //
-            imageArray[0].setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
-            imageArray[1].setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
-            imageArray[2].setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
-            imageArray[3].setImageResource(resourceArray[getIndex(dialStart + 3, resourceArray.length)]);
-            imageArray[4].setImageResource(resourceArray[getIndex(dialStart + 4, resourceArray.length)]);
+            image345.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image285.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+            image225.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 3, resourceArray.length)]);
+            image105.setImageResource(resourceArray[getIndex(dialStart + 4, resourceArray.length)]);
         }
 
         //
@@ -118,15 +118,15 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         //
         if (resourceArray.length == 2) {
-            imageArray[2].setClockListener(clockListener);
-            imageArray[3].setClockListener(clockListener);
+            image225.setClockListener(clockListener);
+            image165.setClockListener(clockListener);
         } else {
-            imageArray[0].setClockListener(clockListener);
-            imageArray[1].setClockListener(clockListener);
-            imageArray[2].setClockListener(clockListener);
-            imageArray[3].setClockListener(clockListener);
-            imageArray[4].setClockListener(clockListener);
-            imageArray[5].setClockListener(clockListener);
+            image345.setClockListener(clockListener);
+            image285.setClockListener(clockListener);
+            image225.setClockListener(clockListener);
+            image165.setClockListener(clockListener);
+            image105.setClockListener(clockListener);
+            image045.setClockListener(clockListener);
         }
     }
 
@@ -146,19 +146,19 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         lastTime = System.currentTimeMillis();
         if (resourceArray.length == 2) {
             if (dialCount % 2 == 0) {
-                readyAnimation(image_add, imageArray[2], resourceArray, 135, clockwise, DURATION);
-                readyAnimation(image_add, imageArray[3], resourceArray, 75, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 135, clockwise, DURATION);
+                readyAnimation(image_add, image165, resourceArray, 75, clockwise, DURATION);
             } else {
-                readyAnimation(image_add, imageArray[2], resourceArray, 75, clockwise, DURATION);
-                readyAnimation(image_add, imageArray[3], resourceArray, 135, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 75, clockwise, DURATION);
+                readyAnimation(image_add, image165, resourceArray, 135, clockwise, DURATION);
             }
         } else {
-            readyAnimation(image_add, imageArray[0], resourceArray, 255, clockwise, duration);
-            readyAnimation(image_add, imageArray[1], resourceArray, 195, clockwise, duration);
-            readyAnimation(image_add, imageArray[2], resourceArray, 135, clockwise, duration);
-            readyAnimation(image_add, imageArray[3], resourceArray, 75, clockwise, duration);
-            readyAnimation(image_add, imageArray[4], resourceArray, 15, clockwise, duration);
-            readyAnimation(image_add, imageArray[5], resourceArray, -45, clockwise, duration);
+            readyAnimation(image_add, image345, resourceArray, 255, clockwise, duration);
+            readyAnimation(image_add, image285, resourceArray, 195, clockwise, duration);
+            readyAnimation(image_add, image225, resourceArray, 135, clockwise, duration);
+            readyAnimation(image_add, image165, resourceArray, 75, clockwise, duration);
+            readyAnimation(image_add, image105, resourceArray, 15, clockwise, duration);
+            readyAnimation(image_add, image045, resourceArray, -45, clockwise, duration);
         }
         //顺时针为正
         if (clockwise) {
