@@ -236,6 +236,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        DataTrans.dialStart = dialCount;
+        DataTrans.dialStart = dialStart + dialCount;
     }
 }
