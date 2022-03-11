@@ -9,11 +9,14 @@ import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.tunaPasta16.R;
 import com.tunaPasta16.application.DataTrans;
@@ -25,18 +28,21 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     private long lastTime;
 
     //
+    private TextView text_login;
     private ImageView image_add;
     private FlingImageView.ClockListener clockListener;
 
     //
     private FlingImageView image345, image285, image225, image165, image105, image045;
+    private Float image345X, image345Y, image285X, image285Y, image225X, image225Y,
+            image165X, image165Y, image105X, image105Y, image045X, image045Y;
 
     private int[] resourceArray =
             {
                     R.drawable.head_man_common,
                     R.drawable.head_woman_common,
-                    R.drawable.head_boy_common,
-                    R.drawable.head_girl_common,
+//                    R.drawable.head_boy_common,
+//                    R.drawable.head_girl_common,
             };
 
     //
@@ -73,6 +79,20 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         image165 = findViewById(R.id.img_angle_165);
         image105 = findViewById(R.id.img_angle_105);
         image045 = findViewById(R.id.img_angle_045);
+
+
+        text_login = findViewById(R.id.text_login);
+        text_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //属性动画播放后设置无效
+                //ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) image225.getLayoutParams();
+                //layoutParams.circleAngle = 225;
+
+                image225.setX(image225X);
+                image225.setY(image225Y);
+            }
+        });
 
         //
         setValue(resourceArray);
@@ -140,6 +160,22 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
     //代码检查到这里
     private void clockTurn(int[] resourceArray, boolean clockwise) {
+        //
+        if (image345X == 0) {
+            image345X = image345.getX();
+            image345Y = image345.getY();
+            image285X = image285.getX();
+            image285Y = image285.getY();
+            image225X = image225.getX();
+            image225Y = image225.getY();
+            image165X = image165.getX();
+            image165Y = image165.getY();
+            image105X = image105.getX();
+            image105Y = image105.getY();
+            image045X = image045.getX();
+            image045Y = image045.getY();
+        }
+
         if (System.currentTimeMillis() - lastTime < DURATION + 100) {
             return;
         }
