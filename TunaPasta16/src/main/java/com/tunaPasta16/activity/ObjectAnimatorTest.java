@@ -34,7 +34,7 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
     //
     private FlingImageView image345, image285, image225, image165, image105, image045;
-    private Float image345X, image345Y, image285X, image285Y, image225X, image225Y,
+    private float image345X, image345Y, image285X, image285Y, image225X, image225Y,
             image165X, image165Y, image105X, image105Y, image045X, image045Y;
 
     private int[] resourceArray =
@@ -79,7 +79,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         image165 = findViewById(R.id.img_angle_165);
         image105 = findViewById(R.id.img_angle_105);
         image045 = findViewById(R.id.img_angle_045);
-
 
         text_login = findViewById(R.id.text_login);
         text_login.setOnClickListener(new View.OnClickListener() {
