@@ -34,8 +34,8 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
     //
     private FlingImageView image345, image285, image225, image165, image105, image045;
-    private float image345X, image345Y, image285X, image285Y, image225X, image225Y,
-            image165X, image165Y, image105X, image105Y, image045X, image045Y;
+//    private float image345X, image345Y, image285X, image285Y, image225X, image225Y,
+//            image165X, image165Y, image105X, image105Y, image045X, image045Y;
 
     private int[] resourceArray =
             {
@@ -88,8 +88,8 @@ public class ObjectAnimatorTest extends AppCompatActivity {
                 //ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) image225.getLayoutParams();
                 //layoutParams.circleAngle = 225;
 
-                image225.setX(image225X);
-                image225.setY(image225Y);
+                image225.setX(image225.locationX);
+                image225.setY(image225.locationY);
             }
         });
 
@@ -160,24 +160,19 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     //代码检查到这里
     private void clockTurn(int[] resourceArray, boolean clockwise) {
         //
-
-        System.out.println("image225X==>" + image345X);
-        System.out.println("image225X==>" + (image345X == 0));
-
-
-        if (image225X == 0) {
-            image345X = image345.getX();
-            image345Y = image345.getY();
-            image285X = image285.getX();
-            image285Y = image285.getY();
-            image225X = image225.getX();
-            image225Y = image225.getY();
-            image165X = image165.getX();
-            image165Y = image165.getY();
-            image105X = image105.getX();
-            image105Y = image105.getY();
-            image045X = image045.getX();
-            image045Y = image045.getY();
+        if (image225.locationX == 0) {
+            image345.locationX = image345.getX();
+            image345.locationY = image345.getY();
+            image285.locationX = image285.getX();
+            image285.locationY = image285.getY();
+            image225.locationX = image225.getX();
+            image225.locationY = image225.getY();
+            image165.locationX = image165.getX();
+            image165.locationY = image165.getY();
+            image105.locationX = image105.getX();
+            image105.locationY = image105.getY();
+            image045.locationX = image045.getX();
+            image045.locationY = image045.getY();
         }
 
         if (System.currentTimeMillis() - lastTime < DURATION + 100) {

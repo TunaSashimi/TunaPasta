@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 public class FlingImageView extends ImageView {
     private ClockListener clockListener;
     private float actionDownX, actionDownY;
+    public float locationX, locationY;
     private static int THRESHOLD_DISTANCE = 10;
 
     public FlingImageView(Context context) {
