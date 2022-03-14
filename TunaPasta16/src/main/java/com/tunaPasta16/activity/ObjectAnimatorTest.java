@@ -34,9 +34,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
     //
     private FlingImageView image345, image285, image225, image165, image105, image045;
-//    private float image345X, image345Y, image285X, image285Y, image225X, image225Y,
-//            image165X, image165Y, image105X, image105Y, image045X, image045Y;
-
     private int[] resourceArray =
             {
                     R.drawable.head_man_common,

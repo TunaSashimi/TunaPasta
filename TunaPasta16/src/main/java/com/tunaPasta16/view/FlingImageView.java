@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 
 @SuppressLint("AppCompatCustomView")
 public class FlingImageView extends ImageView {
+    public float locationX, locationY;
     private ClockListener clockListener;
     private float actionDownX, actionDownY;
-    public float locationX, locationY;
     private static int THRESHOLD_DISTANCE = 10;
 
     public FlingImageView(Context context) {
