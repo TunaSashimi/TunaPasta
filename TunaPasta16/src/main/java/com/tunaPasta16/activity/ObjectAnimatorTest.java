@@ -160,7 +160,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     //代码检查到这里
     private void clockTurn(int[] resourceArray, boolean clockwise) {
         //
-        if (image345X == 0) {
+
+        System.out.println("image225X==>" + image345X);
+        System.out.println("image225X==>" + (image345X == 0));
+
+
+        if (image225X == 0) {
             image345X = image345.getX();
             image345Y = image345.getY();
             image285X = image285.getX();
