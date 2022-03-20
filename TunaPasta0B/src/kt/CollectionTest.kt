@@ -36,9 +36,9 @@ fun main() {
 
     //创建一个持有 Student对象 List
     val list4 = listOf(
-        Student(1, "Jack", 18, 90),
-        Student(2, "Rose", 17, 80),
-        Student(3, "Alice", 16, 70)
+            Student(1, "Jack", 18, 90),
+            Student(2, "Rose", 17, 80),
+            Student(3, "Alice", 16, 70)
     )
 
     //过滤出 studentList 中年龄大于等于 18 岁的Student 对象

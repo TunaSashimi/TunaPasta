@@ -9,11 +9,14 @@ import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.tunaPasta16.R;
 import com.tunaPasta16.application.DataTrans;
@@ -25,29 +28,30 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     private long lastTime;
 
     //
-    private int dialStart = DataTrans.dialStart;//默认转动次数
-    private int dialCount = 0;//已经转动次数
+    private TextView text_login;
+    private ImageView image_add;
+    private FlingImageView.ClockListener clockListener;
 
     //
-    ImageView image_add;
-    FlingImageView.ClockListener clockListener;
-
-    //
-    private FlingImageView[] imageArray = new FlingImageView[6];
-
+    private FlingImageView image345, image285, image225, image165, image105, image045;
     private int[] resourceArray =
             {
                     R.drawable.head_man_common,
                     R.drawable.head_woman_common,
-                    R.drawable.head_boy_common,
-                    R.drawable.head_girl_common,
+//                    R.drawable.head_boy_common,
+//                    R.drawable.head_girl_common,
             };
+
+    //
+    private int dialStart = DataTrans.dialStart;//默认转动次数
+    private int dialCount = 0;//已经转动次数
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.objectanimatortest);
+
         //
         if (Build.VERSION.SDK_INT >= 21) {
             View decorView = getWindow().getDecorView();
@@ -64,87 +68,81 @@ public class ObjectAnimatorTest extends AppCompatActivity {
 
         //
         image_add = findViewById(R.id.image_add);
-        imageArray[0] = findViewById(R.id.img_angle_345);
-        imageArray[1] = findViewById(R.id.img_angle_285);
-        imageArray[2] = findViewById(R.id.img_angle_225);
-        imageArray[3] = findViewById(R.id.img_angle_165);
-        imageArray[4] = findViewById(R.id.img_angle_105);
-        imageArray[5] = findViewById(R.id.img_angle_045);
+
+        //
+        image345 = findViewById(R.id.img_angle_345);
+        image285 = findViewById(R.id.img_angle_285);
+        image225 = findViewById(R.id.img_angle_225);
+        image165 = findViewById(R.id.img_angle_165);
+        image105 = findViewById(R.id.img_angle_105);
+        image045 = findViewById(R.id.img_angle_045);
+
+        text_login = findViewById(R.id.text_login);
+        text_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //属性动画播放后设置无效
+                //ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) image225.getLayoutParams();
+                //layoutParams.circleAngle = 225;
+
+                image225.setX(image225.locationX);
+                image225.setY(image225.locationY);
+            }
+        });
 
         //
         setValue(resourceArray);
     }
 
     //setValue 增加转动过后的保存恢复功能
-    private void setValue(int[] intArray) {
+    private void setValue(int[] resourceArray) {
         //2个,底下两个
         //3个,两边各补一个
         //4个以上,逆时针从上到下摆放,img_angle_045不需要设置
-
-//        if (intArray.length == 2) {
-//            //
-//            imageArray[2].setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-//            imageArray[3].setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
-//        } else if (intArray.length == 3) {
-//            //
-//            imageArray[0].setImageResource(intArray[getIndex(dialStart - 1, intArray.length)]);
-//            imageArray[1].setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-//            imageArray[2].setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
-//            imageArray[3].setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
-//            imageArray[4].setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
-//        } else if (intArray.length >= 4) {
-//            //
-//            imageArray[0].setImageResource(intArray[getIndex(dialStart + 0, intArray.length)]);
-//            imageArray[1].setImageResource(intArray[getIndex(dialStart + 1, intArray.length)]);
-//            imageArray[2].setImageResource(intArray[getIndex(dialStart + 2, intArray.length)]);
-//            imageArray[3].setImageResource(intArray[getIndex(dialStart + 3, intArray.length)]);
-//            imageArray[4].setImageResource(intArray[getIndex(dialStart + 4, intArray.length)]);
-//        }
-
-        if (intArray.length == 2) {
+        if (resourceArray.length == 2) {
             //
-            imageArray[getIndex(dialStart + 2, imageArray.length)].setImageResource(intArray[0]);
-            imageArray[getIndex(dialStart + 3, imageArray.length)].setImageResource(intArray[1]);
-        } else if (intArray.length == 3) {
+            image225.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+        } else if (resourceArray.length == 3) {
             //
-            imageArray[getIndex(dialStart + 0, imageArray.length)].setImageResource(intArray[getIndex(-1, intArray.length)]);
-            imageArray[getIndex(dialStart + 1, imageArray.length)].setImageResource(intArray[getIndex(0, intArray.length)]);
-            imageArray[getIndex(dialStart + 2, imageArray.length)].setImageResource(intArray[getIndex(1, intArray.length)]);
-            imageArray[getIndex(dialStart + 3, imageArray.length)].setImageResource(intArray[getIndex(2, intArray.length)]);
-            imageArray[getIndex(dialStart + 4, imageArray.length)].setImageResource(intArray[getIndex(3, intArray.length)]);
-        } else if (intArray.length >= 4) {
+            image345.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image285.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image225.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image105.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+        } else if (resourceArray.length >= 4) {
             //
-            imageArray[getIndex(dialStart + 0, imageArray.length)].setImageResource(intArray[getIndex(0, intArray.length)]);
-            imageArray[getIndex(dialStart + 1, imageArray.length)].setImageResource(intArray[getIndex(1, intArray.length)]);
-            imageArray[getIndex(dialStart + 2, imageArray.length)].setImageResource(intArray[getIndex(2, intArray.length)]);
-            imageArray[getIndex(dialStart + 3, imageArray.length)].setImageResource(intArray[getIndex(3, intArray.length)]);
-            imageArray[getIndex(dialStart + 4, imageArray.length)].setImageResource(intArray[getIndex(4, intArray.length)]);
+            image345.setImageResource(resourceArray[getIndex(dialStart + 0, resourceArray.length)]);
+            image285.setImageResource(resourceArray[getIndex(dialStart + 1, resourceArray.length)]);
+            image225.setImageResource(resourceArray[getIndex(dialStart + 2, resourceArray.length)]);
+            image165.setImageResource(resourceArray[getIndex(dialStart + 3, resourceArray.length)]);
+            image105.setImageResource(resourceArray[getIndex(dialStart + 4, resourceArray.length)]);
         }
 
         //
         clockListener = new FlingImageView.ClockListener() {
             @Override
             public void clockWise() {
-                clockTurn(intArray, true, DURATION);
+                clockTurn(resourceArray, true);
             }
 
             @Override
             public void clockWiseAnti() {
-                clockTurn(intArray, false, DURATION);
+                clockTurn(resourceArray, false);
             }
         };
 
         //
-        if (intArray.length == 2) {
-            imageArray[getIndex(dialStart + 2, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 3, imageArray.length)].setClockListener(clockListener);
+        if (resourceArray.length == 2) {
+            image225.setClockListener(clockListener);
+            image165.setClockListener(clockListener);
         } else {
-            imageArray[getIndex(dialStart + 0, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 1, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 2, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 3, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 4, imageArray.length)].setClockListener(clockListener);
-            imageArray[getIndex(dialStart + 5, imageArray.length)].setClockListener(clockListener);
+            image345.setClockListener(clockListener);
+            image285.setClockListener(clockListener);
+            image225.setClockListener(clockListener);
+            image165.setClockListener(clockListener);
+            image105.setClockListener(clockListener);
+            image045.setClockListener(clockListener);
         }
     }
 
@@ -156,26 +154,43 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         return index;
     }
 
-    private void clockTurn(int[] intArray, boolean clockwise, long duration) {
-        if (System.currentTimeMillis() - lastTime < duration + 100) {
+    //代码检查到这里
+    private void clockTurn(int[] resourceArray, boolean clockwise) {
+        //
+        if (image225.locationX == 0) {
+            image345.locationX = image345.getX();
+            image345.locationY = image345.getY();
+            image285.locationX = image285.getX();
+            image285.locationY = image285.getY();
+            image225.locationX = image225.getX();
+            image225.locationY = image225.getY();
+            image165.locationX = image165.getX();
+            image165.locationY = image165.getY();
+            image105.locationX = image105.getX();
+            image105.locationY = image105.getY();
+            image045.locationX = image045.getX();
+            image045.locationY = image045.getY();
+        }
+
+        if (System.currentTimeMillis() - lastTime < DURATION + 100) {
             return;
         }
         lastTime = System.currentTimeMillis();
-        if (intArray.length == 2) {
+        if (resourceArray.length == 2) {
             if (dialCount % 2 == 0) {
-                readyAnimation(image_add, imageArray[getIndex(dialStart + 2, imageArray.length)], intArray, 135, clockwise, DURATION);
-                readyAnimation(image_add, imageArray[getIndex(dialStart + 3, imageArray.length)], intArray, 75, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 135, clockwise);
+                readyAnimation(image_add, image165, resourceArray, 75, clockwise);
             } else {
-                readyAnimation(image_add, imageArray[getIndex(dialStart + 2, imageArray.length)], intArray, 75, clockwise, DURATION);
-                readyAnimation(image_add, imageArray[getIndex(dialStart + 3, imageArray.length)], intArray, 135, clockwise, DURATION);
+                readyAnimation(image_add, image225, resourceArray, 75, clockwise);
+                readyAnimation(image_add, image165, resourceArray, 135, clockwise);
             }
         } else {
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 0, imageArray.length)], intArray, 255, clockwise, duration);
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 1, imageArray.length)], intArray, 195, clockwise, duration);
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 2, imageArray.length)], intArray, 135, clockwise, duration);
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 3, imageArray.length)], intArray, 75, clockwise, duration);
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 4, imageArray.length)], intArray, 15, clockwise, duration);
-            readyAnimation(image_add, imageArray[getIndex(dialStart + 5, imageArray.length)], intArray, 315, clockwise, duration);
+            readyAnimation(image_add, image345, resourceArray, 255, clockwise);
+            readyAnimation(image_add, image285, resourceArray, 195, clockwise);
+            readyAnimation(image_add, image225, resourceArray, 135, clockwise);
+            readyAnimation(image_add, image165, resourceArray, 75, clockwise);
+            readyAnimation(image_add, image105, resourceArray, 15, clockwise);
+            readyAnimation(image_add, image045, resourceArray, -45, clockwise);
         }
         //顺时针为正
         if (clockwise) {
@@ -185,30 +200,30 @@ public class ObjectAnimatorTest extends AppCompatActivity {
         }
     }
 
-    private void readyAnimation(View view, ImageView imageView, int[] intArray, int firstAngle, boolean clockwise, long duration) {
+    private void readyAnimation(View view, ImageView imageView, int[] resourceArray, int firstAngle, boolean clockwise) {
         float centerX = view.getX() + view.getWidth() * 0.5f;
         float centerY = view.getY() + view.getHeight() * 0.5f;
         float radiusPX = getResources().getDimension(R.dimen.clock_radius);
         int startAngle = getIndex(firstAngle + SWEEP_ANGLE * dialCount, 360);
 
-        if (intArray.length == 2) {
+        if (resourceArray.length == 2) {
             if (firstAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, firstAngle, SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
             }
         } else {
             if (startAngle == 135) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 1f, 0.7f, 1f, 0.4f, DURATION, clockwise);
             } else if ((clockwise && startAngle == 75) || (!clockwise && startAngle == 195)) {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 1f, 0.4f, 1f, DURATION, clockwise);
             } else {
-                playAnimation(centerX, centerY, radiusPX, imageView, intArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, duration, clockwise);
+                playAnimation(centerX, centerY, radiusPX, imageView, resourceArray, startAngle, clockwise ? SWEEP_ANGLE : -SWEEP_ANGLE, 0.7f, 0.7f, 0.4f, 0.4f, DURATION, clockwise);
             }
         }
     }
 
-    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView, int[] intArray,
+    private void playAnimation(float centerX, float centerY, float radiusPX, ImageView imageView, int[] resourceArray,
                                int startAngle, int sweepAngle, float startScale, float endScale,
                                float startAlpha, float endAlpha, long duration, boolean clockwise) {
         //
@@ -233,12 +248,12 @@ public class ObjectAnimatorTest extends AppCompatActivity {
                 @Override
                 public void onAnimationStart(Animator animation) {
                     //为2的时候不需要设置背后的值
-                    if (intArray.length != 2) {
+                    if (resourceArray.length != 2) {
                         if (startAngle == 315) {
-                            if (intArray.length == 3) {
-                                imageView.setImageResource(intArray[getIndex(clockwise ? dialStart + dialCount + 4 : dialStart + dialCount - 2, resourceArray.length)]);
-                            } else if (intArray.length >= 4) {
-                                imageView.setImageResource(intArray[getIndex(clockwise ? dialStart + dialCount + 5 : dialStart + dialCount - 1, resourceArray.length)]);
+                            if (resourceArray.length == 3) {
+                                imageView.setImageResource(resourceArray[getIndex(clockwise ? dialStart + dialCount + 4 : dialStart + dialCount - 2, resourceArray.length)]);
+                            } else if (resourceArray.length >= 4) {
+                                imageView.setImageResource(resourceArray[getIndex(clockwise ? dialStart + dialCount + 5 : dialStart + dialCount - 1, resourceArray.length)]);
                             }
                         }
                     }
@@ -253,6 +268,6 @@ public class ObjectAnimatorTest extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        DataTrans.dialStart = dialCount;
+        DataTrans.dialStart = dialStart + dialCount;
     }
 }
