@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-
 import com.tunaPasta17.R;
 
 import java.util.ArrayList;
@@ -18,12 +16,12 @@ public class EntryAct extends Activity {
     private String[] s = {"GetConfigValueTest", "PermissionUtilTest", "ArouterTest", "AndroidQTest",
             "WebPTest", "VerifyTest", "SVGTest", "TCalendarTest",
             "CalendarSelectTest", "ExpandViewTest", "MVPTest", "DataBindingDemo",
-            "TLoadingViewTest", "NetworkMonitorActivity"};
+            "TLoadingViewTest", "NetworkMonitorActivity","ViewPager2Test"};
 
     private Class<?>[] c = {GetConfigValueTest.class, PermissionUtilTest.class, ArouterTest.class, AndroidQTest.class,
             WebPTest.class, VerifyTest.class, SVGTest.class, TCalendarTest.class,
             CalendarSelectTest.class, ExpandViewTest.class, MVPTest.class, DataBindingTest.class,
-            TLoadingViewTest.class, NetworkMonitorActivity.class};
+            TLoadingViewTest.class, NetworkMonitorActivity.class,ViewPager2Test.class };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

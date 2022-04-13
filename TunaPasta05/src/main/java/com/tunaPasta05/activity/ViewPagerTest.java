@@ -116,7 +116,7 @@ public class ViewPagerTest extends Activity {
 
 
         //设置ViewPager的适配器
-        viewPager = (ViewPager) findViewById(R.id.pager);
+        viewPager = findViewById(R.id.pager);
         viewPager.setAdapter(new PagerAdapter() {
             public void destroyItem(View v, int position, Object obj) {
                 ((ViewPager) v).removeView(viewList.get(position));

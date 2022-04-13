@@ -360,7 +360,6 @@ public class CircleProgressView extends View {
 		}
 
 		public synchronized void stopCartoom() {
-
 			if (mBCartoom == false) {
 				return;
 			}
