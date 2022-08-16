@@ -19,13 +19,14 @@ import java.util.TimerTask;
  */
 public class ViewPager2Test extends Activity {
     Timer timer = new Timer();
+    ViewPager2 viewPager2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewpager2test);
         //
-        ViewPager2 viewPager2 = findViewById(R.id.viewpager2);
+        viewPager2 = findViewById(R.id.viewpager2);
         viewPager2.setAdapter(new ViewPagerAdapter());
         //
         timer.schedule(new TimerTask() {

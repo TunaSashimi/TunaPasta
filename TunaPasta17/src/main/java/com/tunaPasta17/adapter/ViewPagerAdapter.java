@@ -27,9 +27,6 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.View
         colors.add(android.R.color.holo_green_light);
     }
 
-    //
-    private boolean isCanLoop = true;
-
     @Override
     public ViewPagerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewPagerViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.viewpager2itemtest, parent, false));
@@ -37,17 +34,16 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.View
 
     @Override
     public void onBindViewHolder(ViewPagerViewHolder holder, int position) {
-
         int realPosition = getRealPosition(position);
 
-        holder.mTvTitle.setText("item " + realPosition);
-        holder.mContainer.setBackgroundResource(colors.get(realPosition));
+        holder.relative.setBackgroundResource(colors.get(realPosition));
+        holder.text.setText("item " + realPosition);
     }
 
     @Override
     public int getItemCount() {
-        if (isCanLoop && colors.size() > 1) {
-            return Integer.MAX_VALUE ;
+        if (colors.size() > 1) {
+            return Integer.MAX_VALUE;
         } else {
             return colors.size();
         }
@@ -58,18 +54,18 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.View
         if (colors.size() == 0) {
             return 0;
         } else {
-            return (position + colors.size()) % colors.size();
+            return position % colors.size();
         }
     }
 
     class ViewPagerViewHolder extends RecyclerView.ViewHolder {
-        TextView mTvTitle;
-        RelativeLayout mContainer;
+        RelativeLayout relative;
+        TextView text;
 
         public ViewPagerViewHolder(View itemView) {
             super(itemView);
-            mContainer = itemView.findViewById(R.id.container);
-            mTvTitle = itemView.findViewById(R.id.tvTitle);
+            relative = itemView.findViewById(R.id.relative);
+            text = itemView.findViewById(R.id.text);
         }
     }
 }
