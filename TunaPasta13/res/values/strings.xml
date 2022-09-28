@@ -12,7 +12,7 @@
 
     <string-array name="flexWrapArray">
         <item>nowrap</item>
-        <item>wrap </item>
+        <item>wrap</item>
         <item>wrap_reverse</item>
     </string-array>
 </resources>

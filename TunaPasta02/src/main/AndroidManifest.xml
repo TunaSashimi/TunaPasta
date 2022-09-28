@@ -63,10 +63,10 @@
         <activity android:name="com.tunaPasta02.activity.GlowPadViewTest" />
 
         <service
-            android:name="com.tunaPasta02.service.MyServiceA"
+            android:name="com.tunaPasta02.service.ServiceDemo"
             android:enabled="true" />
         <service
-            android:name="com.tunaPasta02.service.MyBroadcastService"
+            android:name="com.tunaPasta02.service.BroadcastServiceDemo"
             android:enabled="true" />
     </application>
 

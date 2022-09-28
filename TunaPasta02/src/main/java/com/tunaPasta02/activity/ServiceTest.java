@@ -8,12 +8,10 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.tunaPasta02.R;
-import com.tunaPasta02.service.MyServiceA;
+import com.tunaPasta02.service.ServiceDemo;
 
 public class ServiceTest extends Activity {
     private Button startBtn, stopBtn;
@@ -42,18 +40,8 @@ public class ServiceTest extends Activity {
         startBtn =  findViewById(R.id.start_service_btn);
         stopBtn =  findViewById(R.id.stop_service_btn);
 
-        startBtn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                doStartService();
-            }
-        });
-        stopBtn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                doStopService();
-            }
-        });
+        startBtn.setOnClickListener(v -> doStartService());
+        stopBtn.setOnClickListener(v -> doStopService());
         doBindService();
     }
 
@@ -64,17 +52,17 @@ public class ServiceTest extends Activity {
     }
 
     private void doStartService() {
-        Intent it = new Intent(this, MyServiceA.class);
+        Intent it = new Intent(this, ServiceDemo.class);
         this.startService(it);
     }
 
     private void doStopService() {
-        Intent it = new Intent(this, MyServiceA.class);
+        Intent it = new Intent(this, ServiceDemo.class);
         this.stopService(it);
     }
 
     private void doBindService() {
-        Intent it = new Intent(this, MyServiceA.class);
+        Intent it = new Intent(this, ServiceDemo.class);
         this.bindService(it, conn, Context.BIND_AUTO_CREATE);
         //1, Class c=it.getServiceClass();
         //2, if( c 已经有实例 ){

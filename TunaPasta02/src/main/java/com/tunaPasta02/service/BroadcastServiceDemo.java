@@ -2,7 +2,7 @@ package com.tunaPasta02.service;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-public class MyBroadcastService extends Service{
+public class BroadcastServiceDemo extends Service{
 	private boolean isRunning=true;
 	@Override
 	public IBinder onBind(Intent intent) {

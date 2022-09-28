@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.tunaPasta02.R;
-import com.tunaPasta02.service.MyBroadcastService;
+import com.tunaPasta02.service.BroadcastServiceDemo;
 
 public class SendbroadcastTest extends Activity {
     private Button startBtn, stopBtn;
@@ -37,12 +37,12 @@ public class SendbroadcastTest extends Activity {
     }
 
     private void doStartService() {
-        Intent it = new Intent(this, MyBroadcastService.class);
+        Intent it = new Intent(this, BroadcastServiceDemo.class);
         this.startService(it);
     }
 
     private void doStopService() {
-        Intent it = new Intent(this, MyBroadcastService.class);
+        Intent it = new Intent(this, BroadcastServiceDemo.class);
         this.stopService(it);
     }
 }

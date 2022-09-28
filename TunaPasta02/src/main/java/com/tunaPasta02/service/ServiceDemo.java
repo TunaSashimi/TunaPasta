@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.tunaPasta02.R;
 
-public class MyServiceA extends Service{
+public class ServiceDemo extends Service{
 	private boolean isRunning=true;
 	private MediaPlayer player;
 	
@@ -18,8 +18,8 @@ public class MyServiceA extends Service{
 	 *
 	 */
 	public class MyBinder extends Binder{
-		public MyServiceA getService(){
-			return MyServiceA.this;
+		public ServiceDemo getService(){
+			return ServiceDemo.this;
 		}
 	}
 	@Override
